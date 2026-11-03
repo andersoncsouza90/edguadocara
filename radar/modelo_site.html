@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar de Concursos</title>
+<meta name="description" content="Concursos das áreas fiscal, controle e policial monitorados direto no Diário Oficial.">
+<link rel="alternate" type="application/rss+xml" title="Radar de Concursos" href="feed.xml">
+<style>
+:root{
+  --bg:#f6f7f9;--card:#fff;--txt:#14171c;--sub:#5b6472;--borda:#e3e6eb;--realce:#0b5cff;
+  --fiscal:#0f8a5f;--controle:#7a4bd1;--policial:#c2410c;
+  --abertos:#0f8a5f;--anunciados:#b45309;--autorizados:#0b5cff;--previstos:#64748b;--andamento:#475569;--encerrados:#94a3b8;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1116;--card:#161b22;--txt:#e6e9ee;--sub:#9aa4b2;--borda:#2a313c;--realce:#5b9bff;
+  --fiscal:#34d399;--controle:#b392f0;--policial:#fb923c;
+  --abertos:#34d399;--anunciados:#fbbf24;--autorizados:#5b9bff;--previstos:#94a3b8;--andamento:#94a3b8;--encerrados:#64748b;
+}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:28px 16px 8px;max-width:1100px;margin:auto}
+h1{margin:0;font-size:1.6rem;letter-spacing:-.01em}
+header p{margin:4px 0 0;color:var(--sub)}
+main{max-width:1100px;margin:auto;padding:0 16px 48px}
+.resumo{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:18px 0}
+.kpi{background:var(--card);border:1px solid var(--borda);border-radius:12px;padding:12px 14px;cursor:pointer;text-align:left;color:inherit;font:inherit}
+.kpi[aria-pressed="true"]{outline:2px solid var(--realce)}
+.kpi b{display:block;font-size:1.6rem;line-height:1.1}
+.kpi span{color:var(--sub);font-size:.85rem}
+.filtros{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+.chip{border:1px solid var(--borda);background:var(--card);color:var(--txt);border-radius:999px;padding:6px 12px;cursor:pointer;font:inherit}
+.chip[aria-pressed="true"]{background:var(--txt);color:var(--bg);border-color:var(--txt)}
+select,input[type=search]{border:1px solid var(--borda);background:var(--card);color:var(--txt);border-radius:8px;padding:7px 10px;font:inherit}
+input[type=search]{flex:1;min-width:180px}
+.lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+@media (max-width:420px){.lista{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--borda);border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.topo{display:flex;justify-content:space-between;gap:8px;align-items:flex-start}
+.sigla{font-weight:700;font-size:1.1rem}
+.orgao{color:var(--sub);font-size:.88rem}
+.tag{font-size:.75rem;font-weight:600;border-radius:999px;padding:2px 9px;white-space:nowrap;border:1px solid currentColor}
+.fase{font-weight:600}
+dl{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;margin:0;font-size:.9rem}
+dt{color:var(--sub)} dd{margin:0}
+details summary{cursor:pointer;color:var(--realce);font-size:.9rem}
+ol{margin:8px 0 0;padding-left:18px;font-size:.85rem}
+ol li{margin-bottom:6px}
+a{color:var(--realce)}
+.vazio{color:var(--sub);padding:40px 0;text-align:center}
+footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--sub);font-size:.82rem}
+</style>
+</head>
+<body>
+<header>
+  <h1>Radar de Concursos</h1>
+  <p>Fiscal · Controle · Policial — monitorado direto nos diários oficiais. Atualizado em <span id="gerado"></span>.</p>
+</header>
+<main>
+  <section class="resumo" id="kpis" aria-label="Resumo por fase"></section>
+  <section class="filtros" aria-label="Filtros">
+    <button class="chip" data-area="" aria-pressed="true">Todas</button>
+    <button class="chip" data-area="fiscal" aria-pressed="false">Fiscal</button>
+    <button class="chip" data-area="controle" aria-pressed="false">Controle</button>
+    <button class="chip" data-area="policial" aria-pressed="false">Policial</button>
+    <select id="esfera" aria-label="Esfera">
+      <option value="">Todas as esferas</option><option value="federal">Federal</option>
+      <option value="estadual">Estadual</option><option value="municipal">Municipal</option>
+    </select>
+    <select id="uf" aria-label="UF"><option value="">Todas as UFs</option></select>
+    <input type="search" id="busca" placeholder="Buscar órgão, cargo ou banca…">
+  </section>
+  <section class="lista" id="lista"></section>
+</main>
+<footer>
+  <p>Fontes: Diário Oficial da União (Imprensa Nacional), Querido Diário (Open Knowledge Brasil) e curadoria com link da fonte.
+  Atos oficiais não são protegidos por direito autoral (Lei 9.610/1998, art. 8º, IV). Classificação automática: confira sempre o edital.
+  <a href="feed.xml">RSS</a> · <a href="concursos.json">JSON</a></p>
+</footer>
+<script id="dados" type="application/json">__DADOS__</script>
+<script>
+const D = JSON.parse(document.getElementById('dados').textContent);
+const GRUPOS = [["abertos","Abertos / em breve"],["anunciados","Anunciados (comissão/banca)"],["autorizados","Autorizados"],["previstos","Previstos / solicitados"],["andamento","Em andamento"],["encerrados","Encerrados"]];
+const AREAS = {fiscal:"Fiscal",controle:"Controle",policial:"Policial"};
+const st = {area:"", grupo:"", esfera:"", uf:"", q:""};
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const br = iso => iso ? iso.split("-").reverse().join("/") : "";
+const reais = v => v ? v.toLocaleString("pt-BR",{style:"currency",currency:"BRL"}) : "";
+const norm = s => String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+
+$("#gerado").textContent = br(D.gerado_em);
+[...new Set(D.concursos.map(c => c.uf).filter(Boolean))].sort().forEach(uf => {
+  const o = document.createElement("option"); o.value = o.textContent = uf; $("#uf").appendChild(o);
+});
+
+function filtrados(ignorarGrupo){
+  const q = norm(st.q);
+  return D.concursos.filter(c =>
+    (!st.area || c.area === st.area) && (!st.esfera || c.esfera === st.esfera) &&
+    (!st.uf || c.uf === st.uf) && (ignorarGrupo || !st.grupo || c.grupo === st.grupo) &&
+    (!q || norm([c.orgao,c.sigla,c.banca,(c.cargos||[]).join(" ")].join(" ")).includes(q)));
+}
+
+function render(){
+  const base = filtrados(true);
+  $("#kpis").innerHTML = GRUPOS.map(([g,r]) =>
+    `<button class="kpi" data-grupo="${g}" aria-pressed="${st.grupo===g}" style="border-left:4px solid var(--${g})">
+      <b>${base.filter(c=>c.grupo===g).length}</b><span>${r}</span></button>`).join("");
+  const lista = filtrados(false);
+  $("#lista").innerHTML = lista.length ? lista.map(card).join("") :
+    `<p class="vazio">Nenhum concurso com esses filtros.</p>`;
+}
+
+function card(c){
+  const linhas = [
+    ["Fase", `<span class="fase" style="color:var(--${c.grupo})">${esc(c.fase)}</span>`],
+    c.banca && ["Banca", esc(c.banca)],
+    c.vagas && ["Vagas", esc(c.vagas)],
+    c.salario_max && ["Remuneração", "até " + reais(c.salario_max)],
+    (c.inscricoes_inicio||c.inscricoes_fim) && ["Inscrições", `${br(c.inscricoes_inicio)} a ${br(c.inscricoes_fim)}`],
+    c.cargos && c.cargos.length && ["Cargos", esc(c.cargos.join(", "))],
+    ["Último ato", br(c.atualizado_em)],
+  ].filter(Boolean);
+  return `<article class="card">
+    <div class="topo"><div><div class="sigla">${esc(c.sigla)}${c.uf?` <small>· ${esc(c.uf)}</small>`:""}</div>
+      <div class="orgao">${esc(c.orgao)}</div></div>
+      <span class="tag" style="color:var(--${c.area})">${AREAS[c.area]}</span></div>
+    <dl>${linhas.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
+    <details><summary>Linha do tempo (${c.eventos.length} ato${c.eventos.length>1?"s":""})</summary><ol>
+      ${c.eventos.map(e=>`<li><b>${br(e.data)}</b> — ${esc(e.tipo_rotulo)}<br><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titulo)}</a> <small>(${esc(e.fonte)})</small></li>`).join("")}
+    </ol></details></article>`;
+}
+
+document.addEventListener("click", ev => {
+  const chip = ev.target.closest("[data-area]");
+  if (chip){ st.area = chip.dataset.area; document.querySelectorAll("[data-area]").forEach(b => b.setAttribute("aria-pressed", b===chip)); render(); }
+  const kpi = ev.target.closest("[data-grupo]");
+  if (kpi){ st.grupo = st.grupo === kpi.dataset.grupo ? "" : kpi.dataset.grupo; render(); }
+});
+$("#esfera").onchange = e => { st.esfera = e.target.value; render(); };
+$("#uf").onchange = e => { st.uf = e.target.value; render(); };
+$("#busca").oninput = e => { st.q = e.target.value; render(); };
+render();
+</script>
+</body>
+</html>

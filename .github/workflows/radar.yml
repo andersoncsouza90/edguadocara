@@ -1,0 +1,39 @@
+name: Radar de concursos
+
+on:
+  schedule:
+    - cron: "17 9 * * *"   # 06:17 em Brasília, depois da edição do DOU
+  workflow_dispatch:
+    inputs:
+      dias:
+        description: "Quantos dias para trás coletar"
+        default: "3"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testes
+        run: python -m unittest discover -s tests
+      - name: Coletar atos oficiais
+        run: python -m radar coletar --dias "${{ github.event.inputs.dias || '3' }}"
+      - name: Gerar site
+        run: python -m radar site
+      - name: Publicar dados
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "radar-bot@users.noreply.github.com"
+          git add data docs
+          git diff --cached --quiet || git commit -m "radar: coleta de $(date -u +%F)"
+          git push

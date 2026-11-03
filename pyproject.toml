@@ -1,0 +1,15 @@
+[project]
+name = "radar-concursos"
+version = "0.1.0"
+description = "Radar de concursos públicos (fiscal, controle e policial) a partir dos diários oficiais"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+radar = "radar.cli:main"
+
+[tool.setuptools]
+packages = ["radar", "radar.fontes"]
+
+[tool.setuptools.package-data]
+radar = ["modelo_site.html"]
