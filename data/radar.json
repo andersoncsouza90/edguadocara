@@ -1,0 +1,645 @@
+{
+ "versao": 1,
+ "concursos": [
+  {
+   "chave": "cgu-2026",
+   "orgao_chave": "cgu",
+   "eventos": [
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-09",
+     "titulo": "EDITAL CGU Nº 1, DE 8 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-cgu-n-1-de-8-de-outubro-de-2026-737675154",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Controladoria-Geral da União",
+      "sigla": "CGU",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL CGU Nº 1, DE 8 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA EM CARGOS DE AUDITOR FEDERAL DE FINANÇAS E CONTROLE (AFFC) O Secretário-Executivo Adjunto da Controladoria-Geral da União, tendo em vista a autorização por meio da Portaria MGI nº 5.093, de 22 de junho de 2026, e o disposto no Decreto-Lei nº 2.346, de 23 de julho de 1987, na Lei nº 8.112, de 11 de dezembro de 1990, na Lei nº 9.625, de 7 de abril de 1998, na Lei nº 11.890, de 24 de dezembro de 2008, na Lei nº 13.327, de 29 de julho de 2016, no Decreto nº 9.739, de 28 de março",
+     "banca": "Cebraspe",
+     "vagas": null,
+     "salario_max": 20000.0,
+     "inscricoes_inicio": "2008-10-02",
+     "inscricoes_fim": "2022-03-29",
+     "cargos": [
+      "Auditor Federal de Finanças e Controle",
+      "Técnico Federal de Finanças e Controle"
+     ],
+     "id": "433cca5ca4564353"
+    },
+    {
+     "tipo": "retificacao",
+     "data": "2026-10-15",
+     "titulo": "EDITAL CGU Nº 2, DE 13 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-cgu-n-2-de-13-de-outubro-de-2026-738399179",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Controladoria-Geral da União",
+      "sigla": "CGU",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL CGU Nº 2, DE 13 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA EM CARGOS DE AUDITOR FEDERAL DE FINANÇAS E CONTROLE (AFFC) O Secretário-Executivo Adjunto da Controladoria-Geral da União torna pública a retificação do subitem 6.2.4 e do Anexo I - Cronograma Previsto do Edital nº 1 - CGU - AFFC, de 8 de outubro de 2026, conforme a seguir especificado, permanecendo inalterados os demais itens e subitens do referido edital. [...] 6 DAS INSCRIÇÕES NO CONCURSO PÚBLICO [...] 6.2.4 A GRU Cobrança deverá ser paga pelo PagTesouro, utilizando-se a",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [
+      "Auditor Federal de Finanças e Controle"
+     ],
+     "id": "37cb8a77246c88aa"
+    }
+   ]
+  },
+  {
+   "chave": "conselho-regional-de-corretores-de-imoveis-da-8a-regiao-2026",
+   "orgao_chave": "conselho-regional-de-corretores-de-imoveis-da-8a-regiao",
+   "eventos": [
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-14",
+     "titulo": "EDITAL Nº 7/2026, DE 13 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-7/2026-de-13-de-outubro-de-2026-738160024",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Conselho Regional de Corretores de Imóveis da 8ª Região",
+      "sigla": "Conselho Regional de Corretores de Imóveis da 8ª Região",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 7/2026, DE 13 DE OUTUBRO DE 2026 CONVOCAÇÃO DE CANDIDATOS - CONCURSO PÚBLICO CRECI-DF 2025 O Presidente do Conselho Regional de Corretores de Imóveis da 8ª - CRECI-DF, no uso de suas atribuições legais e regimentais, torna pública a convocação dos candidatos aprovados no Concurso Público nº 001/2025, regido pelo Edital de Abertura do Concurso Público CRECI-DF n.º 001/2025, de 19 de novembro de 2025, homologado em 5 de maio de 2026, com publicação no Diário Oficial da União em 5 de maio de 2026, para provimento de cargos do quadro de pessoal deste Conselho. Os candidatos abaixo relaci",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [],
+     "id": "27e121538976af66"
+    }
+   ]
+  },
+  {
+   "chave": "conselho-regional-de-fisioterapia-e-terapia-ocupacional-da-18-regiao-2026",
+   "orgao_chave": "conselho-regional-de-fisioterapia-e-terapia-ocupacional-da-18-regiao",
+   "eventos": [
+    {
+     "tipo": "comissao",
+     "data": "2026-10-22",
+     "titulo": "EDITAL Nº 8, DE 21 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-8-de-21-de-outubro-de-2026-739928377",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "CONSELHO REGIONAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL DA 18 REGIÃO",
+      "sigla": "CONSELHO REGIONAL DE FISIOTERAPIA E TERAPIA OCUPACIONAL DA 18 REGIÃO",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 8, DE 21 DE OUTUBRO DE 2026 CONVOCAÇÃO DE CANDIDATOs APROVADOs EM CONCURSO PÚBLICO - EDITAL Nº 1/2024 O Presidente do Conselho Regional de Fisioterapia e Terapia Ocupacional da 18ª Região - CREFITO18, no uso das atribuições que lhe são conferidas e tendo em vista o disposto no edital nº 1/2024, que rege o Concurso Público Para Provimento de Vaga e Formação de Cadastro de Reserva Para Cargos de Nível Médio e Nível Superior no âmbito deste Conselho, diante da lista de aprovação atualizada, conforme EDITAL de CONVOCAÇÃO Nº 2/2026/CREFITO18, de 15 de abril de 2026. CONSIDERANDO que a rea",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [],
+     "id": "69b94167235ae0b1"
+    }
+   ]
+  },
+  {
+   "chave": "conselho-regional-de-servico-social-15a-regiao-2026",
+   "orgao_chave": "conselho-regional-de-servico-social-15a-regiao",
+   "eventos": [
+    {
+     "tipo": "homologacao",
+     "data": "2026-10-05",
+     "titulo": "PORTARIA Nº 63, DE 1º DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/portaria-n-63-de-1-de-outubro-de-2026-736361483",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "CONSELHO REGIONAL DE SERVIÇO SOCIAL 15ª REGIÃO",
+      "sigla": "CONSELHO REGIONAL DE SERVIÇO SOCIAL 15ª REGIÃO",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "PORTARIA Nº 63, DE 1º DE OUTUBRO DE 2026 O PRESIDENTE DO CONSELHO REGIONAL DE SERVIÇO SOCIAL 15ª REGIÃO AMAZONAS, no exercício da atribuição prevista no art. 24, XXVII, do Regimento Interno do CRESS/AM, CONSIDERANDO a homologação do concurso público regido pelo edital n.º 01/2024-CRESS/AM; CONSIDERANDO o cumprimento, pela Sra. MIRIA CARVALHO GARCIA, das disposições previstas no Edital n.º 01/2024-CRESS/AM referentes aos documentos necessários para o ingresso no quadro de funcionários deste Regional, resolve: Art. 1º ADMITIR a Sra. MIRIA CARVALHO GARCIA no emprego de Agente Fiscal do quadro per",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [],
+     "id": "1972a1890cb2b15b"
+    }
+   ]
+  },
+  {
+   "chave": "fundacao-de-previdencia-complementar-do-servidor-publico-federal-do-poder-judiciario-2026",
+   "orgao_chave": "fundacao-de-previdencia-complementar-do-servidor-publico-federal-do-poder-judiciario",
+   "eventos": [
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-19",
+     "titulo": "EDITAL Nº 11 - FUNPRESP-JUD, DE 14 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-11-funpresp-jud-de-14-de-outubro-de-2026-739058438",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Fundação de Previdência Complementar do Servidor Público Federal do Poder Judiciário",
+      "sigla": "Fundação de Previdência Complementar do Servidor Público Federal do Poder Judiciário",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL Nº 11 - FUNPRESP-JUD, DE 14 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE VAGAS E A FORMAÇÃO DE CADASTRO DE RESERVA EM EMPREGOS DE NÍVEL SUPERIOR O Diretor-Presidente da Fundação de Previdência Complementar do Servidor Público Federal do Poder Judiciário - Funpresp-Jud torna públicos o resultado final na prova discursiva e a convocação para a avaliação de títulos, referentes ao concurso público para o provimento de vagas e a formação de cadastro de reserva em empregos de nível superior. 1 DO RESULTADO FINAL NA PROVA DISCURSIVA 1.1 Resultado final na prova discursiva, na segui",
+     "banca": "Cebraspe",
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [],
+     "id": "04a1610f410c037b"
+    }
+   ]
+  },
+  {
+   "chave": "fundacao-escola-nacional-de-administracao-publica-2026",
+   "orgao_chave": "fundacao-escola-nacional-de-administracao-publica",
+   "eventos": [
+    {
+     "tipo": "resultado",
+     "data": "2026-10-05",
+     "titulo": "EDITAL Nº 258, DE 2 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-258-de-2-de-outubro-de-2026-736544754",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Fundação Escola Nacional de Administração Pública",
+      "sigla": "Fundação Escola Nacional de Administração Pública",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 258, DE 2 DE OUTUBRO DE 2026 resultado final do CONCURSO PÚBLICO PARA PROVIMENTO DE CARGOS DE AUDITOR-FISCAL FEDERAL AGROPECUÁRIO PROCESSO Nº 424.302903/2026-99 CONCURSO PÚBLICO PARA PROVIMENTO DE CARGOS DE AUDITOR-FISCAL FEDERAL AGROPECUÁRIO - MÉDICO VETERINÁRIO, DO QUADRO DE PESSOAL DO MINISTÉRIO DA AGRICULTURA, PECUÁRIA E ABASTECIMENTO (MAPA) A PRESIDENTA DA FUNDAÇÃO ESCOLA NACIONAL DE ADMINISTRAÇÃO PÚBLICA - ENAP, no uso das atribuições previstas no art. 19 do Decreto nº 10.369, de 22 de maio de 2020 e no art. 65 da Lei nº 13.844, de 18 de junho de 2019, na Portaria nº 2.058, de ",
+     "banca": "ESAF",
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [
+      "Auditor Fiscal"
+     ],
+     "id": "d54dbd347ac3caab"
+    }
+   ]
+  },
+  {
+   "chave": "fundacao-universidade-federal-de-ciencias-da-saude-de-porto-alegre-2026",
+   "orgao_chave": "fundacao-universidade-federal-de-ciencias-da-saude-de-porto-alegre",
+   "eventos": [
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-26",
+     "titulo": "EDITAL PROGESP Nº 118, DE 21 DE NOVEMBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-progesp-n-118-de-21-de-novembro-de-2026-740364382",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Fundação Universidade Federal de Ciências da Saúde de Porto Alegre",
+      "sigla": "Fundação Universidade Federal de Ciências da Saúde de Porto Alegre",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL PROGESP Nº 118, DE 21 DE NOVEMBRO DE 2026 Concursos Públicos de Provas e Títulos A PRÓ-REITORA DE GESTÃO COM PESSOAS da Universidade Federal de Ciências da Saúde de Porto Alegre - UFCSPA, no uso de suas atribuições, conferidas pela Portaria n° 57, de 1° de junho de 2018, torna público que estarão abertas, no período de 03 a 17 de novembro de 2026, as inscrições para os Concursos Públicos de Provas e Títulos, destinado ao preenchimento de cargos para docente constantes do Quadro de Pessoal Permanente, conforme Lei nº 8.112, de 11/12/1990, Lei n° 10.741, de 01/10/2003, Lei n° 9.784, de 29",
+     "banca": null,
+     "vagas": 10,
+     "salario_max": 6397.19,
+     "inscricoes_inicio": "2008-10-02",
+     "inscricoes_fim": "2007-06-26",
+     "cargos": [],
+     "id": "2ddb5a5590b520fa"
+    }
+   ]
+  },
+  {
+   "chave": "fundacao-universidade-federal-de-mato-grosso-do-sul-2026",
+   "orgao_chave": "fundacao-universidade-federal-de-mato-grosso-do-sul",
+   "eventos": [
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-07",
+     "titulo": "EDITAL PROGEP/UFMS Nº 137, DE 6 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-progep/ufms-n-137-de-6-de-outubro-de-2026-737185297",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Fundação Universidade Federal de Mato Grosso do Sul",
+      "sigla": "Fundação Universidade Federal de Mato Grosso do Sul",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL PROGEP/UFMS Nº 137, DE 6 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA INGRESSO NA CARREIRA DO MAGISTÉRIO SUPERIOR DA FUNDAÇÃO UNIVERSIDADE FEDERAL DE MATO GROSSO DO SUL A FUNDAÇÃO UNIVERSIDADE FEDERAL DE MATO GROSSO DO SUL - UFMS, por meio da Pró-Reitoria de Gestão de Pessoas - Progep, no uso de suas atribuições legais, delegadas pela Portaria nº 1.438 - RTR/UFMS, de 24 de fevereiro de 2026, e tendo em vista o disposto na Lei nº 8.112, de 11 de dezembro de 1990, na Lei nº 12.772, de 28 de dezembro de 2012, na Lei nº 15.141, de 2 de junho de 2025, na Lei nº 15.142, de 3 de junho de 2025, na ",
+     "banca": "FCC",
+     "vagas": null,
+     "salario_max": 6397.19,
+     "inscricoes_inicio": "2026-10-12",
+     "inscricoes_fim": "2026-10-15",
+     "cargos": [
+      "Escrivão"
+     ],
+     "id": "9dc46d58b939fe8e"
+    }
+   ]
+  },
+  {
+   "chave": "gabinete-da-ministra-2026",
+   "orgao_chave": "gabinete-da-ministra",
+   "eventos": [
+    {
+     "tipo": "retificacao",
+     "data": "2026-10-13",
+     "titulo": "EDITAL",
+     "url": "https://www.in.gov.br/web/dou/-/edital-737939307",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Gabinete da Ministra",
+      "sigla": "Gabinete da Ministra",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL RETIFICAÇÃO DO EDITAL ESPECÍFICO Nº 11/2026 CONCURSO PÚBLICO NACIONAL UNIFICADO DO GOVERNO FEDERAL PARA PROVIMENTO DE VAGAS E FORMAÇÃO DO BANCO DE CANDIDATOS EM LISTA DE ESPERA EM CARGOS DE NÍVEL MÉDIO E SUPERIOR 3ª CONVOCAÇÃO DE APROVADOS - BLOCO 1 a 8 A MINISTRA DE ESTADO DA GESTÃO E DA INOVAÇÃO EM SERVIÇOS PÚBLICOS, no uso da atribuição que lhe confere o art. 87, parágrafo único, incisos I e II da Constituição Federal, tendo em vista a autorização concedida por meio da Portaria MGI nº 2.847, de 16 de junho de 2023, a Portaria MGI nº 6.017, de 4 de outubro de 2023, o disposto no art. ",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [
+      "Auditor Fiscal"
+     ],
+     "id": "378c09e8e1689f43"
+    }
+   ]
+  },
+  {
+   "chave": "mte-aft-2026",
+   "orgao_chave": "mte-aft",
+   "eventos": [
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-20",
+     "titulo": "EDITAL Nº 98, DE 19 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-98-de-19-de-outubro-de-2026-739313733",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Ministério do Trabalho e Emprego (Auditor-Fiscal do Trabalho)",
+      "sigla": "MTE-AFT",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 98, DE 19 DE OUTUBRO DE 2026 CONCURSO PÚBLICO NACIONAL UNIFICADO DO GOVERNO FEDERAL PARA PROVIMENTO DE VAGAS E FORMAÇÃO DO BANCO DE CANDIDATOS EM LISTA DE ESPERA EM CARGOS DE NÍVEL SUPERIOR CONVOCAÇÃO PARA CURSO DE FORMAÇÃO BLOCO 4 - TRABALHO E SAÚDE DO SERVIDOR A MINISTRA DE ESTADO DA GESTÃO E DA INOVAÇÃO EM SERVIÇOS PÚBLICOS, no uso da atribuição que lhe confere o art. 87, parágrafo único, incisos I e II da Constituição Federal, tendo em vista a autorização concedida por meio da Portaria MGI nº 6.017, de 4 de outubro de 2023, o disposto no art. 32, caput, incisos I, II, III e V, da",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [
+      "Auditor-Fiscal do Trabalho"
+     ],
+     "id": "7daf1530465371d1"
+    },
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-29",
+     "titulo": "EDITAL Nº 98, DE 19 DE OUTUBRO DE 2026 (*)",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-98-de-19-de-outubro-de-2026-*-741060622",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Ministério do Trabalho e Emprego (Auditor-Fiscal do Trabalho)",
+      "sigla": "MTE-AFT",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 98, DE 19 DE OUTUBRO DE 2026 (*) CONCURSO PÚBLICO NACIONAL UNIFICADO DO GOVERNO FEDERAL PARA PROVIMENTO DE VAGAS E FORMAÇÃO DO BANCO DE CANDIDATOS EM LISTA DE ESPERA EM CARGOS DE NÍVEL SUPERIOR CONVOCAÇÃO PARA CURSO DE FORMAÇÃO BLOCO 4 - TRABALHO E SAÚDE DO SERVIDOR O MINISTRO DE ESTADO DA GESTÃO E DA INOVAÇÃO EM SERVIÇOS PÚBLICOS SUBSTITUTO, no uso da atribuição que lhe confere o art. 87, parágrafo único, incisos I e II da Constituição Federal, tendo em vista a autorização concedida por meio da Portaria MGI nº 6.017, de 4 de outubro de 2023, o disposto no art. 32, caput, incisos I, ",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [
+      "Auditor-Fiscal do Trabalho"
+     ],
+     "id": "b9eb0f40e4bc8cf1"
+    }
+   ]
+  },
+  {
+   "chave": "pf-2026",
+   "orgao_chave": "pf",
+   "eventos": [
+    {
+     "tipo": "retificacao",
+     "data": "2026-10-14",
+     "titulo": "EDITAL DE CONCURSO PÚBLICO Nº 1/2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-de-concurso-publico-n-1/2026-738307109",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Polícia Federal",
+      "sigla": "PF",
+      "area": "policial",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "policial",
+     "resumo": "EDITAL DE CONCURSO PÚBLICO Nº 1/2026 Indústrias Nucleares do Brasil S.A. - INB, torna pública a realização do Concurso Público destinado a formação de Cadastro de Reserva para os cargos de nível médio e superior previstos neste edital, de acordo com o disposto abaixo. 1. DAS DISPOSIÇÕES PRELIMINARES 1.1 O Concurso Público regido por este Edital, pelos diplomas legais e regulamentares, por seus anexos e posteriores retificações, caso existam, visa a formação de cadastro reserva (CR) para os cargos de nível médio e superior, conforme previsto no item 3.1, observado o prazo de validade do certame",
+     "banca": "FGV",
+     "vagas": 150,
+     "salario_max": 8374.0,
+     "inscricoes_inicio": "2026-10-13",
+     "inscricoes_fim": "2026-11-11",
+     "cargos": [],
+     "id": "e3ed7c9353689e86"
+    }
+   ]
+  },
+  {
+   "chave": "prf-2026",
+   "orgao_chave": "prf",
+   "eventos": [
+    {
+     "tipo": "resultado",
+     "data": "2026-11-03",
+     "titulo": "EDITAL Nº 57 - PRF - POLICIAL RODOVIÁRIO FEDERAL, DE 28 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-57-prf-policial-rodoviario-federal-de-28-de-outubro-de-2026-741343507",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Polícia Rodoviária Federal",
+      "sigla": "PRF",
+      "area": "policial",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "policial",
+     "resumo": "EDITAL Nº 57 - PRF - POLICIAL RODOVIÁRIO FEDERAL, DE 28 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS NO CARGO DE POLICIAL RODOVIÁRIO FEDERAL inclusão de candidato sub judice O DIRETOR-GERAL DA POLÍCIA RODOVIÁRIA FEDERAL, em cumprimento à decisão judicial proferida nos autos do Processo nº 54-65.2014.4.01.3603, em trâmite na Justiça Federal do Mato Grosso, torna pública a inclusão do candidato sub judice Silvio Luis Campos Filgueiras, inscrição nº 10135557, no resultado final na avaliação psicológica, divulgado por meio do subitem 2.1.3 do Edital nº 13 - PRF - Policial Rodoviári",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [
+      "Policial Rodoviário Federal"
+     ],
+     "id": "5ec3edc8801350e2"
+    }
+   ]
+  },
+  {
+   "chave": "rfb-2026",
+   "orgao_chave": "rfb",
+   "eventos": [
+    {
+     "tipo": "homologacao",
+     "data": "2026-10-07",
+     "titulo": "EDITAL Nº 228, DE 5 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-228-de-5-de-outubro-de-2026-737089624",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Receita Federal do Brasil",
+      "sigla": "RFB",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 228, DE 5 DE OUTUBRO DE 2026 O Reitor da Universidade Federal do Estado do Rio e Janeiro - UNIRIO, no uso de suas atribuições, considerando o disposto na Lei nº 8.112, de 11 de dezembro de 1990, na Lei nº 12.772, de 28 de dezembro de 2012, e nas demais disposições legais aplicáveis, tendo em vista a homologação do Concurso Público de Provas e Títulos para Professor Efetivo, através do Edital N. 162, de 26 de junho de 2026, publicado no DOU em 30 de junho de 2026, convoca o(a) candidato(a) aprovado(a) e classificado(a) abaixo relacionado(a) para, inicialmente, entrega de documentos e ",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [],
+     "id": "1e97e93a7d2d4962"
+    },
+    {
+     "tipo": "resultado",
+     "data": "2026-10-09",
+     "titulo": "EDITAL Nº 11/2026- RFB, DE 6 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-11/2026-rfb-de-6-de-outubro-de-2026-737555816",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Receita Federal do Brasil",
+      "sigla": "RFB",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 11/2026- RFB, DE 6 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS NOS QUADROS DA CARREIRA TRIBUTÁRIO E ADUANEIRA DA RECEITA FEDERAL DO BRASIL O SECRETÁRIO ESPECIAL DA RECEITA FEDERAL DO BRASIL no uso da atribuição que lhe confere o inciso III do art. 350 do Regimento Interno da Secretaria Especial da Receita Federal do Brasil, aprovado pela Portaria ME nº 284, de 27 de julho de 2020, e em cumprimento ao Acórdão proferido pelo Tribunal Regional Federal - 1ª Região, nos autos da Ação Judicial nº 1075074-57.2023.4.01.3400, ajuizada por ANA CLÁUDIA BARBOSA DE MELO, candidat",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [
+      "Auditor-Fiscal da Receita Federal"
+     ],
+     "id": "59412dab0a867d26"
+    },
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-22",
+     "titulo": "EDITAL Nº 1/2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-1/2026-739927397",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Receita Federal do Brasil",
+      "sigla": "RFB",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL Nº 1/2026 CONCURSO PÚBLICO PARA O PROVIMENTO DE CARGOS DO QUADRO PERMANENTE DE PESSOAL ABERTURA DE INSCRIÇÕES O Tribunal Regional do Trabalho da 4ª Região, com sede em Porto Alegre e jurisdição no Estado do Rio Grande do Sul, por meio da Comissão de Concurso instituída pela Portaria TRT4 nº 2.890/2025, FAZ SABER que realizará concurso público para provimento de cargos de seu Quadro de Pessoal e formação de cadastro reserva, mediante as condições estabelecidas neste Edital, em locais, datas e horários a serem oportunamente divulgados, que se regerá de acordo com as Instruções Especiais, ",
+     "banca": "FCC",
+     "vagas": 50,
+     "salario_max": 16040.88,
+     "inscricoes_inicio": "2026-10-26",
+     "inscricoes_fim": "2026-11-25",
+     "cargos": [
+      "Agente de Polícia"
+     ],
+     "id": "0de42f6896a26017"
+    },
+    {
+     "tipo": "retificacao",
+     "data": "2026-10-28",
+     "titulo": "EDITAL de 27 de outubro de 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-de-27-de-outubro-de-2026-740757093",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Receita Federal do Brasil",
+      "sigla": "RFB",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL de 27 de outubro de 2026 1ª RETIFICAÇÃO DO EDITAL Nº 11/2026-RFB CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS NOS QUADROS DA CARREIRA TRIBUTÁRIO E ADUANEIRA DA RECEITA FEDERAL DO BRASIL A SECRETÁRIA ESPECIAL DA RECEITA FEDERAL DO BRASIL, SUBSTITUTA, no uso da atribuição que lhe confere o inciso III do art. 350 do Regimento Interno da Secretaria Especial da Receita Federal do Brasil, torna pública a seguinte retificação do Edital supracitado, cuja alteração está a seguir elencada: 1. no item I, ONDE SE LÊ a Classificação 236-A, LEIA-SE a Classificação 116-A. ADRIANA GOMES RÊGO",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [],
+     "id": "0d11395ae177d253"
+    },
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-11-03",
+     "titulo": "EDITAL PROGEP/UFMS Nº 152, DE 29 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-progep/ufms-n-152-de-29-de-outubro-de-2026-741432584",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Receita Federal do Brasil",
+      "sigla": "RFB",
+      "area": "fiscal",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "fiscal",
+     "resumo": "EDITAL PROGEP/UFMS Nº 152, DE 29 DE OUTUBRO DE 2026 CONCURSO PÚBLICO PARA INGRESSO NA CARREIRA DE TÉCNICO-ADMINISTRATIVO EM EDUCAÇÃO DA FUNDAÇÃO UNIVERSIDADE FEDERAL DE MATO GROSSO DO SUL A FUNDAÇÃO UNIVERSIDADE FEDERAL DE MATO GROSSO DO SUL - UFMS, por meio da Presidente da Comissão de Concurso Público, constituída pela Portaria nº 1.794-RTR/UFMS, de 25 de outubro de 2026, no uso de suas atribuições legais, e tendo em vista o disposto nas seguintes normas, Lei nº 8.112, de 11 de dezembro de 1990 (Regime Jurídico dos Servidores Públicos Federais); Lei nº 11.091, de 12 de janeiro de 2005 (Plano",
+     "banca": null,
+     "vagas": 39,
+     "salario_max": null,
+     "inscricoes_inicio": "2026-11-04",
+     "inscricoes_fim": "2026-12-04",
+     "cargos": [],
+     "id": "808896864b1be189"
+    }
+   ]
+  },
+  {
+   "chave": "stn-2026",
+   "orgao_chave": "stn",
+   "eventos": [
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-07",
+     "titulo": "EDITAL Nº 1.077, DE 6 DE OUTUBRO DE 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-1.077-de-6-de-outubro-de-2026-737184646",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Secretaria do Tesouro Nacional",
+      "sigla": "STN",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL Nº 1.077, DE 6 DE OUTUBRO DE 2026 CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA O PROVIMENTO DOS CARGOS DA CARREIRA DO MAGISTÉRIO DO ENSINO BÁSICO, TÉCNICO E TECNOLÓGICO - O REITOR DO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE MINAS GERAIS, no uso das atribuições que lhe são conferidas pelo Estatuto da Instituição, republicado com alterações no Diário Oficial da União do dia 03/02/2026, Seção 1, Página 150 e seguintes, e pelo Decreto de 11 de setembro de 2023, publicado no DOU de 12 de setembro de 2023, Seção 2, Edição nº 174, página 01; CONSIDERANDO o disposto nas Leis nº 8.112",
+     "banca": "FGV",
+     "vagas": null,
+     "salario_max": 6397.19,
+     "inscricoes_inicio": "2026-10-13",
+     "inscricoes_fim": "2026-11-13",
+     "cargos": [],
+     "id": "b2a252f3523ab5ff"
+    },
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-26",
+     "titulo": "EDITAL Nº 1, DE 23 de outubro de 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-1-de-23-de-outubro-de-2026-740280249",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Secretaria do Tesouro Nacional",
+      "sigla": "STN",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL Nº 1, DE 23 de outubro de 2026 ABERTURA DE INSCRIÇÕES PARA CONCURSO PÚBLICO DO TRIBUNAL REGIONAL FEDERAL DA 3ª REGIÃO O PRESIDENTE DO TRIBUNAL REGIONAL FEDERAL DA 3.ª REGIÃO, tendo em vista o contrato celebrado com a Fundação para o Vestibular da Universidade Estadual Paulista \"Júlio de Mesquita Filho\" - VUNESP, faz saber que fará realizar, em locais, datas e horários a serem oportunamente divulgados, Concurso Público destinado à formação de cadastro reserva e ao provimento de cargos dos Quadros Permanentes de Pessoal do Tribunal Regional Federal da 3.ª Região e das Seções Judiciárias d",
+     "banca": "Vunesp",
+     "vagas": 100,
+     "salario_max": 20013.11,
+     "inscricoes_inicio": "2008-10-02",
+     "inscricoes_fim": "2018-04-30",
+     "cargos": [],
+     "id": "2a5a11efc83fff64"
+    }
+   ]
+  },
+  {
+   "chave": "tcu-2026",
+   "orgao_chave": "tcu",
+   "eventos": [
+    {
+     "tipo": "resultado",
+     "data": "2026-10-05",
+     "titulo": "EDITAL PROGEP Nº 156/2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-progep-n-156/2026-736547564",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Tribunal de Contas da União",
+      "sigla": "TCU",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL PROGEP Nº 156/2026 CONCURSO PÚBLICO DE PROVAS E TÍTULOS PARA PREENCHIMENTO DE VAGA(S) DE PROFESSOR(A) DO MAGISTÉRIO SUPERIOR O Pró-Reitor de Gestão de Pessoas da Universidade Federal de Uberlândia, no uso de suas atribuições e considerando a delegação de competência que lhe foi outorgada por meio da Portaria UFU nº 166, de 07 de janeiro de 2025, do Reitor da Universidade Federal de Uberlândia, publicada no Diário Oficial da União em 08 de janeiro de 2025, seção 2, página 34; e tendo em vista o que estabelecem a Lei nº 8.112, de 11 de dezembro de 1990; a Lei nº 12.772, de 28 de dezembro ",
+     "banca": null,
+     "vagas": null,
+     "salario_max": null,
+     "inscricoes_inicio": null,
+     "inscricoes_fim": null,
+     "cargos": [],
+     "id": "7fcf09cef33b8960"
+    },
+    {
+     "tipo": "edital_abertura",
+     "data": "2026-10-23",
+     "titulo": "EDITAL Nº 1 - CREF16/RN, de 22 de outubro de 2026",
+     "url": "https://www.in.gov.br/web/dou/-/edital-n-1-cref16/rn-de-22-de-outubro-de-2026-740172527",
+     "fonte": "DOU",
+     "orgao": {
+      "nome": "Tribunal de Contas da União",
+      "sigla": "TCU",
+      "area": "controle",
+      "esfera": "federal",
+      "uf": null
+     },
+     "area": "controle",
+     "resumo": "EDITAL Nº 1 - CREF16/RN, de 22 de outubro de 2026 CONCURSO PÚBLICO PARA PREENCHIMENTO DE EMPREGOS PÚBLICOS E FORMAÇÃO DE CADASTRO DE RESERVA PARA NÍVEL SUPERIOR O Presidente do CONSELHO REGIONAL DE EDUCAÇÃO FÍSICA DA 16ª REGIÃO/RN (CREF16/RN), no uso de suas atribuições legais, torna pública a realização de CONCURSO PÚBLICO para preenchimento de empregos públicos e formação de cadastro de reserva do quadro de pessoal do CREF16/RN, conforme estabelecido a seguir: 1 - DAS DISPOSIÇÕES PRELIMINARES 1.1 O concurso será regido por este Edital. A organização e a execução de todas as fases do certame,",
+     "banca": "Comperve",
+     "vagas": 60,
+     "salario_max": null,
+     "inscricoes_inicio": "2026-11-15",
+     "inscricoes_fim": "2026-11-16",
+     "cargos": [],
+     "id": "d59d61d61ff979bd"
+    }
+   ]
+  }
+ ]
+}
