@@ -78,6 +78,16 @@ não copia vagas e salário do edital inteiro quando só parte dos cargos é da
 `AMBÍGUO`, crie o concurso com `--carreira` (ex.: `SEFAZ-SP-AFR-2026`) e
 importe de novo.
 
+**Se as ferramentas `mcp__PCI_Concursos__*` não estiverem disponíveis**
+(conector ausente na sessão), avise isso no relatório final e use o plano B.
+Para cada linha `pci ...`, busque na web `site:pciconcursos.com.br <termo>`
+e registre os editais encontrados com
+`python -m radar fato <ID> --fonte-tipo agregador --veiculo "PCI Concursos" --url <link da notícia no PCI>`
+para os campos `status=edital_publicado`, `inscricoes_inicio` e
+`inscricoes_fim`. Antes, crie o concurso com `radar novo` se ele não
+existir. Valem as mesmas regras do importador: só órgãos e cargos da área, e
+vagas/salário só se forem dos cargos da área.
+
 ## 2. Notícias (fases antes do edital, banca, retificações)
 
 Para cada linha `web ...`, rode a WebSearch no modo `standard`; use
