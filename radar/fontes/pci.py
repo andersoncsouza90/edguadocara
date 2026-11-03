@@ -123,10 +123,16 @@ def importar(registro: Registro, caminho: Path, areas: set[Area] | None = None) 
         if areas and area not in areas:
             continue
         conc = next((c for c in registro.concursos.values() if it.id in c.pci_ids), None) \
-            or registro.ativo_por_sigla(sigla)
+            or registro.ativo_por_sigla(sigla, it.cargos)
         if conc is None:
             ano = (it.inicio or hoje or "")[:4]
-            conc = registro.novo(Concurso(gerar_id(sigla, ano), nome, sigla, area, esfera, uf, relevantes))
+            novo_id = gerar_id(sigla, ano)
+            if novo_id in registro.concursos:
+                # mesmo órgão/ano, cargos diferentes: não adivinha, pede curadoria
+                log.append(f"AMBÍGUO: PCI {it.id} ({it.titulo}: {', '.join(it.cargos[:3])}) — "
+                           f"{novo_id} já existe com outros cargos; crie com --carreira e reimporte")
+                continue
+            conc = registro.novo(Concurso(novo_id, nome, sigla, area, esfera, uf, relevantes))
             log.append(f"novo concurso {conc.id} ({nome})")
         if it.id not in conc.pci_ids:
             conc.pci_ids.append(it.id)

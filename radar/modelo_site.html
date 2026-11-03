@@ -52,6 +52,7 @@ a{color:var(--realce)}
 .sub{color:var(--sub)}
 .ft{font-size:.7rem;font-weight:700;border-radius:4px;padding:1px 5px;border:1px solid currentColor}
 .ft-oficial{color:var(--abertos)} .ft-agregador{color:var(--autorizados)} .ft-imprensa{color:var(--previstos)}
+.pedir{margin:20px 0 0;padding:12px 14px;border:1px dashed var(--borda);border-radius:12px;color:var(--sub);font-size:.9rem}
 .vazio{color:var(--sub);padding:40px 0;text-align:center}
 footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--sub);font-size:.82rem}
 </style>
@@ -76,6 +77,7 @@ footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--sub);font-si
     <input type="search" id="busca" placeholder="Buscar ID (ex.: RFB-2026), órgão, cargo ou banca…">
   </section>
   <section class="lista" id="lista"></section>
+  <p class="pedir">Não encontrou um concurso? <a href="https://github.com/andersoncsouza90/edguadocara/issues/new?template=solicitar-monitoramento.yml" target="_blank" rel="noopener">Peça a inclusão no monitoramento</a> — a curadoria diária inclui e responde com o ID.</p>
 </main>
 <footer>
   <p>✓ = confirmado (fonte oficial, PCI Concursos para dados de edital, ou dois veículos de imprensa independentes).
@@ -115,7 +117,7 @@ function render(){
       <b>${base.filter(c=>c.grupo===g).length}</b><span>${r}</span></button>`).join("");
   const lista = filtrados(false);
   $("#lista").innerHTML = lista.length ? lista.map(card).join("") :
-    `<p class="vazio">Nenhum concurso com esses filtros.</p>`;
+    `<p class="vazio">Nenhum concurso com esses filtros. Se ele deveria estar aqui, use o link abaixo para pedir a inclusão.</p>`;
 }
 
 const FONTE = {oficial:"Oficial",agregador:"PCI",imprensa:"Imprensa"};

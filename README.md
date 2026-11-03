@@ -27,6 +27,23 @@ Acompanha cada concurso **do pedido à homologação**, com **ID único** e a
    **sugere** fatos oficiais para os concursos já registrados. Ele não grava
    nada sozinho.
 
+## Rotina diária e pedidos de inclusão
+
+- **Todo dia às 07:57 (Brasília)**, uma tarefa agendada no Claude roda a skill
+  `radar-curadoria`. Ela segue o roteiro de `python -m radar monitorar plano`,
+  grava os fatos, faz commit e push. O GitHub Actions então publica o site.
+- **O que buscar** está em `data/monitoramento.json`: as buscas padrão (PCI e
+  web) mais os **alvos** pedidos. Cada alvo pedido vira busca permanente,
+  mesmo antes de existir concurso.
+- **Como pedir a inclusão de um concurso**:
+  1. Pelo GitHub: *Issues → New issue → "Solicitar monitoramento de
+     concurso"*. O site também tem um link para isso no fim da lista. A rotina
+     do dia seguinte inclui o pedido, responde na issue com o ID e fecha.
+  2. Pelo chat com o Claude ("monitorem a SEFAZ-SP para analista"). Ele usa:
+     ```bash
+     python -m radar monitorar adicionar --descricao "SEFAZ-SP – Analista" --area fiscal --uf SP --pci-termo sefaz --pci-cargo "analista em planejamento" --web "concurso Sefaz SP analista"
+     ```
+
 ## Regras de confiança
 
 | Fonte | Peso | Confirma sozinha? |
@@ -80,6 +97,18 @@ python -m radar fato RFB-2026 --campo status --valor banca_contratada --fonte-ti
 
 ```bash
 python -m radar importar-pci resultado_pci.json
+```
+
+```bash
+python -m radar monitorar plano
+```
+
+```bash
+python -m radar monitorar listar
+```
+
+```bash
+python -m radar ajustar PREF-SAO-JOAO-DEL-REI-MG-2026 --add-cargo "Agente Fiscal de Tributos"
 ```
 
 ```bash

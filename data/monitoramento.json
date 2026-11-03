@@ -1,0 +1,258 @@
+{
+ "buscas_padrao": {
+  "pci": [
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "policia civil",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "policia militar",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "policia penal",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "policia federal",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "rodoviaria federal",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "receita",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "fazenda",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "sefaz",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "secretaria da economia",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "tribunal de contas",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "controladoria",
+    "uf": null
+   },
+   {
+    "ferramenta": "pesquisar_concursos",
+    "termo": "tesouro",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "auditor fiscal",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "fiscal tributario",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "fiscal de tributos",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "fiscal de rendas",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "agente fiscal",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "analista tributario",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "tecnico tributario",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "auditor tributario",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "auditor de controle",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "controle interno",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "controle externo",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "controlador",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "analista de controle",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "delegado",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "agente de policia",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "escrivao",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "investigador",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "papiloscopista",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "perito criminal",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "soldado",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "policial penal",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "agente penitenciario",
+    "uf": null
+   },
+   {
+    "ferramenta": "buscar_por_cargo",
+    "termo": "cadete",
+    "uf": null
+   }
+  ],
+  "web": [
+   "concurso auditor fiscal autorizado",
+   "concurso SEFAZ banca definida",
+   "concurso SEFAZ edital previsto",
+   "concurso fiscal de tributos prefeitura edital",
+   "concurso polícia civil autorização",
+   "concurso polícia militar comissão formada",
+   "concurso polícia penal edital",
+   "concurso tribunal de contas banca",
+   "concurso controladoria geral do estado edital",
+   "concurso Receita Federal",
+   "concurso PF",
+   "concurso PRF",
+   "concurso TCU",
+   "concurso CGU",
+   "concurso Polícia Penal Federal",
+   "concurso Auditor-Fiscal do Trabalho"
+  ]
+ },
+ "alvos": [
+  {
+   "id": "M001",
+   "descricao": "SEFAZ-SP – Analista em Planejamento, Orçamento e Finanças Públicas (APOFP)",
+   "area": "fiscal",
+   "uf": "SP",
+   "pci": [
+    {
+     "ferramenta": "pesquisar_concursos",
+     "termo": "sefaz",
+     "uf": "sp"
+    },
+    {
+     "ferramenta": "buscar_por_cargo",
+     "termo": "analista em planejamento",
+     "uf": "sp"
+    }
+   ],
+   "web": [
+    "concurso Sefaz SP analista APOFP",
+    "concurso Sefaz SP auditor fiscal"
+   ],
+   "concursos": [
+    "SEFAZ-SP-APOFP-2026"
+   ],
+   "origem": "chat 03/11/2026",
+   "solicitado_em": "2026-11-03",
+   "situacao": "ativo",
+   "nota": ""
+  },
+  {
+   "id": "M002",
+   "descricao": "Prefeitura de São João del-Rei/MG – Fiscal Tributário",
+   "area": "fiscal",
+   "uf": "MG",
+   "pci": [
+    {
+     "ferramenta": "pesquisar_concursos",
+     "termo": "sao joao del-rei",
+     "uf": "mg"
+    },
+    {
+     "ferramenta": "buscar_por_cargo",
+     "termo": "fiscal tributario",
+     "uf": "mg"
+    }
+   ],
+   "web": [
+    "concurso Prefeitura São João del-Rei fiscal tributário"
+   ],
+   "concursos": [
+    "PREF-SAO-JOAO-DEL-REI-MG-2026"
+   ],
+   "origem": "chat 03/11/2026",
+   "solicitado_em": "2026-11-03",
+   "situacao": "ativo",
+   "nota": ""
+  }
+ ]
+}

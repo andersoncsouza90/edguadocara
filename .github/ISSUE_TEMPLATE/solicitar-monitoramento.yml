@@ -1,0 +1,50 @@
+name: Solicitar monitoramento de concurso
+description: Peça a inclusão de um concurso (ou órgão/cargo) que o radar ainda não acompanha.
+title: "[Monitoramento] "
+labels: ["monitoramento"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A curadoria diária lê os pedidos abertos, inclui o órgão/cargo na lista de
+        monitoramento permanente e responde aqui com o ID do concurso (ex.: `SEFAZ-SP-2026`).
+  - type: input
+    id: orgao
+    attributes:
+      label: Órgão
+      placeholder: "Ex.: SEFAZ-SP, Prefeitura de São João del-Rei/MG, Polícia Civil do PR"
+    validations:
+      required: true
+  - type: input
+    id: cargo
+    attributes:
+      label: Cargo(s)
+      placeholder: "Ex.: Analista (APOFP), Fiscal Tributário, Delegado"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options: [fiscal, controle, policial]
+    validations:
+      required: true
+  - type: input
+    id: uf
+    attributes:
+      label: UF (deixe em branco se for federal)
+      placeholder: "Ex.: SP"
+  - type: dropdown
+    id: fase
+    attributes:
+      label: Em que fase você acha que está?
+      options: [Não sei, Previsto ou solicitado, Autorizado, Comissão ou banca, Edital publicado]
+  - type: input
+    id: fonte
+    attributes:
+      label: Link de referência (notícia, edital ou DOU), se tiver
+      placeholder: "https://..."
+  - type: textarea
+    id: obs
+    attributes:
+      label: Observações

@@ -18,6 +18,7 @@ from . import site
 from .classificador import classificar
 from .fontes import dou, pci
 from .modelos import Area, Campo, Fato, FonteTipo, Publicacao, Status
+from .monitoramento import Alvo, BuscaPCI, Monitoramento
 from .registro import Concurso, ErroRegistro, Registro, gerar_id
 
 
@@ -147,9 +148,86 @@ def cmd_conferir(a) -> int:
     return 0
 
 
+def _lista(v: str | None) -> list[str]:
+    return [x.strip() for x in (v or "").split(";") if x.strip()]
+
+
+def cmd_ajustar(a) -> int:
+    reg = _registro(a)
+    c = reg.obter(a.id)
+    c.cargos += [x for x in _lista(a.add_cargo) if x not in c.cargos]
+    c.aliases += [x.upper() for x in _lista(a.add_alias) if x.upper() not in c.aliases]
+    if a.encerrar:
+        c.encerrado = True
+    reg.salvar()
+    print(f"{c.id}: cargos={c.cargos} aliases={c.aliases} encerrado={c.encerrado}")
+    return 0
+
+
+def cmd_mon_adicionar(a) -> int:
+    mon = Monitoramento(Path(a.monitoramento))
+    pci = [BuscaPCI("pesquisar_concursos", t, a.uf) for t in _lista(a.pci_termo)]
+    pci += [BuscaPCI("buscar_por_cargo", t, a.uf) for t in _lista(a.pci_cargo)]
+    alvo = mon.adicionar(Alvo(id="", descricao=a.descricao, area=a.area, uf=(a.uf or "").upper() or None,
+                              pci=pci, web=_lista(a.web), origem=a.origem or "", nota=a.nota or ""))
+    mon.salvar()
+    print(f"alvo {alvo.id} criado: {alvo.descricao}")
+    return 0
+
+
+def cmd_mon_listar(a) -> int:
+    for alvo in Monitoramento(Path(a.monitoramento)).alvos:
+        print(f"{alvo.id} [{alvo.situacao}] {alvo.descricao} ({alvo.area}, {alvo.uf or 'BR'}) "
+              f"origem={alvo.origem or '-'} concursos={','.join(alvo.concursos) or '-'}")
+    return 0
+
+
+def cmd_mon_vincular(a) -> int:
+    mon, reg = Monitoramento(Path(a.monitoramento)), _registro(a)
+    alvo = mon.obter(a.alvo)
+    cid = reg.obter(a.concurso).id
+    if cid not in alvo.concursos:
+        alvo.concursos.append(cid)
+    mon.salvar()
+    print(f"{alvo.id} -> {', '.join(alvo.concursos)}")
+    return 0
+
+
+def cmd_mon_encerrar(a) -> int:
+    mon = Monitoramento(Path(a.monitoramento))
+    alvo = mon.obter(a.alvo)
+    alvo.situacao = "encerrado"
+    alvo.nota = (alvo.nota + " | " if alvo.nota else "") + (a.motivo or "encerrado")
+    mon.salvar()
+    print(f"{alvo.id} encerrado")
+    return 0
+
+
+def cmd_mon_plano(a) -> int:
+    """Imprime a lista de buscas do dia (o roteiro da curadoria)."""
+    mon, reg = Monitoramento(Path(a.monitoramento)), _registro(a)
+    sem_edital = [(c.id, f"{c.orgao} {'; '.join(c.cargos[:1])} {c.id.rsplit('-', 1)[1]}".strip())
+                  for c in reg.concursos.values()
+                  if not c.encerrado and c.status.ordem < Status.EDITAL_PUBLICADO.ordem]
+    plano = mon.plano(sem_edital)
+    print(f"# PCI ({len(plano['pci'])} chamadas) — salve cada retorno e rode `radar importar-pci`")
+    for b in plano["pci"]:
+        print(f"pci  {b.descrever()}")
+    print(f"\n# Web ({len(plano['web'])} buscas) — registre fatos com `radar fato`")
+    for w in plano["web"]:
+        print(f"web  {w}")
+    ativos = [x for x in mon.alvos if x.situacao == "ativo"]
+    if ativos:
+        print("\n# Alvos solicitados (confira se já há concurso e vincule com `radar monitorar vincular`)")
+        for x in ativos:
+            print(f"alvo {x.id}: {x.descricao} -> {', '.join(x.concursos) or 'SEM CONCURSO AINDA'}")
+    return 0
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="radar", description="Radar de concursos (fiscal, controle, policial)")
     p.add_argument("--dados", default="data/concursos", help="diretório do registro")
+    p.add_argument("--monitoramento", default="data/monitoramento.json")
     sub = p.add_subparsers(dest="cmd", required=True)
 
     n = sub.add_parser("novo", help="cria um concurso (ID = SIGLA[-CARREIRA]-ANO)")
@@ -204,6 +282,35 @@ def main(argv=None) -> int:
     k = sub.add_parser("classificar", help="classifica um ato do DOU colado (1ª linha = título)")
     k.add_argument("arquivo", nargs="?", default="-")
     k.set_defaults(f=cmd_classificar)
+
+    aj = sub.add_parser("ajustar", help="adiciona cargos/aliases ou encerra um concurso")
+    aj.add_argument("id")
+    aj.add_argument("--add-cargo", help="separados por ;")
+    aj.add_argument("--add-alias", help="separados por ;")
+    aj.add_argument("--encerrar", action="store_true")
+    aj.set_defaults(f=cmd_ajustar)
+
+    m = sub.add_parser("monitorar", help="pedidos de inclusão e roteiro de buscas")
+    msub = m.add_subparsers(dest="acao", required=True)
+    ma = msub.add_parser("adicionar", help="registra um pedido de monitoramento")
+    ma.add_argument("--descricao", required=True, help='ex.: "SEFAZ-SP – Analista (APOFP)"')
+    ma.add_argument("--area", required=True, choices=[x.value for x in Area])
+    ma.add_argument("--uf")
+    ma.add_argument("--pci-termo", help="termos para pesquisar_concursos, separados por ;")
+    ma.add_argument("--pci-cargo", help="termos para buscar_por_cargo, separados por ;")
+    ma.add_argument("--web", help="buscas na web, separadas por ;")
+    ma.add_argument("--origem", help='ex.: "issue #3", "chat"')
+    ma.add_argument("--nota")
+    ma.set_defaults(f=cmd_mon_adicionar)
+    msub.add_parser("listar").set_defaults(f=cmd_mon_listar)
+    mp = msub.add_parser("plano", help="roteiro de buscas do dia")
+    mp.set_defaults(f=cmd_mon_plano)
+    mv = msub.add_parser("vincular")
+    mv.add_argument("alvo"), mv.add_argument("concurso")
+    mv.set_defaults(f=cmd_mon_vincular)
+    me = msub.add_parser("encerrar")
+    me.add_argument("alvo"), me.add_argument("--motivo")
+    me.set_defaults(f=cmd_mon_encerrar)
 
     a = p.parse_args(argv)
     try:

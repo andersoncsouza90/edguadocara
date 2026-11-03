@@ -269,10 +269,22 @@ class Registro:
                 return c
         raise ErroRegistro(f"concurso {id_ou_alias!r} não encontrado")
 
-    def ativo_por_sigla(self, sigla: str) -> Concurso | None:
-        """Ciclo mais recente e não encerrado de um órgão (para casar fontes)."""
+    def ativo_por_sigla(self, sigla: str, cargos: list[str] | None = None) -> Concurso | None:
+        """Ciclo mais recente e não encerrado de um órgão (para casar fontes).
+
+        Se o órgão tiver mais de um concurso ativo (ex.: SEFAZ-SP para analista
+        e para auditor), escolhe pelo cargo; sem cargo em comum, não casa.
+        """
         cands = [c for c in self.concursos.values()
                  if c.sigla.upper() == sigla.upper() and not c.encerrado and c.status is not Status.HOMOLOGADO]
+        if cargos and any(c.cargos for c in cands):
+            alvo = _palavras(cargos)
+            # concurso sem cargos cadastrados aceita qualquer cargo (pontuação mínima 0)
+            pontos = {c.id: (len(alvo & _palavras(c.cargos)) if c.cargos else 0) for c in cands}
+            melhor = max(pontos.values())
+            cands = [c for c in cands if pontos[c.id] == melhor and (melhor > 0 or not c.cargos)]
+            if len(cands) > 1:
+                return None
         return max(cands, key=lambda c: int(ID_RE.match(c.id).group(1)), default=None)
 
     def salvar(self) -> None:
@@ -292,3 +304,9 @@ class Registro:
                 except (ErroRegistro, ValueError) as e:
                     erros.append(f"{c.id}: {e}")
         return erros
+
+
+def _palavras(cargos: list[str]) -> set[str]:
+    texto = _sem_acento(" ".join(cargos)).lower()
+    return {p for p in re.findall(r"[a-z]{4,}", texto)
+            if p not in {"cargo", "cargos", "nivel", "area", "classe", "para", "publicas"}}

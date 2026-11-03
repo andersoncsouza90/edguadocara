@@ -1,0 +1,105 @@
+{
+ "id": "SEFAZ-SP-APOFP-2026",
+ "orgao": "Secretaria da Fazenda e Planejamento de São Paulo",
+ "sigla": "SEFAZ-SP",
+ "area": "fiscal",
+ "esfera": "estadual",
+ "uf": "SP",
+ "cargos": [
+  "Analista em Planejamento, Orçamento e Finanças Públicas",
+  "Analista em planejamento, orçamento e finanças públicas - ciências de dados e tecnologia da informação",
+  "Analista em planejamento, orçamento e finanças públicas - contabilidade pública",
+  "Analista em planejamento, orçamento e finanças públicas - orçamento e finanças públicas"
+ ],
+ "aliases": [
+  "SEFAZ-SP-2026",
+  "SEFAZ-SP-ANALISTA-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [
+  295590
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-sefaz-sp-edital-publicado-2026/",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-03",
+   "nota": "Edital nº 01/2026: 60 vagas, 20 por área, banca FCC"
+  },
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-sp-2026-edital-analista",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-03",
+   "nota": "Edital publicado com 60 vagas de analista"
+  },
+  {
+   "campo": "nota",
+   "valor": "Retificação (Edital nº 02/2026, DOE-SP de 22/10/2026) mudou a prova para 20/12/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-sefaz-sp-edital-publicado-2026/",
+   "data": "2026-10-22",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "salario_max",
+   "valor": 11359.5,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "vagas",
+   "valor": 60,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-abre-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  }
+ ]
+}

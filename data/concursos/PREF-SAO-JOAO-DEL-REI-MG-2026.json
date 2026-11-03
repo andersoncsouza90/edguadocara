@@ -1,0 +1,92 @@
+{
+ "id": "PREF-SAO-JOAO-DEL-REI-MG-2026",
+ "orgao": "Prefeitura de São João del-Rei/MG",
+ "sigla": "PREF-SAO-JOAO-DEL-REI-MG",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Fiscal tributário",
+  "Agente Fiscal de Tributos"
+ ],
+ "aliases": [
+  "PREF-SJDR-MG-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [
+  294432
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "IBGP",
+   "fonte_tipo": "oficial",
+   "veiculo": "Edital nº 02/2026 (IBGP)",
+   "url": "https://dhg1h5j42swfq.cloudfront.net/2026/08/14132127/sao-joao-del-rei-2.pdf",
+   "data": "2026-08-14",
+   "registrado_em": "2026-11-03",
+   "nota": "Edital nº 02/2026 do Município de São João del-Rei"
+  },
+  {
+   "campo": "edital_url",
+   "valor": "https://dhg1h5j42swfq.cloudfront.net/2026/08/14132127/sao-joao-del-rei-2.pdf",
+   "fonte_tipo": "oficial",
+   "veiculo": "Edital nº 02/2026 (IBGP)",
+   "url": "https://dhg1h5j42swfq.cloudfront.net/2026/08/14132127/sao-joao-del-rei-2.pdf",
+   "data": "2026-08-14",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "salario_max",
+   "valor": 7343.42,
+   "fonte_tipo": "imprensa",
+   "veiculo": "TEC Concursos",
+   "url": "https://www.tecconcursos.com.br/guias/pref-sj-del-rei-2026-02/fiscal-tributario-pref-sj-del-rei/-/-",
+   "data": "2026-08-14",
+   "registrado_em": "2026-11-03",
+   "nota": "Fiscal Tributário; inscrições até as 16h de 12/11, prova objetiva em 13/12/2026"
+  },
+  {
+   "campo": "vagas",
+   "valor": 4,
+   "fonte_tipo": "imprensa",
+   "veiculo": "TEC Concursos",
+   "url": "https://www.tecconcursos.com.br/guias/pref-sj-del-rei-2026-02/fiscal-tributario-pref-sj-del-rei/-/-",
+   "data": "2026-08-14",
+   "registrado_em": "2026-11-03",
+   "nota": "Fiscal Tributário (cargo 503). Agente Fiscal de Tributos, de nível médio, tem mais 3 vagas segundo outra fonte"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-12",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-del-rei-mg-abre-concurso-publico-com-salarios-de-ate-15164",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-13",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-del-rei-mg-abre-concurso-publico-com-salarios-de-ate-15164",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-del-rei-mg-abre-concurso-publico-com-salarios-de-ate-15164",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  }
+ ]
+}

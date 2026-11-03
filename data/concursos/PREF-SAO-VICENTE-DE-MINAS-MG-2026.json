@@ -1,0 +1,49 @@
+{
+ "id": "PREF-SAO-VICENTE-DE-MINAS-MG-2026",
+ "orgao": "Prefeitura de São Vicente de Minas/MG",
+ "sigla": "PREF-SAO-VICENTE-DE-MINAS-MG",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Fiscal tributário"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  294173
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-vicente-de-minas-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-21",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-vicente-de-minas-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-vicente-de-minas-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  }
+ ]
+}
