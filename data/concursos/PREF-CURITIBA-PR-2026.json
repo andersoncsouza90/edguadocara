@@ -1,0 +1,49 @@
+{
+ "id": "PREF-CURITIBA-PR-2026",
+ "orgao": "Prefeitura de Curitiba/PR",
+ "sigla": "PREF-CURITIBA-PR",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PR",
+ "cargos": [
+  "Auditor fiscal de tributos municipais"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295313
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-curitiba-pr-retifica-concursos-publicos-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-07",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-curitiba-pr-retifica-concursos-publicos-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-curitiba-pr-retifica-concursos-publicos-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  }
+ ]
+}

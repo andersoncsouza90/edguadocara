@@ -1,0 +1,49 @@
+{
+ "id": "PREF-JAGUARIBE-CE-2026",
+ "orgao": "Prefeitura de Jaguaribe/CE",
+ "sigla": "PREF-JAGUARIBE-CE",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "CE",
+ "cargos": [
+  "Auditor fiscal de tributos municipais"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  294981
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-11",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaguaribe-ce-reabre-inscricoes-para-concursos-publicos",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaguaribe-ce-reabre-inscricoes-para-concursos-publicos",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaguaribe-ce-reabre-inscricoes-para-concursos-publicos",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  }
+ ]
+}

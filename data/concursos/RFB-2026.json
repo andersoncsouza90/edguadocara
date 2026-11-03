@@ -1,0 +1,94 @@
+{
+ "id": "RFB-2026",
+ "orgao": "Receita Federal do Brasil",
+ "sigla": "RFB",
+ "area": "fiscal",
+ "esfera": "federal",
+ "uf": null,
+ "cargos": [
+  "Auditor-Fiscal da Receita Federal",
+  "Analista-Tributário da Receita Federal"
+ ],
+ "aliases": [
+  "RECEITA-FEDERAL-2026"
+ ],
+ "banca_anterior": {
+  "nome": "FGV",
+  "ano": 2022,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-receita-federal-autorizacao-publicada-146-vagas",
+   "data": "2026-07-03",
+   "registrado_em": "2026-11-03",
+   "nota": "Portaria MGI nº 5.505/2026, DOU de 03/07/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/br/2026/07/06/mgi-promove-autorizacao-de-novo-concurso-da-receita-federal-com-146-vagas/",
+   "data": "2026-07-03",
+   "registrado_em": "2026-11-03",
+   "nota": "Portaria MGI nº 5.505/2026"
+  },
+  {
+   "campo": "vagas",
+   "valor": 146,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-receita-federal-autorizacao-publicada-146-vagas",
+   "data": "2026-07-03",
+   "registrado_em": "2026-11-03",
+   "nota": "30 Auditor-Fiscal + 116 Analista-Tributário"
+  },
+  {
+   "campo": "vagas",
+   "valor": 146,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-receita-federal-vagas-2026/",
+   "data": "2026-07-03",
+   "registrado_em": "2026-11-03",
+   "nota": "30 Auditor-Fiscal + 116 Analista-Tributário"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Meta: contrato com a banca em out/2026 e edital em dez/2026; o prazo de 6 meses da autorização vence por volta de 03/01/2027",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-2026-prazos",
+   "data": "2026-10-20",
+   "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-2026-movimentacoes-banca",
+   "data": "2026-10-20",
+   "registrado_em": "2026-11-03",
+   "nota": "Minuta de dispensa de licitação encaminhada à Divisão de Licitações em 20/10/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-receita-federal-2026-escolha-da-banca-avanca-para-146-vagas-e-edital-e-previsto-para-dezembro/",
+   "data": "2026-10-20",
+   "registrado_em": "2026-11-03",
+   "nota": "Escolha da banca avança; sem banca confirmada"
+  }
+ ]
+}

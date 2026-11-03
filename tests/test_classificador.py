@@ -122,6 +122,44 @@ class TestFiltros(unittest.TestCase):
         self.assertIsNotNone(classificar(pub("PORTARIA", texto), {Area.POLICIAL}))
 
 
+class TestRegressoesColetaReal(unittest.TestCase):
+    """Casos que a 1ª coleta real (03/11/2026) classificou errado."""
+
+    def test_edital_de_universidade_que_cita_receita_nao_e_rfb(self):
+        ev = classificar(pub(
+            "EDITAL Nº 228, DE 5 DE OUTUBRO DE 2026",
+            "O Reitor da Universidade Federal do Estado do Rio de Janeiro torna pública a homologação do "
+            "resultado final do concurso público para professor. " + "x " * 400 +
+            "Exige-se CPF em situação regular junto à Receita Federal do Brasil.",
+            "Ministério da Educação/Universidade Federal do Estado do Rio de Janeiro",
+        ))
+        self.assertTrue(ev is None or ev.orgao.sigla != "RFB")
+
+    def test_trt_com_fcc_nao_vira_rfb(self):
+        ev = classificar(pub(
+            "EDITAL Nº 1/2026",
+            "CONCURSO PÚBLICO PARA O PROVIMENTO DE CARGOS DO QUADRO PERMANENTE. ABERTURA DE INSCRIÇÕES. O Tribunal "
+            "Regional do Trabalho da 4ª Região, por meio da Fundação Carlos Chagas... " + "y " * 400 +
+            "comprovante de inscrição no CPF emitido pela Receita Federal.",
+            "Poder Judiciário/Justiça do Trabalho/Tribunal Regional do Trabalho da 4ª Região",
+        ))
+        self.assertTrue(ev is None or ev.orgao.sigla != "RFB")
+
+    def test_sub_judice_de_concurso_antigo_e_ignorado(self):
+        self.assertIsNone(classificar(pub(
+            "EDITAL Nº 57 - PRF - POLICIAL RODOVIÁRIO FEDERAL, DE 28 DE OUTUBRO DE 2026",
+            "CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS NO CARGO DE POLICIAL RODOVIÁRIO FEDERAL inclusão de "
+            "candidato sub judice. O DIRETOR-GERAL torna público o resultado final na avaliação...",
+        )))
+
+    def test_sigla_no_titulo(self):
+        ev = classificar(pub(
+            "EDITAL Nº 3/2026-RFB – RETIFICAÇÃO",
+            "Retifica o edital de abertura do concurso público para a carreira tributária e aduaneira.",
+        ))
+        self.assertEqual(ev.orgao.sigla, "RFB")
+
+
 class TestExtracao(unittest.TestCase):
     def test_orgaos(self):
         casos = {

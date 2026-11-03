@@ -1,73 +1,89 @@
 # Radar de Concursos — Fiscal · Controle · Policial
 
-Monitora **atos oficiais** (DOU e diários municipais) e consolida cada concurso
-numa linha do tempo: **previsto → solicitado → autorizado → comissão formada →
-banca definida → banca contratada → edital publicado → homologado**.
+Acompanha cada concurso **do pedido à homologação**, com **ID único** e a
+**fonte de cada informação**. Exemplos: `RFB-2026` (Banca em contratação),
+`PRF-2026` (Solicitado), `PC-PE-2026` (Inscrições abertas).
 
-O site é estático (GitHub Pages, pasta `docs/`) e tem filtros por área, fase,
-esfera, UF e busca por órgão, cargo ou banca. Também gera `feed.xml` (RSS) e
-`concursos.json`.
-
-## Por que fontes primárias, e não copiar agregadores
-
-| Fundamento | O que diz | Consequência para o projeto |
-|---|---|---|
-| Lei 9.610/1998, art. 8º, IV | Leis, decretos, regulamentos e "demais atos oficiais" **não** são protegidos por direito autoral | Podemos reproduzir e reorganizar atos publicados em diário oficial |
-| Lei 9.610/1998, art. 7º, XIII | Bases de dados com seleção e organização próprias **são** protegidas | Não dá para raspar e republicar a base de PCI Concursos ou Concursos no Brasil |
-| CF/88, art. 37, II | A investidura em cargo efetivo depende de aprovação prévia em concurso público | Todo concurso deixa rastro em ato oficial, e é isso que monitoramos |
-
-## Como cada fase é detectada
-
-| Fase | Ato que a comprova | Exemplo de onde sai |
-|---|---|---|
-| Previsto | PLOA/LOA (Anexo V), plano anual, declaração oficial | **Curadoria manual** (`data/acompanhamento_manual.json`) |
-| Solicitado | Pedido de autorização ao órgão central (ex.: MGI) | Curadoria manual (raramente sai em diário) |
-| Autorizado | Portaria que autoriza o concurso (federal: Decreto 9.739/2019, autorização do ministro da gestão) | DOU, seção 1 |
-| Comissão formada | Portaria que institui a comissão organizadora | DOU seção 1/2, diários estaduais |
-| Banca definida | Dispensa ou contratação direta ratificada (em regra, Lei 14.133/2021, art. 75, XV) | DOU seção 3 |
-| Banca contratada | Extrato de contrato com a banca | DOU seção 3 |
-| Edital publicado | Edital de abertura (ou a retificação dele) | DOU seção 3 |
-| Homologado | Homologação do resultado final. A partir dela corre a validade de até 2 anos, prorrogável uma vez (CF, art. 37, III) | DOU |
-
-Cancelamentos e suspensões aparecem como **situação** do concurso. O status
-consolidado é sempre o mais avançado entre os atos encontrados, e ele nunca
-regride. O histórico completo fica na linha do tempo, com o link de cada ato.
-
-Para o candidato, o site agrupa os concursos em **Abertos / em breve**
-(inscrições a abrir ou abertas), **Anunciados** (comissão ou banca),
-**Autorizados**, **Previstos**, **Em andamento** e **Encerrados**.
-
-## Fontes
-
-| Fonte | Cobertura | Módulo |
-|---|---|---|
-| Diário Oficial da União, página "Leitura do Jornal" (seções 1, 2 e 3) | Órgãos federais (RFB, PF, PRF, TCU, CGU, MTE...) e alguns atos estaduais | `radar/fontes/dou.py` |
-| [Querido Diário](https://queridodiario.ok.org.br) (API pública) | Diários municipais (auditor fiscal, fiscal de tributos, controladorias) | `radar/fontes/querido_diario.py` |
-| Curadoria | Fases "previsto" e "solicitado", com link da fonte | `radar/fontes/manual.py` |
-
-## Estrutura
+## Como funciona
 
 ```
-radar/
-  classificador.py   # é concurso? área, órgão, fase, banca, vagas, salário, inscrições
-  base.py            # base JSON + agrupamento em ciclos + consolidação de status
-  fontes/            # coletores (DOU, Querido Diário, curadoria manual)
-  site.py            # gera docs/index.html, concursos.json e feed.xml
-  modelo_site.html   # front-end (HTML/CSS/JS puro, sem dependências)
-data/radar.json      # base versionada no git (cada ato com link da fonte)
-tests/               # testes com atos fictícios no formato real
+ notícias especializadas ─┐                       ┌─> docs/index.html (site)
+ PCI Concursos (MCP) ─────┼─> agente de curadoria ─┤   docs/concursos.json
+ DOU (conferência) ───────┘   (python -m radar)   └─> docs/feed.xml (RSS)
+                                   │
+                         data/concursos/<ID>.json
+                     (um arquivo por concurso, só fatos com fonte)
 ```
 
-Não há dependências externas, só a biblioteca padrão do Python 3.10+.
+1. **Curadoria.** Um agente Claude segue a skill
+   `.claude/skills/radar-curadoria`. Ele consulta o MCP da PCI Concursos e
+   faz buscas na web, e grava fatos pela CLI (`radar fato`, `radar
+   importar-pci`). A CLI recusa qualquer fato sem URL, data ou valor válido.
+2. **Consolidação.** Status, banca, vagas e inscrições são recalculados a
+   partir dos fatos, segundo as regras de confiança abaixo.
+3. **Publicação.** O GitHub Actions roda os testes, valida o registro e gera
+   o site a cada mudança e uma vez por dia.
+4. **Conferência no DOU (fase 2).** `radar conferir` lê o Diário Oficial e
+   **sugere** fatos oficiais para os concursos já registrados. Ele não grava
+   nada sozinho.
+
+## Regras de confiança
+
+| Fonte | Peso | Confirma sozinha? |
+|---|---|---|
+| Oficial (DOU/DOE, site do órgão, SEI) | 3 | Sim |
+| PCI Concursos | 2 | Sim, para dados de edital (o PCI só lista edital publicado) |
+| Imprensa especializada | 1 | Não. Precisa de **2 veículos diferentes** com o mesmo valor |
+
+- Fato de um único veículo aparece no site como **"sinal"**: ele não muda a
+  fase.
+- Banca **cotada** (especulação) fica separada da banca **definida ou
+  contratada**. A **banca do concurso anterior** também aparece à parte.
+  Juntar essas três coisas era o principal erro da primeira versão.
+- Quando as fontes de mesmo peso divergem (ex.: 146 contra 150 vagas), o site
+  mostra os dois valores.
+- O status nunca regride, e toda informação tem link para a fonte.
+
+## Fases
+
+| Fase | O que a comprova |
+|---|---|
+| Previsto | PLOA/LOA, plano anual, anúncio oficial |
+| Solicitado | Pedido de autorização enviado (ex.: ao MGI) |
+| Autorizado | Portaria/ato de autorização. No âmbito federal, o Decreto 9.739/2019 dá 6 meses para publicar o edital |
+| Comissão formada | Portaria da comissão organizadora |
+| Banca em contratação | Processo de contratação em curso (minuta, termo de referência) |
+| Banca definida | Escolha confirmada pelo órgão (em geral, dispensa com base na Lei 14.133/2021, art. 75, XV) |
+| Banca contratada | Contrato assinado ou extrato publicado |
+| Edital publicado | Edital de abertura |
+| Homologado | Resultado final homologado, início da validade (CF/88, art. 37, III) |
+
+## IDs
+
+`SIGLA[-CARREIRA]-ANO`: `RFB-2026`, `PRF-ADM-2026`, `SEFAZ-SP-2026`,
+`PREF-CURITIBA-PR-2026`. O ano é o do **primeiro ato do ciclo** e não muda;
+outros nomes vão em `aliases`.
 
 ## Uso
 
 ```bash
-python -m radar coletar --dias 7
+python -m radar listar
 ```
 
 ```bash
-python -m radar listar --area fiscal --grupo anunciados
+python -m radar ver RFB-2026
+```
+
+```bash
+python -m radar fato RFB-2026 --campo status --valor banca_contratada --fonte-tipo oficial --veiculo DOU --url "https://www.in.gov.br/..." --data 2026-11-20
+```
+
+```bash
+python -m radar importar-pci resultado_pci.json
+```
+
+```bash
+python -m radar validar
 ```
 
 ```bash
@@ -78,52 +94,18 @@ python -m radar site
 python -m unittest discover -s tests
 ```
 
-Para testar o classificador com um ato colado (a primeira linha é o título):
+Valores aceitos em `--campo`: `status`, `banca`, `banca_cotada`, `vagas`,
+`salario_max`, `inscricoes_inicio`, `inscricoes_fim`, `edital_url`,
+`previsao` e `nota`.
 
-```bash
-python -m radar classificar ato.txt
-```
+## Direitos autorais
 
-### Curadoria manual
+O registro guarda **fatos** (fase, banca, vagas, datas) com link para a
+fonte, e não reproduz o texto das notícias. Atos oficiais não têm proteção
+autoral (Lei 9.610/1998, art. 8º, IV). Já uma base de dados organizada é
+protegida (art. 7º, XIII), e por isso não copiamos a base de agregadores: o
+PCI entra pelo MCP oficial e cada item aponta para a página dele.
 
-Em `data/acompanhamento_manual.json`, inclua um objeto por ato, sempre com a
-URL da fonte:
+## Publicação do site
 
-```json
-[
-  {
-    "orgao": "Receita Federal do Brasil", "sigla": "RFB", "area": "fiscal",
-    "esfera": "federal", "tipo": "solicitacao", "data": "2026-10-15",
-    "titulo": "Receita envia ao MGI pedido de novo concurso",
-    "url": "https://link-da-fonte-oficial", "fonte": "Ofício nº ...",
-    "vagas": 100, "observacao": "Pedido citado em ofício"
-  }
-]
-```
-
-Valores aceitos em `tipo`: `previsao`, `solicitacao`, `autorizacao`,
-`comissao`, `banca_definida`, `contrato_banca`, `edital_abertura`,
-`retificacao`, `suspensao`, `cancelamento`, `resultado`, `homologacao`.
-
-## Automação (GitHub Actions + Pages)
-
-O workflow `.github/workflows/radar.yml` roda todo dia às 06:17 (Brasília).
-Ele executa os testes, coleta os últimos 3 dias, gera o site e faz commit de
-`data/` e `docs/`. Também dá para rodar manualmente em *Actions → Run workflow*.
-
-Para publicar o site: *Settings → Pages → Deploy from a branch →* escolha a
-branch e a pasta `/docs`.
-
-## Limitações conhecidas e próximos passos
-
-1. **Diários estaduais (DOEs).** Cada estado tem um portal diferente, e é lá
-   que saem SEFAZ, PC, PM e TCE. O catálogo de órgãos estaduais já existe;
-   falta um coletor por estado (começar por SP, MG, RJ, RS, PR, BA, GO e DF).
-2. **Classificação por regras.** Regex é auditável e barato, mas erra. Para os
-   atos ambíguos, o próximo passo é usar a API do Claude como segunda opinião,
-   com saída estruturada.
-3. **Alertas.** Notificar por Telegram ou e-mail quando um concurso mudar de
-   fase, usando o `feed.xml` ou um hook pós-coleta.
-4. **Um órgão, vários concursos.** Hoje o agrupamento é um ciclo por órgão. Se
-   o mesmo órgão tiver dois concursos simultâneos (por exemplo, PF para agente
-   e para delegado), eles se fundem; o próximo passo é separar por cargo.
+*Settings → Pages → Deploy from a branch*, pasta `/docs`.

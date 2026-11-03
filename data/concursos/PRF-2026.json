@@ -1,0 +1,53 @@
+{
+ "id": "PRF-2026",
+ "orgao": "Polícia Rodoviária Federal",
+ "sigla": "PRF",
+ "area": "policial",
+ "esfera": "federal",
+ "uf": null,
+ "cargos": [
+  "Policial Rodoviário Federal"
+ ],
+ "aliases": [
+  "PRF-POLICIAL-2026"
+ ],
+ "banca_anterior": {
+  "nome": "Cebraspe",
+  "ano": 2021,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-prf-2026-pedido-edital",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": "Pedido em análise no MGI. A data é a da verificação; a data do protocolo não foi confirmada"
+  },
+  {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-prf-confirmado-envio-de-novo-pedido-de-autorizacao-142475",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": "Confirmado o envio de novo pedido de autorização"
+  },
+  {
+   "campo": "vagas",
+   "valor": 269,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-prf-2026-pedido-edital",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-03",
+   "nota": "Vagas solicitadas para policial; outras fontes citam 533 no total, somando o pedido administrativo"
+  }
+ ]
+}

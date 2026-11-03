@@ -1,0 +1,15 @@
+{"meta": {"total": 4, "data_atual": "2026-11-03", "endpoint": "pesquisa"},
+ "data": [
+  {"id": 295623, "titulo": "PC - Polícia Civil", "cargos": ["DELEGADO DE POLÍCIA", "AGENTE DE POLÍCIA", "ESCRIVÃO DE POLÍCIA"], "cargos_total": 3, "vagas_salario": "500 vagas até R$ 15.000,00", "uf": "PE",
+   "datas": {"inicio": "2026-10-15", "fim": "2026-12-16", "aberto": true, "em_breve": false},
+   "noticia": {"link": "https://www.pciconcursos.com.br/noticias/exemplo-pc-pe"}},
+  {"id": 295586, "titulo": "Prefeitura de Lagoa Santa", "cargos": ["AGENTE ADMINISTRATIVO", "AUDITOR FISCAL DA RECEITA MUNICIPAL", "ENFERMEIRO"], "cargos_total": 34, "vagas_salario": "79 vagas até R$ 8.860,79", "uf": "MG",
+   "datas": {"inicio": "2026-12-16", "fim": "2027-01-18", "aberto": false, "em_breve": true},
+   "noticia": {"link": "https://www.pciconcursos.com.br/noticias/exemplo-lagoa-santa"}},
+  {"id": 294792, "titulo": "UFMG - Universidade Federal de Minas Gerais", "cargos": ["PROFESSOR"], "cargos_total": 1, "vagas_salario": "10 vagas", "uf": "MG",
+   "datas": {"inicio": "2026-08-31", "fim": "2026-12-28", "aberto": true},
+   "noticia": {"link": "https://www.pciconcursos.com.br/noticias/exemplo-ufmg"}},
+  {"id": 295781, "titulo": "CGU - Controladoria-Geral da União", "cargos": ["AUDITOR FEDERAL DE FINANÇAS E CONTROLE"], "cargos_total": 1, "vagas_salario": "", "uf": null,
+   "datas": {"inicio": "2026-10-10", "fim": "2026-11-04", "aberto": true},
+   "noticia": {"link": "https://www.pciconcursos.com.br/noticias/exemplo-cgu"}}
+ ]}

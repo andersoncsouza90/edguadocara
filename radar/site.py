@@ -8,16 +8,16 @@ from email.utils import format_datetime
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-from .base import Base
+from .registro import Registro
 
 MODELO = Path(__file__).with_name("modelo_site.html")
 
 
-def gerar(base: Base, saida: Path = Path("docs"), hoje: date | None = None) -> Path:
+def gerar(registro: Registro, saida: Path = Path("docs"), hoje: date | None = None) -> Path:
     hoje = hoje or date.today()
     saida.mkdir(parents=True, exist_ok=True)
     concursos = sorted(
-        (c.para_site(hoje) for c in base.concursos.values()),
+        (c.para_site(hoje) for c in registro.concursos.values()),
         key=lambda c: c["atualizado_em"], reverse=True,
     )
     payload = {"gerado_em": hoje.isoformat(), "concursos": concursos}
@@ -32,27 +32,25 @@ def gerar(base: Base, saida: Path = Path("docs"), hoje: date | None = None) -> P
 
 
 def _rss(concursos: list[dict], limite: int = 60) -> str:
-    eventos = [
-        (ev, c) for c in concursos for ev in c["eventos"]
-    ]
-    eventos.sort(key=lambda par: par[0]["data"], reverse=True)
+    fatos = [(f, c) for c in concursos for f in c["linha_do_tempo"] if f["campo"] != "nota"]
+    fatos.sort(key=lambda par: par[0]["data"], reverse=True)
     itens = []
-    for ev, c in eventos[:limite]:
-        dt = datetime.fromisoformat(ev["data"]).replace(tzinfo=timezone.utc)
-        titulo = f"[{c['area'].upper()}] {c['sigla']}: {ev['tipo_rotulo']}"
+    for f, c in fatos[:limite]:
+        dt = datetime.fromisoformat(f["data"]).replace(tzinfo=timezone.utc)
+        titulo = f"[{c['id']}] {f['campo'].replace('_', ' ')}: {f['valor']} ({f['veiculo']})"
         itens.append(
             "<item>"
             f"<title>{escape(titulo)}</title>"
-            f"<link>{escape(ev['url'])}</link>"
-            f"<guid isPermaLink=\"false\">{escape(c['chave'] + '|' + ev['url'] + '|' + ev['tipo'])}</guid>"
+            f"<link>{escape(f['url'])}</link>"
+            f"<guid isPermaLink=\"false\">{escape(c['id'] + '|' + f['campo'] + '|' + str(f['valor']) + '|' + f['url'])}</guid>"
             f"<pubDate>{format_datetime(dt)}</pubDate>"
-            f"<description>{escape(ev['titulo'])}</description>"
+            f"<description>{escape(c['orgao'] + ' — ' + (f.get('nota') or ''))}</description>"
             "</item>"
         )
     return (
         '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
         "<title>Radar de Concursos – Fiscal, Controle e Policial</title>"
         "<link>https://github.com/andersoncsouza90/edguadocara</link>"
-        "<description>Atos oficiais de concursos monitorados no DOU e diários oficiais</description>"
+        "<description>Andamento de concursos com fonte de cada informação</description>"
         + "".join(itens) + "</channel></rss>\n"
     )

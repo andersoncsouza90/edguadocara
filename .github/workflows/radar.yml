@@ -1,13 +1,15 @@
 name: Radar de concursos
 
+# A coleta (PCI + notícias) é feita pelo agente de curadoria
+# (.claude/skills/radar-curadoria). Este workflow valida o registro e
+# republica o site: a cada mudança em data/ e uma vez por dia, para que
+# "inscrições abertas → encerradas" mude sozinho conforme a data.
 on:
+  push:
+    paths: ["data/**", "radar/**", "tests/**"]
   schedule:
-    - cron: "17 9 * * *"   # 06:17 em Brasília, depois da edição do DOU
+    - cron: "17 9 * * *"   # 06:17 em Brasília
   workflow_dispatch:
-    inputs:
-      dias:
-        description: "Quantos dias para trás coletar"
-        default: "3"
 
 permissions:
   contents: write
@@ -17,7 +19,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  coletar:
+  publicar:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,14 +28,14 @@ jobs:
           python-version: "3.12"
       - name: Testes
         run: python -m unittest discover -s tests
-      - name: Coletar atos oficiais
-        run: python -m radar coletar --dias "${{ github.event.inputs.dias || '3' }}"
+      - name: Validar registro
+        run: python -m radar validar
       - name: Gerar site
         run: python -m radar site
-      - name: Publicar dados
+      - name: Publicar
         run: |
           git config user.name "radar-bot"
           git config user.email "radar-bot@users.noreply.github.com"
-          git add data docs
-          git diff --cached --quiet || git commit -m "radar: coleta de $(date -u +%F)"
+          git add docs
+          git diff --cached --quiet || git commit -m "radar: site de $(date -u +%F)"
           git push

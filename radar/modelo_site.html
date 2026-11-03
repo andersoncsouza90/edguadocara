@@ -47,6 +47,11 @@ details summary{cursor:pointer;color:var(--realce);font-size:.9rem}
 ol{margin:8px 0 0;padding-left:18px;font-size:.85rem}
 ol li{margin-bottom:6px}
 a{color:var(--realce)}
+.ok{color:var(--abertos);font-weight:700}
+.aviso{color:var(--anunciados);font-size:.85rem}
+.sub{color:var(--sub)}
+.ft{font-size:.7rem;font-weight:700;border-radius:4px;padding:1px 5px;border:1px solid currentColor}
+.ft-oficial{color:var(--abertos)} .ft-agregador{color:var(--autorizados)} .ft-imprensa{color:var(--previstos)}
 .vazio{color:var(--sub);padding:40px 0;text-align:center}
 footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--sub);font-size:.82rem}
 </style>
@@ -54,7 +59,7 @@ footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--sub);font-si
 <body>
 <header>
   <h1>Radar de Concursos</h1>
-  <p>Fiscal · Controle · Policial — monitorado direto nos diários oficiais. Atualizado em <span id="gerado"></span>.</p>
+  <p>Fiscal · Controle · Policial — cada informação com a sua fonte. Atualizado em <span id="gerado"></span>.</p>
 </header>
 <main>
   <section class="resumo" id="kpis" aria-label="Resumo por fase"></section>
@@ -68,13 +73,14 @@ footer{max-width:1100px;margin:auto;padding:0 16px 32px;color:var(--sub);font-si
       <option value="estadual">Estadual</option><option value="municipal">Municipal</option>
     </select>
     <select id="uf" aria-label="UF"><option value="">Todas as UFs</option></select>
-    <input type="search" id="busca" placeholder="Buscar órgão, cargo ou banca…">
+    <input type="search" id="busca" placeholder="Buscar ID (ex.: RFB-2026), órgão, cargo ou banca…">
   </section>
   <section class="lista" id="lista"></section>
 </main>
 <footer>
-  <p>Fontes: Diário Oficial da União (Imprensa Nacional), Querido Diário (Open Knowledge Brasil) e curadoria com link da fonte.
-  Atos oficiais não são protegidos por direito autoral (Lei 9.610/1998, art. 8º, IV). Classificação automática: confira sempre o edital.
+  <p>✓ = confirmado (fonte oficial, PCI Concursos para dados de edital, ou dois veículos de imprensa independentes).
+  "Fonte única" = noticiado por um só veículo, ainda não confirmado. Banca "cotada" é especulação, não banca definida.
+  Registramos fatos com link para a fonte, sem reproduzir textos. Confira sempre o edital.
   <a href="feed.xml">RSS</a> · <a href="concursos.json">JSON</a></p>
 </footer>
 <script id="dados" type="application/json">__DADOS__</script>
@@ -99,7 +105,7 @@ function filtrados(ignorarGrupo){
   return D.concursos.filter(c =>
     (!st.area || c.area === st.area) && (!st.esfera || c.esfera === st.esfera) &&
     (!st.uf || c.uf === st.uf) && (ignorarGrupo || !st.grupo || c.grupo === st.grupo) &&
-    (!q || norm([c.orgao,c.sigla,c.banca,(c.cargos||[]).join(" ")].join(" ")).includes(q)));
+    (!q || norm([c.id,c.orgao,c.sigla,c.banca&&c.banca.valor,(c.bancas_cotadas||[]).join(" "),(c.aliases||[]).join(" "),(c.cargos||[]).join(" ")].join(" ")).includes(q)));
 }
 
 function render(){
@@ -112,23 +118,39 @@ function render(){
     `<p class="vazio">Nenhum concurso com esses filtros.</p>`;
 }
 
+const FONTE = {oficial:"Oficial",agregador:"PCI",imprensa:"Imprensa"};
+const fontes = fs => (fs||[]).map(f=>`<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.veiculo)}</a>`).join(", ");
+function bloco(b, fmt){
+  if(!b) return "";
+  const v = fmt ? fmt(b.valor) : esc(b.valor);
+  const selo = b.confirmado ? `<span class="ok" title="Confirmado">✓</span>` : `<span class="aviso" title="Fonte única, não confirmado">fonte única</span>`;
+  const div = b.divergentes && b.divergentes.length ? ` <span class="aviso">fontes divergem: ${esc(b.divergentes.join(" / "))}</span>` : "";
+  return `${v} ${selo}${div}`;
+}
 function card(c){
+  const banca = c.banca ? bloco(c.banca)
+    : (c.bancas_cotadas.length ? `<span class="aviso">não definida · cotadas: ${esc(c.bancas_cotadas.join(", "))}</span>`
+      : `<span class="sub">${c.status === "edital_publicado" || c.status === "homologado" ? "não informada (veja o edital)" : "não definida"}</span>`);
   const linhas = [
     ["Fase", `<span class="fase" style="color:var(--${c.grupo})">${esc(c.fase)}</span>`],
-    c.banca && ["Banca", esc(c.banca)],
-    c.vagas && ["Vagas", esc(c.vagas)],
-    c.salario_max && ["Remuneração", "até " + reais(c.salario_max)],
+    c.sinal && ["Sinal", `<span class="aviso">${esc(c.sinal.rotulo)} — fonte única (${fontes(c.sinal.fontes)}), aguardando confirmação</span>`],
+    ["Banca", banca],
+    c.banca_anterior && ["Último concurso", `${esc(c.banca_anterior.nome)}${c.banca_anterior.ano?" ("+esc(c.banca_anterior.ano)+")":""}`],
+    c.vagas && ["Vagas", bloco(c.vagas)],
+    c.salario_max && ["Remuneração", bloco(c.salario_max, v => "até " + reais(v))],
     (c.inscricoes_inicio||c.inscricoes_fim) && ["Inscrições", `${br(c.inscricoes_inicio)} a ${br(c.inscricoes_fim)}`],
+    c.previsao && ["Previsão", esc(c.previsao)],
     c.cargos && c.cargos.length && ["Cargos", esc(c.cargos.join(", "))],
-    ["Último ato", br(c.atualizado_em)],
+    c.edital_url && ["Edital", `<a href="${esc(c.edital_url)}" target="_blank" rel="noopener">abrir</a>`],
   ].filter(Boolean);
+  const t = c.linha_do_tempo;
   return `<article class="card">
-    <div class="topo"><div><div class="sigla">${esc(c.sigla)}${c.uf?` <small>· ${esc(c.uf)}</small>`:""}</div>
-      <div class="orgao">${esc(c.orgao)}</div></div>
+    <div class="topo"><div><div class="sigla">${esc(c.id)}</div>
+      <div class="orgao">${esc(c.orgao)}${c.uf && !c.orgao.includes(c.uf)?` · ${esc(c.uf)}`:""}</div></div>
       <span class="tag" style="color:var(--${c.area})">${AREAS[c.area]}</span></div>
     <dl>${linhas.map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
-    <details><summary>Linha do tempo (${c.eventos.length} ato${c.eventos.length>1?"s":""})</summary><ol>
-      ${c.eventos.map(e=>`<li><b>${br(e.data)}</b> — ${esc(e.tipo_rotulo)}<br><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.titulo)}</a> <small>(${esc(e.fonte)})</small></li>`).join("")}
+    <details><summary>Linha do tempo (${t.length} registro${t.length>1?"s":""})</summary><ol>
+      ${t.map(e=>`<li><b>${br(e.data)}</b> · <span class="ft ft-${e.fonte_tipo}">${FONTE[e.fonte_tipo]}</span> ${esc(e.campo.replace(/_/g," "))}: <b>${esc(e.valor)}</b>${e.nota?` — ${esc(e.nota)}`:""}<br><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.veiculo)}</a></li>`).join("")}
     </ol></details></article>`;
 }
 

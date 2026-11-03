@@ -49,6 +49,11 @@ _PREP = r"(?:de |do |da )?"
 # ---------------------------------------------------------------------------
 
 _ORGAOS_FIXOS: list[tuple[str, Orgao]] = [
+    (r"\brfb\b", Orgao("Receita Federal do Brasil", "RFB", Area.FISCAL)),
+    (r"\bprf\b", Orgao("Polícia Rodoviária Federal", "PRF", Area.POLICIAL)),
+    (r"\btcu\b", Orgao("Tribunal de Contas da União", "TCU", Area.CONTROLE)),
+    (r"\bcgu\b", Orgao("Controladoria-Geral da União", "CGU", Area.CONTROLE)),
+    (r"\bdpf\b|[-\u2013]\s*pf\b", Orgao("Polícia Federal", "PF", Area.POLICIAL)),
     (r"policia rodoviaria federal", Orgao("Polícia Rodoviária Federal", "PRF", Area.POLICIAL)),
     (r"policia penal federal|secretaria nacional de politicas penais",
      Orgao("Polícia Penal Federal", "PPF", Area.POLICIAL)),
@@ -213,6 +218,11 @@ _REGRAS_TEXTO: list[tuple[TipoEvento, list[str]]] = [
 ]
 
 _CONCURSO_RE = re.compile(r"concurso\s+public")
+# Atos de execução de concursos em andamento/antigos: não mudam a fase.
+_IGNORAR = re.compile(
+    r"sub judice|reintegra\w*|nomea\w*|convoca\w*|exame medico|avaliacao medica|curso de formacao"
+    r"|teste de aptidao|investigacao social|resultado (?:provisorio|preliminar)|prorroga\w* .{0,40}validade"
+)
 
 
 # Sinais inequívocos de edital de abertura: prevalecem sobre menções a
@@ -401,8 +411,15 @@ def classificar(pub: Publicacao, areas: set[Area] | None = None) -> Evento | Non
     ):
         return None
 
-    orgao = identificar_orgao(texto) or identificar_orgao(normalizar(pub.hierarquia))
-    area = detectar_area(cabecalho, texto, orgao)
+    if _IGNORAR.search(f"{titulo} {corpo[:300]}") and tipo is not TipoEvento.HOMOLOGACAO:
+        return None
+
+    # O órgão é o AUTOR do ato: título, hierarquia do diário e o início do
+    # texto. Nunca o texto inteiro: editais de universidades citam "CPF
+    # regular na Receita Federal" e isso não os torna concursos da RFB.
+    orgao = (identificar_orgao(titulo) or identificar_orgao(normalizar(pub.hierarquia))
+             or identificar_orgao(corpo[:400]))
+    area = detectar_area(cabecalho, cabecalho, orgao)
     if area is None or (areas and area not in areas):
         return None
     if orgao is None:
