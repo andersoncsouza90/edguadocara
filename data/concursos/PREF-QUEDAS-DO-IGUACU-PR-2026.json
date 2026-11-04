@@ -1,0 +1,49 @@
+{
+ "id": "PREF-QUEDAS-DO-IGUACU-PR-2026",
+ "orgao": "Prefeitura de Quedas do Iguaçu/PR",
+ "sigla": "PREF-QUEDAS-DO-IGUACU-PR",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PR",
+ "cargos": [
+  "Fiscal de tributos municipais"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296056
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-25",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-abre-concurso-publico-com-salarios-de-ate-11998",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-24",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-abre-concurso-publico-com-salarios-de-ate-11998",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-abre-concurso-publico-com-salarios-de-ate-11998",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

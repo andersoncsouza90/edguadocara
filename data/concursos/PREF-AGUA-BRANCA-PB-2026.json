@@ -1,0 +1,59 @@
+{
+ "id": "PREF-AGUA-BRANCA-PB-2026",
+ "orgao": "Prefeitura de Água Branca/PB",
+ "sigla": "PREF-AGUA-BRANCA-PB",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PB",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295616
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-15",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-branca-pb-republica-editais-de-concursos-publicos",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-15",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-branca-pb-republica-editais-de-concursos-publicos",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 10 cargos (24 vagas até R$ 3.242,00 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-branca-pb-republica-editais-de-concursos-publicos",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-branca-pb-republica-editais-de-concursos-publicos",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

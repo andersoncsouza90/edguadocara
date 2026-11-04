@@ -1,0 +1,49 @@
+{
+ "id": "CAM-TIBAU-DO-SUL-RN-2026",
+ "orgao": "Câmara Municipal de Tibau do Sul/RN",
+ "sigla": "CAM-TIBAU-DO-SUL-RN",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "RN",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295709
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-tibau-do-sul-rn-abre-concurso-publico-com-oito-vagas-imediatas",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-07",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-tibau-do-sul-rn-abre-concurso-publico-com-oito-vagas-imediatas",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-tibau-do-sul-rn-abre-concurso-publico-com-oito-vagas-imediatas",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

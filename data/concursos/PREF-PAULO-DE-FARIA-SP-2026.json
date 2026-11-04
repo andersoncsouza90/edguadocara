@@ -1,0 +1,59 @@
+{
+ "id": "PREF-PAULO-DE-FARIA-SP-2026",
+ "orgao": "Prefeitura de Paulo de Faria/SP",
+ "sigla": "PREF-PAULO-DE-FARIA-SP",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Controlador interno e ouvidoria"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296034
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-22",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 43 cargos (34 vagas até R$ 8.632,29 no total); cargos da área: Controlador interno e ouvidoria",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-paulo-de-faria-sp-abre-concurso-publico-com-salarios-de-ate-8632",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

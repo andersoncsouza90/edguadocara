@@ -1,0 +1,62 @@
+{
+ "id": "PREF-CONTAGEM-MG-2026",
+ "orgao": "Prefeitura de Contagem/MG",
+ "sigla": "PREF-CONTAGEM-MG",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Auditor de controle interno - ciências contábeis",
+  "Auditor de controle interno - direito",
+  "Auditor de controle interno - engenharia civil",
+  "Auditor de controle interno - tecnologia da informação"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  294444
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-17",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-contagem-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-contagem-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 36 cargos (272 vagas até R$ 13.305,57 no total); cargos da área: Auditor de controle interno - ciências contábeis, Auditor de controle interno - direito, Auditor de controle interno - engenharia civil, Auditor de controle interno - tecnologia da informação",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-contagem-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-contagem-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

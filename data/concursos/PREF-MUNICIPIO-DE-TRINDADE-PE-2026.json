@@ -1,0 +1,59 @@
+{
+ "id": "PREF-MUNICIPIO-DE-TRINDADE-PE-2026",
+ "orgao": "Prefeitura de Município de Trindade/PE",
+ "sigla": "PREF-MUNICIPIO-DE-TRINDADE-PE",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PE",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  294998
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-trindade-pe-divulga-edital-retificado-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-09-10",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-trindade-pe-divulga-edital-retificado-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 37 cargos (353 vagas até R$ 6.600,00 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-trindade-pe-divulga-edital-retificado-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-trindade-pe-divulga-edital-retificado-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

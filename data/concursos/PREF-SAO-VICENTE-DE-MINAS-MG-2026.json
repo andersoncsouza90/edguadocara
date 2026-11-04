@@ -6,7 +6,8 @@
  "esfera": "municipal",
  "uf": "MG",
  "cargos": [
-  "Fiscal tributário"
+  "Fiscal tributário",
+  "Controlador interno"
  ],
  "aliases": [],
  "banca_anterior": null,
@@ -43,6 +44,16 @@
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-vicente-de-minas-mg-retifica-edital-de-concurso-publico",
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 32 cargos (35 vagas até R$ 15.142,28 no total); cargos da área: Controlador interno, Fiscal tributário",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-vicente-de-minas-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
    "nota": ""
   }
  ]

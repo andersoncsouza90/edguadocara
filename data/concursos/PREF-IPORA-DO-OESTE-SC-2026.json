@@ -1,0 +1,60 @@
+{
+ "id": "PREF-IPORA-DO-OESTE-SC-2026",
+ "orgao": "Prefeitura de Iporã do Oeste/SC",
+ "sigla": "PREF-IPORA-DO-OESTE-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Analista de controle interno",
+  "Fiscal de tributos e obras"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295936
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipora-do-oeste-sc-abre-concurso-publico-e-processos-seletivos-com-salarios-de-ate-19265",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipora-do-oeste-sc-abre-concurso-publico-e-processos-seletivos-com-salarios-de-ate-19265",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 47 cargos (5 vagas até R$ 19.265,80 no total); cargos da área: Analista de controle interno, Fiscal de tributos e obras",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipora-do-oeste-sc-abre-concurso-publico-e-processos-seletivos-com-salarios-de-ate-19265",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipora-do-oeste-sc-abre-concurso-publico-e-processos-seletivos-com-salarios-de-ate-19265",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

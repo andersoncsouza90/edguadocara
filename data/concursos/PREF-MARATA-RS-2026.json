@@ -1,0 +1,49 @@
+{
+ "id": "PREF-MARATA-RS-2026",
+ "orgao": "Prefeitura de Maratá/RS",
+ "sigla": "PREF-MARATA-RS",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "RS",
+ "cargos": [
+  "Fiscal tributário"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295759
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-marata-rs-abre-concurso-publico-com-salarios-de-ate-10165",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-08",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-marata-rs-abre-concurso-publico-com-salarios-de-ate-10165",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-marata-rs-abre-concurso-publico-com-salarios-de-ate-10165",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

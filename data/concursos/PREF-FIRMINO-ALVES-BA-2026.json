@@ -1,0 +1,49 @@
+{
+ "id": "PREF-FIRMINO-ALVES-BA-2026",
+ "orgao": "Prefeitura de Firmino Alves/BA",
+ "sigla": "PREF-FIRMINO-ALVES-BA",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "BA",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295863
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-firmino-alves-ba-abre-concurso-publico-com-salarios-de-ate-4867",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-14",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-firmino-alves-ba-abre-concurso-publico-com-salarios-de-ate-4867",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-firmino-alves-ba-abre-concurso-publico-com-salarios-de-ate-4867",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

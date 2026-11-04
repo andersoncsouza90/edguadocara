@@ -1,0 +1,60 @@
+{
+ "id": "PREF-MACEDONIA-SP-2026",
+ "orgao": "Prefeitura de Macedônia/SP",
+ "sigla": "PREF-MACEDONIA-SP",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Controlador interno",
+  "Soldador"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296004
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-08",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 60 cargos (1 vaga até R$ 8.189,58 no total); cargos da área: Controlador interno, Soldador",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

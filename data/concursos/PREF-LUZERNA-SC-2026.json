@@ -1,0 +1,60 @@
+{
+ "id": "PREF-LUZERNA-SC-2026",
+ "orgao": "Prefeitura de Luzerna/SC",
+ "sigla": "PREF-LUZERNA-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Auditor fiscal da receita municipal",
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296333
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luzerna-sc-abre-concurso-publico-com-salarios-de-ate-14004",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luzerna-sc-abre-concurso-publico-com-salarios-de-ate-14004",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 46 cargos (4 vagas até R$ 14.004,25 no total); cargos da área: Auditor fiscal da receita municipal, Controlador interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luzerna-sc-abre-concurso-publico-com-salarios-de-ate-14004",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luzerna-sc-abre-concurso-publico-com-salarios-de-ate-14004",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

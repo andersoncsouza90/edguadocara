@@ -1,0 +1,49 @@
+{
+ "id": "CAM-PIRES-DO-RIO-GO-2026",
+ "orgao": "Câmara Municipal de Pires do Rio/GO",
+ "sigla": "CAM-PIRES-DO-RIO-GO",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "GO",
+ "cargos": [
+  "Assistente de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  294928
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-pires-do-rio-go-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-pires-do-rio-go-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-pires-do-rio-go-retifica-edital-de-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

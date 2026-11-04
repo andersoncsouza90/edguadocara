@@ -1,0 +1,59 @@
+{
+ "id": "PREF-CANTO-DO-BURITI-PI-2026",
+ "orgao": "Prefeitura de Canto do Buriti/PI",
+ "sigla": "PREF-CANTO-DO-BURITI-PI",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PI",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296029
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-26",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-canto-do-buriti-pi-abre-concurso-publico-com-salarios-de-ate-16210",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-27",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-canto-do-buriti-pi-abre-concurso-publico-com-salarios-de-ate-16210",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 41 cargos (257 vagas até R$ 16.210,00 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-canto-do-buriti-pi-abre-concurso-publico-com-salarios-de-ate-16210",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-canto-do-buriti-pi-abre-concurso-publico-com-salarios-de-ate-16210",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

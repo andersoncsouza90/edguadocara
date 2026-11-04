@@ -7,7 +7,8 @@
  "uf": "MG",
  "cargos": [
   "Fiscal tributário",
-  "Agente Fiscal de Tributos"
+  "Agente Fiscal de Tributos",
+  "Agente fiscal de tributos"
  ],
  "aliases": [
   "PREF-SJDR-MG-2026"
@@ -86,6 +87,16 @@
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-del-rei-mg-abre-concurso-publico-com-salarios-de-ate-15164",
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 43 cargos (74 vagas até R$ 15.164,56 no total); cargos da área: Agente fiscal de tributos, Fiscal tributário",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-del-rei-mg-abre-concurso-publico-com-salarios-de-ate-15164",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
    "nota": ""
   }
  ]

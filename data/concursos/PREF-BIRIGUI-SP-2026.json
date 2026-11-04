@@ -1,0 +1,61 @@
+{
+ "id": "PREF-BIRIGUI-SP-2026",
+ "orgao": "Prefeitura de Birigui/SP",
+ "sigla": "PREF-BIRIGUI-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Controlador interno",
+  "Fiscal de tributos",
+  "Soldador"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296057
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-10",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-abre-concurso-publico-com-salarios-de-ate-13881",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-22",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-abre-concurso-publico-com-salarios-de-ate-13881",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 78 cargos (171 vagas até R$ 13.881,85 no total); cargos da área: Controlador interno, Fiscal de tributos, Soldador",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-abre-concurso-publico-com-salarios-de-ate-13881",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-birigui-sp-abre-concurso-publico-com-salarios-de-ate-13881",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

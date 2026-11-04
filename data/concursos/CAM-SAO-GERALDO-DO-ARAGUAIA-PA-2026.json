@@ -1,0 +1,49 @@
+{
+ "id": "CAM-SAO-GERALDO-DO-ARAGUAIA-PA-2026",
+ "orgao": "Câmara Municipal de São Geraldo do Araguaia/PA",
+ "sigla": "CAM-SAO-GERALDO-DO-ARAGUAIA-PA",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "PA",
+ "cargos": [
+  "Chefe de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296102
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-geraldo-do-araguaia-pa-abre-concurso-publico-com-salarios-de-ate-3000",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-geraldo-do-araguaia-pa-abre-concurso-publico-com-salarios-de-ate-3000",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-geraldo-do-araguaia-pa-abre-concurso-publico-com-salarios-de-ate-3000",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

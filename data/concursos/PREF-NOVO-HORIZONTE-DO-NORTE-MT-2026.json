@@ -1,0 +1,49 @@
+{
+ "id": "PREF-NOVO-HORIZONTE-DO-NORTE-MT-2026",
+ "orgao": "Prefeitura de Novo Horizonte do Norte/MT",
+ "sigla": "PREF-NOVO-HORIZONTE-DO-NORTE-MT",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "MT",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296017
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-horizonte-do-norte-mt-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-horizonte-do-norte-mt-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-horizonte-do-norte-mt-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

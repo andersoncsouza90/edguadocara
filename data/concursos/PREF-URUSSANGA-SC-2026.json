@@ -1,0 +1,59 @@
+{
+ "id": "PREF-URUSSANGA-SC-2026",
+ "orgao": "Prefeitura de Urussanga/SC",
+ "sigla": "PREF-URUSSANGA-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Fiscal de tributos municipal"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295775
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-08",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-urussanga-sc-abre-processo-seletivo-com-salarios-de-ate-23930",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-urussanga-sc-abre-processo-seletivo-com-salarios-de-ate-23930",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 49 cargos (20 vagas até R$ 23.930,19 no total); cargos da área: Fiscal de tributos municipal",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-urussanga-sc-abre-processo-seletivo-com-salarios-de-ate-23930",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-urussanga-sc-abre-processo-seletivo-com-salarios-de-ate-23930",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

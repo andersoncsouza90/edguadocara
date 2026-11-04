@@ -1,0 +1,59 @@
+{
+ "id": "PREF-ILHOTA-SC-2026",
+ "orgao": "Prefeitura de Ilhota/SC",
+ "sigla": "PREF-ILHOTA-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295909
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-14",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ilhota-sc-publica-edital-de-concurso-publico-com-salarios-de-ate-21113",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ilhota-sc-publica-edital-de-concurso-publico-com-salarios-de-ate-21113",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 48 cargos (36 vagas até R$ 21.113,16 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ilhota-sc-publica-edital-de-concurso-publico-com-salarios-de-ate-21113",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ilhota-sc-publica-edital-de-concurso-publico-com-salarios-de-ate-21113",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

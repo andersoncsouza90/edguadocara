@@ -1,0 +1,59 @@
+{
+ "id": "PREF-IPE-RS-2026",
+ "orgao": "Prefeitura de Ipê/RS",
+ "sigla": "PREF-IPE-RS",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "RS",
+ "cargos": [
+  "Agente de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295943
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipe-rs-abre-concurso-publico-com-salarios-de-ate-20745",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipe-rs-abre-concurso-publico-com-salarios-de-ate-20745",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 47 cargos (28 vagas até R$ 20.745,08 no total); cargos da área: Agente de controle interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipe-rs-abre-concurso-publico-com-salarios-de-ate-20745",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipe-rs-abre-concurso-publico-com-salarios-de-ate-20745",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

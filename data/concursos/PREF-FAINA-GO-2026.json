@@ -1,0 +1,50 @@
+{
+ "id": "PREF-FAINA-GO-2026",
+ "orgao": "Prefeitura de Faina/GO",
+ "sigla": "PREF-FAINA-GO",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "GO",
+ "cargos": [
+  "Controlador interno",
+  "Técnico em controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  271576
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-faina-go-reabrem-concurso-publico-com-diversas-vagas",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-faina-go-reabrem-concurso-publico-com-diversas-vagas",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-faina-go-reabrem-concurso-publico-com-diversas-vagas",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

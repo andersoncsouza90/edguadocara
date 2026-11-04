@@ -1,0 +1,59 @@
+{
+ "id": "PREF-ARAL-MOREIRA-MS-2026",
+ "orgao": "Prefeitura de Aral Moreira/MS",
+ "sigla": "PREF-ARAL-MOREIRA-MS",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "MS",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296054
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-aral-moreira-ms-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-22",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-aral-moreira-ms-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 42 cargos (174 vagas até R$ 4.318,18 no total); cargos da área: Controlador interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-aral-moreira-ms-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-aral-moreira-ms-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

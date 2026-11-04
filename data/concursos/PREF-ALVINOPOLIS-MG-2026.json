@@ -1,0 +1,49 @@
+{
+ "id": "PREF-ALVINOPOLIS-MG-2026",
+ "orgao": "Prefeitura de Alvinópolis/MG",
+ "sigla": "PREF-ALVINOPOLIS-MG",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Fiscal de tributos municipais"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295065
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-15",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-alvinopolis-mg-publica-retificacoes-de-concurso-publico-com-salarios-de-ate-17954",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-alvinopolis-mg-publica-retificacoes-de-concurso-publico-com-salarios-de-ate-17954",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-alvinopolis-mg-publica-retificacoes-de-concurso-publico-com-salarios-de-ate-17954",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

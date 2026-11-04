@@ -1,0 +1,49 @@
+{
+ "id": "CAM-SAO-JOAO-DO-PIAUI-PI-2026",
+ "orgao": "Câmara Municipal de São João do Piauí/PI",
+ "sigla": "CAM-SAO-JOAO-DO-PIAUI-PI",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "PI",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296327
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-30",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-joao-do-piaui-pi-abre-concurso-publico-para-controlador-interno",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-joao-do-piaui-pi-abre-concurso-publico-para-controlador-interno",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-joao-do-piaui-pi-abre-concurso-publico-para-controlador-interno",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

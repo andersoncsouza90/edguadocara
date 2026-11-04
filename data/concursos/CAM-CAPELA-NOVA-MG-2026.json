@@ -1,0 +1,49 @@
+{
+ "id": "CAM-CAPELA-NOVA-MG-2026",
+ "orgao": "Câmara Municipal de Capela Nova/MG",
+ "sigla": "CAM-CAPELA-NOVA-MG",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  295818
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-14",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-capela-nova-mg-abre-concurso-publico-para-diferentes-niveis-de-escolaridade",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-12-14",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-capela-nova-mg-abre-concurso-publico-para-diferentes-niveis-de-escolaridade",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-capela-nova-mg-abre-concurso-publico-para-diferentes-niveis-de-escolaridade",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "PREF-SAO-JOSE-DA-BELA-VISTA-SP-2026",
+ "orgao": "Prefeitura de São José da Bela Vista/SP",
+ "sigla": "PREF-SAO-JOSE-DA-BELA-VISTA-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Agente fiscal tributário",
+  "Fiscal de rendas e postura"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296094
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-da-bela-vista-sp-abre-concurso-publico-para-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

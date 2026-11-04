@@ -1,0 +1,30 @@
+{
+ "id": "PREF-SAO-JULIAO-PI-2026",
+ "orgao": "Prefeitura de São Julião/PI",
+ "sigla": "PREF-SAO-JULIAO-PI",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "PI",
+ "cargos": [
+  "Controlador interno",
+  "Técnico em controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296235
+ ],
+ "encerrado": true,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-juliao-pi-suspende-concurso-publico",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

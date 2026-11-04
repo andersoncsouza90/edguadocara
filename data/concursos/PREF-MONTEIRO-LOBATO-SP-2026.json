@@ -1,0 +1,50 @@
+{
+ "id": "PREF-MONTEIRO-LOBATO-SP-2026",
+ "orgao": "Prefeitura de Monteiro Lobato/SP",
+ "sigla": "PREF-MONTEIRO-LOBATO-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Fiscal de tributos",
+  "Analista de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296139
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

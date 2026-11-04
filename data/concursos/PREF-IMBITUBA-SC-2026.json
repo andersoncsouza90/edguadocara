@@ -6,7 +6,8 @@
  "esfera": "municipal",
  "uf": "SC",
  "cargos": [
-  "Auditor fiscal"
+  "Auditor fiscal",
+  "Auditor de controle interno"
  ],
  "aliases": [],
  "banca_anterior": null,

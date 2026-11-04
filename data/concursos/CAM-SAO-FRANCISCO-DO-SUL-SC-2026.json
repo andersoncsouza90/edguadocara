@@ -1,0 +1,49 @@
+{
+ "id": "CAM-SAO-FRANCISCO-DO-SUL-SC-2026",
+ "orgao": "Câmara Municipal de São Francisco do Sul/SC",
+ "sigla": "CAM-SAO-FRANCISCO-DO-SUL-SC",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Controlador"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296250
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-07",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-francisco-do-sul-sc-abre-concurso-publico-com-salarios-de-ate-10924",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-francisco-do-sul-sc-abre-concurso-publico-com-salarios-de-ate-10924",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-francisco-do-sul-sc-abre-concurso-publico-com-salarios-de-ate-10924",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

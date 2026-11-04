@@ -1,0 +1,59 @@
+{
+ "id": "PREF-GUARUJA-DO-SUL-SC-2026",
+ "orgao": "Prefeitura de Guarujá do Sul/SC",
+ "sigla": "PREF-GUARUJA-DO-SUL-SC",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Controlador de acesso"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296345
+ ],
+ "encerrado": true,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-02",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaruja-do-sul-sc-abre-concurso-e-selecoes-com-salarios-de-ate-30-7-mil",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaruja-do-sul-sc-abre-concurso-e-selecoes-com-salarios-de-ate-30-7-mil",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 38 cargos (5 vagas até R$ 30.761,75 no total); cargos da área: Controlador de acesso",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaruja-do-sul-sc-abre-concurso-e-selecoes-com-salarios-de-ate-30-7-mil",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaruja-do-sul-sc-abre-concurso-e-selecoes-com-salarios-de-ate-30-7-mil",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

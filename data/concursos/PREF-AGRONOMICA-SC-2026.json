@@ -1,0 +1,49 @@
+{
+ "id": "PREF-AGRONOMICA-SC-2026",
+ "orgao": "Prefeitura de Agronômica/SC",
+ "sigla": "PREF-AGRONOMICA-SC",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Agente de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296330
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agronomica-sc-abre-concurso-publico-com-salarios-de-ate-19660",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agronomica-sc-abre-concurso-publico-com-salarios-de-ate-19660",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agronomica-sc-abre-concurso-publico-com-salarios-de-ate-19660",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}

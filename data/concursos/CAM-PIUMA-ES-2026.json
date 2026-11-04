@@ -1,0 +1,49 @@
+{
+ "id": "CAM-PIUMA-ES-2026",
+ "orgao": "Câmara Municipal de Piúma/ES",
+ "sigla": "CAM-PIUMA-ES",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "ES",
+ "cargos": [
+  "Auditor de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296331
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-piuma-es-abre-concurso-publico-com-salarios-de-ate-9018",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-piuma-es-abre-concurso-publico-com-salarios-de-ate-9018",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-piuma-es-abre-concurso-publico-com-salarios-de-ate-9018",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-04",
+   "nota": ""
+  }
+ ]
+}
