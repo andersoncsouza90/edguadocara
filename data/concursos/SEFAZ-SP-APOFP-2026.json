@@ -100,6 +100,66 @@
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-retifica-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-retifica-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Provas objetiva e discursiva previstas para 13/12/2026 em São Paulo (FCC); inscrições até 03/11 segundo a imprensa, prorrogadas até 05/11 segundo o PCI",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/sp/2026/10/02/concurso-sefaz-sp-oferta-60-vagas-com-salarios-de-ate-r-113-mil/",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": "Data da verificação; fontes divergem no fim das inscrições (PCI: prorrogado)"
+  },
+  {
+   "campo": "salario_max",
+   "valor": 11359.5,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-retifica-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-retifica-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  },
+  {
+   "campo": "vagas",
+   "valor": 60,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/sefaz-sp-retifica-concurso-publico-para-analista-em-planejamento-orcamento-e-financas-publicas",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
   }
  ]
 }

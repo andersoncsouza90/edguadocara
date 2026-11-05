@@ -1,0 +1,59 @@
+{
+ "id": "PREF-ESTANCIA-TURISTICA-DE-GUARATINGUETA-SP-2026",
+ "orgao": "Prefeitura de Estância Turística de Guaratinguetá/SP",
+ "sigla": "PREF-ESTANCIA-TURISTICA-DE-GUARATINGUETA-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296373
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-15",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 86 cargos (107 vagas até R$ 18.540,71 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-05",
+   "nota": ""
+  }
+ ]
+}
