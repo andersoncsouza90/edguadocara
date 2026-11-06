@@ -1,0 +1,60 @@
+{
+ "id": "PREF-BOA-VIAGEM-CE-2026",
+ "orgao": "Prefeitura de Boa Viagem/CE",
+ "sigla": "PREF-BOA-VIAGEM-CE",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "CE",
+ "cargos": [
+  "Agente fiscal de tributos",
+  "Analista de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296434
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-07",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-boa-viagem-ce-abre-concurso-publico-com-vagas-para-diversas-areas-de-atuacao",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-boa-viagem-ce-abre-concurso-publico-com-vagas-para-diversas-areas-de-atuacao",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 68 cargos (1001 vagas até R$ 14.718,92 no total); cargos da área: Agente fiscal de tributos, Analista de controle interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-boa-viagem-ce-abre-concurso-publico-com-vagas-para-diversas-areas-de-atuacao",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-boa-viagem-ce-abre-concurso-publico-com-vagas-para-diversas-areas-de-atuacao",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  }
+ ]
+}

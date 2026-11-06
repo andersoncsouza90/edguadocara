@@ -1,0 +1,59 @@
+{
+ "id": "PREF-INHAPIM-MG-2026",
+ "orgao": "Prefeitura de Inhapim/MG",
+ "sigla": "PREF-INHAPIM-MG",
+ "area": "policial",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Soldador"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296439
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inhapim-mg-abre-concurso-publico-com-salarios-de-ate-11232",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inhapim-mg-abre-concurso-publico-com-salarios-de-ate-11232",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 66 cargos (301 vagas até R$ 11.232,59 no total); cargos da área: Soldador",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inhapim-mg-abre-concurso-publico-com-salarios-de-ate-11232",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inhapim-mg-abre-concurso-publico-com-salarios-de-ate-11232",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  }
+ ]
+}

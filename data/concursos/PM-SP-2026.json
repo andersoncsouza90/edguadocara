@@ -1,0 +1,69 @@
+{
+ "id": "PM-SP-2026",
+ "orgao": "Polícia Militar — SP",
+ "sigla": "PM-SP",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "SP",
+ "cargos": [
+  "Aluno soldado pm"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296396
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-22",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "salario_max",
+   "valor": 5482.21,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "vagas",
+   "valor": 2000,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/policia-militar-sp-abre-2000-vagas-para-aluno-soldado",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  }
+ ]
+}

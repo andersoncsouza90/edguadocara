@@ -1,0 +1,60 @@
+{
+ "id": "PREF-FLORESTA-PE-2026",
+ "orgao": "Prefeitura de Floresta/PE",
+ "sigla": "PREF-FLORESTA-PE",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PE",
+ "cargos": [
+  "Fiscal de tributos",
+  "Técnico em controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  294650
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-12",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floresta-pe-publica-retificacao-de-concurso-publico",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-08-24",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floresta-pe-publica-retificacao-de-concurso-publico",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 73 cargos (431 vagas até R$ 8.000,00 no total); cargos da área: Fiscal de tributos, Técnico em controle interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floresta-pe-publica-retificacao-de-concurso-publico",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floresta-pe-publica-retificacao-de-concurso-publico",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-06",
+   "nota": ""
+  }
+ ]
+}
