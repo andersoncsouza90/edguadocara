@@ -1,0 +1,59 @@
+{
+ "id": "PREF-ANCHIETA-ES-2026",
+ "orgao": "Prefeitura de Anchieta/ES",
+ "sigla": "PREF-ANCHIETA-ES",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "ES",
+ "cargos": [
+  "Auditor de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296457
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-14",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-anchieta-es-abre-concurso-publico-com-salarios-de-ate-7362",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-anchieta-es-abre-concurso-publico-com-salarios-de-ate-7362",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 19 cargos (33 vagas até R$ 7.362,50 no total); cargos da área: Auditor de controle interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-anchieta-es-abre-concurso-publico-com-salarios-de-ate-7362",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-anchieta-es-abre-concurso-publico-com-salarios-de-ate-7362",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  }
+ ]
+}

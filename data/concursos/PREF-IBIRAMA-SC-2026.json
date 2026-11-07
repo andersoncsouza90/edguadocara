@@ -1,0 +1,59 @@
+{
+ "id": "PREF-IBIRAMA-SC-2026",
+ "orgao": "Prefeitura de Ibirama/SC",
+ "sigla": "PREF-IBIRAMA-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296459
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-29",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ibirama-sc-abre-concurso-publico-com-salarios-de-ate-20364",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ibirama-sc-abre-concurso-publico-com-salarios-de-ate-20364",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 31 cargos (10 vagas até R$ 20.364,15 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ibirama-sc-abre-concurso-publico-com-salarios-de-ate-20364",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ibirama-sc-abre-concurso-publico-com-salarios-de-ate-20364",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  }
+ ]
+}
