@@ -8,12 +8,14 @@
  "cargos": [
   "Agente fiscal de renda",
   "Analista de controle de convênio",
-  "Analista de controle interno"
+  "Analista de controle interno",
+  "Agente controlador de zoonoses"
  ],
  "aliases": [],
  "banca_anterior": null,
  "pci_ids": [
-  296464
+  296464,
+  296465
  ],
  "encerrado": false,
  "fatos": [
@@ -28,11 +30,31 @@
    "nota": ""
   },
   {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-tres-concursos-publicos-para-diversos-cargos",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
    "campo": "inscricoes_inicio",
    "valor": "2026-11-16",
    "fonte_tipo": "agregador",
    "veiculo": "PCI Concursos",
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-concurso-publico-com-salarios-de-ate-6812",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-tres-concursos-publicos-para-diversos-cargos",
    "data": "2026-11-07",
    "registrado_em": "2026-11-07",
    "nota": ""
@@ -53,6 +75,16 @@
    "fonte_tipo": "agregador",
    "veiculo": "PCI Concursos",
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-concurso-publico-com-salarios-de-ate-6812",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-tres-concursos-publicos-para-diversos-cargos",
    "data": "2026-11-07",
    "registrado_em": "2026-11-07",
    "nota": ""

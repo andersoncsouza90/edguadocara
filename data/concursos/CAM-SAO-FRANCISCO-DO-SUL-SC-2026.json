@@ -44,6 +44,36 @@
    "data": "2026-11-04",
    "registrado_em": "2026-11-04",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-07",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-francisco-do-sul-sc-retifica-edital-de-concurso-publico",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-06",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-francisco-do-sul-sc-retifica-edital-de-concurso-publico",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-francisco-do-sul-sc-retifica-edital-de-concurso-publico",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
   }
  ]
 }

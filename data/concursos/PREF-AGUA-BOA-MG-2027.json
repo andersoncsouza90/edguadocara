@@ -1,0 +1,49 @@
+{
+ "id": "PREF-AGUA-BOA-MG-2027",
+ "orgao": "Prefeitura de Água Boa/MG",
+ "sigla": "PREF-AGUA-BOA-MG",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Fiscal de rendas"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296444
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-02-11",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-boa-mg-abre-concurso-publico-com-salarios-de-ate-13945",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2027-01-11",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-boa-mg-abre-concurso-publico-com-salarios-de-ate-13945",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-agua-boa-mg-abre-concurso-publico-com-salarios-de-ate-13945",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-07",
+   "nota": ""
+  }
+ ]
+}
