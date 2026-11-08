@@ -160,6 +160,16 @@
    "data": "2026-11-05",
    "registrado_em": "2026-11-05",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-05",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-sefaz-sp-inscricoes-prorrogadas",
+   "data": "2026-11-08",
+   "registrado_em": "2026-11-08",
+   "nota": "Inscrições prorrogadas até 05/11/2026 às 23h59 (data da verificação); PCI informava 03/11"
   }
  ]
 }
