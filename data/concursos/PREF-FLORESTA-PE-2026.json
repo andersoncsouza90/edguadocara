@@ -55,6 +55,34 @@
    "data": "2026-11-06",
    "registrado_em": "2026-11-06",
    "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos",
+    "vagas": 4,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floresta-pe-publica-retificacao-de-concurso-publico",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Técnico em Controle Interno",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-floresta-pe-publica-retificacao-de-concurso-publico",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
   }
  ]
 }

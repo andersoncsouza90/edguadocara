@@ -63,7 +63,8 @@ class Campo(str, Enum):
     STATUS = "status"
     BANCA = "banca"                    # só banca DEFINIDA/CONTRATADA
     BANCA_COTADA = "banca_cotada"      # especulação / favorita / em negociação
-    VAGAS = "vagas"
+    VAGAS = "vagas"                    # total do concurso (quando o edital inteiro é da área)
+    VAGAS_CARGO = "vagas_cargo"        # {"cargo", "vagas" (imediatas), "cr" (cadastro reserva)}
     SALARIO_MAX = "salario_max"
     INSCRICOES_INICIO = "inscricoes_inicio"
     INSCRICOES_FIM = "inscricoes_fim"
@@ -75,7 +76,7 @@ class Campo(str, Enum):
 # Campos em que o PCI (agregador) basta para confirmar: ele só lista
 # concursos depois que o edital sai.
 CAMPOS_CONFIRMADOS_POR_AGREGADOR = {
-    Campo.STATUS, Campo.VAGAS, Campo.SALARIO_MAX, Campo.INSCRICOES_INICIO,
+    Campo.STATUS, Campo.VAGAS, Campo.VAGAS_CARGO, Campo.SALARIO_MAX, Campo.INSCRICOES_INICIO,
     Campo.INSCRICOES_FIM, Campo.EDITAL_URL, Campo.BANCA,
 }
 
@@ -85,7 +86,7 @@ class Fato:
     """Uma afirmação sobre um concurso, sempre amarrada à fonte."""
 
     campo: Campo
-    valor: str | int | float
+    valor: str | int | float | dict
     fonte_tipo: FonteTipo
     veiculo: str
     url: str
@@ -94,8 +95,14 @@ class Fato:
     nota: str = ""
 
     @property
+    def valor_texto(self) -> str:
+        import json
+
+        return json.dumps(self.valor, ensure_ascii=False, sort_keys=True) if isinstance(self.valor, dict) else str(self.valor)
+
+    @property
     def chave(self) -> tuple:
-        return (self.campo.value, str(self.valor), self.url)
+        return (self.campo.value, self.valor_texto, self.url)
 
     def para_dict(self) -> dict:
         d = asdict(self)

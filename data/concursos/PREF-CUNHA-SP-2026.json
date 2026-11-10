@@ -45,6 +45,48 @@
    "data": "2026-11-04",
    "registrado_em": "2026-11-04",
    "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor de Controle Interno",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cunha-sp-abre-concurso-publico-com-salarios-de-ate-9147",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "sem número na lista da notícia: cadastro de reserva"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cunha-sp-abre-concurso-publico-com-salarios-de-ate-9147",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "sem número na lista da notícia: cadastro de reserva"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal Tributário",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cunha-sp-abre-concurso-publico-com-salarios-de-ate-9147",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "sem número na lista da notícia: cadastro de reserva"
   }
  ]
 }

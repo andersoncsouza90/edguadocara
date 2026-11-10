@@ -88,7 +88,7 @@ class Concurso:
             return True
         if fato.fonte_tipo is FonteTipo.AGREGADOR and fato.campo in CAMPOS_CONFIRMADOS_POR_AGREGADOR:
             return True
-        veiculos = {f.veiculo.lower() for f in todos if str(f.valor) == str(fato.valor)}
+        veiculos = {f.veiculo.lower() for f in todos if f.valor_texto == fato.valor_texto}
         return len(veiculos) >= 2
 
     def consolidar(self, campo: Campo) -> Consolidado | None:
@@ -97,7 +97,7 @@ class Concurso:
             return None
         if campo is Campo.STATUS:
             return self._consolidar_status(fatos)
-        if campo in {Campo.BANCA_COTADA, Campo.NOTA, Campo.PREVISAO}:
+        if campo in {Campo.BANCA_COTADA, Campo.NOTA, Campo.PREVISAO, Campo.VAGAS_CARGO}:
             vals = list(dict.fromkeys(f.valor for f in reversed(fatos)))
             return Consolidado(vals, False, fatos)
         # escolhe o valor com melhor fonte; empate -> mais recente
@@ -132,6 +132,70 @@ class Concurso:
             return None
         topo = max(nao_conf, key=lambda f: Status(f.valor).ordem)
         return Consolidado(Status(topo.valor), False, [f for f in nao_conf if f.valor == topo.valor])
+
+    # ----------------------------------------------------- vagas por cargo
+    def vagas_por_cargo(self) -> list[dict]:
+        """Uma linha por cargo da área, com a melhor fonte disponível."""
+        grupos: dict[str, list[Fato]] = {}
+        for f in self._do_campo(Campo.VAGAS_CARGO):
+            if self.area_do_cargo(f.valor["cargo"]) is None:
+                continue  # ex.: "Soldador" num edital de prefeitura
+            grupos.setdefault(_norm_cargo(f.valor["cargo"]), []).append(f)
+        linhas = []
+        for fatos in grupos.values():
+            melhor = max(fatos, key=lambda f: (self._confirma(f, fatos), f.fonte_tipo.peso, f.data))
+            linhas.append({
+                "cargo": melhor.valor["cargo"], "area": self.area_do_cargo(melhor.valor["cargo"]),
+                "vagas": int(melhor.valor.get("vagas") or 0),
+                "cr": bool(melhor.valor.get("cr")), "confirmado": self._confirma(melhor, fatos),
+                "fonte": {"veiculo": melhor.veiculo, "url": melhor.url, "data": melhor.data},
+            })
+        return sorted(linhas, key=lambda r: r["cargo"])
+
+    def area_do_cargo(self, cargo: str) -> str:
+        """Órgão inteiro da área (PF, SEFAZ, TCE...): a área do concurso.
+        Prefeitura/câmara: a área do cargo (um edital fiscal pode ter cargo de controle)."""
+        if self.esfera != "municipal":
+            return self.area.value
+        from .classificador import normalizar
+        from .fontes.pci import CARGOS_AREA
+
+        n = normalizar(cargo)
+        return next((a.value for a, p in CARGOS_AREA if re.search(p, n)), None)  # None = fora do radar
+
+    def vagas_area(self) -> dict:
+        """Vagas imediatas dos cargos da área, com o grau de certeza.
+
+        cobertura:
+          por_cargo  todos os cargos da área têm número (soma é exata)
+          so_cr      só cadastro de reserva (0 vagas imediatas)
+          parcial    alguns cargos da área ainda sem número (soma é piso)
+          total      só o total do concurso (edital inteiro da área)
+          sem_dado   nenhum número
+        """
+        linhas = self.vagas_por_cargo()
+        if linhas:
+            cobertos = [_norm_cargo(r["cargo"]) for r in linhas]
+            pendentes = [{"cargo": c, "area": self.area_do_cargo(c)} for c in self.cargos
+                         if self.area_do_cargo(c) and not any(_casa_cargo(_norm_cargo(c), x) for x in cobertos)]
+            imediatas = sum(r["vagas"] for r in linhas)
+            if pendentes:
+                cobertura = "parcial"
+            elif imediatas == 0 and any(r["cr"] for r in linhas):
+                cobertura = "so_cr"
+            else:
+                cobertura = "por_cargo"
+            return {"valor": imediatas, "confirmado": not pendentes and all(r["confirmado"] for r in linhas),
+                    "cobertura": cobertura, "cr": any(r["cr"] for r in linhas),
+                    "pendentes": pendentes, "cargos": linhas}
+        total = self.consolidar(Campo.VAGAS)
+        if total:
+            return {"valor": int(total.valor), "confirmado": total.confirmado, "cobertura": "total",
+                    "cr": False, "pendentes": [], "cargos": [],
+                    "fonte": {"veiculo": total.fontes[0].veiculo, "url": total.fontes[0].url} if total.fontes else None}
+        return {"valor": None, "confirmado": False, "cobertura": "sem_dado", "cr": False,
+                "pendentes": [{"cargo": c, "area": self.area_do_cargo(c)} for c in self.cargos
+                              if self.area_do_cargo(c)], "cargos": []}
 
     @property
     def status(self) -> Status:
@@ -191,7 +255,7 @@ class Concurso:
                      if sinal else None,
             "banca": bloco(Campo.BANCA), "bancas_cotadas": self._valor(Campo.BANCA_COTADA) or [],
             "banca_anterior": self.banca_anterior,
-            "vagas": bloco(Campo.VAGAS), "salario_max": bloco(Campo.SALARIO_MAX),
+            "vagas": bloco(Campo.VAGAS), "vagas_area": self.vagas_area(), "salario_max": bloco(Campo.SALARIO_MAX),
             "inscricoes_inicio": self._valor(Campo.INSCRICOES_INICIO),
             "inscricoes_fim": self._valor(Campo.INSCRICOES_FIM),
             "edital_url": self._valor(Campo.EDITAL_URL),
@@ -220,7 +284,30 @@ class Concurso:
         return cls(area=Area(d.pop("area")), fatos=fatos, **d)
 
 
+def _norm_cargo(c: str) -> str:
+    t = _sem_acento(c).lower()
+    t = re.sub(r"\(.*?\)|[-–:/,]", " ", t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+_VAZIAS = {"de", "da", "do", "das", "dos", "e", "em", "na", "no", "a", "o"}
+
+
+def _casa_cargo(a: str, b: str) -> bool:
+    if a == b or a in b or b in a:
+        return True
+    pa = {w for w in a.split() if w not in _VAZIAS}
+    pb = {w for w in b.split() if w not in _VAZIAS}
+    return bool(pa) and bool(pb) and (pa <= pb or pb <= pa)
+
+
 def _rotulo_valor(f: Fato) -> str:
+    if f.campo is Campo.VAGAS_CARGO:
+        v = f.valor
+        partes = [f"{v.get('vagas', 0)} vaga(s)" if v.get("vagas") else "sem vagas imediatas"]
+        if v.get("cr"):
+            partes.append("cadastro de reserva")
+        return f"{v['cargo']}: {' + '.join(partes)}"
     if f.campo is Campo.STATUS:
         return Status(f.valor).rotulo
     return str(f.valor)
@@ -237,6 +324,13 @@ def validar_fato(f: Fato) -> None:
         Status(f.valor)  # levanta ValueError se inválido
     if f.campo in {Campo.VAGAS} and not isinstance(f.valor, int):
         raise ErroRegistro("vagas deve ser inteiro")
+    if f.campo is Campo.VAGAS_CARGO:
+        v = f.valor
+        if not (isinstance(v, dict) and str(v.get("cargo", "")).strip() and isinstance(v.get("vagas"), int)
+                and v["vagas"] >= 0 and isinstance(v.get("cr", False), bool)):
+            raise ErroRegistro('vagas_cargo deve ser {"cargo": str, "vagas": int >= 0, "cr": bool}')
+        if v["vagas"] == 0 and not v.get("cr"):
+            raise ErroRegistro("vagas_cargo com 0 vagas imediatas precisa de cr=true (cadastro de reserva)")
     if f.campo in {Campo.INSCRICOES_INICIO, Campo.INSCRICOES_FIM} and not re.match(r"^\d{4}-\d{2}-\d{2}$", str(f.valor)):
         raise ErroRegistro("datas de inscrição em AAAA-MM-DD")
 

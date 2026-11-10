@@ -44,6 +44,20 @@
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
    "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal de Tributos Municipais",
+    "vagas": 1,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaguaribe-ce-reabre-inscricoes-para-concursos-publicos",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
   }
  ]
 }

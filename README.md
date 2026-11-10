@@ -44,6 +44,28 @@ Acompanha cada concurso **do pedido à homologação**, com **ID único** e a
      python -m radar monitorar adicionar --descricao "SEFAZ-SP – Analista" --area fiscal --uf SP --pci-termo sefaz --pci-cargo "analista em planejamento" --web "concurso Sefaz SP analista"
      ```
 
+## Contador de vagas
+
+O site soma apenas **vagas imediatas por cargo da área** (campo
+`vagas_cargo`). O total do edital nunca é atribuído a um cargo.
+
+| Fonte da vaga | Como entra |
+|---|---|
+| Edital (PDF da banca ou prefeitura) | `radar vagas <ID> --fonte-tipo oficial` (confirma) |
+| Notícia do PCI (lista "Cargo (N vagas)") | `radar importar-vagas-pci`, automático (confirma) |
+| Imprensa | `radar vagas <ID> --fonte-tipo imprensa`: um veículo = fonte única; dois = confirmado |
+
+Cada concurso tem uma **cobertura**: `por_cargo` (soma exata), `so_cr` (só
+cadastro de reserva), `parcial` (há cargos da área sem número, e a soma é um
+piso), `total` (edital inteiro da área, ex.: PM) ou `sem_dado`. O painel
+mostra, por área, as vagas confirmadas e quantos concursos estão em cada
+situação. Assim, o que não se sabe aparece como "sem número", nunca como
+zero. Cargos excluídos por retificação ou errata saem da conta.
+
+```bash
+python -m radar vagas-pendentes --area fiscal
+```
+
 ## Regras de confiança
 
 | Fonte | Peso | Confirma sozinha? |

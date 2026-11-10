@@ -74,6 +74,20 @@
    "data": "2026-11-07",
    "registrado_em": "2026-11-07",
    "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controlador",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-francisco-do-sul-sc-retifica-edital-de-concurso-publico",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
   }
  ]
 }

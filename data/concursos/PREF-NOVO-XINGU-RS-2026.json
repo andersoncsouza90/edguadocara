@@ -54,6 +54,30 @@
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
    "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Objetiva Concursos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-xingu-rs-abre-concurso-publico-com-salarios-de-ate-8797",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "banca citada na notícia do PCI"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal da Receita Municipal",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-xingu-rs-abre-concurso-publico-com-salarios-de-ate-8797",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
   }
  ]
 }

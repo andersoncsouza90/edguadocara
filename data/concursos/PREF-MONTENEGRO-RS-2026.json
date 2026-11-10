@@ -8,7 +8,8 @@
  "cargos": [
   "Auditor de controle interno - direito",
   "Auditor de controle interno - engenharia civil",
-  "Fiscal tributário"
+  "Fiscal tributário",
+  "Auditor de Controle Interno"
  ],
  "aliases": [],
  "banca_anterior": null,
@@ -55,6 +56,44 @@
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-montenegro-rs-abre-concurso-publico-com-salarios-de-ate-9848",
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
+   "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Fundatec",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-montenegro-rs-abre-concurso-publico-com-salarios-de-ate-9848",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "banca citada na notícia do PCI"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor de Controle Interno",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-montenegro-rs-abre-concurso-publico-com-salarios-de-ate-9848",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal Tributário",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-montenegro-rs-abre-concurso-publico-com-salarios-de-ate-9848",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
    "nota": ""
   }
  ]

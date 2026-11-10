@@ -44,6 +44,30 @@
    "data": "2026-11-04",
    "registrado_em": "2026-11-04",
    "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Legalle",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-negrinho-sc-e-orgaos-municipais-abrem-novos-concursos-publicos",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "banca citada na notícia do PCI"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controlador Interno",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-rio-negrinho-sc-e-orgaos-municipais-abrem-novos-concursos-publicos",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "sem número na lista da notícia: cadastro de reserva"
   }
  ]
 }

@@ -109,6 +109,19 @@ input[type=search]{flex:1;min-width:200px}
 .barra .trilho{height:10px;background:transparent;border-radius:0 4px 4px 0;position:relative}
 .barra .fill{height:10px;border-radius:0 4px 4px 0;background:var(--bar);min-width:2px}
 .barra .num{font-variant-numeric:tabular-nums;color:var(--ink);min-width:2.5em;text-align:right}
+table.cont{font-size:.84rem}
+table.cont th{cursor:default;padding:6px 8px}
+table.cont td{padding:8px;vertical-align:middle}
+table.cont tr.clic{cursor:pointer}
+table.cont tr.sel td{background:var(--surface-2)}
+.cob{display:flex;gap:2px;height:8px;min-width:120px}
+.cob span{border-radius:2px;min-width:0}
+.s-num{background:var(--bar)}
+.s-cr{background:var(--axis)}
+.s-pend{background:repeating-linear-gradient(135deg,var(--muted) 0 2px,transparent 2px 5px)}
+.s-vazio{flex:1;background:var(--grid)}
+.cob-txt{color:var(--muted);font-size:.74rem;margin-top:3px}
+.cob-txt b{color:var(--ink)}
 .barra.sel .nome{color:var(--ink);font-weight:600}
 .barra.zero .fill{background:var(--axis)}
 
@@ -227,8 +240,9 @@ footer p{margin:4px 0}
     <article class="card c5">
       <div class="card-topo"><div><h2>Funil de fases</h2><p class="sub">Do pedido à homologação: fase confirmada de cada concurso</p></div></div>
       <div class="barras" id="funil"></div>
-      <div class="card-topo" style="margin:18px 0 10px"><div><h2>Por área</h2></div></div>
-      <div class="barras" id="areas"></div>
+      <div class="card-topo" style="margin:18px 0 6px"><div><h2>Contador de vagas</h2>
+        <p class="sub">Inscrições abertas ou em breve · vagas imediatas por cargo da área</p></div></div>
+      <div id="contador"></div>
     </article>
 
     <article class="card c4">
@@ -268,7 +282,8 @@ footer p{margin:4px 0}
 
   <footer>
     <p><span class="ok">✓</span> confirmado: fonte oficial, PCI Concursos (para dados de edital) ou dois veículos de imprensa independentes.
-    <span class="aviso">fonte única</span>: noticiado por um só veículo, ainda não confirmado. Banca "cotada" é especulação, não banca definida.</p>
+    <span class="aviso">fonte única</span>: noticiado por um só veículo, ainda não confirmado.
+    Vagas: soma das vagas imediatas <b>por cargo da área</b>; “CR” = só cadastro de reserva; “+” = há cargos da área ainda sem número; cargos excluídos por retificação saem da conta. Banca "cotada" é especulação, não banca definida.</p>
     <p>O mapa é um cartograma: cada UF ocupa um quadrado do mesmo tamanho, na posição aproximada do estado. Concursos federais, sem UF, aparecem à parte.
     Registramos fatos com link para a fonte, sem reproduzir textos. Confira sempre o edital. <a href="feed.xml">RSS</a> · <a href="concursos.json">JSON</a></p>
   </footer>
@@ -323,7 +338,28 @@ $("#tema").onclick = () => {
 $("#gerado").textContent = br(HOJE);
 Object.keys(NOME_UF).sort().forEach(uf => { const o = document.createElement("option"); o.value = uf; o.textContent = `${uf} — ${NOME_UF[uf]}`; $("#uf").appendChild(o); });
 
-const vagasDe = c => c.vagas ? Number(c.vagas.valor) || 0 : 0;
+// Vagas da área: soma das vagas imediatas por cargo (filtrando pela área do cargo),
+// ou o total do edital quando o órgão inteiro é da área (PM, PC...).
+// cob: por_cargo | total | so_cr | parcial | sem_dado | fora (nenhum cargo da área filtrada)
+function vagasInfo(c, area = st.area) {
+  const va = c.vagas_area || {cobertura:"sem_dado", cargos:[], pendentes:[]};
+  if (va.cobertura === "total") {
+    return !area || c.area === area ? {vagas: va.valor || 0, conf: va.confirmado, cob: "total", cr: false} : {vagas: 0, conf: false, cob: "fora"};
+  }
+  const linhas = (va.cargos || []).filter(r => !area || r.area === area);
+  const pend = (va.pendentes || []).filter(p => !area || p.area === area);
+  if (!linhas.length) return {vagas: 0, conf: false, cob: pend.length ? "sem_dado" : "fora", cr: false};
+  const v = linhas.reduce((s,r) => s + r.vagas, 0);
+  return {vagas: v, conf: !pend.length && linhas.every(r => r.confirmado), cr: linhas.some(r => r.cr),
+          cob: pend.length ? "parcial" : (v === 0 && linhas.some(r => r.cr)) ? "so_cr" : "por_cargo"};
+}
+const vagasDe = c => vagasInfo(c).vagas;
+function classeVagas(i) {               // categorias exclusivas para o contador
+  if (i.cob === "fora") return null;
+  if (i.cob === "so_cr") return "cr";
+  if ((i.cob === "por_cargo" || i.cob === "total") && i.conf) return "num";
+  return "pend";
+}
 const aberto = c => c.grupo === "abertos";
 
 function filtrar({semUf=false, semGrupo=false} = {}) {
@@ -357,14 +393,18 @@ function kpis() {
   const breve = base.filter(c => c.fase === "Inscrições em breve");
   const anun = base.filter(c => c.grupo === "anunciados");
   const aut = base.filter(c => c.grupo === "autorizados" || c.grupo === "previstos");
-  const vagas = base.filter(aberto).reduce((s,c) => s + (c.vagas && c.vagas.confirmado ? vagasDe(c) : 0), 0);
+  const infos = base.filter(aberto).map(c => vagasInfo(c));
+  const vagas = infos.reduce((s,i) => s + (classeVagas(i) === "num" ? i.vagas : 0), 0);
+  const nNum = infos.filter(i => classeVagas(i) === "num").length, nCr = infos.filter(i => classeVagas(i) === "cr").length,
+        nPend = infos.filter(i => classeVagas(i) === "pend").length;
   const itens = [
     ["", "Concursos monitorados", base.length, `${base.filter(c=>c.sinal).length} com sinal não confirmado`],
     ["abertos", "Inscrições abertas", ab.length, fim7 ? `${fim7} encerram em até 7 dias` : "nenhum encerra em 7 dias"],
     [null, "Inscrições em breve", breve.length, breve.length ? `próxima abre em ${br(breve.map(c=>c.inscricoes_inicio).sort()[0])}` : ""],
     ["anunciados", "Comissão ou banca", anun.length, `${anun.filter(c=>c.status==="banca_em_definicao").length} com banca em contratação`],
     ["autorizados", "Autorizados e previstos", aut.length, `${base.filter(c=>c.grupo==="autorizados").length} autorizados`],
-    [null, "Vagas abertas confirmadas", num(vagas), "editais abertos ou em breve"],
+    [null, `Vagas imediatas confirmadas${st.area ? " · " + AREAS[st.area].toLowerCase() : ""}`, num(vagas),
+      `${nNum} com número · ${nCr} só CR · ${nPend} sem número`],
   ];
   $("#kpis").innerHTML = itens.map(([g, r, v, d], i) => g === null
     ? `<div class="kpi estatico"><div class="rot">${r}</div><div class="val">${v}</div><div class="det">${esc(d)}</div></div>`
@@ -437,12 +477,21 @@ function funil() {
   const max = Math.max(1, ...cont.map(c=>c[2]));
   $("#funil").innerHTML = cont.map(([k,r,v]) => `<div class="barra${v?"":" zero"}" data-fase="${k}">
     <span class="nome">${r}</span><span class="trilho"><span class="fill" style="display:block;width:${v/max*100}%"></span></span><span class="num">${num(v)}</span></div>`).join("");
-  const baseA = D.concursos.filter(c => (!st.esfera || c.esfera===st.esfera) && (!st.uf || (st.uf==="BR" ? !c.uf : c.uf===st.uf)) && (!st.grupo || c.grupo===st.grupo));
-  const as = Object.keys(AREAS).map(a => [a, baseA.filter(c=>c.area===a).length]);
-  const maxA = Math.max(1, ...as.map(a=>a[1]));
-  $("#areas").innerHTML = as.map(([a,v]) => `<div class="barra clic${st.area===a?" sel":""}" data-area-bar="${a}" role="button" tabindex="0">
-    <span class="nome"><span class="dot" style="background:var(--${a})"></span>${AREAS[a]}</span>
-    <span class="trilho"><span class="fill" style="display:block;width:${v/maxA*100}%;background:var(--${a})"></span></span><span class="num">${num(v)}</span></div>`).join("");
+  // contador de vagas por área (ignora o filtro de área para comparar as três)
+  const baseA = D.concursos.filter(c => aberto(c) && (!st.esfera || c.esfera===st.esfera) && (!st.uf || (st.uf==="BR" ? !c.uf : c.uf===st.uf)));
+  const linhas = Object.keys(AREAS).map(a => {
+    const inf = baseA.map(c => vagasInfo(c, a)).filter(i => classeVagas(i));
+    const k = t => inf.filter(i => classeVagas(i) === t).length;
+    return {a, vagas: inf.reduce((s,i) => s + (classeVagas(i) === "num" ? i.vagas : 0), 0), n: inf.length, num: k("num"), cr: k("cr"), pend: k("pend")};
+  });
+  $("#contador").innerHTML = `<table class="cont"><thead><tr><th>Área</th><th class="n">Vagas</th><th>Cobertura dos concursos</th></tr></thead><tbody>` +
+    linhas.map(l => `<tr class="clic${st.area===l.a?" sel":""}" data-area-bar="${l.a}" tabindex="0" role="button">
+      <td><span class="area"><span class="dot" style="background:var(--${l.a})"></span>${AREAS[l.a]}</span></td>
+      <td class="n"><b>${num(l.vagas)}</b></td>
+      <td><div class="cob" title="${l.num} com número, ${l.cr} só cadastro de reserva, ${l.pend} sem número">
+          ${l.n ? `<span class="s-num" style="flex:${l.num}"></span><span class="s-cr" style="flex:${l.cr}"></span><span class="s-pend" style="flex:${l.pend}"></span>` : `<span class="s-vazio"></span>`}</div>
+        <div class="cob-txt">${l.num} com número · ${l.cr} só CR · ${l.pend ? `<b>${l.pend} sem número</b>` : "0 sem número"}</div></td></tr>`).join("") +
+    `</tbody></table><p class="sub" style="margin-top:6px">Só entram vagas lidas por cargo (notícia do PCI, edital ou duas fontes). Vagas de outros cargos do mesmo edital não são somadas.</p>`;
 }
 
 // ---------------------------------------------------------------- listas
@@ -471,12 +520,20 @@ function listas() {
 // ---------------------------------------------------------------- tabela
 const chave = {
   id: c => c.id, area: c => c.area, uf: c => c.uf || "", fase: c => ORDEM_FASE[c.status] * 10 + (c.grupo==="abertos"?1:0),
-  banca: c => (c.banca && c.banca.valor) || "", vagas: c => vagasDe(c), fim: c => c.inscricoes_fim || "", atualizado: c => c.atualizado_em,
+  banca: c => (c.banca && c.banca.valor) || "", vagas: c => { const i = vagasInfo(c); return i.cob === "fora" ? -2 : i.cob === "sem_dado" ? -1 : i.vagas; }, fim: c => c.inscricoes_fim || "", atualizado: c => c.atualizado_em,
 };
 function celulaBanca(c) {
   if (c.banca) return `${esc(c.banca.valor)} ${c.banca.confirmado ? '<span class="ok" title="confirmado">✓</span>' : '<span class="aviso">fonte única</span>'}`;
   if (c.bancas_cotadas && c.bancas_cotadas.length) return `<span class="aviso">cotada: ${esc(c.bancas_cotadas.join(", "))}</span>`;
   return `<span style="color:var(--muted)">${["edital_publicado","homologado"].includes(c.status) ? "não informada" : "não definida"}</span>`;
+}
+function detalheVagas(c) {
+  const va = c.vagas_area || {};
+  const fonte = f => f ? ` · <a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.veiculo)}</a>` : "";
+  if (va.cobertura === "total") return `${num(va.valor)} no edital ${va.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}${fonte(va.fonte)}`;
+  const linhas = (va.cargos || []).map(r => `<div><span class="dot" style="background:var(--${r.area})"></span> ${esc(r.cargo)}: <b>${r.vagas ? num(r.vagas) + " vaga" + (r.vagas > 1 ? "s" : "") : "sem vagas imediatas"}</b>${r.cr ? " + CR" : ""} ${r.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}${fonte(r.fonte)}</div>`);
+  const pend = (va.pendentes || []).map(p => `<div><span class="dot" style="background:var(--${p.area})"></span> ${esc(p.cargo)}: <span class="aviso">sem número ainda</span></div>`);
+  return linhas.concat(pend).join("") || '<span class="aviso">sem número ainda</span>';
 }
 function detalhe(c) {
   const fontes = fs => (fs||[]).map(f => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.veiculo)}</a>`).join(", ");
@@ -484,7 +541,7 @@ function detalhe(c) {
     ["Órgão", esc(c.orgao) + (c.esfera ? ` · ${c.esfera}` : "")],
     c.sinal && ["Sinal", `<span class="aviso">${esc(c.sinal.rotulo)}, fonte única (${fontes(c.sinal.fontes)}), aguardando confirmação</span>`],
     c.banca_anterior && ["Último concurso", `${esc(c.banca_anterior.nome)}${c.banca_anterior.ano ? " (" + esc(c.banca_anterior.ano) + ")" : ""}`],
-    c.vagas && ["Vagas", `${num(vagasDe(c))} ${c.vagas.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}${c.vagas.divergentes && c.vagas.divergentes.length ? ` <span class="aviso">fontes divergem: ${esc(c.vagas.divergentes.join(" / "))}</span>` : ""}`],
+    ["Vagas", detalheVagas(c)],
     c.salario_max && ["Remuneração", `até ${reais(c.salario_max.valor)} ${c.salario_max.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}`],
     (c.inscricoes_inicio || c.inscricoes_fim) && ["Inscrições", `${br(c.inscricoes_inicio)} a ${br(c.inscricoes_fim)}`],
     c.previsao && ["Previsão", esc(c.previsao)],
@@ -496,6 +553,13 @@ function detalhe(c) {
   return `<tr class="detalhe"><td colspan="8"><div class="det-grid">
     <dl>${linhas.map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
     <div><div style="font-weight:600;margin-bottom:4px">Linha do tempo</div><ul class="tl">${tl}</ul></div></div></td></tr>`;
+}
+function celulaVagas(c) {
+  const i = vagasInfo(c);
+  if (i.cob === "fora") return "—";
+  if (i.cob === "sem_dado") return '<span class="aviso">sem número</span>';
+  if (i.cob === "so_cr") return '<span title="só cadastro de reserva">CR</span>';
+  return `${num(i.vagas)}${i.cob === "parcial" ? "+" : ""}${i.cr ? " + CR" : ""} ${i.conf ? '<span class="ok" title="confirmado">✓</span>' : '<span class="aviso" title="fonte única ou cargos sem número"></span>'}`;
 }
 function tabela() {
   const lista = filtrar().sort((a,b) => { const x = chave[st.sort](a), y = chave[st.sort](b); return (x > y ? 1 : x < y ? -1 : 0) * st.dir; });
@@ -509,7 +573,7 @@ function tabela() {
       <td data-r="UF">${esc(c.uf || "Federal")}</td>
       <td data-r="Fase"><div><span class="fase">${esc(c.fase)}</span>${c.sinal ? `<div class="aviso">sinal: ${esc(c.sinal.rotulo)}</div>` : ""}</div></td>
       <td data-r="Banca">${celulaBanca(c)}</td>
-      <td data-r="Vagas" class="n">${c.vagas ? num(vagasDe(c)) + (c.vagas.confirmado ? "" : "*") : "—"}</td>
+      <td data-r="Vagas" class="n">${celulaVagas(c)}</td>
       <td data-r="Inscrições até">${c.inscricoes_fim ? br(c.inscricoes_fim) : "—"}</td>
       <td data-r="Último registro">${br(c.atualizado_em)}</td>
     </tr>${st.aberto === c.id ? detalhe(c) : ""}`).join("")
@@ -560,7 +624,7 @@ $("#mapa").addEventListener("mousemove", ev => {
 });
 $("#mapa").addEventListener("mouseleave", esconderTip);
 document.addEventListener("mousemove", ev => {
-  const bar = ev.target.closest("#funil .barra, #regioes .barra, #areas .barra");
+  const bar = ev.target.closest("#funil .barra, #regioes .barra");
   if (!bar) { if (!ev.target.closest("#mapa")) esconderTip(); return; }
   const nome = bar.querySelector(".nome").textContent.trim(), v = bar.querySelector(".num").textContent;
   let extra = "";

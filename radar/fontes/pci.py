@@ -26,12 +26,12 @@ from ..registro import Concurso, Registro, gerar_id
 UF_PARA_NOME = {uf: nome for nome, uf in ESTADOS.items()}
 
 CARGOS_AREA: list[tuple[Area, str]] = [
-    (Area.FISCAL, r"auditor[- ]fiscal|fiscal (?:de |da )?(?:tributos|rendas?|receita)|fiscal tributario"
+    (Area.FISCAL, r"\bauditor[- ]fiscal|fiscal (?:de |da )?(?:tributos|rendas?|receita)|fiscal tributario"
                   r"|agente fiscal de (?:tributos|rendas)|auditor (?:de |da )?(?:tributos|receita)|analista tributario"),
-    (Area.CONTROLE, r"controle (?:interno|externo)|controlador|auditor de controle|analista de controle"
+    (Area.CONTROLE, r"controle (?:interno|externo)|controlador (?:interno|geral|municipal)|^controlador$|auditor de controle|analista de controle"
                     r"|financas e controle"),
     (Area.POLICIAL, r"delegado|agente de policia|escrivao|investigador|papiloscopista|perito criminal"
-                    r"|policial|soldado|oficial (?:pm|combatente)|cadete"),
+                    r"|policial|\bsoldado\b|oficial (?:pm|combatente)|cadete"),
 ]
 
 

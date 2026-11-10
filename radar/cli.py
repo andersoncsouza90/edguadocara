@@ -224,6 +224,75 @@ def cmd_mon_plano(a) -> int:
     return 0
 
 
+def cmd_vagas(a) -> int:
+    """Registra vagas de um cargo (imediatas e/ou cadastro de reserva)."""
+    reg = _registro(a)
+    c = reg.obter(a.id)
+    f = Fato(Campo.VAGAS_CARGO, {"cargo": a.cargo.strip(), "vagas": a.vagas, "cr": a.cr},
+             FonteTipo(a.fonte_tipo), a.veiculo, a.url, a.data, nota=a.nota or "")
+    if c.adicionar(f):
+        reg.salvar()
+    va = c.vagas_area()
+    print(f"{c.id}: {a.cargo} = {a.vagas}{' + CR' if a.cr else ''} | vagas da área: {va['valor']} "
+          f"({va['cobertura']}{', pendentes: ' + '; '.join(x['cargo'] for x in va['pendentes']) if va['pendentes'] else ''})")
+    return 0
+
+
+def _pendentes(reg, area=None):
+    hoje = date.today()
+    for c in sorted(reg.concursos.values(), key=lambda c: (c.area.value, c.id)):
+        grupo, fase = c.grupo(hoje)
+        if grupo != "abertos" or (area and c.area.value != area):
+            continue
+        va = c.vagas_area()
+        if va["cobertura"] in {"sem_dado", "parcial"} or not va["confirmado"]:
+            yield c, fase, va
+
+
+def cmd_vagas_pendentes(a) -> int:
+    from .fontes.pci_noticia import links_pci
+
+    n = 0
+    for c, fase, va in _pendentes(_registro(a), a.area):
+        n += 1
+        links = links_pci(c)
+        print(f"{c.id:<40} {fase:<20} {va['cobertura']:<9} vagas={va['valor'] if va['valor'] is not None else '-'}"
+              f"{' (fonte única)' if va['valor'] is not None and not va['confirmado'] else ''}"
+              f" | sem número: {'; '.join(x['cargo'] for x in va['pendentes']) or '-'}"
+              f"{' | ' + links[0] if links else ''}")
+    print(f"{n} concurso(s) abertos ou em breve sem vagas confirmadas por cargo")
+    return 0
+
+
+def cmd_importar_vagas_pci(a) -> int:
+    import time
+
+    from .fontes import http_get
+    from .fontes.pci_noticia import importar_vagas, links_pci
+
+    reg = _registro(a)
+    alvos = [reg.obter(i) for i in a.ids] if a.ids else [c for c, _, _ in _pendentes(reg, a.area)]
+    feitos = falhas = 0
+    for c in alvos[: a.limite or None]:
+        for url in links_pci(c)[:2]:
+            try:
+                pagina = http_get(url, tentativas=2)
+            except Exception as e:  # noqa: BLE001
+                falhas += 1
+                print(f"{c.id}: falha ao baixar {url}: {e}", file=sys.stderr)
+                continue
+            log = importar_vagas(c, pagina, url, date.today().isoformat())
+            for linha in log:
+                print(linha)
+            time.sleep(a.pausa)
+            if c.vagas_por_cargo():
+                break
+        feitos += 1
+    reg.salvar()
+    print(f"{feitos} concurso(s) processados, {falhas} falha(s) de download")
+    return 0
+
+
 def main(argv=None) -> int:
     p = argparse.ArgumentParser(prog="radar", description="Radar de concursos (fiscal, controle, policial)")
     p.add_argument("--dados", default="data/concursos", help="diretório do registro")
@@ -311,6 +380,29 @@ def main(argv=None) -> int:
     me = msub.add_parser("encerrar")
     me.add_argument("alvo"), me.add_argument("--motivo")
     me.set_defaults(f=cmd_mon_encerrar)
+
+    vg = sub.add_parser("vagas", help="registra vagas de um cargo (imediatas e/ou cadastro de reserva)")
+    vg.add_argument("id")
+    vg.add_argument("--cargo", required=True)
+    vg.add_argument("--vagas", type=int, required=True, help="vagas imediatas (0 se só cadastro de reserva)")
+    vg.add_argument("--cr", action="store_true", help="há cadastro de reserva")
+    vg.add_argument("--fonte-tipo", required=True, choices=[x.value for x in FonteTipo])
+    vg.add_argument("--veiculo", required=True)
+    vg.add_argument("--url", required=True)
+    vg.add_argument("--data", required=True)
+    vg.add_argument("--nota")
+    vg.set_defaults(f=cmd_vagas)
+
+    vp = sub.add_parser("vagas-pendentes", help="abertos/em breve sem vagas confirmadas por cargo")
+    vp.add_argument("--area", choices=[x.value for x in Area])
+    vp.set_defaults(f=cmd_vagas_pendentes)
+
+    iv = sub.add_parser("importar-vagas-pci", help="lê a notícia do PCI e registra vagas por cargo")
+    iv.add_argument("ids", nargs="*", help="concursos específicos (padrão: todos os pendentes)")
+    iv.add_argument("--area", choices=[x.value for x in Area])
+    iv.add_argument("--limite", type=int, default=0)
+    iv.add_argument("--pausa", type=float, default=1.0, help="segundos entre downloads")
+    iv.set_defaults(f=cmd_importar_vagas_pci)
 
     a = p.parse_args(argv)
     try:

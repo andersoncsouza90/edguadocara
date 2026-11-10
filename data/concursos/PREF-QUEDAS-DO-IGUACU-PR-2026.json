@@ -5,15 +5,13 @@
  "area": "fiscal",
  "esfera": "municipal",
  "uf": "PR",
- "cargos": [
-  "Fiscal de tributos municipais"
- ],
+ "cargos": [],
  "aliases": [],
  "banca_anterior": null,
  "pci_ids": [
   296056
  ],
- "encerrado": false,
+ "encerrado": true,
  "fatos": [
   {
    "campo": "inscricoes_fim",
@@ -43,6 +41,16 @@
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-abre-concurso-publico-com-salarios-de-ate-11998",
    "data": "2026-11-04",
    "registrado_em": "2026-11-04",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Cargo(s) excluído(s) do edital por retificação/errata: Fiscal de tributos municipais",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-abre-concurso-publico-com-salarios-de-ate-11998",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
    "nota": ""
   }
  ]

@@ -88,6 +88,46 @@ para os campos `status=edital_publicado`, `inscricoes_inicio` e
 existir. Valem as mesmas regras do importador: só órgãos e cargos da área, e
 vagas/salário só se forem dos cargos da área.
 
+### Vagas por cargo (obrigatório; prioridade para a área fiscal)
+
+O contador de vagas do site só soma vagas **por cargo da área**. O total do
+edital ("84 vagas, 38 cargos") não serve. Depois do `importar-pci`, rode:
+
+```bash
+python -m radar importar-vagas-pci
+```
+
+O comando lê a notícia do PCI de cada concurso aberto ou em breve que ainda
+não tem vagas por cargo. Ele registra imediatas + cadastro de reserva só dos
+cargos da área, ignora cargos parecidos (ex.: "Soldador", "Controlador de
+acesso/zoonoses"), pega a banca citada e **detecta cargos excluídos por
+retificação/errata**. Para isso o site www.pciconcursos.com.br precisa estar
+liberado na rede da sessão; se o download falhar, avise no relatório.
+
+Depois veja o que ficou sem número:
+
+```bash
+python -m radar vagas-pendentes --area fiscal
+```
+
+Para cada pendente fiscal, procure o edital (site da banca ou da prefeitura)
+ou duas notícias, e registre:
+
+```bash
+python -m radar vagas <ID> --cargo "Fiscal Tributário" --vagas 4 [--cr] \
+  --fonte-tipo oficial --veiculo "Edital nº 02/2026" --url "<pdf do edital>" --data AAAA-MM-DD
+```
+
+Regras:
+- `--vagas` são as **imediatas**; use `--vagas 0 --cr` se for só cadastro de
+  reserva.
+- **Nunca** divida o total do edital entre cargos, nem estime.
+- Vaga por cargo de um só veículo de imprensa fica como fonte única. Edital
+  ou PCI confirmam.
+- Se a notícia ou o edital disser que o cargo foi **excluído**, registre
+  `--campo nota` e retire o cargo com `python -m radar ajustar <ID> --encerrar`
+  quando não sobrar cargo da área.
+
 ## 2. Notícias (fases antes do edital, banca, retificações)
 
 Para cada linha `web ...`, rode a WebSearch no modo `standard`; use
@@ -198,6 +238,7 @@ configurado.
 
 Inclua `data/monitoramento.json` no commit.
 
-No relatório final, liste os pedidos atendidos (issue → ID), as **mudanças de fase** do dia (ex.: "RFB-2026:
+No relatório final, informe também o contador de vagas fiscais (vagas
+imediatas confirmadas e quantos concursos ainda estão sem número). Liste os pedidos atendidos (issue → ID), as **mudanças de fase** do dia (ex.: "RFB-2026:
 Autorizado → Banca em contratação"), os sinais ainda não confirmados e as
 fontes que divergem entre si.

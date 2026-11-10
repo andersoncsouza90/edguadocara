@@ -6,7 +6,8 @@
  "esfera": "municipal",
  "uf": "SP",
  "cargos": [
-  "Fiscal de tributos"
+  "Fiscal de tributos",
+  "Fiscal de Tributos I"
  ],
  "aliases": [],
  "banca_anterior": null,
@@ -38,6 +39,34 @@
   {
    "campo": "status",
    "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipero-sp-abre-concursos-publicos-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipero-sp-abre-concursos-publicos-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos I",
+    "vagas": 1,
+    "cr": false
+   },
    "fonte_tipo": "agregador",
    "veiculo": "PCI Concursos",
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipero-sp-abre-concursos-publicos-e-processo-seletivo",
