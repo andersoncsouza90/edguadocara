@@ -1,0 +1,49 @@
+{
+ "id": "PREF-PEDRA-BRANCA-DO-AMAPARI-AP-2026",
+ "orgao": "Prefeitura de Pedra Branca do Amapari/AP",
+ "sigla": "PREF-PEDRA-BRANCA-DO-AMAPARI-AP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "AP",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296520
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pedra-branca-do-amapari-ap-abre-concurso-publico-com-salarios-de-ate-6000",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pedra-branca-do-amapari-ap-abre-concurso-publico-com-salarios-de-ate-6000",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pedra-branca-do-amapari-ap-abre-concurso-publico-com-salarios-de-ate-6000",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  }
+ ]
+}

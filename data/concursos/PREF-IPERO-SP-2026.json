@@ -1,0 +1,49 @@
+{
+ "id": "PREF-IPERO-SP-2026",
+ "orgao": "Prefeitura de Iperó/SP",
+ "sigla": "PREF-IPERO-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296496
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipero-sp-abre-concursos-publicos-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipero-sp-abre-concursos-publicos-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipero-sp-abre-concursos-publicos-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  }
+ ]
+}

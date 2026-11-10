@@ -1,0 +1,49 @@
+{
+ "id": "PREF-SANTA-BRANCA-SP-2026",
+ "orgao": "Prefeitura de Santa Branca/SP",
+ "sigla": "PREF-SANTA-BRANCA-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Fiscal tributário"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296494
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-10",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-branca-sp-abre-concurso-publico-com-salarios-de-ate-6892",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-branca-sp-abre-concurso-publico-com-salarios-de-ate-6892",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-branca-sp-abre-concurso-publico-com-salarios-de-ate-6892",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "id": "PREF-PATROCINIO-PAULISTA-SP-2026",
+ "orgao": "Prefeitura de Patrocínio Paulista/SP",
+ "sigla": "PREF-PATROCINIO-PAULISTA-SP",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Auditor de controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296497
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patrocinio-paulista-sp-divulga-editais-de-concurso-publico-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-10",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patrocinio-paulista-sp-divulga-editais-de-concurso-publico-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patrocinio-paulista-sp-divulga-editais-de-concurso-publico-e-processo-seletivo",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  }
+ ]
+}

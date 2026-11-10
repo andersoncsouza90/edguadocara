@@ -44,6 +44,36 @@
    "data": "2026-11-04",
    "registrado_em": "2026-11-04",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-12",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-retifica-concurso-publico-com-salarios-de-ate-5600",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-17",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-retifica-concurso-publico-com-salarios-de-ate-5600",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-retifica-concurso-publico-com-salarios-de-ate-5600",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
   }
  ]
 }
