@@ -253,6 +253,45 @@
    "solicitado_em": "2026-11-03",
    "situacao": "ativo",
    "nota": ""
+  },
+  {
+   "id": "M003",
+   "descricao": "SEFAZ-RS – Auditor Fiscal e Analista Tributário da Receita Estadual",
+   "area": "fiscal",
+   "uf": "RS",
+   "pci": [
+    {
+     "ferramenta": "pesquisar_concursos",
+     "termo": "sefaz",
+     "uf": "rs"
+    },
+    {
+     "ferramenta": "pesquisar_concursos",
+     "termo": "receita estadual",
+     "uf": "rs"
+    },
+    {
+     "ferramenta": "buscar_por_cargo",
+     "termo": "auditor fiscal da receita estadual",
+     "uf": "rs"
+    },
+    {
+     "ferramenta": "buscar_por_cargo",
+     "termo": "analista tributario",
+     "uf": "rs"
+    }
+   ],
+   "web": [
+    "concurso Sefaz RS edital",
+    "concurso Sefaz RS FCC contrato"
+   ],
+   "concursos": [
+    "SEFAZ-RS-2026"
+   ],
+   "origem": "chat 10/11/2026",
+   "solicitado_em": "2026-11-10",
+   "situacao": "ativo",
+   "nota": "Pedido informa banca contratada FCC"
   }
  ]
 }

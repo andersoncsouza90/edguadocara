@@ -114,6 +114,12 @@ python -m radar fato <ID> --campo <campo> --valor <valor> \
   invente uma data.
 - **Registre o mesmo fato em 2 veículos diferentes** sempre que possível: é
   isso que o confirma no site. Fato de um só veículo aparece como "sinal".
+- **Se houver fontes que contestam o fato** (ex.: dois sites dizem "banca
+  contratada" e outros dizem que o contrato ainda não foi assinado),
+  registre-o de **um só** veículo, para ele ficar como sinal, e explique a
+  divergência na `--nota`. Ele é confirmado depois, por um ato oficial
+  (extrato no DOE ou no PNCP). Dois veículos não confirmam o que outros
+  contestam.
 
 ### Qual status registrar
 

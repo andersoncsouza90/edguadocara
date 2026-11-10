@@ -1,0 +1,94 @@
+{
+ "id": "SEFAZ-RS-2026",
+ "orgao": "Secretaria da Fazenda do Rio Grande do Sul (Receita Estadual)",
+ "sigla": "SEFAZ-RS",
+ "area": "fiscal",
+ "esfera": "estadual",
+ "uf": "RS",
+ "cargos": [
+  "Auditor Fiscal da Receita Estadual",
+  "Analista Tributário da Receita Estadual"
+ ],
+ "aliases": [
+  "RECEITA-ESTADUAL-RS-2026"
+ ],
+ "banca_anterior": {
+  "nome": "Cebraspe",
+  "ano": 2018,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-sefaz-rs-banca-definida-2026/",
+   "data": "2026-09-29",
+   "registrado_em": "2026-11-10",
+   "nota": "Termo de Dispensa nº 0008/2026/SEFAZ-RS, DOE-RS de 29/09/2026"
+  },
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-rs-banca-2026",
+   "data": "2026-09-29",
+   "registrado_em": "2026-11-10",
+   "nota": "Banca definida para auditor e analista"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-sefaz-rs-fcc-banca-organizadora",
+   "data": "2026-09-29",
+   "registrado_em": "2026-11-10",
+   "nota": "Termo de Dispensa nº 0008/2026/SEFAZ-RS, DOE-RS de 29/09/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-sefaz-rs-banca-definida-2026/",
+   "data": "2026-09-29",
+   "registrado_em": "2026-11-10",
+   "nota": "Termo de Dispensa nº 0008/2026/SEFAZ-RS, DOE-RS de 29/09/2026"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Próximos passos: assinatura do contrato com a FCC e publicação dos editais, ainda sem data",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Ache Concursos",
+   "url": "https://www.acheconcursos.com.br/noticias/concurso-sefaz-rs-banca-definida-93626",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-sefaz-rs-2026-banca-contratada/",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "Data da verificação. Estratégia e 7 Fontes dizem 'contratada'; Ache Concursos e Decorando a Lei Seca dizem que a assinatura do contrato está pendente. Nenhum extrato de contrato localizado; registrado como fonte única até haver extrato no DOE-RS ou no PNCP"
+  },
+  {
+   "campo": "vagas",
+   "valor": 46,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-sefaz-rs-2026-banca-contratada/",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-10",
+   "nota": "29 AFRE + 17 ATRE (estimativa). Nova Concursos repete o número, mas outras fontes dizem que não há quantitativo oficial; os 15 mil do contrato são inscrições, não vagas"
+  }
+ ]
+}
