@@ -1,0 +1,60 @@
+{
+ "id": "PREF-SAO-ROQUE-DO-CANAA-ES-2026",
+ "orgao": "Prefeitura de São Roque do Canaã/ES",
+ "sigla": "PREF-SAO-ROQUE-DO-CANAA-ES",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "ES",
+ "cargos": [
+  "Analista tributário",
+  "Auditor fiscal de receita municipal"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296542
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-do-canaa-es-abre-concurso-publico-com-salarios-de-ate-6723",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-do-canaa-es-abre-concurso-publico-com-salarios-de-ate-6723",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 41 cargos (114 vagas até R$ 6.723,72 no total); cargos da área: Analista tributário, Auditor fiscal de receita municipal",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-do-canaa-es-abre-concurso-publico-com-salarios-de-ate-6723",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-roque-do-canaa-es-abre-concurso-publico-com-salarios-de-ate-6723",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  }
+ ]
+}

@@ -17,6 +17,34 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos e Obras",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Ache Concursos",
+   "url": "https://www.acheconcursos.com.br/concursos-santa-catarina/prefeitura-de-ipora-do-oeste-sc-tem-concurso-aberto-com-vagas-19-2-mil-94043",
+   "data": "2026-10-16",
+   "registrado_em": "2026-11-11",
+   "nota": "Só cadastro de reserva; numeração do edital diverge entre portais (15/2026 x 16/2026)"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista de Controle Interno",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Ache Concursos",
+   "url": "https://www.acheconcursos.com.br/concursos-santa-catarina/prefeitura-de-ipora-do-oeste-sc-tem-concurso-aberto-com-vagas-19-2-mil-94043",
+   "data": "2026-10-16",
+   "registrado_em": "2026-11-11",
+   "nota": "Só cadastro de reserva"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-11-16",
    "fonte_tipo": "agregador",

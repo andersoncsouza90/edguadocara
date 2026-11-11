@@ -99,6 +99,26 @@
    "data": "2026-10-20",
    "registrado_em": "2026-11-03",
    "nota": "Escolha da banca avança; sem banca confirmada"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Contratação da banca, prevista para outubro, ficou para novembro/2026; edital mantido para dezembro/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-banca-em-novembro-2026",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-11",
+   "nota": "17 propostas recebidas até 30/09; banca ainda não anunciada oficialmente"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Contratação da banca, prevista para outubro, ficou para novembro/2026; edital mantido para dezembro/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Portal de Prefeitura",
+   "url": "https://portaldeprefeitura.com.br/oportunidades/concurso-receita-federal-146-vagas-pode-ter-banca-contratada-novembro/635597/",
+   "data": "2026-11-07",
+   "registrado_em": "2026-11-11",
+   "nota": "Título: 'pode ter banca contratada em novembro'; sem nome de banca"
   }
  ]
 }

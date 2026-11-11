@@ -1,0 +1,72 @@
+{
+ "id": "SEFAZ-BA-2026",
+ "orgao": "Secretaria da Fazenda do Estado da Bahia",
+ "sigla": "SEFAZ-BA",
+ "area": "fiscal",
+ "esfera": "estadual",
+ "uf": "BA",
+ "cargos": [
+  "Auditor Fiscal",
+  "Agente de Tributos Estaduais"
+ ],
+ "aliases": [],
+ "banca_anterior": {
+  "nome": "FGV",
+  "ano": 2022,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Cesgranrio",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-sefaz-ba-cesgranrio-banca",
+   "data": "2026-09-22",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Cesgranrio",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-ba-2026-banca-definida",
+   "data": "2026-09-22",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-sefaz-ba-cesgranrio-banca",
+   "data": "2026-09-22",
+   "registrado_em": "2026-11-11",
+   "nota": "Cesgranrio escolhida para Auditor Fiscal e Agente de Tributos; contrato ainda em elaboração"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-ba-2026-banca-definida",
+   "data": "2026-09-22",
+   "registrado_em": "2026-11-11",
+   "nota": "Banca definida para edital com 200 vagas"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Edital previsto para novembro/2026 (previsão repassada ao Sindsefaz); provas dez/2026 ou jan/2027",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://www.estrategiaconcursos.com.br/blog/concursos-fiscais/",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": "Data da verificação; vagas divergem: 187 (autorização de março: 100 AF + 87 ATE) ou 200 (100+100)"
+  }
+ ]
+}

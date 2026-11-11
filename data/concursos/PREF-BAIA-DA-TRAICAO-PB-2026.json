@@ -1,0 +1,49 @@
+{
+ "id": "PREF-BAIA-DA-TRAICAO-PB-2026",
+ "orgao": "Prefeitura de Baía da Traição/PB",
+ "sigla": "PREF-BAIA-DA-TRAICAO-PB",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PB",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296530
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-baia-da-traicao-pb-abre-concurso-publico-com-vagas-em-diversos-cargos",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-17",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-baia-da-traicao-pb-abre-concurso-publico-com-vagas-em-diversos-cargos",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-baia-da-traicao-pb-abre-concurso-publico-com-vagas-em-diversos-cargos",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "id": "SEFAZ-SC-2026",
+ "orgao": "Secretaria de Estado da Fazenda de Santa Catarina",
+ "sigla": "SEFAZ-SC",
+ "area": "fiscal",
+ "esfera": "estadual",
+ "uf": "SC",
+ "cargos": [
+  "Auditor Estadual de Finanças Públicas"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-sc-2026-contrato-publicado",
+   "data": "2026-08-06",
+   "registrado_em": "2026-11-11",
+   "nota": "Extrato do contrato com a FCC publicado em 06/08/2026"
+  },
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Meu Site Jurídico (Juspodivm)",
+   "url": "https://meusitejuridico.editorajuspodivm.com.br/2026/09/02/edital-publicado-auditor-estadual-de-financas-publicas-sefaz-sc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-10-05",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-sefaz-sc-2026-edital-saiu-com-50-vagas-veja-o-que-estudar-para-a-fcc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-09-04",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-sefaz-sc-2026-edital-saiu-com-50-vagas-veja-o-que-estudar-para-a-fcc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Prova objetiva prevista para 22/11/2026 (FCC)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Meu Site Jurídico (Juspodivm)",
+   "url": "https://meusitejuridico.editorajuspodivm.com.br/2026/09/02/edital-publicado-auditor-estadual-de-financas-publicas-sefaz-sc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Meu Site Jurídico (Juspodivm)",
+   "url": "https://meusitejuridico.editorajuspodivm.com.br/2026/09/02/edital-publicado-auditor-estadual-de-financas-publicas-sefaz-sc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": "Edital para Auditor Estadual de Finanças Públicas, 50 vagas + CR, FCC"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-sefaz-sc-2026-edital-saiu-com-50-vagas-veja-o-que-estudar-para-a-fcc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": "Edital saiu com 50 vagas, banca FCC"
+  },
+  {
+   "campo": "vagas",
+   "valor": 50,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Meu Site Jurídico (Juspodivm)",
+   "url": "https://meusitejuridico.editorajuspodivm.com.br/2026/09/02/edital-publicado-auditor-estadual-de-financas-publicas-sefaz-sc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": "50 vagas + cadastro de reserva, Auditor Estadual de Finanças Públicas"
+  },
+  {
+   "campo": "vagas",
+   "valor": 50,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-sefaz-sc-2026-edital-saiu-com-50-vagas-veja-o-que-estudar-para-a-fcc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Estadual de Finanças Públicas",
+    "vagas": 50,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Meu Site Jurídico (Juspodivm)",
+   "url": "https://meusitejuridico.editorajuspodivm.com.br/2026/09/02/edital-publicado-auditor-estadual-de-financas-publicas-sefaz-sc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Estadual de Finanças Públicas",
+    "vagas": 50,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-sefaz-sc-2026-edital-saiu-com-50-vagas-veja-o-que-estudar-para-a-fcc/",
+   "data": "2026-09-01",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  }
+ ]
+}

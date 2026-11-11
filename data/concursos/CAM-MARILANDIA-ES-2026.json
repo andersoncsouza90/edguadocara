@@ -1,0 +1,49 @@
+{
+ "id": "CAM-MARILANDIA-ES-2026",
+ "orgao": "Câmara Municipal de Marilândia/ES",
+ "sigla": "CAM-MARILANDIA-ES",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "ES",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296545
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-25",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-marilandia-es-abre-selecao-para-controlador-interno",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-marilandia-es-abre-selecao-para-controlador-interno",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-marilandia-es-abre-selecao-para-controlador-interno",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  }
+ ]
+}

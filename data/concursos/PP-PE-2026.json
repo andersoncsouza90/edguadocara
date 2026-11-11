@@ -1,0 +1,169 @@
+{
+ "id": "PP-PE-2026",
+ "orgao": "Secretaria de Administração Penitenciária e Ressocialização de Pernambuco (SEAP-PE) – Polícia Penal",
+ "sigla": "PP-PE",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "PE",
+ "cargos": [
+  "Policial Penal"
+ ],
+ "aliases": [
+  "SEAP-PE",
+  "SEAP PE",
+  "Polícia Penal PE"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-policia-penal-pe-publicado-2026",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Nova Concursos",
+   "url": "https://www.novaconcursos.com.br/portal/?p=317915",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": "Prova objetiva prevista para 21/03/2027"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/seap-pe-abre-concurso-publico-com-700-vagas-para-policial-penal",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-04",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-policia-penal-pe-publicado-2026",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-12",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/seap-pe-abre-concurso-publico-com-700-vagas-para-policial-penal",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-12",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-policia-penal-pe-publicado-2026",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "salario_max",
+   "valor": 5667.92,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/seap-pe-abre-concurso-publico-com-700-vagas-para-policial-penal",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "salario_max",
+   "valor": 5667.92,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/policia-penal-pe-edital-publicado-com-700-vagas-e-salario-de-r-56-mil",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/seap-pe-abre-concurso-publico-com-700-vagas-para-policial-penal",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": "Edital publicado no DOE-PE em 04/11/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-policia-penal-pe-publicado-2026",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "vagas",
+   "valor": 700,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/seap-pe-abre-concurso-publico-com-700-vagas-para-policial-penal",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": "Cargo único: Policial Penal"
+  },
+  {
+   "campo": "vagas",
+   "valor": 700,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/policia-penal-pe-edital-publicado-com-700-vagas-e-salario-de-r-56-mil",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Policial Penal",
+    "vagas": 700,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/seap-pe-abre-concurso-publico-com-700-vagas-para-policial-penal",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Policial Penal",
+    "vagas": 700,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-policia-penal-pe-panorama",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-11",
+   "nota": "700 imediatas, sem cadastro de reserva"
+  }
+ ]
+}

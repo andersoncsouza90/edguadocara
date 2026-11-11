@@ -52,6 +52,16 @@
    "nota": ""
   },
   {
+   "campo": "nota",
+   "valor": "Retificação (Edital nº 02/2026, DOE-SP de 22/10/2026) mudou a prova para 20/12/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-sefaz-sp-provas-adiadas",
+   "data": "2026-10-22",
+   "registrado_em": "2026-11-11",
+   "nota": "Provas objetiva e discursiva adiadas de 13/12 para 20/12/2026"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-11-03",
    "fonte_tipo": "agregador",

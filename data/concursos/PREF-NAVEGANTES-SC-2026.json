@@ -5,7 +5,9 @@
  "area": "fiscal",
  "esfera": "municipal",
  "uf": "SC",
- "cargos": [],
+ "cargos": [
+  "Auditor fiscal"
+ ],
  "aliases": [],
  "banca_anterior": null,
  "pci_ids": [
