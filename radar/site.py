@@ -28,6 +28,11 @@ def gerar(registro: Registro, saida: Path = Path("docs"), hoje: date | None = No
     (saida / "index.html").write_text(pagina, encoding="utf-8")
     (saida / "feed.xml").write_text(_rss(concursos), encoding="utf-8")
     (saida / ".nojekyll").write_text("", encoding="utf-8")
+    estatico = Path(__file__).with_name("static")
+    if estatico.is_dir():
+        (saida / "assets").mkdir(exist_ok=True)
+        for arq in estatico.iterdir():
+            (saida / "assets" / arq.name).write_bytes(arq.read_bytes())
     return saida / "index.html"
 
 

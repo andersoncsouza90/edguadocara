@@ -12,4 +12,4 @@ radar = "radar.cli:main"
 packages = ["radar", "radar.fontes"]
 
 [tool.setuptools.package-data]
-radar = ["modelo_site.html"]
+radar = ["modelo_site.html", "static/*"]

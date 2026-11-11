@@ -1,203 +1,280 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Radar de Concursos</title>
-<meta name="description" content="Painel de concursos das áreas fiscal, controle e policial: fases, bancas, prazos e mapa por UF, com fonte de cada informação.">
+<title>Radar de Concursos · Guruja</title>
+<meta name="description" content="Radar de concursos fiscais, de controle e policiais: fases, bancas, vagas por cargo, prazos e mapa por UF, com a fonte de cada informação.">
+<meta name="theme-color" content="#0B0A07">
 <link rel="alternate" type="application/rss+xml" title="Radar de Concursos" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
 <style>
-:root{
-  color-scheme:light;
-  --page:#f9f9f7; --surface:#fcfcfb; --surface-2:#f0efec; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
-  --grid:#e1e0d9; --axis:#c3c2b7; --ring:rgba(11,11,11,.10); --accent:#2a78d6;
-  --fiscal:#2a78d6; --controle:#eb6834; --policial:#1baf7a;
-  --bar:#2a78d6; --good:#0ca30c; --good-ink:#006300; --warning:#fab219; --critical:#d03b3b;
-  --seq-0:#f0efec; --seq-1:#b7d3f6; --seq-2:#86b6ef; --seq-3:#3987e5; --seq-4:#1c5cab; --seq-5:#0d366b;
-  --shadow:0 1px 2px rgba(11,11,11,.04);
+/* Identidade Guruja (guruja.com.br): void/coal/slab + lima + bone; vermelho só para urgência */
+:root,[data-theme="dark"]{
+  color-scheme:dark;
+  --page:#0B0A07; --nav:#110F0A; --surface:#17140E; --surface-2:#1F1B13; --surface-3:#29241A;
+  --ink:#F4FDC2; --ink-2:rgba(234,243,200,.70); --muted:rgba(234,243,200,.45);
+  --line:rgba(234,243,200,.11); --line-2:rgba(234,243,200,.19);
+  --lima:#DEFF03; --lima-ink:#1B2200; --lima-soft:rgba(222,255,3,.10); --lima-txt:#DEFF03;
+  --vermelho:#EE0032; --vermelho-txt:#FF4D74; --ok:#B8D600;
+  --fiscal:#8AA200; --controle:#4A90E2; --policial:#D55181;
+  --bar:#8AA200; --bar-2:rgba(234,243,200,.28);
+  --seq-0:#221E16; --seq-1:#2F3A05; --seq-2:#4C5E00; --seq-3:#6F8800; --seq-4:#A3C400; --seq-5:#DEFF03;
+  --shadow:0 1px 0 rgba(234,243,200,.04) inset;
 }
-@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){
-  color-scheme:dark;
-  --page:#0d0d0d; --surface:#1a1a19; --surface-2:#262624; --ink:#f0efec; --ink-2:#c3c2b7; --muted:#898781;
-  --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10); --accent:#3987e5;
-  --fiscal:#3987e5; --controle:#d95926; --policial:#199e70;
-  --bar:#3987e5; --good-ink:#0ca30c;
-  --seq-0:#262624; --seq-1:#104281; --seq-2:#1c5cab; --seq-3:#2a78d6; --seq-4:#5598e7; --seq-5:#9ec5f4;
-  --shadow:none;
-}}
-:root[data-theme="dark"]{
-  color-scheme:dark;
-  --page:#0d0d0d; --surface:#1a1a19; --surface-2:#262624; --ink:#f0efec; --ink-2:#c3c2b7; --muted:#898781;
-  --grid:#2c2c2a; --axis:#383835; --ring:rgba(255,255,255,.10); --accent:#3987e5;
-  --fiscal:#3987e5; --controle:#d95926; --policial:#199e70;
-  --bar:#3987e5; --good-ink:#0ca30c;
-  --seq-0:#262624; --seq-1:#104281; --seq-2:#1c5cab; --seq-3:#2a78d6; --seq-4:#5598e7; --seq-5:#9ec5f4;
-  --shadow:none;
+[data-theme="light"]{
+  color-scheme:light;
+  --page:#F6F7EE; --nav:#0B0A07; --surface:#FFFFFF; --surface-2:#F4F6E8; --surface-3:#EAEEDA;
+  --ink:#0B0A07; --ink-2:#4A4A3F; --muted:#7B7B6C;
+  --line:rgba(11,10,7,.09); --line-2:rgba(11,10,7,.16);
+  --lima:#DEFF03; --lima-ink:#1B2200; --lima-soft:#F4FDC2; --lima-txt:#4F5F00;
+  --vermelho:#EE0032; --vermelho-txt:#C4002A; --ok:#4F7A00;
+  --fiscal:#6F8500; --controle:#2A78D6; --policial:#C2185B;
+  --bar:#6F8500; --bar-2:#C9CCB8;
+  --seq-0:#EEF0E2; --seq-1:#EEF9B0; --seq-2:#D4EC5A; --seq-3:#A8C400; --seq-4:#6F8500; --seq-5:#3B4700;
+  --shadow:0 1px 2px rgba(11,10,7,.05);
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--page);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-a{color:var(--accent)}
+body{margin:0;background:var(--page);color:var(--ink);font:14px/1.5 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--lima-txt)}
 button,select,input{font:inherit;color:inherit}
-.wrap{max-width:1320px;margin:0 auto;padding:0 16px}
+.wrap{max-width:1360px;margin:0 auto;padding:0 16px}
+.disp{font-family:"Barlow Condensed","DM Sans",sans-serif;letter-spacing:.01em}
+.up{text-transform:uppercase;letter-spacing:.06em}
 
-/* topo */
-.topo{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0 14px;flex-wrap:wrap}
-.marca{display:flex;align-items:center;gap:10px}
-.logo{width:30px;height:30px;border-radius:8px;background:var(--ink);display:grid;place-items:center}
-.logo svg{width:18px;height:18px}
-.marca h1{font-size:1.15rem;margin:0;letter-spacing:-.01em}
-.marca p{margin:0;color:var(--ink-2);font-size:.82rem}
-.acoes{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.btn{border:1px solid var(--ring);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;text-decoration:none;color:var(--ink);display:inline-flex;gap:6px;align-items:center}
-.btn.primario{background:var(--ink);color:var(--page);border-color:var(--ink)}
-.atualizado{color:var(--muted);font-size:.82rem}
+/* ---------- barra superior (Status Invest: logo + busca grande + ações) */
+.nav{background:var(--nav);border-bottom:1px solid rgba(234,243,200,.11);position:sticky;top:0;z-index:20}
+.nav .wrap{display:flex;align-items:center;gap:18px;height:64px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:#F4FDC2;flex:none}
+.marca img{height:26px;width:auto;display:block}
+.marca .sep{width:1px;height:26px;background:rgba(234,243,200,.19)}
+.marca .nome{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;line-height:1}
+.marca .nome small{display:block;font-size:.62rem;font-weight:600;color:rgba(234,243,200,.55);letter-spacing:.14em}
+.busca{flex:1;max-width:620px;position:relative}
+.busca input{width:100%;height:42px;border-radius:21px;border:1px solid rgba(234,243,200,.19);background:#17140E;color:#F4FDC2;padding:0 16px 0 42px;outline:none}
+.busca input::placeholder{color:rgba(234,243,200,.45)}
+.busca input:focus{border-color:#DEFF03;box-shadow:0 0 0 3px rgba(222,255,3,.18)}
+.busca svg{position:absolute;left:15px;top:12px;width:18px;height:18px;stroke:rgba(234,243,200,.55)}
+.acoes{display:flex;gap:8px;align-items:center;margin-left:auto}
+.btn{height:38px;border-radius:19px;padding:0 16px;border:1px solid rgba(234,243,200,.19);background:transparent;color:#F4FDC2;cursor:pointer;display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:600;white-space:nowrap}
+.btn:hover{border-color:rgba(234,243,200,.4)}
+.btn.lima{background:#DEFF03;color:#1B2200;border-color:#DEFF03}
+.btn.lima:hover{filter:brightness(.95)}
+.btn.icone{width:38px;padding:0;justify-content:center}
+.marca .curto{display:none}
+@media (max-width:520px){.marca .longo{display:none}.marca .curto{display:inline}.marca img{height:22px}.marca{gap:9px}}
+@media (max-width:820px){.nav .wrap{flex-wrap:wrap;height:auto;padding-top:10px;padding-bottom:10px}.busca{order:3;flex-basis:100%;max-width:none}.marca .nome small{display:none}.btn .txt{display:none}.btn.lima .txt{display:inline}}
 
-/* filtros */
-.filtros{position:relative;z-index:5;background:var(--page);padding:8px 0 12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;border-bottom:1px solid var(--grid)}
-.seg{display:inline-flex;background:var(--surface);border:1px solid var(--ring);border-radius:9px;padding:2px}
-.seg button{border:0;background:transparent;padding:5px 11px;border-radius:7px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--ink-2)}
-.seg button[aria-pressed="true"]{background:var(--surface-2);color:var(--ink);font-weight:600}
+/* ---------- faixa de prazos (equivalente à faixa de índices do Status Invest) */
+.faixa{background:var(--nav);border-bottom:1px solid var(--line)}
+[data-theme="light"] .faixa{background:#17140E}
+.faixa .wrap{display:flex;align-items:center;gap:10px;height:42px;overflow-x:auto;scrollbar-width:none}
+.faixa .wrap::-webkit-scrollbar{display:none}
+.faixa .rot{font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:.8rem;color:#DEFF03;letter-spacing:.08em;flex:none}
+.chip-prazo{flex:none;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(234,243,200,.14);border-radius:14px;padding:3px 10px;font-size:.78rem;color:rgba(234,243,200,.8);cursor:pointer;background:none}
+.chip-prazo b{color:#F4FDC2;font-weight:700}
+.chip-prazo .d{font-weight:700;color:#DEFF03}
+.chip-prazo .d.urg{color:#FF4D74}
+
+/* ---------- cabeçalho da página */
+.cab{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;padding:22px 0 14px}
+.cab h1{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:900;text-transform:uppercase;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:.95;letter-spacing:-.005em}
+.cab h1 em{font-style:normal;color:var(--lima-txt)}
+.cab p{margin:6px 0 0;color:var(--ink-2)}
+.atual{color:var(--muted);font-size:.82rem}
+.atual b{color:var(--ink)}
+
+/* ---------- filtros */
+.filtros{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.seg{display:inline-flex;background:var(--surface);border:1px solid var(--line-2);border-radius:20px;padding:3px}
+.seg button{border:0;background:transparent;padding:5px 13px;border-radius:16px;cursor:pointer;display:inline-flex;align-items:center;gap:7px;color:var(--ink-2);font-weight:500}
+.seg button[aria-pressed="true"]{background:var(--lima);color:var(--lima-ink);font-weight:700}
+.seg button[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--lima-ink)}
 .dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none}
-select,input[type=search]{border:1px solid var(--ring);background:var(--surface);border-radius:8px;padding:6px 10px}
-input[type=search]{flex:1;min-width:200px}
-.limpar{border:0;background:none;color:var(--accent);cursor:pointer;padding:6px}
+select{height:34px;border:1px solid var(--line-2);background:var(--surface);border-radius:17px;padding:0 12px;color:var(--ink)}
+.limpar{border:0;background:none;color:var(--lima-txt);cursor:pointer;padding:6px;font-weight:600}
 
-@media (min-width:761px){.filtros{position:sticky;top:0}}
-/* grade */
-.grade{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:14px}
-.card{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow);min-width:0}
-.card h2{font-size:.92rem;margin:0;font-weight:600}
-.card .sub{color:var(--muted);font-size:.8rem;margin:2px 0 0}
-.card-topo{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:10px;flex-wrap:wrap}
-.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}.c4{grid-column:span 4}
-@media (max-width:1040px){.c7,.c5{grid-column:span 12}.c4{grid-column:span 6}}
-@media (max-width:700px){.c4{grid-column:span 12}}
-
-/* KPIs */
-.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:14px}
-@media (max-width:1040px){.kpis{grid-template-columns:repeat(3,1fr)}}
+/* ---------- indicadores (cards "top-info" do Status Invest) */
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:16px}
+@media (max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}}
 @media (max-width:560px){.kpis{grid-template-columns:repeat(2,1fr)}}
-.kpi{background:var(--surface);border:1px solid var(--ring);border-radius:12px;padding:12px 14px;text-align:left;cursor:pointer;box-shadow:var(--shadow)}
-.kpi[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:-1px}
-.kpi .rot{color:var(--ink-2);font-size:.8rem;display:flex;align-items:center;gap:6px}
-.kpi .val{font-size:1.75rem;font-weight:650;letter-spacing:-.02em;line-height:1.2;margin-top:4px}
-.kpi .det{color:var(--muted);font-size:.76rem;margin-top:2px;min-height:1.1em}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px 16px;text-align:left;cursor:pointer;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:2px;min-width:0}
+.kpi:hover{border-color:var(--line-2)}
+.kpi[aria-pressed="true"]{border-color:var(--lima);box-shadow:0 0 0 1px var(--lima) inset}
+.kpi .rot{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);display:flex;align-items:center;gap:6px}
+.kpi .rot .i{width:14px;height:14px;border-radius:50%;border:1px solid var(--line-2);display:inline-grid;place-items:center;font-size:.6rem;color:var(--muted);text-transform:none}
+.kpi .val{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:2.35rem;line-height:1.05;letter-spacing:-.01em}
+.kpi .det{color:var(--ink-2);font-size:.76rem;min-height:1.2em}
 .kpi.estatico{cursor:default}
+.kpi.destaque{background:var(--lima);border-color:var(--lima);color:var(--lima-ink)}
+.kpi.destaque .rot,.kpi.destaque .det{color:rgba(27,34,0,.72)}
+.kpi.destaque .rot .i{border-color:rgba(27,34,0,.4);color:rgba(27,34,0,.72)}
 
-/* mapa */
-.mapa-wrap{display:flex;gap:16px;align-items:flex-start;flex-wrap:wrap}
-#mapa{flex:1 1 380px;max-width:520px;min-width:0}
+/* ---------- cards */
+.grade{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;margin-top:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);min-width:0}
+.c12{grid-column:span 12}.c7{grid-column:span 7}.c5{grid-column:span 5}
+@media (max-width:1100px){.c7,.c5{grid-column:span 12}}
+.card-topo{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+.card h2{margin:0;font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;font-size:1.12rem;letter-spacing:.03em}
+.card .sub{color:var(--muted);font-size:.78rem;margin:2px 0 0}
+.bloco + .bloco{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+
+/* ---------- mapa */
+.mapa-wrap{display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap}
+#mapa{flex:1 1 360px;max-width:500px;min-width:0}
 #mapa svg{width:100%;height:auto;display:block}
 .tile{cursor:pointer}
 .tile rect{stroke:var(--surface);stroke-width:2}
-.tile.sel rect{stroke:var(--ink);stroke-width:2.5}
-.tile text{pointer-events:none;font-family:inherit}
-.legenda{display:flex;gap:2px;align-items:flex-end;flex-wrap:wrap;margin-top:8px}
-.legenda .bin{display:flex;flex-direction:column;gap:3px;font-size:.72rem;color:var(--ink-2);flex:1 1 0;min-width:40px;max-width:92px;white-space:nowrap}
-.legenda .sw{height:10px;border-radius:2px}
+.tile.sel rect{stroke:var(--lima);stroke-width:3}
+[data-theme="light"] .tile.sel rect{stroke:var(--ink)}
+.tile text{pointer-events:none;font-family:"Barlow Condensed",sans-serif}
+.legenda{display:flex;gap:2px;align-items:flex-end;margin-top:10px}
+.legenda .bin{display:flex;flex-direction:column;gap:3px;font-size:.72rem;color:var(--ink-2);flex:1 1 0;min-width:36px;max-width:84px;white-space:nowrap}
+.legenda .sw{height:8px;border-radius:2px}
 .mapa-lado{flex:1 1 220px;min-width:0}
-.nacional{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--ring);border-radius:10px;padding:10px 12px;margin-bottom:12px;cursor:pointer;background:var(--surface)}
-.nacional.sel{outline:2px solid var(--ink);outline-offset:-1px}
-.nacional b{font-size:1.3rem}
+.nacional{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line-2);border-radius:12px;padding:10px 14px;margin-bottom:14px;cursor:pointer;background:var(--surface-2)}
+.nacional.sel{border-color:var(--lima)}
+.nacional b{font-family:"Barlow Condensed",sans-serif;font-size:1.7rem;font-weight:800}
+.h3{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px}
 
-/* barras */
-.barras{display:flex;flex-direction:column;gap:8px}
-.barra{display:grid;grid-template-columns:minmax(92px,38%) 1fr auto;gap:8px;align-items:center;font-size:.84rem;cursor:default}
-.barra.clic{cursor:pointer}
-.barra .nome{color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:6px}
-.barra .trilho{height:10px;background:transparent;border-radius:0 4px 4px 0;position:relative}
-.barra .fill{height:10px;border-radius:0 4px 4px 0;background:var(--bar);min-width:2px}
-.barra .num{font-variant-numeric:tabular-nums;color:var(--ink);min-width:2.5em;text-align:right}
-table.cont{font-size:.84rem}
-table.cont th{cursor:default;padding:6px 8px}
-table.cont td{padding:8px;vertical-align:middle}
+/* ---------- barras */
+.barras{display:flex;flex-direction:column;gap:7px}
+.barra{display:grid;grid-template-columns:minmax(96px,40%) 1fr auto;gap:10px;align-items:center;font-size:.84rem}
+.barra .nome{color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.barra .trilho{height:8px;background:var(--surface-3);border-radius:4px;overflow:hidden}
+.barra .fill{height:8px;border-radius:0 4px 4px 0;background:var(--bar);min-width:2px;display:block}
+.barra .num{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:1rem;min-width:2.4em;text-align:right;font-variant-numeric:tabular-nums}
+.barra.zero .fill{background:var(--bar-2)}
+.barra.zero .num{color:var(--muted)}
+
+/* ---------- contador de vagas */
+table.cont{width:100%;border-collapse:collapse}
+table.cont th{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:left;padding:0 8px 8px;border-bottom:1px solid var(--line)}
+table.cont td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.cont tr:last-child td{border-bottom:0}
 table.cont tr.clic{cursor:pointer}
-table.cont tr.sel td{background:var(--surface-2)}
-.cob{display:flex;gap:2px;height:8px;min-width:120px}
+table.cont tr.clic:hover td,table.cont tr.sel td{background:var(--surface-2)}
+table.cont .v{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.55rem;text-align:right;line-height:1}
+.cob{display:flex;gap:2px;height:8px;min-width:110px}
 .cob span{border-radius:2px;min-width:0}
 .s-num{background:var(--bar)}
-.s-cr{background:var(--axis)}
+.s-cr{background:var(--bar-2)}
 .s-pend{background:repeating-linear-gradient(135deg,var(--muted) 0 2px,transparent 2px 5px)}
-.s-vazio{flex:1;background:var(--grid)}
-.cob-txt{color:var(--muted);font-size:.74rem;margin-top:3px}
+.s-vazio{flex:1;background:var(--surface-3)}
+.cob-txt{color:var(--muted);font-size:.74rem;margin-top:4px}
 .cob-txt b{color:var(--ink)}
-.barra.sel .nome{color:var(--ink);font-weight:600}
-.barra.zero .fill{background:var(--axis)}
 
-/* listas */
-.lista{list-style:none;margin:0;padding:0}
-.lista li{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-top:1px solid var(--grid)}
-.lista li:first-child{border-top:0}
+/* ---------- abas (Status Invest usa abas em quase todo bloco) */
+.abas{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:-4px 0 12px;overflow-x:auto}
+.abas button{border:0;background:none;padding:10px 12px;cursor:pointer;color:var(--muted);font-family:"Barlow Condensed",sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:.95rem;border-bottom:3px solid transparent;margin-bottom:-1px;white-space:nowrap}
+.abas button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--lima)}
+.abas button .n{font-family:"DM Sans",sans-serif;font-size:.72rem;font-weight:700;background:var(--surface-3);color:var(--ink-2);border-radius:9px;padding:1px 7px;margin-left:6px;vertical-align:2px}
+.abas button[aria-selected="true"] .n{background:var(--lima);color:var(--lima-ink)}
+
+/* ---------- listas da aba de prazos */
+.lista{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:0 24px}
+.lista li{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);cursor:pointer}
 .lista .principal{flex:1;min-width:0}
-.lista .t{font-weight:600;font-size:.86rem}
-.lista .s{color:var(--muted);font-size:.78rem;overflow:hidden;text-overflow:ellipsis}
-.prazo{font-variant-numeric:tabular-nums;font-size:.78rem;font-weight:600;border-radius:6px;padding:2px 7px;white-space:nowrap;background:var(--surface-2);color:var(--ink-2)}
-.prazo.urgente{color:var(--critical)}
-.ft{font-size:.68rem;font-weight:700;border-radius:4px;padding:1px 5px;border:1px solid var(--axis);color:var(--ink-2);white-space:nowrap}
-.ft-oficial{border-color:var(--good-ink);color:var(--good-ink)}
-.vazio{color:var(--muted);padding:16px 0;text-align:center;font-size:.86rem}
+.lista .t{font-weight:700;font-size:.88rem}
+.lista .s{color:var(--muted);font-size:.78rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prazo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1rem;border-radius:8px;padding:2px 9px;white-space:nowrap;background:var(--surface-3);color:var(--ink)}
+.prazo.urgente{background:rgba(238,0,50,.14);color:var(--vermelho-txt)}
+.prazo.lima{background:var(--lima-soft);color:var(--lima-txt)}
+.ft{font-size:.64rem;font-weight:700;border-radius:4px;padding:1px 6px;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap;text-transform:uppercase;letter-spacing:.05em}
+.ft-oficial{border-color:var(--ok);color:var(--ok)}
+.vazio{color:var(--muted);padding:18px 0;text-align:center;font-size:.86rem;grid-column:1/-1}
 
-/* tabela */
-.tabela-wrap{overflow-x:auto}
-table{width:100%;border-collapse:collapse;font-size:.86rem}
-th{text-align:left;font-weight:600;color:var(--ink-2);font-size:.78rem;padding:8px 10px;border-bottom:1px solid var(--axis);white-space:nowrap;cursor:pointer;user-select:none}
-th[aria-sort] .seta::after{content:" ↓"}
-th[aria-sort="ascending"] .seta::after{content:" ↑"}
-td{padding:9px 10px;border-bottom:1px solid var(--grid);vertical-align:top}
-td.n{font-variant-numeric:tabular-nums;text-align:right}
-th.n{text-align:right}
+/* ---------- tabela (ranking do Status Invest) */
+.tabela-wrap{overflow-x:auto;margin:0 -18px;padding:0 18px}
+table.rk{width:100%;border-collapse:collapse;font-size:.86rem}
+table.rk th{text-align:left;font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:10px;border-bottom:1px solid var(--line-2);white-space:nowrap;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--surface)}
+table.rk th[aria-sort]{color:var(--ink)}
+table.rk th[aria-sort] .seta::after{content:" ▼";font-size:.6rem;color:var(--lima-txt)}
+table.rk th[aria-sort="ascending"] .seta::after{content:" ▲"}
+table.rk td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.rk td.n,table.rk th.n{text-align:right}
 tr.linha{cursor:pointer}
 tr.linha:hover td{background:var(--surface-2)}
-.idc{font-weight:650;white-space:nowrap}
-.org{color:var(--ink-2);font-size:.8rem}
-.area{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
-.fase{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-weight:600}
-.ok{color:var(--good-ink);font-weight:700}
-.aviso{color:var(--ink-2);font-size:.78rem}
-.aviso::before{content:"◔ ";color:var(--warning)}
-tr.detalhe td{background:var(--surface-2);padding:12px 14px}
-.det-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px 24px}
-.det-grid dl{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;margin:0}
-.det-grid dt{color:var(--muted)} .det-grid dd{margin:0}
-.tl{list-style:none;margin:0;padding:0;font-size:.82rem}
-.tl li{padding:4px 0;border-top:1px solid var(--grid)}
-.tl li:first-child{border-top:0}
-.contagem{color:var(--muted);font-size:.8rem}
-
+tr.linha[aria-expanded="true"] td{background:var(--surface-2)}
+.ticker{display:inline-flex;align-items:center;gap:8px}
+.ticker .tag{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:.95rem;letter-spacing:.02em;background:var(--surface-3);border-left:3px solid var(--c);border-radius:6px;padding:2px 9px;white-space:nowrap}
+.org{color:var(--muted);font-size:.78rem;margin-top:3px;max-width:340px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.area{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;color:var(--ink-2)}
+.pill{display:inline-flex;align-items:center;gap:6px;white-space:nowrap;font-weight:700;font-size:.76rem;border-radius:12px;padding:3px 10px;background:var(--surface-3);color:var(--ink)}
+.pill.abertos{background:var(--lima);color:var(--lima-ink)}
+.pill.anunciados{box-shadow:inset 0 0 0 1px var(--lima);color:var(--lima-txt);background:transparent}
+.pill.encerrados,.pill.andamento{color:var(--muted)}
+.numero{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:1.08rem}
+.ok{color:var(--ok);font-weight:700}
+.aviso{color:var(--ink-2);font-size:.76rem}
+.aviso::before{content:"◔ ";color:var(--lima-txt)}
+tr.detalhe td{background:var(--surface-2);padding:16px 18px;border-bottom:1px solid var(--line-2)}
+.det-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px 28px}
+.det-grid dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:.85rem}
+.det-grid dt{color:var(--muted);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding-top:2px}
+.det-grid dd{margin:0}
+.det-grid dd div{margin-bottom:3px}
+.tl{list-style:none;margin:0;padding:0;font-size:.82rem;border-left:2px solid var(--line-2)}
+.tl li{padding:4px 0 8px 12px;position:relative}
+.tl li::before{content:"";position:absolute;left:-5px;top:9px;width:8px;height:8px;border-radius:50%;background:var(--surface-2);box-shadow:0 0 0 2px var(--lima-txt)}
 @media (max-width:760px){
-  thead{display:none}
-  table,tbody,tr,td{display:block;width:100%}
-  tr.linha{border:1px solid var(--ring);border-radius:10px;margin-bottom:8px;padding:6px 0;background:var(--surface)}
-  tr.linha td{border:0;padding:3px 12px;display:flex;justify-content:space-between;gap:10px;text-align:right}
-  tr.linha td::before{content:attr(data-r);color:var(--muted);text-align:left;font-size:.78rem}
-  tr.linha td.n{text-align:right}
-  tr.detalhe{margin:-6px 0 10px}
+  table.rk thead{display:none}
+  table.rk,table.rk tbody,table.rk tr,table.rk td{display:block;width:100%}
+  tr.linha{border:1px solid var(--line);border-radius:12px;margin-bottom:8px;padding:8px 0;background:var(--surface)}
+  tr.linha td{border:0;padding:3px 14px;display:flex;justify-content:space-between;gap:10px;text-align:right}
+  tr.linha td::before{content:attr(data-r);color:var(--muted);text-align:left;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+  tr.linha td:first-child{display:block;text-align:left}
+  tr.linha td:first-child::before{content:none}
+  tr.detalhe{margin:-8px 0 10px}
+  .tabela-wrap{margin:0;padding:0}
 }
 
-/* tooltip */
-#tip{position:fixed;z-index:20;pointer-events:none;background:var(--surface);border:1px solid var(--ring);border-radius:10px;padding:10px 12px;font-size:.8rem;box-shadow:0 6px 24px rgba(0,0,0,.14);max-width:280px;opacity:0;transition:opacity .08s}
-#tip b{font-size:.88rem}
+/* ---------- tooltip */
+#tip{position:fixed;z-index:30;pointer-events:none;background:var(--surface-3);color:var(--ink);border:1px solid var(--line-2);border-radius:10px;padding:10px 12px;font-size:.8rem;box-shadow:0 10px 30px rgba(0,0,0,.35);max-width:290px;opacity:0;transition:opacity .08s}
+#tip b{font-family:"Barlow Condensed",sans-serif;font-size:1.05rem;text-transform:uppercase;letter-spacing:.03em}
 #tip .l{display:flex;justify-content:space-between;gap:16px;color:var(--ink-2)}
-#tip .l span:last-child{color:var(--ink);font-variant-numeric:tabular-nums}
-footer{color:var(--muted);font-size:.78rem;padding:22px 0 36px}
-footer p{margin:4px 0}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#tip .l span:last-child{color:var(--ink);font-weight:700}
+footer{margin-top:28px;background:var(--nav);color:rgba(234,243,200,.6);font-size:.78rem}
+footer .wrap{padding:24px 16px 36px;display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between}
+footer p{margin:4px 0;max-width:760px}
+footer a{color:#DEFF03}
+footer img{height:22px;opacity:.9}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="topo">
-    <div class="marca">
-      <div class="logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="var(--page)" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M12 12l5.5-5.5"/></svg></div>
-      <div><h1>Radar de Concursos</h1><p>Fiscal · Controle · Policial — cada informação com a sua fonte</p></div>
-    </div>
+<header class="nav">
+  <div class="wrap">
+    <a class="marca" href="https://guruja.com.br" target="_blank" rel="noopener" aria-label="Guruja">
+      <img src="assets/guruja-logo.webp" alt="Guruja" width="103" height="26">
+      <span class="sep" aria-hidden="true"></span>
+      <span class="nome"><span class="longo">Radar de concursos</span><span class="curto">Radar</span><small>Fiscal · Controle · Policial</small></span>
+    </a>
+    <label class="busca">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input type="search" id="busca" placeholder="Pesquise um concurso, órgão, cargo ou banca (ex.: RFB-2026, FCC)" aria-label="Buscar">
+    </label>
     <div class="acoes">
-      <span class="atualizado">Atualizado em <b id="gerado"></b></span>
-      <button class="btn" id="tema" type="button" aria-label="Alternar tema claro/escuro"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>Tema</button>
-      <a class="btn primario" href="https://github.com/andersoncsouza90/edguadocara/issues/new?template=solicitar-monitoramento.yml" target="_blank" rel="noopener">+ Pedir inclusão</a>
+      <button class="btn icone" id="tema" type="button" aria-label="Alternar tema claro/escuro" title="Tema claro/escuro">
+        <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor"/></svg>
+      </button>
+      <a class="btn lima" href="https://github.com/andersoncsouza90/edguadocara/issues/new?template=solicitar-monitoramento.yml" target="_blank" rel="noopener">+ <span class="txt">Pedir inclusão</span></a>
     </div>
-  </header>
+  </div>
+</header>
+<div class="faixa" aria-label="Inscrições encerrando"><div class="wrap" id="faixa"></div></div>
+
+<main class="wrap">
+  <section class="cab">
+    <div>
+      <h1>Painel de <em>concursos</em></h1>
+      <p>Do pedido de autorização à homologação — cada informação com a sua fonte.</p>
+    </div>
+    <div class="atual">Atualizado em <b id="gerado"></b> · <a href="feed.xml">RSS</a> · <a href="concursos.json">JSON</a></div>
+  </section>
 
   <nav class="filtros" aria-label="Filtros">
     <div class="seg" role="group" aria-label="Área">
@@ -211,7 +288,6 @@ footer p{margin:4px 0}
       <option value="estadual">Estadual</option><option value="municipal">Municipal</option>
     </select>
     <select id="uf" aria-label="UF"><option value="">Todas as UFs</option><option value="BR">Federal (sem UF)</option></select>
-    <input type="search" id="busca" placeholder="Buscar ID (RFB-2026), órgão, cargo ou banca…" aria-label="Buscar">
     <button class="limpar" id="limpar" type="button">Limpar filtros</button>
   </nav>
 
@@ -230,7 +306,7 @@ footer p{margin:4px 0}
         <div id="mapa" role="img" aria-label="Mapa de calor de concursos por UF"></div>
         <div class="mapa-lado">
           <div class="nacional" id="nacional" role="button" tabindex="0"></div>
-          <h2 style="font-size:.84rem;margin:0 0 8px">Por região</h2>
+          <p class="h3">Por região</p>
           <div class="barras" id="regioes"></div>
         </div>
       </div>
@@ -238,32 +314,33 @@ footer p{margin:4px 0}
     </article>
 
     <article class="card c5">
-      <div class="card-topo"><div><h2>Funil de fases</h2><p class="sub">Do pedido à homologação: fase confirmada de cada concurso</p></div></div>
-      <div class="barras" id="funil"></div>
-      <div class="card-topo" style="margin:18px 0 6px"><div><h2>Contador de vagas</h2>
-        <p class="sub">Inscrições abertas ou em breve · vagas imediatas por cargo da área</p></div></div>
-      <div id="contador"></div>
+      <div class="bloco">
+        <div class="card-topo"><div><h2>Contador de vagas</h2>
+          <p class="sub">Inscrições abertas ou em breve · vagas imediatas por cargo da área</p></div></div>
+        <div id="contador"></div>
+      </div>
+      <div class="bloco">
+        <div class="card-topo"><div><h2>Funil de fases</h2><p class="sub">Fase confirmada de cada concurso</p></div></div>
+        <div class="barras" id="funil"></div>
+      </div>
     </article>
 
-    <article class="card c4">
-      <div class="card-topo"><div><h2>Inscrições encerrando</h2><p class="sub">Próximos prazos</p></div></div>
-      <ul class="lista" id="prazos"></ul>
-    </article>
-    <article class="card c4">
-      <div class="card-topo"><div><h2>Inscrições em breve</h2><p class="sub">Editais publicados, inscrições ainda não abertas</p></div></div>
-      <ul class="lista" id="embreve"></ul>
-    </article>
-    <article class="card c4">
-      <div class="card-topo"><div><h2>Últimas movimentações</h2><p class="sub">Notícias e atos oficiais: fase, banca, previsão</p></div></div>
-      <ul class="lista" id="movs"></ul>
+    <article class="card c12">
+      <div class="abas" role="tablist" aria-label="Prazos e movimentações">
+        <button role="tab" type="button" data-aba="prazos" aria-selected="true">Encerrando<span class="n" id="n-prazos"></span></button>
+        <button role="tab" type="button" data-aba="embreve" aria-selected="false">Abrem em breve<span class="n" id="n-embreve"></span></button>
+        <button role="tab" type="button" data-aba="movs" aria-selected="false">Movimentações<span class="n" id="n-movs"></span></button>
+      </div>
+      <ul class="lista" id="aba-lista"></ul>
     </article>
 
     <article class="card c12">
       <div class="card-topo">
-        <div><h2>Concursos</h2><p class="sub contagem" id="contagem"></p></div>
+        <div><h2>Concursos</h2><p class="sub" id="contagem"></p></div>
       </div>
+      <div class="abas" role="tablist" aria-label="Situação" id="abas-grupo"></div>
       <div class="tabela-wrap">
-        <table>
+        <table class="rk">
           <thead><tr>
             <th data-sort="id"><span class="seta">Concurso</span></th>
             <th data-sort="area"><span class="seta">Área</span></th>
@@ -271,23 +348,28 @@ footer p{margin:4px 0}
             <th data-sort="fase"><span class="seta">Fase</span></th>
             <th data-sort="banca"><span class="seta">Banca</span></th>
             <th data-sort="vagas" class="n"><span class="seta">Vagas</span></th>
-            <th data-sort="fim"><span class="seta">Inscrições até</span></th>
-            <th data-sort="atualizado" aria-sort="descending"><span class="seta">Último registro</span></th>
+            <th data-sort="fim" class="n"><span class="seta">Inscrições até</span></th>
+            <th data-sort="atualizado" class="n" aria-sort="descending"><span class="seta">Atualizado</span></th>
           </tr></thead>
           <tbody id="tabela"></tbody>
         </table>
       </div>
     </article>
   </section>
+</main>
 
-  <footer>
-    <p><span class="ok">✓</span> confirmado: fonte oficial, PCI Concursos (para dados de edital) ou dois veículos de imprensa independentes.
-    <span class="aviso">fonte única</span>: noticiado por um só veículo, ainda não confirmado.
-    Vagas: soma das vagas imediatas <b>por cargo da área</b>; “CR” = só cadastro de reserva; “+” = há cargos da área ainda sem número; cargos excluídos por retificação saem da conta. Banca "cotada" é especulação, não banca definida.</p>
-    <p>O mapa é um cartograma: cada UF ocupa um quadrado do mesmo tamanho, na posição aproximada do estado. Concursos federais, sem UF, aparecem à parte.
-    Registramos fatos com link para a fonte, sem reproduzir textos. Confira sempre o edital. <a href="feed.xml">RSS</a> · <a href="concursos.json">JSON</a></p>
-  </footer>
-</div>
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="assets/guruja-logo.webp" alt="Guruja" width="87" height="22">
+      <p><span class="ok">✓</span> confirmado: fonte oficial, PCI Concursos (para dados de edital) ou dois veículos independentes. <b>◔ fonte única</b>: noticiado por um só veículo, ainda não confirmado. Banca “cotada” é especulação, não banca definida.</p>
+      <p>Vagas: soma das vagas imediatas <b>por cargo da área</b>; “CR” = só cadastro de reserva; “+” = há cargos da área sem número; cargos excluídos por retificação saem da conta.
+      O mapa é um cartograma: cada UF ocupa um quadrado igual, na posição aproximada do estado; concursos federais aparecem à parte.</p>
+      <p>Registramos fatos com link para a fonte, sem reproduzir textos. Confira sempre o edital.</p>
+    </div>
+    <div><a href="https://github.com/andersoncsouza90/edguadocara/issues/new?template=solicitar-monitoramento.yml" target="_blank" rel="noopener">Pedir inclusão de concurso</a><br><a href="feed.xml">RSS</a> · <a href="concursos.json">Dados (JSON)</a></div>
+  </div>
+</footer>
 <div id="tip" role="tooltip"></div>
 
 <script id="dados" type="application/json">__DADOS__</script>
@@ -320,17 +402,14 @@ const NOME_UF = {AC:"Acre",AL:"Alagoas",AM:"Amazonas",AP:"Amapá",BA:"Bahia",CE:
 const GRADE = {RR:[2,0],AP:[4,0],AM:[1,1],PA:[3,1],MA:[4,1],CE:[5,1],RN:[6,1],
   AC:[0,2],RO:[1,2],MT:[2,2],TO:[3,2],PI:[4,2],PE:[5,2],PB:[6,2],
   MS:[2,3],GO:[3,3],DF:[4,3],BA:[5,3],AL:[6,3],PR:[2,4],SP:[3,4],MG:[4,4],ES:[5,4],SE:[6,4],SC:[2,5],RJ:[4,5],RS:[2,6]};
-const GRUPO_ROT = {abertos:"Abertos",anunciados:"Anunciados",autorizados:"Autorizados",previstos:"Previstos",andamento:"Em andamento",encerrados:"Encerrados"};
+const GRUPOS = [["","Todos"],["abertos","Abertos"],["anunciados","Comissão ou banca"],["autorizados","Autorizados"],["previstos","Previstos"],["andamento","Em andamento"],["encerrados","Encerrados"]];
 
-const st = {area:"", esfera:"", uf:"", q:"", grupo:"", metrica:"concursos", sort:"atualizado", dir:-1, aberto:null};
+const st = {area:"", esfera:"", uf:"", q:"", grupo:"", metrica:"concursos", sort:"atualizado", dir:-1, aberto:null, aba:"prazos"};
 
-// tema (preferência local do visitante)
+// tema: escuro (identidade Guruja) por padrão; preferência guardada localmente
 try { const t = localStorage.getItem("radar-tema"); if (t) document.documentElement.dataset.theme = t; } catch(e) {}
 $("#tema").onclick = () => {
-  const escuro = document.documentElement.dataset.theme
-    ? document.documentElement.dataset.theme === "dark"
-    : matchMedia("(prefers-color-scheme: dark)").matches;
-  document.documentElement.dataset.theme = escuro ? "light" : "dark";
+  document.documentElement.dataset.theme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
   try { localStorage.setItem("radar-tema", document.documentElement.dataset.theme); } catch(e) {}
   render();
 };
@@ -338,9 +417,9 @@ $("#tema").onclick = () => {
 $("#gerado").textContent = br(HOJE);
 Object.keys(NOME_UF).sort().forEach(uf => { const o = document.createElement("option"); o.value = uf; o.textContent = `${uf} — ${NOME_UF[uf]}`; $("#uf").appendChild(o); });
 
-// Vagas da área: soma das vagas imediatas por cargo (filtrando pela área do cargo),
-// ou o total do edital quando o órgão inteiro é da área (PM, PC...).
-// cob: por_cargo | total | so_cr | parcial | sem_dado | fora (nenhum cargo da área filtrada)
+// ---------------------------------------------------------------- vagas
+// Soma das vagas imediatas por cargo da área (ou total do edital quando o órgão
+// inteiro é da área). cob: por_cargo | total | so_cr | parcial | sem_dado | fora
 function vagasInfo(c, area = st.area) {
   const va = c.vagas_area || {cobertura:"sem_dado", cargos:[], pendentes:[]};
   if (va.cobertura === "total") {
@@ -354,7 +433,7 @@ function vagasInfo(c, area = st.area) {
           cob: pend.length ? "parcial" : (v === 0 && linhas.some(r => r.cr)) ? "so_cr" : "por_cargo"};
 }
 const vagasDe = c => vagasInfo(c).vagas;
-function classeVagas(i) {               // categorias exclusivas para o contador
+function classeVagas(i) {
   if (i.cob === "fora") return null;
   if (i.cob === "so_cr") return "cr";
   if ((i.cob === "por_cargo" || i.cob === "total") && i.conf) return "num";
@@ -362,14 +441,13 @@ function classeVagas(i) {               // categorias exclusivas para o contador
 }
 const aberto = c => c.grupo === "abertos";
 
+const casaBusca = c => !st.q || norm([c.id,c.orgao,c.sigla,c.banca&&c.banca.valor,(c.bancas_cotadas||[]).join(" "),(c.aliases||[]).join(" "),(c.cargos||[]).join(" ")].join(" ")).includes(norm(st.q));
 function filtrar({semUf=false, semGrupo=false} = {}) {
-  const q = norm(st.q);
   return D.concursos.filter(c =>
     (!st.area || c.area === st.area) &&
     (!st.esfera || c.esfera === st.esfera) &&
     (semUf || !st.uf || (st.uf === "BR" ? !c.uf : c.uf === st.uf)) &&
-    (semGrupo || !st.grupo || c.grupo === st.grupo) &&
-    (!q || norm([c.id,c.orgao,c.sigla,c.banca&&c.banca.valor,(c.bancas_cotadas||[]).join(" "),(c.aliases||[]).join(" "),(c.cargos||[]).join(" ")].join(" ")).includes(q)));
+    (semGrupo || !st.grupo || c.grupo === st.grupo) && casaBusca(c));
 }
 
 // ---------------------------------------------------------------- tooltip
@@ -385,6 +463,15 @@ function mostrarTip(ev, html) {
 const esconderTip = () => { tip.style.opacity = 0; };
 const linhaTip = (k, v) => `<div class="l"><span>${k}</span><span>${v}</span></div>`;
 
+// ---------------------------------------------------------------- faixa de prazos
+function faixa() {
+  const ab = filtrar({semGrupo:true}).filter(c => c.fase === "Inscrições abertas" && c.inscricoes_fim)
+    .sort((a,b) => a.inscricoes_fim.localeCompare(b.inscricoes_fim)).slice(0, 14);
+  $("#faixa").innerHTML = `<span class="rot">Encerram</span>` + (ab.length ? ab.map(c => { const d = dias(HOJE, c.inscricoes_fim);
+    return `<button type="button" class="chip-prazo" data-id="${esc(c.id)}"><b>${esc(c.id)}</b><span class="d${d<=3?" urg":""}">${d===0?"⚠ hoje":d<=3?`⚠ ${d}d`:`${d}d`}</span></button>`; }).join("")
+    : `<span class="chip-prazo" style="cursor:default">Nenhuma inscrição aberta com esses filtros</span>`);
+}
+
 // ---------------------------------------------------------------- KPIs
 function kpis() {
   const base = filtrar({semGrupo:true});
@@ -398,18 +485,19 @@ function kpis() {
   const nNum = infos.filter(i => classeVagas(i) === "num").length, nCr = infos.filter(i => classeVagas(i) === "cr").length,
         nPend = infos.filter(i => classeVagas(i) === "pend").length;
   const itens = [
-    ["", "Concursos monitorados", base.length, `${base.filter(c=>c.sinal).length} com sinal não confirmado`],
-    ["abertos", "Inscrições abertas", ab.length, fim7 ? `${fim7} encerram em até 7 dias` : "nenhum encerra em 7 dias"],
-    [null, "Inscrições em breve", breve.length, breve.length ? `próxima abre em ${br(breve.map(c=>c.inscricoes_inicio).sort()[0])}` : ""],
-    ["anunciados", "Comissão ou banca", anun.length, `${anun.filter(c=>c.status==="banca_em_definicao").length} com banca em contratação`],
-    ["autorizados", "Autorizados e previstos", aut.length, `${base.filter(c=>c.grupo==="autorizados").length} autorizados`],
-    [null, `Vagas imediatas confirmadas${st.area ? " · " + AREAS[st.area].toLowerCase() : ""}`, num(vagas),
-      `${nNum} com número · ${nCr} só CR · ${nPend} sem número`],
+    {g:null, d:true, r:`Vagas confirmadas${st.area ? " · " + AREAS[st.area] : ""}`, v:num(vagas), x:`${nNum} com número · ${nCr} só CR · ${nPend} sem número`,
+     h:"Soma das vagas imediatas por cargo da área, em concursos com inscrições abertas ou em breve. Só entra número lido do edital, da notícia do PCI ou de duas fontes."},
+    {g:"abertos", r:"Inscrições abertas", v:ab.length, x: fim7 ? `${fim7} encerram em até 7 dias` : "nenhum encerra em 7 dias", h:"Concursos com inscrições abertas hoje"},
+    {g:null, r:"Abrem em breve", v:breve.length, x: breve.length ? `próxima em ${br(breve.map(c=>c.inscricoes_inicio).sort()[0])}` : "—", h:"Edital publicado, inscrições ainda não abertas"},
+    {g:"anunciados", r:"Comissão ou banca", v:anun.length, x:`${anun.filter(c=>c.status==="banca_em_definicao").length} com banca em contratação`, h:"Comissão formada, banca em contratação, definida ou contratada"},
+    {g:"autorizados", r:"Autorizados", v:base.filter(c=>c.grupo==="autorizados").length, x:`${aut.length - base.filter(c=>c.grupo==="autorizados").length} previstos ou solicitados`, h:"Ato de autorização publicado"},
+    {g:"", r:"Monitorados", v:base.length, x:`${base.filter(c=>c.sinal).length} com sinal não confirmado`, h:"Todos os concursos do radar com os filtros atuais"},
   ];
-  $("#kpis").innerHTML = itens.map(([g, r, v, d], i) => g === null
-    ? `<div class="kpi estatico"><div class="rot">${r}</div><div class="val">${v}</div><div class="det">${esc(d)}</div></div>`
-    : `<button type="button" class="kpi" data-grupo="${g}" data-i="${i}" aria-pressed="${g!=="" && st.grupo===g}">
-        <div class="rot">${r}</div><div class="val">${v}</div><div class="det">${esc(d)}</div></button>`).join("");
+  $("#kpis").innerHTML = itens.map(k => {
+    const corpo = `<div class="rot">${esc(k.r)}<span class="i" title="${esc(k.h)}">?</span></div><div class="val">${k.v}</div><div class="det">${esc(k.x)}</div>`;
+    return k.g === null ? `<div class="kpi estatico${k.d?" destaque":""}" title="${esc(k.h)}">${corpo}</div>`
+      : `<button type="button" class="kpi" data-grupo="${k.g}" aria-pressed="${k.g!=="" && st.grupo===k.g}" title="${esc(k.h)}">${corpo}</button>`;
+  }).join("");
 }
 
 // ---------------------------------------------------------------- mapa
@@ -417,120 +505,114 @@ function cores() { const cs = getComputedStyle(document.documentElement); return
 function quebras(max) {
   if (max <= 0) return [];
   if (max <= 5) return Array.from({length:max}, (_,i) => i+1);
-  const q = [1, Math.ceil(max*.2), Math.ceil(max*.4), Math.ceil(max*.6), Math.ceil(max*.8)];
-  return [...new Set(q)];
+  return [...new Set([1, Math.ceil(max*.2), Math.ceil(max*.4), Math.ceil(max*.6), Math.ceil(max*.8)])];
 }
 function classe(v, qs) { if (!v) return 0; let k = 0; qs.forEach((q,i) => { if (v >= q) k = i+1; }); return Math.min(k, 5); }
 function tintaSobre(hex) {
-  const h = hex.replace("#",""); if (h.length < 6) return "var(--ink)";
+  const h = hex.replace("#",""); if (h.length < 6) return "currentColor";
   const [r,g,b] = [0,2,4].map(i => parseInt(h.slice(i,i+2),16)/255).map(c => c <= .03928 ? c/12.92 : ((c+.055)/1.055)**2.4);
-  return (0.2126*r + 0.7152*g + 0.0722*b) > 0.32 ? "#0b0b0b" : "#ffffff";
+  return (0.2126*r + 0.7152*g + 0.0722*b) > 0.3 ? "#0B0A07" : "#F4FDC2";
 }
-
 function mapa() {
   const base = filtrar({semUf:true});
   const porUf = {};
   base.forEach(c => { const k = c.uf || "BR"; (porUf[k] ||= []).push(c); });
   const valor = l => !l ? 0 : st.metrica === "vagas" ? l.reduce((s,c)=>s+vagasDe(c),0) : l.length;
-  const vals = Object.keys(GRADE).map(uf => valor(porUf[uf]));
-  const qs = quebras(Math.max(0, ...vals));
-  const pal = cores();
+  const qs = quebras(Math.max(0, ...Object.keys(GRADE).map(uf => valor(porUf[uf]))));
+  const pal = cores(), muted = getComputedStyle(document.documentElement).getPropertyValue("--muted");
   const T = 58, G = 4, W = 7*(T+G), H = 7*(T+G);
   let svg = `<svg viewBox="0 0 ${W} ${H}" aria-hidden="true">`;
   for (const [uf, [cx, cy]] of Object.entries(GRADE)) {
-    const v = valor(porUf[uf]), k = classe(v, qs), fill = pal[k];
-    const tinta = k === 0 ? "var(--muted)" : tintaSobre(fill);
+    const v = valor(porUf[uf]), k = classe(v, qs), fill = pal[k], tinta = k === 0 ? muted : tintaSobre(fill);
     svg += `<g class="tile${st.uf===uf?" sel":""}" data-uf="${uf}" tabindex="0">
-      <rect x="${cx*(T+G)}" y="${cy*(T+G)}" width="${T}" height="${T}" rx="7" fill="${fill}"/>
-      <text x="${cx*(T+G)+8}" y="${cy*(T+G)+20}" font-size="13" font-weight="700" fill="${tinta}">${uf}</text>
-      <text x="${cx*(T+G)+T-8}" y="${cy*(T+G)+T-9}" font-size="15" font-weight="600" text-anchor="end" fill="${tinta}">${v ? num(v) : ""}</text>
-    </g>`;
+      <rect x="${cx*(T+G)}" y="${cy*(T+G)}" width="${T}" height="${T}" rx="8" fill="${fill}"/>
+      <text x="${cx*(T+G)+8}" y="${cy*(T+G)+20}" font-size="15" font-weight="800" fill="${tinta}">${uf}</text>
+      <text x="${cx*(T+G)+T-8}" y="${cy*(T+G)+T-8}" font-size="19" font-weight="800" text-anchor="end" fill="${tinta}">${v ? curto(v) : ""}</text></g>`;
   }
   $("#mapa").innerHTML = svg + "</svg>";
   $("#mapa").setAttribute("aria-label", `Mapa de calor de ${st.metrica} por UF. ` +
     Object.keys(GRADE).filter(uf => valor(porUf[uf])).map(uf => `${NOME_UF[uf]}: ${valor(porUf[uf])}`).join("; "));
-
-  // legenda em classes
-  const rotulos = qs.map((q,i) => { const prox = qs[i+1]; return prox ? curto(q) : `${curto(q)}+`; });
-  $("#legenda").innerHTML = `<div class="bin"><div class="sw" style="background:${pal[0]};outline:1px solid var(--ring)"></div>0</div>` +
-    rotulos.map((r,i) => `<div class="bin"><div class="sw" style="background:${pal[i+1]}"></div>${r}</div>`).join("") +
-    `<div class="bin" style="justify-content:flex-end;padding-left:8px;color:var(--muted);max-width:none;flex:2 1 auto">${st.metrica === "vagas" ? "vagas confirmadas ou noticiadas" : "concursos"}</div>`;
-
-  // federais
+  $("#legenda").innerHTML = `<div class="bin"><div class="sw" style="background:${pal[0]};box-shadow:inset 0 0 0 1px var(--line-2)"></div>0</div>` +
+    qs.map((q,i) => `<div class="bin"><div class="sw" style="background:${pal[i+1]}"></div>${qs[i+1] ? curto(q) : curto(q) + "+"}</div>`).join("") +
+    `<div class="bin" style="justify-content:flex-end;padding-left:8px;color:var(--muted);max-width:none;flex:2 1 auto">${st.metrica === "vagas" ? "vagas (por cargo da área)" : "concursos"}</div>`;
   const br_ = porUf.BR || [];
   $("#nacional").className = "nacional" + (st.uf === "BR" ? " sel" : "");
-  $("#nacional").innerHTML = `<div><div style="font-weight:600">Federais e nacionais</div><div class="sub" style="color:var(--muted);font-size:.78rem">sem UF: RFB, PF, PRF, TCU, CGU…</div></div><b>${num(valor(br_))}</b>`;
-
-  // regiões
-  const regs = ["Norte","Nordeste","Centro-Oeste","Sudeste","Sul"].map(r => [r, Object.keys(GRADE).filter(uf => REGIAO[uf]===r).reduce((s,uf)=>s+valor(porUf[uf]),0)])
-    .sort((a,b) => b[1]-a[1]);
+  $("#nacional").innerHTML = `<div><div class="h3" style="margin:0">Federais e nacionais</div><div style="color:var(--ink-2);font-size:.8rem">RFB, PF, PRF, TCU, CGU…</div></div><b>${num(valor(br_))}</b>`;
+  const regs = ["Norte","Nordeste","Centro-Oeste","Sudeste","Sul"].map(r => [r, Object.keys(GRADE).filter(uf => REGIAO[uf]===r).reduce((s,uf)=>s+valor(porUf[uf]),0)]).sort((a,b) => b[1]-a[1]);
   const maxR = Math.max(1, ...regs.map(r=>r[1]));
   $("#regioes").innerHTML = regs.map(([r,v]) => `<div class="barra${v?"":" zero"}" data-regiao="${r}">
-      <span class="nome">${r}</span><span class="trilho"><span class="fill" style="display:block;width:${v/maxR*100}%"></span></span><span class="num">${num(v)}</span></div>`).join("");
+    <span class="nome">${r}</span><span class="trilho"><span class="fill" style="width:${v/maxR*100}%"></span></span><span class="num">${num(v)}</span></div>`).join("");
   mapa._porUf = porUf; mapa._valor = valor;
 }
 
-// ---------------------------------------------------------------- funil e áreas
-function funil() {
-  const base = filtrar({semGrupo:true});
-  const cont = FASES.map(([k,r]) => [k, r, base.filter(c => c.status === k).length]);
-  const max = Math.max(1, ...cont.map(c=>c[2]));
-  $("#funil").innerHTML = cont.map(([k,r,v]) => `<div class="barra${v?"":" zero"}" data-fase="${k}">
-    <span class="nome">${r}</span><span class="trilho"><span class="fill" style="display:block;width:${v/max*100}%"></span></span><span class="num">${num(v)}</span></div>`).join("");
-  // contador de vagas por área (ignora o filtro de área para comparar as três)
-  const baseA = D.concursos.filter(c => aberto(c) && (!st.esfera || c.esfera===st.esfera) && (!st.uf || (st.uf==="BR" ? !c.uf : c.uf===st.uf)));
+// ---------------------------------------------------------------- contador e funil
+function painelDireito() {
+  const baseA = D.concursos.filter(c => aberto(c) && (!st.esfera || c.esfera===st.esfera) && (!st.uf || (st.uf==="BR" ? !c.uf : c.uf===st.uf)) && casaBusca(c));
   const linhas = Object.keys(AREAS).map(a => {
     const inf = baseA.map(c => vagasInfo(c, a)).filter(i => classeVagas(i));
     const k = t => inf.filter(i => classeVagas(i) === t).length;
     return {a, vagas: inf.reduce((s,i) => s + (classeVagas(i) === "num" ? i.vagas : 0), 0), n: inf.length, num: k("num"), cr: k("cr"), pend: k("pend")};
   });
-  $("#contador").innerHTML = `<table class="cont"><thead><tr><th>Área</th><th class="n">Vagas</th><th>Cobertura dos concursos</th></tr></thead><tbody>` +
+  $("#contador").innerHTML = `<table class="cont"><thead><tr><th>Área</th><th style="text-align:right">Vagas</th><th>Cobertura dos concursos</th></tr></thead><tbody>` +
     linhas.map(l => `<tr class="clic${st.area===l.a?" sel":""}" data-area-bar="${l.a}" tabindex="0" role="button">
       <td><span class="area"><span class="dot" style="background:var(--${l.a})"></span>${AREAS[l.a]}</span></td>
-      <td class="n"><b>${num(l.vagas)}</b></td>
+      <td class="v">${num(l.vagas)}</td>
       <td><div class="cob" title="${l.num} com número, ${l.cr} só cadastro de reserva, ${l.pend} sem número">
-          ${l.n ? `<span class="s-num" style="flex:${l.num}"></span><span class="s-cr" style="flex:${l.cr}"></span><span class="s-pend" style="flex:${l.pend}"></span>` : `<span class="s-vazio"></span>`}</div>
-        <div class="cob-txt">${l.num} com número · ${l.cr} só CR · ${l.pend ? `<b>${l.pend} sem número</b>` : "0 sem número"}</div></td></tr>`).join("") +
-    `</tbody></table><p class="sub" style="margin-top:6px">Só entram vagas lidas por cargo (notícia do PCI, edital ou duas fontes). Vagas de outros cargos do mesmo edital não são somadas.</p>`;
+        ${l.n ? `<span class="s-num" style="flex:${l.num}"></span><span class="s-cr" style="flex:${l.cr}"></span><span class="s-pend" style="flex:${l.pend}"></span>` : `<span class="s-vazio"></span>`}</div>
+        <div class="cob-txt">${l.num} com número · ${l.cr} só CR · ${l.pend ? `<b>${l.pend} sem número</b>` : "0 sem número"}</div></td></tr>`).join("") + `</tbody></table>`;
+  const base = filtrar({semGrupo:true});
+  const cont = FASES.map(([k,r]) => [k, r, base.filter(c => c.status === k).length]);
+  const max = Math.max(1, ...cont.map(c=>c[2]));
+  $("#funil").innerHTML = cont.map(([k,r,v]) => `<div class="barra${v?"":" zero"}" data-fase="${k}">
+    <span class="nome">${r}</span><span class="trilho"><span class="fill" style="width:${v/max*100}%"></span></span><span class="num">${num(v)}</span></div>`).join("");
 }
 
-// ---------------------------------------------------------------- listas
-function listas() {
+// ---------------------------------------------------------------- abas de prazos
+function abas() {
   const base = filtrar({semGrupo:true});
-  const ab = base.filter(c => c.fase === "Inscrições abertas" && c.inscricoes_fim).sort((a,b) => a.inscricoes_fim.localeCompare(b.inscricoes_fim)).slice(0, 7);
-  $("#prazos").innerHTML = ab.length ? ab.map(c => { const d = dias(HOJE, c.inscricoes_fim);
-    return `<li data-id="${esc(c.id)}"><div class="principal"><div class="t">${esc(c.id)}</div><div class="s">${esc(c.orgao)} · até ${br(c.inscricoes_fim)}</div></div>
-      <span class="prazo${d<=3?" urgente":""}">${d===0?"⚠ hoje":d<=3?`⚠ ${d} dia${d>1?"s":""}`:`${d} dias`}</span></li>`; }).join("")
-    : `<li class="vazio">Nenhuma inscrição aberta com esses filtros.</li>`;
-  const eb = base.filter(c => c.fase === "Inscrições em breve").sort((a,b) => (a.inscricoes_inicio||"").localeCompare(b.inscricoes_inicio||"")).slice(0, 7);
-  $("#embreve").innerHTML = eb.length ? eb.map(c => `<li data-id="${esc(c.id)}"><div class="principal"><div class="t">${esc(c.id)}</div>
-      <div class="s">${esc(c.orgao)}${c.vagas?` · ${num(vagasDe(c))} vagas`:""}</div></div><span class="prazo">abre ${br(c.inscricoes_inicio)}</span></li>`).join("")
-    : `<li class="vazio">Nenhum edital com inscrições a abrir.</li>`;
-  const relevantes = new Set(["status","banca","edital_url","previsao","banca_cotada"]);
-  // só notícias e atos oficiais: os editais vindos do PCI já aparecem nos cards de prazos
-  const movs = base.flatMap(c => c.linha_do_tempo.filter(f => relevantes.has(f.campo) && f.fonte_tipo !== "agregador").map(f => ({...f, id:c.id})))
-    .sort((a,b) => b.data.localeCompare(a.data)).slice(0, 8);
+  const prazos = base.filter(c => c.fase === "Inscrições abertas" && c.inscricoes_fim).sort((a,b) => a.inscricoes_fim.localeCompare(b.inscricoes_fim));
+  const breve = base.filter(c => c.fase === "Inscrições em breve").sort((a,b) => (a.inscricoes_inicio||"").localeCompare(b.inscricoes_inicio||""));
+  const rel = new Set(["status","banca","edital_url","previsao","banca_cotada"]);
+  const movs = base.flatMap(c => c.linha_do_tempo.filter(f => rel.has(f.campo) && f.fonte_tipo !== "agregador").map(f => ({...f, id:c.id})))
+    .sort((a,b) => b.data.localeCompare(a.data));
+  $("#n-prazos").textContent = prazos.length; $("#n-embreve").textContent = breve.length; $("#n-movs").textContent = movs.length;
+  document.querySelectorAll("[data-aba]").forEach(b => b.setAttribute("aria-selected", b.dataset.aba === st.aba));
+  const vg = c => { const i = vagasInfo(c); return i.cob === "so_cr" ? " · cadastro de reserva" : classeVagas(i) === "num" ? ` · ${num(i.vagas)} vaga${i.vagas>1?"s":""}` : ""; };
   const rot = {status:"Fase", banca:"Banca", edital_url:"Edital", previsao:"Previsão", banca_cotada:"Banca cotada"};
-  $("#movs").innerHTML = movs.length ? movs.map(m => `<li data-id="${esc(m.id)}"><div class="principal"><div class="t">${esc(m.id)} <span class="ft ft-${m.fonte_tipo}">${m.fonte_tipo==="oficial"?"Oficial":m.fonte_tipo==="agregador"?"PCI":"Imprensa"}</span></div>
+  let html = "";
+  if (st.aba === "prazos") html = prazos.slice(0, 24).map(c => { const d = dias(HOJE, c.inscricoes_fim);
+    return `<li data-id="${esc(c.id)}"><span class="dot" style="background:var(--${c.area})"></span><div class="principal"><div class="t">${esc(c.id)}</div><div class="s">${esc(c.orgao)}${vg(c)} · até ${br(c.inscricoes_fim)}</div></div>
+      <span class="prazo${d<=3?" urgente":""}">${d===0?"⚠ HOJE":d<=3?`⚠ ${d} DIA${d>1?"S":""}`:`${d} DIAS`}</span></li>`; }).join("");
+  if (st.aba === "embreve") html = breve.slice(0, 24).map(c => `<li data-id="${esc(c.id)}"><span class="dot" style="background:var(--${c.area})"></span><div class="principal"><div class="t">${esc(c.id)}</div>
+      <div class="s">${esc(c.orgao)}${vg(c)}</div></div><span class="prazo lima">ABRE ${br(c.inscricoes_inicio).slice(0,5)}</span></li>`).join("");
+  if (st.aba === "movs") html = movs.slice(0, 24).map(m => `<li data-id="${esc(m.id)}"><span class="ft ft-${m.fonte_tipo}">${m.fonte_tipo==="oficial"?"Oficial":"Imprensa"}</span><div class="principal"><div class="t">${esc(m.id)}</div>
       <div class="s">${rot[m.campo]}: ${esc(m.campo==="edital_url"?"publicado":m.valor)} · <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.veiculo)}</a></div></div>
-      <span class="prazo">${br(m.data).slice(0,5)}</span></li>`).join("")
-    : `<li class="vazio">Sem movimentações.</li>`;
+      <span class="prazo">${br(m.data).slice(0,5)}</span></li>`).join("");
+  $("#aba-lista").innerHTML = html || `<li class="vazio">Nada aqui com esses filtros.</li>`;
 }
 
 // ---------------------------------------------------------------- tabela
 const chave = {
   id: c => c.id, area: c => c.area, uf: c => c.uf || "", fase: c => ORDEM_FASE[c.status] * 10 + (c.grupo==="abertos"?1:0),
-  banca: c => (c.banca && c.banca.valor) || "", vagas: c => { const i = vagasInfo(c); return i.cob === "fora" ? -2 : i.cob === "sem_dado" ? -1 : i.vagas; }, fim: c => c.inscricoes_fim || "", atualizado: c => c.atualizado_em,
+  banca: c => (c.banca && c.banca.valor) || "", vagas: c => { const i = vagasInfo(c); return i.cob === "fora" ? -2 : i.cob === "sem_dado" ? -1 : i.vagas; },
+  fim: c => c.inscricoes_fim || "", atualizado: c => c.atualizado_em,
 };
 function celulaBanca(c) {
   if (c.banca) return `${esc(c.banca.valor)} ${c.banca.confirmado ? '<span class="ok" title="confirmado">✓</span>' : '<span class="aviso">fonte única</span>'}`;
   if (c.bancas_cotadas && c.bancas_cotadas.length) return `<span class="aviso">cotada: ${esc(c.bancas_cotadas.join(", "))}</span>`;
   return `<span style="color:var(--muted)">${["edital_publicado","homologado"].includes(c.status) ? "não informada" : "não definida"}</span>`;
 }
+function celulaVagas(c) {
+  const i = vagasInfo(c);
+  if (i.cob === "fora") return '<span style="color:var(--muted)">—</span>';
+  if (i.cob === "sem_dado") return '<span class="aviso">sem número</span>';
+  if (i.cob === "so_cr") return '<span class="numero" title="só cadastro de reserva">CR</span>';
+  return `<span class="numero">${num(i.vagas)}${i.cob === "parcial" ? "+" : ""}</span>${i.cr ? " <small>+ CR</small>" : ""} ${i.conf ? '<span class="ok" title="confirmado">✓</span>' : '<span class="aviso" title="fonte única ou cargos sem número"></span>'}`;
+}
 function detalheVagas(c) {
   const va = c.vagas_area || {};
   const fonte = f => f ? ` · <a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.veiculo)}</a>` : "";
-  if (va.cobertura === "total") return `${num(va.valor)} no edital ${va.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}${fonte(va.fonte)}`;
+  if (va.cobertura === "total") return `<b>${num(va.valor)}</b> no edital ${va.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}${fonte(va.fonte)}`;
   const linhas = (va.cargos || []).map(r => `<div><span class="dot" style="background:var(--${r.area})"></span> ${esc(r.cargo)}: <b>${r.vagas ? num(r.vagas) + " vaga" + (r.vagas > 1 ? "s" : "") : "sem vagas imediatas"}</b>${r.cr ? " + CR" : ""} ${r.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}${fonte(r.fonte)}</div>`);
   const pend = (va.pendentes || []).map(p => `<div><span class="dot" style="background:var(--${p.area})"></span> ${esc(p.cargo)}: <span class="aviso">sem número ainda</span></div>`);
   return linhas.concat(pend).join("") || '<span class="aviso">sem número ainda</span>';
@@ -539,58 +621,53 @@ function detalhe(c) {
   const fontes = fs => (fs||[]).map(f => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.veiculo)}</a>`).join(", ");
   const linhas = [
     ["Órgão", esc(c.orgao) + (c.esfera ? ` · ${c.esfera}` : "")],
-    c.sinal && ["Sinal", `<span class="aviso">${esc(c.sinal.rotulo)}, fonte única (${fontes(c.sinal.fontes)}), aguardando confirmação</span>`],
-    c.banca_anterior && ["Último concurso", `${esc(c.banca_anterior.nome)}${c.banca_anterior.ano ? " (" + esc(c.banca_anterior.ano) + ")" : ""}`],
+    ["Fase", `${esc(c.fase)}${c.sinal ? ` <span class="aviso">sinal: ${esc(c.sinal.rotulo)} (${fontes(c.sinal.fontes)})</span>` : ""}`],
+    ["Banca", celulaBanca(c) + (c.banca_anterior ? ` <span style="color:var(--muted)">· último concurso: ${esc(c.banca_anterior.nome)}${c.banca_anterior.ano ? " (" + esc(c.banca_anterior.ano) + ")" : ""}</span>` : "")],
     ["Vagas", detalheVagas(c)],
     c.salario_max && ["Remuneração", `até ${reais(c.salario_max.valor)} ${c.salario_max.confirmado ? '<span class="ok">✓</span>' : '<span class="aviso">fonte única</span>'}`],
     (c.inscricoes_inicio || c.inscricoes_fim) && ["Inscrições", `${br(c.inscricoes_inicio)} a ${br(c.inscricoes_fim)}`],
     c.previsao && ["Previsão", esc(c.previsao)],
-    c.cargos && c.cargos.length && ["Cargos", esc(c.cargos.join("; "))],
     c.edital_url && ["Edital", `<a href="${esc(c.edital_url)}" target="_blank" rel="noopener">abrir edital</a>`],
   ].filter(Boolean);
-  const tl = c.linha_do_tempo.map(e => `<li><b>${br(e.data)}</b> · <span class="ft ft-${e.fonte_tipo}">${e.fonte_tipo==="oficial"?"Oficial":e.fonte_tipo==="agregador"?"PCI":"Imprensa"}</span>
-    ${esc(e.campo.replace(/_/g," "))}: <b>${esc(e.valor)}</b>${e.nota ? ` — ${esc(e.nota)}` : ""} · <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.veiculo)}</a></li>`).join("");
+  const tl = c.linha_do_tempo.map(e => `<li><b>${br(e.data)}</b> <span class="ft ft-${e.fonte_tipo}">${e.fonte_tipo==="oficial"?"Oficial":e.fonte_tipo==="agregador"?"PCI":"Imprensa"}</span>
+    ${esc(e.campo.replace(/_/g," "))}: <b>${esc(e.valor)}</b>${e.nota ? ` — <span style="color:var(--ink-2)">${esc(e.nota)}</span>` : ""} · <a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.veiculo)}</a></li>`).join("");
   return `<tr class="detalhe"><td colspan="8"><div class="det-grid">
     <dl>${linhas.map(([k,v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>
-    <div><div style="font-weight:600;margin-bottom:4px">Linha do tempo</div><ul class="tl">${tl}</ul></div></div></td></tr>`;
-}
-function celulaVagas(c) {
-  const i = vagasInfo(c);
-  if (i.cob === "fora") return "—";
-  if (i.cob === "sem_dado") return '<span class="aviso">sem número</span>';
-  if (i.cob === "so_cr") return '<span title="só cadastro de reserva">CR</span>';
-  return `${num(i.vagas)}${i.cob === "parcial" ? "+" : ""}${i.cr ? " + CR" : ""} ${i.conf ? '<span class="ok" title="confirmado">✓</span>' : '<span class="aviso" title="fonte única ou cargos sem número"></span>'}`;
+    <div><p class="h3">Linha do tempo</p><ul class="tl">${tl}</ul></div></div></td></tr>`;
 }
 function tabela() {
+  const semGrupo = filtrar({semGrupo:true});
+  $("#abas-grupo").innerHTML = GRUPOS.map(([g,r]) => { const n = g ? semGrupo.filter(c => c.grupo === g).length : semGrupo.length;
+    return n || !g ? `<button role="tab" type="button" data-grupo-aba="${g}" aria-selected="${st.grupo===g}">${r}<span class="n">${n}</span></button>` : ""; }).join("");
   const lista = filtrar().sort((a,b) => { const x = chave[st.sort](a), y = chave[st.sort](b); return (x > y ? 1 : x < y ? -1 : 0) * st.dir; });
-  $("#contagem").textContent = `${lista.length} de ${D.concursos.length} concursos · clique numa linha para ver fontes e linha do tempo`;
+  $("#contagem").textContent = `${lista.length} de ${D.concursos.length} concursos · clique numa linha para ver vagas por cargo, fontes e linha do tempo`;
   document.querySelectorAll("th[data-sort]").forEach(th => {
     if (th.dataset.sort === st.sort) th.setAttribute("aria-sort", st.dir > 0 ? "ascending" : "descending"); else th.removeAttribute("aria-sort");
   });
   $("#tabela").innerHTML = lista.length ? lista.map(c => `<tr class="linha" data-id="${esc(c.id)}" tabindex="0" aria-expanded="${st.aberto===c.id}">
-      <td data-r="Concurso"><div><div class="idc">${esc(c.id)}</div><div class="org">${esc(c.orgao)}</div></div></td>
+      <td data-r="Concurso"><span class="ticker"><span class="tag" style="--c:var(--${c.area})">${esc(c.id)}</span></span><div class="org">${esc(c.orgao)}</div></td>
       <td data-r="Área"><span class="area"><span class="dot" style="background:var(--${c.area})"></span>${AREAS[c.area]}</span></td>
-      <td data-r="UF">${esc(c.uf || "Federal")}</td>
-      <td data-r="Fase"><div><span class="fase">${esc(c.fase)}</span>${c.sinal ? `<div class="aviso">sinal: ${esc(c.sinal.rotulo)}</div>` : ""}</div></td>
+      <td data-r="UF">${esc(c.uf || "BR")}</td>
+      <td data-r="Fase"><span class="pill ${c.grupo}">${esc(c.fase)}</span>${c.sinal ? `<div class="aviso" style="margin-top:4px">sinal: ${esc(c.sinal.rotulo)}</div>` : ""}</td>
       <td data-r="Banca">${celulaBanca(c)}</td>
       <td data-r="Vagas" class="n">${celulaVagas(c)}</td>
-      <td data-r="Inscrições até">${c.inscricoes_fim ? br(c.inscricoes_fim) : "—"}</td>
-      <td data-r="Último registro">${br(c.atualizado_em)}</td>
+      <td data-r="Inscrições até" class="n">${c.inscricoes_fim ? br(c.inscricoes_fim) : '<span style="color:var(--muted)">—</span>'}</td>
+      <td data-r="Atualizado" class="n" style="color:var(--ink-2)">${br(c.atualizado_em)}</td>
     </tr>${st.aberto === c.id ? detalhe(c) : ""}`).join("")
     : `<tr><td colspan="8" class="vazio">Nenhum concurso com esses filtros. Se ele deveria estar aqui, use “+ Pedir inclusão”.</td></tr>`;
 }
 
-function render() { kpis(); mapa(); funil(); listas(); tabela(); }
+function render() { faixa(); kpis(); mapa(); painelDireito(); abas(); tabela(); }
 
 // ---------------------------------------------------------------- eventos
 function setArea(a) { st.area = a; document.querySelectorAll("[data-area]").forEach(b => b.setAttribute("aria-pressed", b.dataset.area === a)); }
 function setUf(uf) { st.uf = uf; $("#uf").value = uf; $("#mapa-sub").textContent = uf ? `Filtrando: ${uf === "BR" ? "federais" : NOME_UF[uf]} · clique de novo para limpar` : "Clique numa UF para filtrar o painel"; }
 function abrir(id) {
+  if (st.grupo && !filtrar().some(c => c.id === id)) st.grupo = "";
   st.aberto = st.aberto === id ? null : id; tabela();
   const tr = document.querySelector(`tr.linha[data-id="${CSS.escape(id)}"]`);
-  if (tr && st.aberto) tr.scrollIntoView({block:"nearest", behavior:"smooth"});
+  if (tr && st.aberto) tr.scrollIntoView({block:"center", behavior:"smooth"});
 }
-
 document.addEventListener("click", ev => {
   const t = ev.target;
   if (t.closest("a")) return;
@@ -599,11 +676,13 @@ document.addEventListener("click", ev => {
   const met = t.closest("[data-metrica]");
   if (met) { st.metrica = met.dataset.metrica; document.querySelectorAll("[data-metrica]").forEach(b => b.setAttribute("aria-pressed", b === met)); mapa(); return; }
   const kpi = t.closest(".kpi[data-grupo]"); if (kpi) { const g = kpi.dataset.grupo; st.grupo = (st.grupo === g || !g) ? "" : g; render(); return; }
+  const ga = t.closest("[data-grupo-aba]"); if (ga) { st.grupo = ga.dataset.grupoAba; render(); return; }
+  const aba = t.closest("[data-aba]"); if (aba) { st.aba = aba.dataset.aba; abas(); return; }
   const tile = t.closest(".tile"); if (tile) { setUf(st.uf === tile.dataset.uf ? "" : tile.dataset.uf); render(); return; }
   if (t.closest("#nacional")) { setUf(st.uf === "BR" ? "" : "BR"); render(); return; }
   const th = t.closest("th[data-sort]");
   if (th) { const k = th.dataset.sort; st.dir = st.sort === k ? -st.dir : (["id","area","uf","banca","fim"].includes(k) ? 1 : -1); st.sort = k; tabela(); return; }
-  const li = t.closest(".lista li[data-id]"); if (li) { abrir(li.dataset.id); return; }
+  const chip = t.closest(".chip-prazo[data-id], .lista li[data-id]"); if (chip) { abrir(chip.dataset.id); return; }
   const tr = t.closest("tr.linha"); if (tr) { abrir(tr.dataset.id); return; }
 });
 document.addEventListener("keydown", ev => {
@@ -611,15 +690,12 @@ document.addEventListener("keydown", ev => {
   const alvo = ev.target.closest(".tile, #nacional, tr.linha, [data-area-bar]");
   if (alvo) { ev.preventDefault(); alvo.dispatchEvent(new MouseEvent("click", {bubbles:true})); }
 });
-
-// hover: mapa e barras
 $("#mapa").addEventListener("mousemove", ev => {
   const tile = ev.target.closest(".tile"); if (!tile) return esconderTip();
   const uf = tile.dataset.uf, l = (mapa._porUf || {})[uf] || [];
-  const ab = l.filter(aberto).length, vg = l.reduce((s,c)=>s+vagasDe(c),0);
   const top = l.slice().sort((a,b)=>vagasDe(b)-vagasDe(a)).slice(0,3).map(c=>esc(c.id)).join("<br>");
-  mostrarTip(ev, `<b>${NOME_UF[uf]} (${uf})</b> · <span style="color:var(--muted)">${REGIAO[uf]}</span>
-    ${linhaTip("Concursos", num(l.length))}${linhaTip("Com inscrições abertas ou em breve", num(ab))}${linhaTip("Vagas noticiadas", num(vg))}
+  mostrarTip(ev, `<b>${NOME_UF[uf]}</b> <span style="color:var(--muted)">${uf} · ${REGIAO[uf]}</span>
+    ${linhaTip("Concursos", num(l.length))}${linhaTip("Abertos ou em breve", num(l.filter(aberto).length))}${linhaTip("Vagas por cargo da área", num(l.reduce((s,c)=>s+vagasDe(c),0)))}
     ${top ? `<div style="margin-top:6px;color:var(--ink-2)">${top}</div>` : ""}`);
 });
 $("#mapa").addEventListener("mouseleave", esconderTip);
@@ -633,12 +709,10 @@ document.addEventListener("mousemove", ev => {
   if (bar.dataset.fase) extra = filtrar({semGrupo:true}).filter(c=>c.status===bar.dataset.fase).slice(0,6).map(c=>`<div>${esc(c.id)}</div>`).join("");
   mostrarTip(ev, `<b>${esc(nome)}</b>${linhaTip(bar.dataset.regiao && st.metrica==="vagas" ? "Vagas" : "Concursos", v)}${extra ? `<div style="margin-top:6px">${extra}</div>` : ""}`);
 });
-
 $("#esfera").onchange = e => { st.esfera = e.target.value; render(); };
 $("#uf").onchange = e => { setUf(e.target.value); render(); };
 $("#busca").oninput = e => { st.q = e.target.value; render(); };
 $("#limpar").onclick = () => { st.q = ""; st.esfera = ""; st.grupo = ""; $("#busca").value = ""; $("#esfera").value = ""; setArea(""); setUf(""); render(); };
-matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => render());
 render();
 </script>
 </body>
