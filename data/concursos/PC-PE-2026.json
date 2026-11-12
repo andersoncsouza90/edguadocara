@@ -116,6 +116,16 @@
    "data": "2026-11-11",
    "registrado_em": "2026-11-11",
    "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/PC_PE_26/arquivos/D70610824B6BDD9266B820E9F9E5A3527D9125712B300C4F3A4A49DB948553E2.html",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": "Edital nº 1 de abertura (Ed_1_PCPE_26_abertura) hospedado no site do Cebraspe; data da verificação"
   }
  ]
 }

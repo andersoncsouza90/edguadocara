@@ -44,6 +44,20 @@
    "data": "2026-11-11",
    "registrado_em": "2026-11-11",
    "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-baia-da-traicao-pb-abre-concurso-publico-com-vagas-em-diversos-cargos",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": ""
   }
  ]
 }

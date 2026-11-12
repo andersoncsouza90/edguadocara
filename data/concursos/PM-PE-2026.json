@@ -68,6 +68,16 @@
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
    "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Instituto AOCP",
+   "fonte_tipo": "oficial",
+   "veiculo": "Instituto AOCP (site da banca)",
+   "url": "https://www.institutoaocp.org.br/concursos/714",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": "Página do Concurso Público 001/2026 da PMPE no site da banca, com inscrições até 23/11/2026; data da verificação"
   }
  ]
 }

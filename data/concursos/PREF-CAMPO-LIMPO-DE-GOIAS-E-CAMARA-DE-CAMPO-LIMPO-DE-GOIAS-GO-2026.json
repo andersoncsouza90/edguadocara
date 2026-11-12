@@ -1,0 +1,63 @@
+{
+ "id": "PREF-CAMPO-LIMPO-DE-GOIAS-E-CAMARA-DE-CAMPO-LIMPO-DE-GOIAS-GO-2026",
+ "orgao": "Prefeitura de Campo Limpo de Goiás e Câmara de Campo Limpo de Goiás/GO",
+ "sigla": "PREF-CAMPO-LIMPO-DE-GOIAS-E-CAMARA-DE-CAMPO-LIMPO-DE-GOIAS-GO",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "GO",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296577
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-21",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-campo-limpo-de-goias-go-anunciam-concurso-publico-com-diversas-vagas",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-12-21",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-campo-limpo-de-goias-go-anunciam-concurso-publico-com-diversas-vagas",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-campo-limpo-de-goias-go-anunciam-concurso-publico-com-diversas-vagas",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controlador Interno",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-campo-limpo-de-goias-go-anunciam-concurso-publico-com-diversas-vagas",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": ""
+  }
+ ]
+}
