@@ -24,6 +24,14 @@ class TestRelevancia(unittest.TestCase):
         self.assertEqual(vigia.relevancia("Polícia Militar do Estado de São Paulo - Cabo PM")[0], "policial")
         self.assertEqual(vigia.relevancia("Prefeitura de X - Auditor Fiscal de Tributos")[0], "fiscal")
 
+    def test_pagina_antiga_nao_e_novidade(self):
+        h = date(2026, 11, 12)
+        self.assertTrue(vigia._antigo("Concurso Público para a Receita Federal do Brasil", "https://conhecimento.fgv.br/concursos/rfb22", h))
+        self.assertTrue(vigia._antigo("Polícia Militar - Cabo PM 2022", "https://x/concursos/pmespcabo22", h))
+        self.assertFalse(vigia._antigo("Tribunal de Contas do Estado", "https://x/concursos/tce26", h))
+        self.assertFalse(vigia._antigo("Polícia Civil", "https://x/concursos/pc25", h))
+        self.assertFalse(vigia._antigo("Secretaria da Fazenda", "https://x/concursos/sefaz/index.html", h))
+
     def test_fora_do_escopo(self):
         for t in ["Tribunal de Justiça do Estado da Paraíba", "Prefeitura de Macaé", "UNASP Vestibular Medicina",
                   "Tribunal Regional do Trabalho da 6ª Região", "Residência Médica - Polícia Militar"]:

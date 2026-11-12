@@ -152,6 +152,34 @@ class TestRegressoesColetaReal(unittest.TestCase):
             "candidato sub judice. O DIRETOR-GERAL torna público o resultado final na avaliação...",
         )))
 
+    def test_resultado_sub_judice_do_concurso_de_2022(self):
+        # texto real: DOU de 09/10/2026
+        self.assertIsNone(classificar(pub(
+            "EDITAL Nº 11/2026- RFB, DE 6 DE OUTUBRO DE 2026",
+            "CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS NOS QUADROS DA CARREIRA TRIBUTÁRIO E ADUANEIRA DA RECEITA "
+            "FEDERAL DO BRASIL O SECRETÁRIO ESPECIAL DA RECEITA FEDERAL DO BRASIL (...) em cumprimento ao Acórdão "
+            "proferido pelo Tribunal Regional Federal - 1ª Região, nos autos da Ação Judicial nº 1075074-57.2023.4.01.3400, "
+            "(...) concurso público para provimento de cargos de Auditor-Fiscal da Receita Federal do Brasil, regido "
+            "pelo Edital nº 1/2022 - RFB, de 2 de dezembro de 2022, (...) resolve: I. DIVULGAR o resultado final do "
+            "concurso público supracitado, exclusivamente para a candidata (...) Aprovada Sub Judice",
+            "Ministério da Fazenda/Secretaria Especial da Receita Federal do Brasil")))
+
+    def test_retificacao_de_edital_que_nao_e_o_de_abertura(self):
+        # texto real: DOU de 28/10/2026
+        self.assertIsNone(classificar(pub(
+            "EDITAL de 27 de outubro de 2026",
+            "1ª RETIFICAÇÃO DO EDITAL Nº 11/2026-RFB CONCURSO PÚBLICO PARA PROVIMENTO DE VAGAS NOS QUADROS DA CARREIRA "
+            "TRIBUTÁRIO E ADUANEIRA DA RECEITA FEDERAL DO BRASIL A SECRETÁRIA ESPECIAL DA RECEITA FEDERAL DO BRASIL, "
+            "SUBSTITUTA, torna pública a seguinte retificação do Edital supracitado: 1. no item I, ONDE SE LÊ a "
+            "Classificação 236-A, LEIA-SE a Classificação 116-A.",
+            "Ministério da Fazenda/Secretaria Especial da Receita Federal do Brasil")))
+
+    def test_ato_regido_por_edital_de_ano_anterior(self):
+        self.assertIsNone(classificar(pub(
+            "EDITAL Nº 30 - PF, DE 3 DE NOVEMBRO DE 2026",
+            "A Polícia Federal torna pública a homologação do resultado final do concurso público regido pelo "
+            "Edital nº 1/2025 - PF, para o candidato a seguir.")))
+
     def test_sigla_no_titulo(self):
         ev = classificar(pub(
             "EDITAL Nº 3/2026-RFB – RETIFICAÇÃO",

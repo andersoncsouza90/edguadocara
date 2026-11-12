@@ -219,6 +219,9 @@ _REGRAS_TEXTO: list[tuple[TipoEvento, list[str]]] = [
 
 _CONCURSO_RE = re.compile(r"concurso\s+public")
 # Atos de execução de concursos em andamento/antigos: não mudam a fase.
+_JUDICIAL = re.compile(
+    r"acao judicial|decisao judicial|acordao proferido|mandado de seguranca|forca executoria|cumprimento (?:a|de) (?:decisao|sentenca|acordao)"
+)
 _IGNORAR = re.compile(
     r"sub judice|reintegra\w*|nomea\w*|convoca\w*|exame medico|avaliacao medica|curso de formacao"
     r"|teste de aptidao|investigacao social|resultado (?:provisorio|preliminar)|prorroga\w* .{0,40}validade"
@@ -416,6 +419,19 @@ def classificar(pub: Publicacao, areas: set[Area] | None = None) -> Evento | Non
         return None
 
     if _IGNORAR.search(f"{titulo} {corpo[:300]}") and tipo is not TipoEvento.HOMOLOGACAO:
+        return None
+    # Atos de concursos anteriores não mudam a fase do concurso atual:
+    # cumprimento de decisão judicial, ou ato "regido pelo Edital nº 1/2022".
+    if _JUDICIAL.search(f"{titulo} {corpo[:900]}"):
+        return None
+    ano_ato = int(pub.data[:4]) if pub.data[:4].isdigit() else None
+    regido = re.search(r"regid[oa]s? pelo edital n\S* \d+/(\d{4})", texto)
+    if regido and ano_ato and int(regido.group(1)) < ano_ato:
+        return None
+    # Retificação só comprova edital publicado se for do edital de abertura
+    # (nº 1 ou que trate de abertura/inscrições); senão é ato de execução.
+    if tipo is TipoEvento.RETIFICACAO and not re.search(
+            r"edital (?:de abertura|n\S* 0?1\b)|abertura|inscric", texto):
         return None
 
     # O órgão é o AUTOR do ato: título, hierarquia do diário e o início do

@@ -79,6 +79,17 @@ def relevancia(titulo: str) -> tuple[str, str | None] | None:
     return None
 
 
+def _antigo(titulo: str, url: str, hoje: date) -> bool:
+    """Página de concurso de 2+ anos atrás (ex.: .../rfb22, "Cabo PM 2022"): não é novidade."""
+    anos = [int(a) for a in re.findall(r"\b(20\d{2})\b", titulo)]
+    m = re.search(r"(?<!\d)(20\d{2}|\d{2})/?(?:index\.html)?$", url.rstrip("/"))
+    if m:
+        a = int(m.group(1))
+        anos.append(a if a > 2000 else 2000 + a)
+    anos = [a for a in anos if 2010 <= a <= hoje.year + 1]
+    return bool(anos) and max(anos) <= hoje.year - 2
+
+
 # ------------------------------------------------------------------ coletores
 
 def _texto(trecho: str) -> str:
@@ -167,7 +178,7 @@ def coletar_fonte(f: dict, hoje: date) -> tuple[list[Item], int]:
     relevantes = []
     for titulo, url, detalhe in brutos:
         r = relevancia(titulo)
-        if r:
+        if r and not _antigo(titulo, url, hoje):
             relevantes.append(Item(f["id"], f["veiculo"], titulo[:240], url, r[0], r[1], None, detalhe))
     return relevantes, len(brutos)
 
