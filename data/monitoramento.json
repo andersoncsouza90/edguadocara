@@ -194,6 +194,223 @@
    "concurso CGU",
    "concurso Polícia Penal Federal",
    "concurso Auditor-Fiscal do Trabalho"
+  ],
+  "web_oficial": [
+   {
+    "grupo": "bancas",
+    "consulta": "concurso público auditor fiscal edital 2026",
+    "dominios": [
+     "cebraspe.org.br",
+     "vunesp.com.br",
+     "cesgranrio.org.br",
+     "institutoaocp.org.br",
+     "institutoconsulplan.org.br",
+     "idecan.org.br",
+     "fundatec.org.br",
+     "ibfc.org.br",
+     "ibade.org.br",
+     "quadrix.org.br",
+     "fepese.org.br"
+    ]
+   },
+   {
+    "grupo": "bancas",
+    "consulta": "concurso público secretaria da fazenda edital 2026",
+    "dominios": [
+     "cebraspe.org.br",
+     "vunesp.com.br",
+     "cesgranrio.org.br",
+     "institutoaocp.org.br",
+     "institutoconsulplan.org.br",
+     "idecan.org.br",
+     "fundatec.org.br",
+     "ibfc.org.br",
+     "ibade.org.br",
+     "quadrix.org.br",
+     "fepese.org.br"
+    ]
+   },
+   {
+    "grupo": "bancas",
+    "consulta": "concurso público tribunal de contas edital 2026",
+    "dominios": [
+     "cebraspe.org.br",
+     "vunesp.com.br",
+     "cesgranrio.org.br",
+     "institutoaocp.org.br",
+     "institutoconsulplan.org.br",
+     "idecan.org.br",
+     "fundatec.org.br",
+     "ibfc.org.br",
+     "ibade.org.br",
+     "quadrix.org.br",
+     "fepese.org.br"
+    ]
+   },
+   {
+    "grupo": "bancas",
+    "consulta": "concurso público controladoria edital 2026",
+    "dominios": [
+     "cebraspe.org.br",
+     "vunesp.com.br",
+     "cesgranrio.org.br",
+     "institutoaocp.org.br",
+     "institutoconsulplan.org.br",
+     "idecan.org.br",
+     "fundatec.org.br",
+     "ibfc.org.br",
+     "ibade.org.br",
+     "quadrix.org.br",
+     "fepese.org.br"
+    ]
+   },
+   {
+    "grupo": "bancas",
+    "consulta": "concurso público polícia civil edital 2026",
+    "dominios": [
+     "cebraspe.org.br",
+     "vunesp.com.br",
+     "cesgranrio.org.br",
+     "institutoaocp.org.br",
+     "institutoconsulplan.org.br",
+     "idecan.org.br",
+     "fundatec.org.br",
+     "ibfc.org.br",
+     "ibade.org.br",
+     "quadrix.org.br",
+     "fepese.org.br"
+    ]
+   },
+   {
+    "grupo": "bancas",
+    "consulta": "concurso público polícia militar edital 2026",
+    "dominios": [
+     "cebraspe.org.br",
+     "vunesp.com.br",
+     "cesgranrio.org.br",
+     "institutoaocp.org.br",
+     "institutoconsulplan.org.br",
+     "idecan.org.br",
+     "fundatec.org.br",
+     "ibfc.org.br",
+     "ibade.org.br",
+     "quadrix.org.br",
+     "fepese.org.br"
+    ]
+   },
+   {
+    "grupo": "bancas",
+    "consulta": "concurso público polícia penal edital 2026",
+    "dominios": [
+     "cebraspe.org.br",
+     "vunesp.com.br",
+     "cesgranrio.org.br",
+     "institutoaocp.org.br",
+     "institutoconsulplan.org.br",
+     "idecan.org.br",
+     "fundatec.org.br",
+     "ibfc.org.br",
+     "ibade.org.br",
+     "quadrix.org.br",
+     "fepese.org.br"
+    ]
+   },
+   {
+    "grupo": "diários estaduais",
+    "consulta": "concurso público auditor fiscal receita estadual edital",
+    "dominios": [
+     "doe.sp.gov.br",
+     "diariooficial.rs.gov.br",
+     "jornalminasgerais.mg.gov.br",
+     "ioerj.com.br",
+     "dodf.df.gov.br",
+     "dioe.pr.gov.br",
+     "doe.sea.sc.gov.br",
+     "egba.ba.gov.br",
+     "cepe.com.br",
+     "abc.go.gov.br"
+    ]
+   },
+   {
+    "grupo": "diários estaduais",
+    "consulta": "autoriza concurso público secretaria da fazenda",
+    "dominios": [
+     "doe.sp.gov.br",
+     "diariooficial.rs.gov.br",
+     "jornalminasgerais.mg.gov.br",
+     "ioerj.com.br",
+     "dodf.df.gov.br",
+     "dioe.pr.gov.br",
+     "doe.sea.sc.gov.br",
+     "egba.ba.gov.br",
+     "cepe.com.br",
+     "abc.go.gov.br"
+    ]
+   },
+   {
+    "grupo": "diários estaduais",
+    "consulta": "concurso público tribunal de contas do estado edital",
+    "dominios": [
+     "doe.sp.gov.br",
+     "diariooficial.rs.gov.br",
+     "jornalminasgerais.mg.gov.br",
+     "ioerj.com.br",
+     "dodf.df.gov.br",
+     "dioe.pr.gov.br",
+     "doe.sea.sc.gov.br",
+     "egba.ba.gov.br",
+     "cepe.com.br",
+     "abc.go.gov.br"
+    ]
+   },
+   {
+    "grupo": "diários estaduais",
+    "consulta": "concurso público polícia civil edital de abertura",
+    "dominios": [
+     "doe.sp.gov.br",
+     "diariooficial.rs.gov.br",
+     "jornalminasgerais.mg.gov.br",
+     "ioerj.com.br",
+     "dodf.df.gov.br",
+     "dioe.pr.gov.br",
+     "doe.sea.sc.gov.br",
+     "egba.ba.gov.br",
+     "cepe.com.br",
+     "abc.go.gov.br"
+    ]
+   },
+   {
+    "grupo": "diários estaduais",
+    "consulta": "concurso público polícia militar polícia penal edital",
+    "dominios": [
+     "doe.sp.gov.br",
+     "diariooficial.rs.gov.br",
+     "jornalminasgerais.mg.gov.br",
+     "ioerj.com.br",
+     "dodf.df.gov.br",
+     "dioe.pr.gov.br",
+     "doe.sea.sc.gov.br",
+     "egba.ba.gov.br",
+     "cepe.com.br",
+     "abc.go.gov.br"
+    ]
+   },
+   {
+    "grupo": "diários estaduais",
+    "consulta": "comissão organizadora concurso público fazenda polícia",
+    "dominios": [
+     "doe.sp.gov.br",
+     "diariooficial.rs.gov.br",
+     "jornalminasgerais.mg.gov.br",
+     "ioerj.com.br",
+     "dodf.df.gov.br",
+     "dioe.pr.gov.br",
+     "doe.sea.sc.gov.br",
+     "egba.ba.gov.br",
+     "cepe.com.br",
+     "abc.go.gov.br"
+    ]
+   }
   ]
  },
  "alvos": [

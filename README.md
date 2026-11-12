@@ -29,7 +29,7 @@ Acompanha cada concurso **do pedido à homologação**, com **ID único** e a
 
 ## Rotina diária e pedidos de inclusão
 
-- **Todo dia às 07:57 (Brasília)**, uma tarefa agendada no Claude roda a skill
+- **Duas vezes ao dia, às 07:57 e 16:57 (Brasília)**, uma tarefa agendada no Claude roda a skill
   `radar-curadoria`. Ela segue o roteiro de `python -m radar monitorar plano`,
   grava os fatos, faz commit e push. O GitHub Actions então publica o site.
 - **O que buscar** está em `data/monitoramento.json`: as buscas padrão (PCI e
@@ -43,6 +43,30 @@ Acompanha cada concurso **do pedido à homologação**, com **ID único** e a
      ```bash
      python -m radar monitorar adicionar --descricao "SEFAZ-SP – Analista" --area fiscal --uf SP --pci-termo sefaz --pci-cargo "analista em planejamento" --web "concurso Sefaz SP analista"
      ```
+
+## Fontes e frequência
+
+| Camada | Fontes | Frequência | Quem roda |
+|---|---|---|---|
+| **Vigia** (sem IA) | Sites da FGV, FCC e IBGP; DOU seções 1 e 3 (íntegra dos atos de RFB, PF, PRF, TCU, CGU...) | 6 vezes ao dia | GitHub Actions (`vigia.yml`) |
+| **Curadoria** (agente) | Fila do vigia; PCI Concursos; notícias; busca em domínios oficiais de bancas com bloqueio (Cebraspe, Vunesp, Cesgranrio, AOCP, Consulplan...) e de diários estaduais | 2 vezes ao dia (07:57 e 16:57) | Tarefa agendada no Claude |
+
+O vigia grava em `data/vigia/`: `detectados.json` (itens das três áreas),
+`saude.json` (cada fonte: leu ou falhou, e quando) e a curadoria grava
+`tratados.json`. O site mostra a fila na aba **"Direto das fontes"**, com o
+aviso de que ainda não foi conferida, e a saúde das fontes no rodapé.
+
+Para incluir uma fonte, adicione um item em `data/fontes.json` (`html_links`
+para página com lista de links, `json` para API) e rode
+`python -m radar vigiar <id>` para ver se ela é lida.
+
+```bash
+python -m radar vigiar
+```
+
+```bash
+python -m radar novidades
+```
 
 ## Contador de vagas
 

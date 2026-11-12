@@ -20,7 +20,10 @@ def gerar(registro: Registro, saida: Path = Path("docs"), hoje: date | None = No
         (c.para_site(hoje) for c in registro.concursos.values()),
         key=lambda c: c["atualizado_em"], reverse=True,
     )
-    payload = {"gerado_em": hoje.isoformat(), "concursos": concursos}
+    from . import vigia
+
+    payload = {"gerado_em": hoje.isoformat(), "concursos": concursos,
+               "novidades": vigia.pendentes()[:60], "fontes": vigia.saude()}
     bruto = json.dumps(payload, ensure_ascii=False)
 
     (saida / "concursos.json").write_text(bruto, encoding="utf-8")

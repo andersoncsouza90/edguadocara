@@ -1,0 +1,12 @@
+[
+ {"id": "fgv", "nome": "FGV Conhecimento (banca)", "veiculo": "FGV (site da banca)", "tipo": "html_links",
+  "url": "https://conhecimento.fgv.br/concursos", "padrao_link": "conhecimento\\.fgv\\.br/concursos?/[a-z0-9]"},
+ {"id": "fcc", "nome": "Fundação Carlos Chagas (banca)", "veiculo": "FCC (site da banca)", "tipo": "html_links",
+  "url": "https://www.concursosfcc.com.br/concursos/", "padrao_link": "/concursos/[a-z0-9]+/index\\.html"},
+ {"id": "ibgp", "nome": "IBGP (banca)", "veiculo": "IBGP (site da banca)", "tipo": "json",
+  "urls": {"inscrições abertas": "https://www.ibgpconcursos.com.br/rest/concurso/inscricaoAberta",
+           "próximas inscrições": "https://www.ibgpconcursos.com.br/rest/concurso/proximasInscricoes"},
+  "url_item": "https://www.ibgpconcursos.com.br/inscricoes_abertas.jsp#concurso-{id}",
+  "campos_detalhe": {"vagas no edital": "totalVagas", "inscrições de": "inicioInscricaoFormatado", "até": "fimInscricaoFormatado"}},
+ {"id": "dou", "nome": "Diário Oficial da União (seções 1 e 3)", "veiculo": "DOU", "tipo": "dou", "secoes": ["do1", "do3"]}
+]

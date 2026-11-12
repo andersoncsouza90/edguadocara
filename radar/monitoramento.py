@@ -65,6 +65,8 @@ class Monitoramento:
         pad = bruto.get("buscas_padrao", {})
         self.padrao_pci = [BuscaPCI(**b) for b in pad.get("pci", [])]
         self.padrao_web = list(pad.get("web", []))
+        # buscas restritas a domínios oficiais (bancas que bloqueiam robôs, diários estaduais)
+        self.padrao_oficial = list(pad.get("web_oficial", []))
         self.alvos: list[Alvo] = []
         for a in bruto.get("alvos", []):
             a = dict(a)
@@ -107,11 +109,12 @@ class Monitoramento:
             + [w for a in self.alvos if a.situacao == "ativo" for w in a.web]
             + [f"concurso {nome} banca edital" for _, nome in concursos_sem_edital]
         ))
-        return {"pci": pci, "web": web}
+        return {"pci": pci, "web": web, "oficial": self.padrao_oficial}
 
     def salvar(self) -> None:
         dados = {
-            "buscas_padrao": {"pci": [asdict(b) for b in self.padrao_pci], "web": self.padrao_web},
+            "buscas_padrao": {"pci": [asdict(b) for b in self.padrao_pci], "web": self.padrao_web,
+                              "web_oficial": self.padrao_oficial},
             "alvos": [asdict(a) for a in self.alvos],
         }
         self.caminho.parent.mkdir(parents=True, exist_ok=True)

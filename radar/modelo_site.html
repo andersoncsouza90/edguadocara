@@ -186,6 +186,12 @@ table.cont .v{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-siz
 .prazo.lima{background:var(--lima-soft);color:var(--lima-txt)}
 .ft{font-size:.64rem;font-weight:700;border-radius:4px;padding:1px 6px;border:1px solid var(--line-2);color:var(--ink-2);white-space:nowrap;text-transform:uppercase;letter-spacing:.05em}
 .ft-oficial{border-color:var(--ok);color:var(--ok)}
+.lista li.ext{cursor:default}
+.lista li.ext .t{white-space:normal;font-weight:600}
+.lista li.nota-fontes{grid-column:1/-1;cursor:default;color:var(--ink-2);font-size:.8rem;display:block}
+.saude{display:flex;gap:6px 14px;flex-wrap:wrap;margin:8px 0}
+.saude span::before{content:"● ";color:#B8D600}
+.saude span.erro::before{content:"⚠ ";color:#FF4D74}
 .vazio{color:var(--muted);padding:18px 0;text-align:center;font-size:.86rem;grid-column:1/-1}
 
 /* ---------- tabela (ranking do Status Invest) */
@@ -330,6 +336,7 @@ footer img{height:22px;opacity:.9}
         <button role="tab" type="button" data-aba="prazos" aria-selected="true">Encerrando<span class="n" id="n-prazos"></span></button>
         <button role="tab" type="button" data-aba="embreve" aria-selected="false">Abrem em breve<span class="n" id="n-embreve"></span></button>
         <button role="tab" type="button" data-aba="movs" aria-selected="false">Movimentações<span class="n" id="n-movs"></span></button>
+        <button role="tab" type="button" data-aba="fontes" aria-selected="false">Direto das fontes<span class="n" id="n-fontes"></span></button>
       </div>
       <ul class="lista" id="aba-lista"></ul>
     </article>
@@ -366,6 +373,7 @@ footer img{height:22px;opacity:.9}
       <p>Vagas: soma das vagas imediatas <b>por cargo da área</b>; “CR” = só cadastro de reserva; “+” = há cargos da área sem número; cargos excluídos por retificação saem da conta.
       O mapa é um cartograma: cada UF ocupa um quadrado igual, na posição aproximada do estado; concursos federais aparecem à parte.</p>
       <p>Registramos fatos com link para a fonte, sem reproduzir textos. Confira sempre o edital.</p>
+      <p style="margin-top:10px"><b>Fontes lidas automaticamente</b> (última leitura):</p><div class="saude" id="saude"></div>
     </div>
     <div><a href="https://github.com/andersoncsouza90/edguadocara/issues/new?template=solicitar-monitoramento.yml" target="_blank" rel="noopener">Pedir inclusão de concurso</a><br><a href="feed.xml">RSS</a> · <a href="concursos.json">Dados (JSON)</a></div>
   </div>
@@ -415,6 +423,7 @@ $("#tema").onclick = () => {
 };
 
 $("#gerado").textContent = br(HOJE);
+$("#saude").innerHTML = Object.values(D.fontes || {}).map(f => `<span class="${f.ok ? "" : "erro"}" title="${esc(f.erro || "")}">${esc(f.nome)}: ${f.ok ? esc((f.ultima_ok || "").replace("T"," ").replace("Z"," UTC")) : "falhou" + (f.ultima_ok ? ", última leitura " + esc(f.ultima_ok.slice(0,10)) : "")}</span>`).join("") || "<span>ainda sem leituras</span>";
 Object.keys(NOME_UF).sort().forEach(uf => { const o = document.createElement("option"); o.value = uf; o.textContent = `${uf} — ${NOME_UF[uf]}`; $("#uf").appendChild(o); });
 
 // ---------------------------------------------------------------- vagas
@@ -588,6 +597,12 @@ function abas() {
   if (st.aba === "movs") html = movs.slice(0, 24).map(m => `<li data-id="${esc(m.id)}"><span class="ft ft-${m.fonte_tipo}">${m.fonte_tipo==="oficial"?"Oficial":"Imprensa"}</span><div class="principal"><div class="t">${esc(m.id)}</div>
       <div class="s">${rot[m.campo]}: ${esc(m.campo==="edital_url"?"publicado":m.valor)} · <a href="${esc(m.url)}" target="_blank" rel="noopener">${esc(m.veiculo)}</a></div></div>
       <span class="prazo">${br(m.data).slice(0,5)}</span></li>`).join("");
+  const nov = (D.novidades || []).filter(n => (!st.area || n.area === st.area) && (!st.q || norm(n.titulo + " " + (n.orgao||"")).includes(norm(st.q))));
+  $("#n-fontes").textContent = nov.length;
+  if (st.aba === "fontes") html = `<li class="nota-fontes">Detectado automaticamente em sites de bancas e no Diário Oficial. <b>Ainda não conferido pela curadoria</b>: pode ser um concurso antigo ou já registrado. Abra a fonte para ver.</li>` +
+    nov.slice(0, 30).map(n => `<li class="ext"><span class="dot" style="background:var(--${n.area})"></span><div class="principal"><div class="t">${esc(n.orgao ? n.orgao + " · " : "")}${esc(n.titulo)}</div>
+      <div class="s"><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.veiculo)}</a>${n.tipo ? " · " + esc(n.tipo.replace(/_/g," ")) : ""}${n.detalhe && n.fonte !== "dou" ? " · " + esc(n.detalhe) : ""}</div></div>
+      <span class="prazo">${br(n.primeiro_visto.slice(0,10)).slice(0,5)}</span></li>`).join("");
   $("#aba-lista").innerHTML = html || `<li class="vazio">Nada aqui com esses filtros.</li>`;
 }
 

@@ -216,6 +216,10 @@ def cmd_mon_plano(a) -> int:
     print(f"\n# Web ({len(plano['web'])} buscas) — registre fatos com `radar fato`")
     for w in plano["web"]:
         print(f"web  {w}")
+    if plano["oficial"]:
+        print(f"\n# Fontes oficiais por busca ({len(plano['oficial'])}) — WebSearch com allowed_domains; fato com --fonte-tipo oficial")
+        for o in plano["oficial"]:
+            print(f"oficial  {o['consulta']}  | allowed_domains: {','.join(o['dominios'])}")
     ativos = [x for x in mon.alvos if x.situacao == "ativo"]
     if ativos:
         print("\n# Alvos solicitados (confira se já há concurso e vincule com `radar monitorar vincular`)")
@@ -290,6 +294,39 @@ def cmd_importar_vagas_pci(a) -> int:
         feitos += 1
     reg.salvar()
     print(f"{feitos} concurso(s) processados, {falhas} falha(s) de download")
+    return 0
+
+
+def cmd_vigiar(a) -> int:
+    from . import vigia
+
+    novos, saude = vigia.vigiar(so=a.fontes or None)
+    for f, s in saude.items():
+        print(f"{'ok  ' if s['ok'] else 'ERRO'} {f:<8} lidos={s['lidos']:<4} relevantes={s['relevantes']:<3} {s['erro']}")
+    for it in novos:
+        print(f"NOVO {it.id} [{it.area}] {it.veiculo}: {it.titulo[:110]}")
+    print(f"{len(novos)} novidade(s); {len(vigia.pendentes())} na fila da curadoria")
+    return 0
+
+
+def cmd_novidades(a) -> int:
+    from . import vigia
+
+    fila = [n for n in vigia.pendentes() if not a.area or n["area"] == a.area]
+    for n in fila:
+        print(f"{n['id']} {n['primeiro_visto'][:16]} [{n['area']}] {n['veiculo']}"
+              f"{' · ' + n['orgao'] if n.get('orgao') else ''}{' · ' + n['tipo'] if n.get('tipo') else ''}\n"
+              f"    {n['titulo']}\n    {n['url']}{chr(10) + '    ' + n['detalhe'][:200] if n.get('detalhe') else ''}")
+    print(f"{len(fila)} novidade(s) aguardando curadoria")
+    return 0
+
+
+def cmd_tratar(a) -> int:
+    from . import vigia
+
+    if a.concurso:
+        _registro(a).obter(a.concurso)
+    print(f"{vigia.tratar(a.ids, a.resultado, a.concurso, a.nota or '')} novidade(s) marcadas como {a.resultado}")
     return 0
 
 
@@ -403,6 +440,21 @@ def main(argv=None) -> int:
     iv.add_argument("--limite", type=int, default=0)
     iv.add_argument("--pausa", type=float, default=1.0, help="segundos entre downloads")
     iv.set_defaults(f=cmd_importar_vagas_pci)
+
+    vi = sub.add_parser("vigiar", help="lê as fontes oficiais (bancas, DOU) e enfileira novidades")
+    vi.add_argument("fontes", nargs="*", help="ids de data/fontes.json (padrão: todas)")
+    vi.set_defaults(f=cmd_vigiar)
+
+    nv = sub.add_parser("novidades", help="fila de novidades aguardando curadoria")
+    nv.add_argument("--area", choices=[x.value for x in Area])
+    nv.set_defaults(f=cmd_novidades)
+
+    tr = sub.add_parser("tratar", help="marca novidades como tratadas")
+    tr.add_argument("ids", nargs="+")
+    tr.add_argument("--resultado", required=True, choices=["registrado", "ja-registrado", "irrelevante"])
+    tr.add_argument("--concurso", help="ID do concurso em que os fatos foram registrados")
+    tr.add_argument("--nota")
+    tr.set_defaults(f=cmd_tratar)
 
     a = p.parse_args(argv)
     try:

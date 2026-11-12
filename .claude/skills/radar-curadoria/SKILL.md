@@ -50,6 +50,40 @@ Para cada pedido:
    diário e feche a issue do mesmo jeito: o alvo segue ativo no
    `data/monitoramento.json`.
 
+## 0.5 Novidades direto das fontes oficiais (trate ANTES do resto)
+
+O vigia lê sites de bancas (FGV, FCC, IBGP) e o DOU várias vezes ao dia, sem
+IA, e põe na fila o que é das três áreas. Atualize e veja a fila:
+
+```bash
+python -m radar vigiar
+```
+
+```bash
+python -m radar novidades
+```
+
+Se `vigiar` mostrar `ERRO` em alguma fonte, cite no relatório final (a
+leitura do GitHub Actions pode ter funcionado mesmo que a daqui falhe).
+
+Para **cada** novidade da fila:
+
+1. Abra a URL e confira o que é. Uma página antiga no site da banca (ex.:
+   "PM-SP – Cabo PM 2022") não é concurso novo.
+2. Se for concurso ou fase nova: crie o concurso se preciso (`radar novo`) e
+   registre os fatos com **`--fonte-tipo oficial`** e o veículo indicado
+   (`"FGV (site da banca)"`, `"DOU"`). A página do concurso no site da banca
+   confirma banca e edital publicado; o ato no DOU confirma a fase do ato.
+3. Marque a novidade:
+   ```bash
+   python -m radar tratar <id> --resultado registrado --concurso <ID>
+   ```
+   Use `--resultado ja-registrado` se o radar já tinha a informação, ou
+   `--resultado irrelevante --nota "<motivo>"` (concurso antigo, fora da área).
+
+Nunca deixe novidade sem tratar de uma rodada para a outra sem dizer o
+motivo no relatório.
+
 ## 1. Roteiro do dia
 
 ```bash
@@ -127,6 +161,18 @@ Regras:
 - Se a notícia ou o edital disser que o cargo foi **excluído**, registre
   `--campo nota` e retire o cargo com `python -m radar ajustar <ID> --encerrar`
   quando não sobrar cargo da área.
+
+### Fontes oficiais por busca (bancas com bloqueio e diários estaduais)
+
+Cebraspe, Vunesp, Cesgranrio, AOCP, Consulplan e outras bancas bloqueiam
+leitura automática, e os diários estaduais não têm busca simples. Para cada
+linha `oficial ...` do plano, rode a WebSearch em modo `extended` passando a
+lista em `allowed_domains`. Só vale resultado **com data recente** (últimos
+30 dias) e das três áreas. Registre com `--fonte-tipo oficial`, veículo com o
+nome do site (ex.: `"Cebraspe (site da banca)"`, `"DOE-SP"`) e a URL do
+resultado. Se a busca só trouxer páginas antigas, não registre nada.
+
+Não tente contornar bloqueio de site (captcha, Cloudflare): use só a busca.
 
 ## 2. Notícias (fases antes do edital, banca, retificações)
 
