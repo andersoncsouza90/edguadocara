@@ -1,0 +1,50 @@
+{
+ "id": "PREF-BALNEARIO-CAMBORIU-SC-2026",
+ "orgao": "Prefeitura de Balneário Camboriú",
+ "sigla": "PREF-BALNEARIO-CAMBORIU-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Auditor Fiscal de Tributos Municipais"
+ ],
+ "aliases": [
+  "ISS-BALNEARIO-CAMBORIU-2026",
+  "ISS-BC-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "FURB",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-balneario-camboriu-sc-banca-definida-2026/",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-12",
+   "nota": "Termo de Dispensa Licitatória nº 114/2026; lido só no trecho do buscador"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-balneario-camboriu-sc-banca-definida-2026/",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-12",
+   "nota": "FURB escolhida pelo Termo de Dispensa Licitatória nº 114/2026; autorização da Secretaria de Gestão de Pessoas publicada em 10/11/2026. Lido só no trecho do buscador (site bloqueado na sessão); Concurseira com TDAH repete. Ato oficial não conferido"
+  },
+  {
+   "campo": "nota",
+   "valor": "Cargo de Auditor Fiscal de Tributos Municipais ainda não confirmado no edital: só um texto de mentoria o cita (salário de R$ 11,6 mil). Concurso deve ser para cadastro de reserva; edital não publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Método 4.2",
+   "url": "https://metodo4ponto2.com.br/salario-real-auditor-fiscal-balneario-camboriu-contracheques-furb",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": "Data da verificação; lido só no trecho do buscador"
+  }
+ ]
+}

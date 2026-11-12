@@ -509,6 +509,40 @@
    "solicitado_em": "2026-11-10",
    "situacao": "ativo",
    "nota": "Pedido informa banca contratada FCC"
+  },
+  {
+   "id": "M004",
+   "descricao": "Prefeitura de Balneário Camboriú/SC – Auditor Fiscal de Tributos Municipais (ISS)",
+   "area": "fiscal",
+   "uf": "SC",
+   "pci": [
+    {
+     "ferramenta": "pesquisar_concursos",
+     "termo": "balneario camboriu",
+     "uf": "sc"
+    },
+    {
+     "ferramenta": "buscar_por_cargo",
+     "termo": "auditor fiscal",
+     "uf": "sc"
+    },
+    {
+     "ferramenta": "buscar_por_cargo",
+     "termo": "fiscal de tributos",
+     "uf": "sc"
+    }
+   ],
+   "web": [
+    "concurso Prefeitura Balneário Camboriú FURB edital",
+    "concurso ISS Balneário Camboriú auditor fiscal"
+   ],
+   "concursos": [
+    "PREF-BALNEARIO-CAMBORIU-SC-2026"
+   ],
+   "origem": "chat",
+   "solicitado_em": "2026-11-12",
+   "situacao": "ativo",
+   "nota": "Não confundir com ISS Camboriú (município vizinho, Idecan, prova em 14/06/2026)"
   }
  ]
 }
