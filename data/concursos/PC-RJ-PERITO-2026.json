@@ -1,0 +1,59 @@
+{
+ "id": "PC-RJ-PERITO-2026",
+ "orgao": "Polícia Civil do Estado do Rio de Janeiro",
+ "sigla": "PC-RJ",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "RJ",
+ "cargos": [
+  "Perito Legista",
+  "Perito Criminal",
+  "Piloto Policial"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "FGV",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-2026-banca",
+   "data": "2026-06-24",
+   "registrado_em": "2026-11-12",
+   "nota": "FGV homologada via PNCP"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-2026-banca",
+   "data": "2026-06-24",
+   "registrado_em": "2026-11-12",
+   "nota": "FGV homologada em 24/06/2026 via PNCP, com termo de referência divulgado. Delegado (85 vagas) é concurso separado, com a Cesgranrio"
+  },
+  {
+   "campo": "vagas",
+   "valor": 329,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-2026-banca",
+   "data": "2026-06-24",
+   "registrado_em": "2026-11-12",
+   "nota": "251 Perito Legista + 76 Perito Criminal + 2 Piloto Policial"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concursos-previstos-novembro-2026",
+   "data": "2026-11-02",
+   "registrado_em": "2026-11-12",
+   "nota": "Data da página: FGV 'oficialmente contratada'; edital pode sair em novembro. Gran e Degrau Cultural (comissão de fiscalização do contrato no DO de 03/11) repetem, mas não foram abertos; extrato não conferido"
+  }
+ ]
+}

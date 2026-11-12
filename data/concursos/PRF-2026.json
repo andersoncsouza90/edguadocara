@@ -48,6 +48,16 @@
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
    "nota": "Vagas solicitadas para policial; outras fontes citam 533 no total, somando o pedido administrativo"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Ministra do MGI projeta novo concurso da PRF para 2027 (sem autorização publicada)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário de Pernambuco",
+   "url": "https://www.diariodepernambuco.com.br/economia/2026/11/11728987-governo-preve-novos-concursos-para-inss-prf-e-policia-penal-em-2027.html",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-12",
+   "nota": "Declaração de Esther Dweck; é previsão, não autorização. Lido só no trecho do buscador; Direção e Gran repetem"
   }
  ]
 }

@@ -1,0 +1,37 @@
+{
+ "id": "PM-AC-2026",
+ "orgao": "Polícia Militar do Estado do Acre",
+ "sigla": "PM-AC",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "AC",
+ "cargos": [
+  "Aluno Soldado PM"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Idecan",
+   "fonte_tipo": "imprensa",
+   "veiculo": "ac24horas",
+   "url": "https://ac24horas.com/2026/11/12/idecan-vai-organizar-concursos-da-pm-e-dos-bombeiros-do-acre/",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": "Dispensa de licitação publicada no DOE-AC de 12/11/2026; lido só no trecho do buscador"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "ac24horas",
+   "url": "https://ac24horas.com/2026/11/12/idecan-vai-organizar-concursos-da-pm-e-dos-bombeiros-do-acre/",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": "Idecan escolhido por dispensa de licitação, ato publicado no DOE-AC de 12/11/2026; contrato não assinado. Lido só no trecho do buscador (site bloqueado na sessão); A Gazeta do Acre e Direção repetem. Vagas divergem: 262 (Gran) x 260 (Estratégia)"
+  }
+ ]
+}

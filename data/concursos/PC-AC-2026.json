@@ -27,6 +27,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "banca",
+   "valor": "Idecan",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concursos-previstos-novembro-2026",
+   "data": "2026-11-02",
+   "registrado_em": "2026-11-12",
+   "nota": "Data da página, anterior ao edital: Idecan definido como banca para 139 vagas"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-12-14",
    "fonte_tipo": "agregador",
@@ -75,6 +85,16 @@
    "data": "2026-11-07",
    "registrado_em": "2026-11-07",
    "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Idecan",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/policia-civil-do-estado-do-acre-pcac-e-sead-ac-abrem-concurso-publico-com-salarios-de-ate-19505",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-12",
+   "nota": "Data da verificação. Inscrições de 11/11 a 14/12/2026 exclusivamente pelo site do Idecan"
   }
  ]
 }

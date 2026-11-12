@@ -81,6 +81,16 @@
    "nota": "Data da verificação. Estratégia e 7 Fontes dizem 'contratada'; Ache Concursos e Decorando a Lei Seca dizem que a assinatura do contrato está pendente. Nenhum extrato de contrato localizado; registrado como fonte única até haver extrato no DOE-RS ou no PNCP"
   },
   {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-rs-banca-contratada-2026",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-12",
+   "nota": "Contrato com a FCC assinado e disponibilizado no PNCP (data da notícia). Direção cita Contrato nº 26/04/031, assinado pela Sefaz em 09/11; Gran cita extrato no DOE-RS de 11/11/2026. Extrato oficial não conferido"
+  },
+  {
    "campo": "vagas",
    "valor": 46,
    "fonte_tipo": "imprensa",

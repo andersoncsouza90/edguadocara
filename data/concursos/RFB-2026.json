@@ -122,6 +122,16 @@
   },
   {
    "campo": "previsao",
+   "valor": "Assinatura do contrato com a banca em meados de novembro/2026; edital previsto para dezembro/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-banca-em-novembro-2026",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-12",
+   "nota": "Receita informou que a contratação prevista para outubro atrasou; prazo da portaria termina em 03/01/2027; banca não anunciada"
+  },
+  {
+   "campo": "previsao",
    "valor": "Contratação da banca, prevista para outubro, ficou para novembro/2026; edital mantido para dezembro/2026",
    "fonte_tipo": "imprensa",
    "veiculo": "Portal de Prefeitura",

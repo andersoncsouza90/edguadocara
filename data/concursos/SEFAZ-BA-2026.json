@@ -59,6 +59,16 @@
    "nota": "Banca definida para edital com 200 vagas"
   },
   {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concursos-previstos-novembro-2026",
+   "data": "2026-11-02",
+   "registrado_em": "2026-11-12",
+   "nota": "Data da página. Folha diz, 'segundo apuração', que o contrato com a Cesgranrio já foi assinado; Ache Concursos e Estratégia dizem contrato em elaboração. Sem extrato publicado: manter como sinal"
+  },
+  {
    "campo": "previsao",
    "valor": "Edital previsto para novembro/2026 (previsão repassada ao Sindsefaz); provas dez/2026 ou jan/2027",
    "fonte_tipo": "imprensa",
