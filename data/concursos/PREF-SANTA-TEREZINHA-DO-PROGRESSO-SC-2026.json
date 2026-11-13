@@ -1,0 +1,61 @@
+{
+ "id": "PREF-SANTA-TEREZINHA-DO-PROGRESSO-SC-2026",
+ "orgao": "Prefeitura de Santa Terezinha do Progresso/SC",
+ "sigla": "PREF-SANTA-TEREZINHA-DO-PROGRESSO-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Agente, Fiscal e Auditor de Tributação"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-25",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-salarios-de-ate-10000",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": "PCI lista o cargo Agente, Fiscal e Auditor de Tributação em edital com 20 cargos; data da verificação"
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-26",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-salarios-de-ate-10000",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": "PCI lista o cargo Agente, Fiscal e Auditor de Tributação em edital com 20 cargos; data da verificação"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-salarios-de-ate-10000",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": "PCI lista o cargo Agente, Fiscal e Auditor de Tributação em edital com 20 cargos; data da verificação"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente, Fiscal e Auditor de Tributação",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-salarios-de-ate-10000",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": "sem número na lista da notícia: cadastro de reserva"
+  }
+ ]
+}
