@@ -121,6 +121,16 @@
    "nota": "17 propostas recebidas até 30/09; banca ainda não anunciada oficialmente"
   },
   {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-2026-comissoes-formadas",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-13",
+   "nota": "Portarias Sucor nº 56 (comissão de coordenação do concurso) e nº 57 (GT de conteúdos programáticos), no Boletim de Serviço da RFB de 05/11/2026"
+  },
+  {
    "campo": "previsao",
    "valor": "Assinatura do contrato com a banca em meados de novembro/2026; edital previsto para dezembro/2026",
    "fonte_tipo": "imprensa",
@@ -129,6 +139,16 @@
    "data": "2026-11-06",
    "registrado_em": "2026-11-12",
    "nota": "Receita informou que a contratação prevista para outubro atrasou; prazo da portaria termina em 03/01/2027; banca não anunciada"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Contratação da banca prevista para novembro/2026 e edital para dezembro/2026; nenhuma banca anunciada (17 propostas recebidas)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-banca-em-novembro-2026",
+   "data": "2026-11-06",
+   "registrado_em": "2026-11-13",
+   "nota": "Folha: contratação atrasou de outubro para novembro; termo de dispensa já incluído no processo"
   },
   {
    "campo": "previsao",
