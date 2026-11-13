@@ -164,6 +164,26 @@
    "data": "2026-11-04",
    "registrado_em": "2026-11-11",
    "nota": "700 imediatas, sem cadastro de reserva"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/secretaria-de-administracao-penitenciaria-e-ressocializacao-de-pernambuco-divulga-concurso-publico-para-policial-penal/",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": "Notícia da banca: SEAP-PE divulga concurso para Policial Penal, 700 vagas, inscrições de 12/11/2026 a 04/01/2027 pelo Cebraspe; data da verificação"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/secretaria-de-administracao-penitenciaria-e-ressocializacao-de-pernambuco-divulga-concurso-publico-para-policial-penal/",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": "Notícia da banca: SEAP-PE divulga concurso para Policial Penal, 700 vagas, inscrições de 12/11/2026 a 04/01/2027 pelo Cebraspe; data da verificação"
   }
  ]
 }
