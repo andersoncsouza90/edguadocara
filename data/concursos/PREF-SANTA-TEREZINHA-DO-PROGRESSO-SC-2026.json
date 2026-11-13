@@ -14,6 +14,40 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "banca",
+   "valor": "Fênix Instituto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-8-vagas-e-cadastro-de-reserva",
+   "data": "2026-10-23",
+   "registrado_em": "2026-11-13",
+   "nota": "Edital nº 01/2026, banca Fênix Instituto"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-8-vagas-e-cadastro-de-reserva",
+   "data": "2026-10-23",
+   "registrado_em": "2026-11-13",
+   "nota": "Edital nº 01/2026, banca Fênix Instituto; cargo de tributação só em cadastro de reserva; prova em 06/12/2026"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente, Fiscal e Auditor de Tributação",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-8-vagas-e-cadastro-de-reserva",
+   "data": "2026-10-23",
+   "registrado_em": "2026-11-13",
+   "nota": "Cargo só em cadastro de reserva"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-11-25",
    "fonte_tipo": "agregador",

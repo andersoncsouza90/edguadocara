@@ -17,6 +17,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "nota",
+   "valor": "Segundo o PCI, o cargo Fiscal de Tributos e Obras está no Processo Seletivo nº 016/2026 (cadastro de reserva), não no Concurso Público nº 015/2026; organização da AMEOSC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipora-do-oeste-sc-abre-concurso-publico-e-processos-seletivos-com-salarios-de-ate-19265",
+   "data": "2026-10-16",
+   "registrado_em": "2026-11-13",
+   "nota": "data da notícia"
+  },
+  {
    "campo": "vagas_cargo",
    "valor": {
     "cargo": "Fiscal de Tributos e Obras",

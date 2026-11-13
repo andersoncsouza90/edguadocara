@@ -99,6 +99,44 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": "29 AFRE + 17 ATRE (estimativa). Nova Concursos repete o número, mas outras fontes dizem que não há quantitativo oficial; os 15 mil do contrato são inscrições, não vagas"
+  },
+  {
+   "campo": "vagas",
+   "valor": 46,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-rs-banca-contratada-2026",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-13",
+   "nota": "Folha: 46 vagas, sendo 29 de Auditor Fiscal e 17 de Analista Tributário; contrato com a FCC assinado e publicado no PNCP"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal da Receita Estadual",
+    "vagas": 29,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-rs-banca-contratada-2026",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-13",
+   "nota": "Número do veículo, ainda sem edital"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista Tributário da Receita Estadual",
+    "vagas": 17,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-rs-banca-contratada-2026",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-13",
+   "nota": "Número do veículo, ainda sem edital"
   }
  ]
 }

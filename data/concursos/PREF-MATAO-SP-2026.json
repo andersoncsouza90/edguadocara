@@ -14,6 +14,40 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "banca",
+   "valor": "IBAM",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-matao-sp-abre-concurso-com-28-vagas-para-diversos-cargos",
+   "data": "2026-10-16",
+   "registrado_em": "2026-11-13",
+   "nota": "Edital nº 02/2026, banca IBAM"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-matao-sp-abre-concurso-com-28-vagas-para-diversos-cargos",
+   "data": "2026-10-16",
+   "registrado_em": "2026-11-13",
+   "nota": "Edital nº 02/2026, banca IBAM; cargo fiscal só em cadastro de reserva; prova em 24/01/2027"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-matao-sp-abre-concurso-com-28-vagas-para-diversos-cargos",
+   "data": "2026-10-16",
+   "registrado_em": "2026-11-13",
+   "nota": "Cargo só em cadastro de reserva"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-11-18",
    "fonte_tipo": "agregador",

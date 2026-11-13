@@ -27,6 +27,16 @@
    "nota": "Termo de Dispensa Licitatória nº 114/2026; lido só no trecho do buscador"
   },
   {
+   "campo": "nota",
+   "valor": "Dispensa nº 114/2026 (autorizada em 10/11/2026, R$ 693.493,38) contrata a FURB para concurso de 'cadastro de reserva para cargos efetivos do Município'; o ato não lista cargos e há sites que o associam à Guarda Municipal, não ao Auditor Fiscal. Banca segue como sinal até sair ato ou edital com os cargos.",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos SC",
+   "url": "https://concursossc.com.br/concurso-prefeitura-de-balneario-camboriu-furb-e-contratada-como-banca-organizadora/",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-13",
+   "nota": "lido pelo resultado da busca; ato no DOM/SC: diariomunicipal.sc.gov.br/atos/5154613"
+  },
+  {
    "campo": "status",
    "valor": "banca_definida",
    "fonte_tipo": "imprensa",

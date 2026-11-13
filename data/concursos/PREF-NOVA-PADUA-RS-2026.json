@@ -16,6 +16,26 @@
   {
    "campo": "banca",
    "valor": "Fundatec",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-nova-padua-rs-abre-concurso-publico-para-formacao-de-cadastro-de-reserva-em-21-cargos",
+   "data": "2026-10-26",
+   "registrado_em": "2026-11-13",
+   "nota": "Edital nº 01/2026, Fundatec"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-de-nova-padua-rs-abre-concurso-publico-para-formacao-de-cadastro-de-reserva-em-21-cargos",
+   "data": "2026-10-26",
+   "registrado_em": "2026-11-13",
+   "nota": "Edital nº 01/2026, Fundatec, cadastro de reserva em 21 cargos"
+  },
+  {
+   "campo": "banca",
+   "valor": "Fundatec",
    "fonte_tipo": "agregador",
    "veiculo": "PCI Concursos",
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-padua-rs-abre-concurso-para-cadastro-de-reserva-em-diversas-areas",

@@ -46,6 +46,16 @@
    "nota": "251 Perito Legista + 76 Perito Criminal + 2 Piloto Policial"
   },
   {
+   "campo": "banca",
+   "valor": "FGV",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Nova Concursos",
+   "url": "https://www.novaconcursos.com.br/portal/?p=317074",
+   "data": "2026-10-19",
+   "registrado_em": "2026-11-13",
+   "nota": "Título da matéria: 'Concurso PC RJ banca contratada: FGV e 329 vagas'; lido pelo resultado da busca (site fora da rede da sessão). Folha diz que a banca foi contratada em 19/10/2026"
+  },
+  {
    "campo": "status",
    "valor": "banca_contratada",
    "fonte_tipo": "imprensa",
@@ -59,11 +69,83 @@
    "campo": "status",
    "valor": "banca_contratada",
    "fonte_tipo": "imprensa",
+   "veiculo": "Nova Concursos",
+   "url": "https://www.novaconcursos.com.br/portal/?p=317074",
+   "data": "2026-10-19",
+   "registrado_em": "2026-11-13",
+   "nota": "Título da matéria: 'Concurso PC RJ banca contratada: FGV e 329 vagas'; lido pelo resultado da busca (site fora da rede da sessão). Folha diz que a banca foi contratada em 19/10/2026"
+  },
+  {
+   "campo": "vagas",
+   "valor": 329,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Nova Concursos",
+   "url": "https://www.novaconcursos.com.br/portal/?p=317074",
+   "data": "2026-10-19",
+   "registrado_em": "2026-11-13",
+   "nota": "Título da matéria: 'Concurso PC RJ banca contratada: FGV e 329 vagas'; lido pelo resultado da busca (site fora da rede da sessão). Folha diz que a banca foi contratada em 19/10/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
    "veiculo": "Folha Dirigida/Qconcursos",
    "url": "https://folha.qconcursos.com/n/concursos-previstos-novembro-2026",
    "data": "2026-11-02",
    "registrado_em": "2026-11-12",
    "nota": "Data da página: FGV 'oficialmente contratada'; edital pode sair em novembro. Gran e Degrau Cultural (comissão de fiscalização do contrato no DO de 03/11) repetem, mas não foram abertos; extrato não conferido"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Edital estimado ainda para 2026; depende de parecer da Assessoria Jurídica e da PGE",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-fiscais-nomeados-2026",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-13",
+   "nota": "Fiscais do contrato com a FGV designados em 03/11/2026"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Perito Legista",
+    "vagas": 251,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-fiscais-nomeados-2026",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-13",
+   "nota": "Número do veículo, ainda sem edital"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Perito Criminal",
+    "vagas": 76,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-fiscais-nomeados-2026",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-13",
+   "nota": "Número do veículo, ainda sem edital"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Piloto Policial",
+    "vagas": 2,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-fiscais-nomeados-2026",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-13",
+   "nota": "Número do veículo, ainda sem edital"
   }
  ]
 }

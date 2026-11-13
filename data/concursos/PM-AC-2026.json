@@ -24,6 +24,16 @@
    "nota": "Dispensa de licitação publicada no DOE-AC de 12/11/2026; lido só no trecho do buscador"
   },
   {
+   "campo": "banca",
+   "valor": "Idecan",
+   "fonte_tipo": "imprensa",
+   "veiculo": "A Gazeta do Acre",
+   "url": "https://agazetadoacre.com/2026/11/noticias/geral/concursos-da-pm-e-dos-bombeiros-do-acre-terao-idecan-como-banca-organizadora-veja-o-que-se-sabe/",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-13",
+   "nota": "Dispensa de licitação publicada no DOE-AC em 12/11/2026 (art. 75, XV, Lei 14.133) para o Idecan organizar os concursos da PMAC e do CBMAC; contrato ainda a formalizar; lido pelo resultado da busca"
+  },
+  {
    "campo": "status",
    "valor": "banca_definida",
    "fonte_tipo": "imprensa",
@@ -32,6 +42,16 @@
    "data": "2026-11-12",
    "registrado_em": "2026-11-12",
    "nota": "Idecan escolhido por dispensa de licitação, ato publicado no DOE-AC de 12/11/2026; contrato não assinado. Lido só no trecho do buscador (site bloqueado na sessão); A Gazeta do Acre e Direção repetem. Vagas divergem: 262 (Gran) x 260 (Estratégia)"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "A Gazeta do Acre",
+   "url": "https://agazetadoacre.com/2026/11/noticias/geral/concursos-da-pm-e-dos-bombeiros-do-acre-terao-idecan-como-banca-organizadora-veja-o-que-se-sabe/",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-13",
+   "nota": "Dispensa de licitação publicada no DOE-AC em 12/11/2026 (art. 75, XV, Lei 14.133) para o Idecan organizar os concursos da PMAC e do CBMAC; contrato ainda a formalizar; lido pelo resultado da busca"
   }
  ]
 }
