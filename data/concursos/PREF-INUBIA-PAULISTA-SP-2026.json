@@ -1,0 +1,63 @@
+{
+ "id": "PREF-INUBIA-PAULISTA-SP-2026",
+ "orgao": "Prefeitura de Inúbia Paulista/SP",
+ "sigla": "PREF-INUBIA-PAULISTA-SP",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296613
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inubia-paulista-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inubia-paulista-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inubia-paulista-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controlador Interno",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inubia-paulista-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-13",
+   "nota": "sem número na lista da notícia: cadastro de reserva"
+  }
+ ]
+}

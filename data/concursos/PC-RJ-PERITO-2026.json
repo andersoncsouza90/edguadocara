@@ -50,6 +50,16 @@
    "valor": "banca_contratada",
    "fonte_tipo": "imprensa",
    "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-fiscais-nomeados-2026",
+   "data": "2026-10-19",
+   "registrado_em": "2026-11-13",
+   "nota": "Matéria de 03/11/2026: FGV 'foi contratada no último dia 19 de outubro'; fiscais do contrato designados em 03/11; edital depende de parecer da Assessoria Jurídica e da PGE. Mesmo veículo do registro anterior; extrato não citado"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
    "url": "https://folha.qconcursos.com/n/concursos-previstos-novembro-2026",
    "data": "2026-11-02",
    "registrado_em": "2026-11-12",
