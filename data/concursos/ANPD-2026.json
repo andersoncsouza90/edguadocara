@@ -1,0 +1,129 @@
+{
+ "id": "ANPD-2026",
+ "orgao": "Agência Nacional de Proteção de Dados",
+ "sigla": "ANPD",
+ "area": "controle",
+ "esfera": "federal",
+ "uf": null,
+ "cargos": [
+  "Especialista em Regulação de Proteção de Dados"
+ ],
+ "aliases": [
+  "ANPD-2027"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-anpd-2027-cebraspe-banca/",
+   "data": "2026-06-24",
+   "registrado_em": "2026-11-16",
+   "nota": "Autorização de 24/06/2026 (50 vagas), segundo a imprensa"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Wilson Tavares",
+   "url": "https://wilsontavares.com.br/blog/artigos/anpd/",
+   "data": "2026-06-24",
+   "registrado_em": "2026-11-16",
+   "nota": "50 vagas autorizadas; edital previsto até dezembro"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-anpd-comissao-organizadora",
+   "data": "2026-11-11",
+   "registrado_em": "2026-11-16",
+   "nota": "Portaria GABPR/ANPD nº 759 institui a comissão organizadora (relatado; não localizado no DOU)"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-anpd-2027-cebraspe-banca/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Banca definida pela ANPD por dispensa de licitação (informado como oficializado)"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-anpd-banca-definida-2026/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Cebraspe definido; edital previsto para dezembro"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Edital previsto para até 24/12/2026 (prazo de seis meses da autorização); provas previstas para 18/04/2027",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-anpd-2027-cebraspe-banca/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Datas previstas, não oficiais"
+  },
+  {
+   "campo": "salario_max",
+   "valor": 17726.42,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Certou",
+   "url": "https://certou.com.br/concurso-anpd-2026-primeiro-edital-vagas-salarios-especialista/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Remuneração inicial informada"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-anpd-2027-cebraspe-banca/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Fontes de imprensa; verificar no DOU/edital"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-anpd-banca-definida-2026/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Fontes de imprensa; verificar no DOU/edital"
+  },
+  {
+   "campo": "vagas",
+   "valor": 50,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Certou",
+   "url": "https://certou.com.br/concurso-anpd-2026-primeiro-edital-vagas-salarios-especialista/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "50 vagas imediatas + cadastro reserva de até 150; especialista, nível superior"
+  },
+  {
+   "campo": "vagas",
+   "valor": 50,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Fatos de Mato Grosso",
+   "url": "https://www.fatosdematogrosso.com.br/concursos/50-vagas-e-salario-de-r-177-mil-anpd-avanca-na-preparacao-de-concurso/14854",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "50 vagas"
+  }
+ ]
+}
