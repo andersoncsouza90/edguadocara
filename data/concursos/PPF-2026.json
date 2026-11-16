@@ -1,0 +1,46 @@
+{
+ "id": "PPF-2026",
+ "orgao": "Polícia Penal Federal (Senappen/MJSP)",
+ "sigla": "PPF",
+ "area": "policial",
+ "esfera": "federal",
+ "uf": null,
+ "cargos": [
+  "Policial Penal Federal",
+  "Especialista Federal em Assistência à Execução Penal",
+  "Técnico Federal de Apoio à Execução Penal"
+ ],
+ "aliases": [
+  "SENAPPEN-2026",
+  "PPF-2027"
+ ],
+ "banca_anterior": {
+  "nome": "Cebraspe",
+  "ano": 2020,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "previsao",
+   "valor": "Ministra Esther Dweck (MGI) projetou em 12/11/2026 autorização e novo concurso em 2027",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-penal-federal-2027-ministra-projeta-autorizacao",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-16",
+   "nota": "Projeção em entrevista ao 'Bom dia, ministra'; sem autorização publicada"
+  },
+  {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-penal-federal-2027-ministra-projeta-autorizacao",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-16",
+   "nota": "Senappen pediu ao MGI em 2026 concurso com 10 vagas de policial penal federal, 1 de especialista e cadastro de reserva de técnico; pedido em análise. Último concurso expirou em 26/05/2026"
+  }
+ ]
+}

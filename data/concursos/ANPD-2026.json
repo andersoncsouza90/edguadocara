@@ -76,6 +76,16 @@
    "nota": "Datas previstas, não oficiais"
   },
   {
+   "campo": "previsao",
+   "valor": "Termo de referência no PNCP: assinatura do contrato com o Cebraspe no 'próximo dia 20', edital em 18/12/2026 e provas em 18/04/2027 (datas preliminares)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-anpd-cebraspe-2026",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Cronograma do documento-base, sujeito a alteração; contrato ainda não assinado em 16/11"
+  },
+  {
    "campo": "salario_max",
    "valor": 17726.42,
    "fonte_tipo": "imprensa",
