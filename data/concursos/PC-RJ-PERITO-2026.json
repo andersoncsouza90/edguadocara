@@ -156,6 +156,16 @@
    "data": "2026-11-03",
    "registrado_em": "2026-11-13",
    "nota": "Número do veículo, ainda sem edital"
+  },
+  {
+   "campo": "nota",
+   "valor": "Extrato no DOERJ: Contrato nº 92/SEPOL/2026 (Sepol x FGV), cerca de R$ 2,97 milhões, 12 meses; publicada também a comissão de fiscalização do contrato",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-pc-rj-comissao-fiscalizacao-contrato-fgv",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": "Data da verificação; dados do trecho da busca, a página não abriu"
   }
  ]
 }
