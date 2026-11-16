@@ -58,6 +58,16 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": "sem número na lista da notícia: cadastro de reserva"
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 16 cargos (6 vagas até R$ 6.892,33 no total); cargos da área: Fiscal tributário",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-branca-sp-abre-concurso-publico-com-salarios-de-ate-6892",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
   }
  ]
 }

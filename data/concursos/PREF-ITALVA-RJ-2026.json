@@ -1,0 +1,88 @@
+{
+ "id": "PREF-ITALVA-RJ-2026",
+ "orgao": "Prefeitura de Italva/RJ",
+ "sigla": "PREF-ITALVA-RJ",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "RJ",
+ "cargos": [
+  "Auditor de controle interno",
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296654
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-italva-rj-abre-concurso-publico-com-salarios-de-ate-12132",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-italva-rj-abre-concurso-publico-com-salarios-de-ate-12132",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 53 cargos (137 vagas até R$ 12.132,37 no total); cargos da área: Auditor de controle interno, Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-italva-rj-abre-concurso-publico-com-salarios-de-ate-12132",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-italva-rj-abre-concurso-publico-com-salarios-de-ate-12132",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor de Controle Interno",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-italva-rj-abre-concurso-publico-com-salarios-de-ate-12132",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-italva-rj-abre-concurso-publico-com-salarios-de-ate-12132",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  }
+ ]
+}

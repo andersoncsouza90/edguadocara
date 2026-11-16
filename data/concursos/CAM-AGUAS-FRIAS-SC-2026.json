@@ -1,0 +1,63 @@
+{
+ "id": "CAM-AGUAS-FRIAS-SC-2026",
+ "orgao": "Câmara Municipal de Águas Frias/SC",
+ "sigla": "CAM-AGUAS-FRIAS-SC",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Controle interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296667
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-20",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-aguas-frias-sc-abre-concurso-para-tesoureiro-contador-e-controle-interno",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-aguas-frias-sc-abre-concurso-para-tesoureiro-contador-e-controle-interno",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-aguas-frias-sc-abre-concurso-para-tesoureiro-contador-e-controle-interno",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controle Interno",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-aguas-frias-sc-abre-concurso-para-tesoureiro-contador-e-controle-interno",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-16",
+   "nota": ""
+  }
+ ]
+}
