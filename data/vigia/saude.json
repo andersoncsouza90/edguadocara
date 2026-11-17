@@ -1,9 +1,10 @@
 {
  "dou": {
-  "erro": "",
-  "lidos": 2893,
+  "erro": "Falha ao baixar https://www.in.gov.br/leiturajornal?data=16-11-2026&secao=do1: The read operation timed out",
+  "falhou_em": "2026-11-17T09:20Z",
+  "lidos": 0,
   "nome": "Diário Oficial da União (seções 1 e 3)",
-  "ok": true,
+  "ok": false,
   "relevantes": 0,
   "ultima_ok": "2026-11-17T04:00Z"
  },
@@ -13,7 +14,7 @@
   "nome": "Fundação Carlos Chagas (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-17T04:00Z"
+  "ultima_ok": "2026-11-17T09:20Z"
  },
  "fgv": {
   "erro": "",
@@ -21,7 +22,7 @@
   "nome": "FGV Conhecimento (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-17T04:00Z"
+  "ultima_ok": "2026-11-17T09:20Z"
  },
  "ibgp": {
   "erro": "",
@@ -29,6 +30,6 @@
   "nome": "IBGP (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-17T04:00Z"
+  "ultima_ok": "2026-11-17T09:20Z"
  }
 }
