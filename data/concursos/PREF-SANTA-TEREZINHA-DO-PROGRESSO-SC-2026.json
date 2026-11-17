@@ -6,11 +6,14 @@
  "esfera": "municipal",
  "uf": "SC",
  "cargos": [
-  "Agente, Fiscal e Auditor de Tributação"
+  "Agente, Fiscal e Auditor de Tributação",
+  "Agente, fiscal e auditor de tributação"
  ],
  "aliases": [],
  "banca_anterior": null,
- "pci_ids": [],
+ "pci_ids": [
+  296113
+ ],
  "encerrado": false,
  "fatos": [
   {

@@ -6,11 +6,14 @@
  "esfera": "municipal",
  "uf": "RS",
  "cargos": [
-  "Auditor Tributário"
+  "Auditor Tributário",
+  "Auditor tributário"
  ],
  "aliases": [],
  "banca_anterior": null,
- "pci_ids": [],
+ "pci_ids": [
+  296185
+ ],
  "encerrado": false,
  "fatos": [
   {

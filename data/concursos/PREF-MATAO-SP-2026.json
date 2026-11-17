@@ -6,11 +6,14 @@
  "esfera": "municipal",
  "uf": "SP",
  "cargos": [
-  "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos"
+  "Agente de Fiscalização Pública - Fiscal de Comércio, Serviços e Tributos",
+  "Agente de fiscalização pública - fiscal de comércio, serviços e tributos"
  ],
  "aliases": [],
  "banca_anterior": null,
- "pci_ids": [],
+ "pci_ids": [
+  295934
+ ],
  "encerrado": false,
  "fatos": [
   {
