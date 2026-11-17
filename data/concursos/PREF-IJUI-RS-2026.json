@@ -6,7 +6,9 @@
  "esfera": "municipal",
  "uf": "RS",
  "cargos": [
-  "Fiscal tributário"
+  "Fiscal tributário",
+  "Analista de controle interno - direito",
+  "Analista de Controle Interno - Área Direito"
  ],
  "aliases": [],
  "banca_anterior": null,
@@ -15,6 +17,26 @@
  ],
  "encerrado": false,
  "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Fundatec",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-municipal-de-ijui-rs-publica-concurso-com-157-vagas",
+   "data": "2026-10-23",
+   "registrado_em": "2026-11-17",
+   "nota": "Concurso Público nº 01/2026; inscrições pelo site da Fundatec"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-19",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/prefeitura-municipal-de-ijui-rs-publica-concurso-com-157-vagas",
+   "data": "2026-10-23",
+   "registrado_em": "2026-11-17",
+   "nota": "Folha: inscrições de 23/10 a 19/11/2026; o PCI indica 24/11 — conferir no edital"
+  },
   {
    "campo": "inscricoes_fim",
    "valor": "2026-11-19",
@@ -77,6 +99,74 @@
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-abre-concurso-publico-com-salarios-de-ate-21312",
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-24",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-retifica-edital-de-concurso-publico",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-retifica-edital-de-concurso-publico",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 83 cargos (157 vagas até R$ 21.312,22 no total); cargos da área: Analista de controle interno - direito, Fiscal tributário",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-retifica-edital-de-concurso-publico",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-retifica-edital-de-concurso-publico",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista de Controle Interno - Área Direito",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-retifica-edital-de-concurso-publico",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal Tributário",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-retifica-edital-de-concurso-publico",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
    "nota": ""
   }
  ]

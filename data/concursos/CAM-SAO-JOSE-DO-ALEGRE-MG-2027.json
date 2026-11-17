@@ -1,0 +1,69 @@
+{
+ "id": "CAM-SAO-JOSE-DO-ALEGRE-MG-2027",
+ "orgao": "Câmara Municipal de São José do Alegre/MG",
+ "sigla": "CAM-SAO-JOSE-DO-ALEGRE-MG",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296712
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-14",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-jose-do-alegre-mg-abre-concurso-para-controlador-interno",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2027-01-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-jose-do-alegre-mg-abre-concurso-para-controlador-interno",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "salario_max",
+   "valor": 3131.31,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-jose-do-alegre-mg-abre-concurso-para-controlador-interno",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-jose-do-alegre-mg-abre-concurso-para-controlador-interno",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "vagas",
+   "valor": 1,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-sao-jose-do-alegre-mg-abre-concurso-para-controlador-interno",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  }
+ ]
+}

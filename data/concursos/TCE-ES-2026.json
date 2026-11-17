@@ -1,0 +1,81 @@
+{
+ "id": "TCE-ES-2026",
+ "orgao": "Tribunal de Contas do Estado — ES",
+ "sigla": "TCE-ES",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "ES",
+ "cargos": [
+  "Técnico de nível superior - desenvolvedor c# full stack",
+  "Técnico de nível superior - infraestrutura de tecnologia da informação",
+  "Técnico de nível superior - inteligência artificial"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296701
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/tce-es-abre-processo-seletivo-com-vagas-na-area-de-tecnologia",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/tce-es-abre-processo-seletivo-com-vagas-na-area-de-tecnologia",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Processo seletivo simplificado de designação temporária (até 36 meses, prorrogável), área de TI: Desenvolvedor C# 15 vagas + CR, Infraestrutura de TI 1 vaga + CR, Inteligência Artificial só CR; não é concurso efetivo de controle externo",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/tce-es-abre-processo-seletivo-com-vagas-na-area-de-tecnologia",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": "data da verificação"
+  },
+  {
+   "campo": "salario_max",
+   "valor": 17645.21,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/tce-es-abre-processo-seletivo-com-vagas-na-area-de-tecnologia",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/tce-es-abre-processo-seletivo-com-vagas-na-area-de-tecnologia",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  },
+  {
+   "campo": "vagas",
+   "valor": 16,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/tce-es-abre-processo-seletivo-com-vagas-na-area-de-tecnologia",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": ""
+  }
+ ]
+}
