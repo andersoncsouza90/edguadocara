@@ -1,0 +1,69 @@
+{
+ "id": "PC-TO-2026",
+ "orgao": "Polícia Civil do Estado do Tocantins",
+ "sigla": "PC-TO",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "TO",
+ "cargos": [
+  "Delegado de Polícia",
+  "Perito Criminal",
+  "Investigador de Polícia"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "CEISC",
+   "url": "https://ceisc.com.br/blog/post/governo-do-tocantins-assina-autorizacao-para-novo-edital-com-452-vagas-na-policia-civil",
+   "data": "2026-03-30",
+   "registrado_em": "2026-11-17",
+   "nota": "Governo do Tocantins assina autorização para 452 vagas"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Nova Concursos",
+   "url": "https://www.novaconcursos.com.br/portal/?p=313613",
+   "data": "2026-03-30",
+   "registrado_em": "2026-11-17",
+   "nota": "452 vagas autorizadas"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-comissao-2026",
+   "data": "2026-04-01",
+   "registrado_em": "2026-11-17",
+   "nota": "Comissão organizadora instituída por portaria no DOE-TO de 01/04/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-pc-to-institui-comissao-organizadora",
+   "data": "2026-04-01",
+   "registrado_em": "2026-11-17",
+   "nota": "PC-TO institui comissão organizadora"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-2026-banca-escolha",
+   "data": "2026-08-21",
+   "registrado_em": "2026-11-17",
+   "nota": "Concurso segue em fase de escolha da banca; sem prazo para contratação (lido no trecho do buscador)"
+  }
+ ]
+}

@@ -106,6 +106,16 @@
    "nota": "Data da página: FGV 'oficialmente contratada'; edital pode sair em novembro. Gran e Degrau Cultural (comissão de fiscalização do contrato no DO de 03/11) repetem, mas não foram abertos; extrato não conferido"
   },
   {
+   "campo": "nota",
+   "valor": "Fiscais do contrato com a FGV designados",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-fiscais-nomeados-2026",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-17",
+   "nota": "Contrato nº 92/SEPOL/2026 de 19/10/2026; edital ainda não publicado"
+  },
+  {
    "campo": "previsao",
    "valor": "Edital estimado ainda para 2026; depende de parecer da Assessoria Jurídica e da PGE",
    "fonte_tipo": "imprensa",

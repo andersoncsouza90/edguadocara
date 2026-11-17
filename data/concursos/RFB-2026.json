@@ -159,6 +159,16 @@
    "data": "2026-11-07",
    "registrado_em": "2026-11-11",
    "nota": "Título: 'pode ter banca contratada em novembro'; sem nome de banca"
+  },
+  {
+   "campo": "nota",
+   "valor": "Processo de contratação da banca chegou à área financeira; 17 propostas analisadas; sem banca confirmada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-receita-federal-2026-processo-chega-a-area-financeira-e-edital-avanca-para-146-vagas/",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": "Data da verificação; um veículo cita FGV, mas a maioria diz que não há banca definida (não registrado como banca)"
   }
  ]
 }

@@ -34,6 +34,16 @@
    "nota": "Dispensa de licitação publicada no DOE-AC em 12/11/2026 (art. 75, XV, Lei 14.133) para o Idecan organizar os concursos da PMAC e do CBMAC; contrato ainda a formalizar; lido pelo resultado da busca"
   },
   {
+   "campo": "nota",
+   "valor": "Dispensa do Idecan assinada em 11/11 e publicada no DOE-AC em 12/11/2026 (PM e Bombeiros); fontes divergem se o contrato já foi assinado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Juruá Informativo",
+   "url": "https://www.juruainformativo.com.br/2026/11/saiu-no-diario-oficial-governo-contrata-banca-para-concursos-da-pm-e-dos-bombeiros-no-acre/",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-17",
+   "nota": "Estratégia e Direção dizem 'contratado'; ac24horas e Folha do Acre dizem que o contrato ainda será formalizado. Mantida banca definida"
+  },
+  {
    "campo": "status",
    "valor": "banca_definida",
    "fonte_tipo": "imprensa",

@@ -62,6 +62,26 @@
    "nota": "Provas objetiva e discursiva adiadas de 13/12 para 20/12/2026"
   },
   {
+   "campo": "nota",
+   "valor": "Provas adiadas de 13/12 para 20/12/2026 (Edital nº 02/2026)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "ABC do ABC",
+   "url": "https://abcdoabc.com.br/provas-do-concurso-da-sefaz-sp-sao-adiadas/",
+   "data": "2026-10-22",
+   "registrado_em": "2026-11-17",
+   "nota": "Edital nº 02/2026 publicado no DOE em 22/10/2026 adia as provas para 20/12"
+  },
+  {
+   "campo": "nota",
+   "valor": "Provas adiadas de 13/12 para 20/12/2026 (Edital nº 02/2026)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-sp-provas-nova-data-2026",
+   "data": "2026-10-22",
+   "registrado_em": "2026-11-17",
+   "nota": "Nova data das provas: 20/12/2026"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-11-03",
    "fonte_tipo": "agregador",

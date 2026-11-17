@@ -71,6 +71,16 @@
    "nota": "Dados do trecho da busca (página não abriu); Magistrar também noticia a publicação do contrato em 10/11"
   },
   {
+   "campo": "nota",
+   "valor": "Contrato nº 26/04/031 com a FCC (assinado em 05/11 e 09/11/2026), R$ 1.902.785,00, 36 meses; autorização de início de serviço em 10/11/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "CEISC",
+   "url": "https://ceisc.com.br/blog/post/concurso-sefaz-rs-contrato-com-a-fundacao-carlos-chagas-e-assinado-e-novo-edital-e-iminente",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-17",
+   "nota": "Previsão sem edital: 29 AFRE e 17 ATRE (Folha Dirigida); vagas não registradas até o edital"
+  },
+  {
    "campo": "previsao",
    "valor": "Próximos passos: assinatura do contrato com a FCC e publicação dos editais, ainda sem data",
    "fonte_tipo": "imprensa",

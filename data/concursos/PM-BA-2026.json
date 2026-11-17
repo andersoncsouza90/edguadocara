@@ -1,0 +1,72 @@
+{
+ "id": "PM-BA-2026",
+ "orgao": "Polícia Militar da Bahia",
+ "sigla": "PM-BA",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "BA",
+ "cargos": [
+  "Soldado PM",
+  "Oficial PM (CFO)"
+ ],
+ "aliases": [],
+ "banca_anterior": {
+  "nome": "FCC",
+  "ano": 2022,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "previsao",
+   "valor": "Edital até fevereiro de 2027, segundo o governador",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-pm-ba-edital-para-2700-vagas-ate-fevereiro-diz-governador-146215",
+   "data": "2026-10-26",
+   "registrado_em": "2026-11-17",
+   "nota": "Declaração do governador; fontes oscilam entre dez/2026 e fev/2027"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-ba-2026-autorizado",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": "Data da verificação (autorização de junho/2026, dia exato não conferido); 2.700 vagas (2.500 soldado + 200 CFO)"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-pm-ba-edital-nao-e-publicado-mas-governo-reforca-aval-para-2700-vagas-de-soldados-e-oficiais-143442",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": "Data da verificação; governo reforça aval para 2.700 vagas"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-pm-ba-iniciado-processo-de-escolha-da-banca-para-2700-vagas-144531",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": "Data da verificação; iniciado processo de escolha da banca"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-ba-2026-em-fase-de-escolha-da-banca",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": "Data da verificação; comandante diz que está em fase de escolha da banca"
+  }
+ ]
+}

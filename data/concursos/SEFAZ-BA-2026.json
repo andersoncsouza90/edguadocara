@@ -77,6 +77,16 @@
    "data": "2026-11-11",
    "registrado_em": "2026-11-11",
    "nota": "Data da verificação; vagas divergem: 187 (autorização de março: 100 AF + 87 ATE) ou 200 (100+100)"
+  },
+  {
+   "campo": "nota",
+   "valor": "Fontes divergem sobre a assinatura do contrato com a Cesgranrio: 7Fontes e Folha Dirigida dizem assinado; Aprova (citando o Sindsefaz), LS Ensino e Magistrar dizem que o contrato ainda será redigido",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Aprova Concursos",
+   "url": "https://www.aprovaconcursos.com.br/noticias/concurso-sefaz-ba/",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-17",
+   "nota": "Data da verificação; extrato do contrato não localizado. Vagas divergem: 187 (100 AF + 87 ATE) ou 200"
   }
  ]
 }

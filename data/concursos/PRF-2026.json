@@ -60,6 +60,16 @@
    "nota": "Declaração de Esther Dweck; é previsão, não autorização. Lido só no trecho do buscador; Direção e Gran repetem"
   },
   {
+   "campo": "nota",
+   "valor": "Ministra Esther Dweck (MGI) prevê autorização e edital em 2027 (declaração, sem ato)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-prf-2027-esther-dweck-preve-autorizacao",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-17",
+   "nota": "Entrevista da ministra; pedido segue sem autorização"
+  },
+  {
    "campo": "previsao",
    "valor": "Ministra Esther Dweck (MGI) disse em 12/11/2026 que a PRF 'deve ter um novo concurso no ano que vem' (2027); ainda sem autorização",
    "fonte_tipo": "imprensa",
@@ -68,6 +78,16 @@
    "data": "2026-11-12",
    "registrado_em": "2026-11-13",
    "nota": "Fala no programa Bom dia, Ministra; pedidos somam 533 vagas (269 de policial + 264 de agente administrativo)"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Autorização e edital previstos para 2027 (declaração da ministra do MGI)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "CEISC",
+   "url": "https://ceisc.com.br/blog/post/concurso-prf-em-entrevista-ministra-da-gestao-indica-novo-edital-em-2027",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-17",
+   "nota": "Declaração da ministra Esther Dweck; não é ato oficial"
   }
  ]
 }

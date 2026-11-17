@@ -1,0 +1,39 @@
+{
+ "id": "TC-DF-2026",
+ "orgao": "Tribunal de Contas do Distrito Federal",
+ "sigla": "TC-DF",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "DF",
+ "cargos": [
+  "Analista Administrativo de Controle Externo"
+ ],
+ "aliases": [
+  "TCDF-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/tc_df_26_analista/arquivos/5CBDB1BF33DA95A4A4268EAEB774729DABC511BEB376FD8BA860E1DCE2AB265B.html",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-17",
+   "nota": "Concurso organizado pelo Cebraspe"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/tc_df_26_analista/arquivos/5CBDB1BF33DA95A4A4268EAEB774729DABC511BEB376FD8BA860E1DCE2AB265B.html",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-17",
+   "nota": "Edital nº 3 de 05/11/2026 marca a prova objetiva para 22/11/2026"
+  }
+ ]
+}

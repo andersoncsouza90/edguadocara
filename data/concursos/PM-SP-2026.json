@@ -64,6 +64,26 @@
    "data": "2026-11-06",
    "registrado_em": "2026-11-06",
    "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Vunesp",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-pm-sp-inscricoes-abertas-para-2-mil-vagas-de-soldado",
+   "data": "2026-11-09",
+   "registrado_em": "2026-11-17",
+   "nota": "Inscrições de 09/11 a 22/12/2026 pelo site da Vunesp; prova prevista para 28/02/2027"
+  },
+  {
+   "campo": "banca",
+   "valor": "Vunesp",
+   "fonte_tipo": "imprensa",
+   "veiculo": "CEISC",
+   "url": "https://ceisc.com.br/blog/post/concurso-pm-sp-edital-para-carreira-de-soldado-esta-com-inscricoes-abertas",
+   "data": "2026-11-09",
+   "registrado_em": "2026-11-17",
+   "nota": "Edital de Soldado PM 2ª classe com 2 mil vagas organizado pela Vunesp"
   }
  ]
 }

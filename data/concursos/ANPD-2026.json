@@ -46,6 +46,26 @@
    "nota": "Portaria GABPR/ANPD nº 759 institui a comissão organizadora (relatado; não localizado no DOU)"
   },
   {
+   "campo": "nota",
+   "valor": "ANPD autorizou a contratação do Cebraspe por dispensa e divulgou o termo de referência; contrato previsto para 20/11/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-anpd-banca-definida-2026/",
+   "data": "2026-11-14",
+   "registrado_em": "2026-11-17",
+   "nota": "Lido só no trecho do buscador; Estratégia fala em 'oficializado', a maioria em contrato ainda previsto (mantida banca definida)"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Edital previsto para 18/12/2026 e provas para 18/04/2027 (termo de referência)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-anpd-2026-cebraspe-e-escolhido-como-banca-veja-provas-e-como-estudar/",
+   "data": "2026-11-14",
+   "registrado_em": "2026-11-17",
+   "nota": "Cronograma do termo de referência da dispensa"
+  },
+  {
    "campo": "banca",
    "valor": "Cebraspe",
    "fonte_tipo": "imprensa",

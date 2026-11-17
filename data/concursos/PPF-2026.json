@@ -33,6 +33,16 @@
    "nota": "Projeção em entrevista ao 'Bom dia, ministra'; sem autorização publicada"
   },
   {
+   "campo": "previsao",
+   "valor": "Autorização e edital projetados para 2027 (declaração da ministra do MGI)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-penal-federal-2027-ministra-projeta-autorizacao",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-17",
+   "nota": "Declaração da ministra Esther Dweck; pedido ainda sem autorização"
+  },
+  {
    "campo": "status",
    "valor": "solicitado",
    "fonte_tipo": "imprensa",
