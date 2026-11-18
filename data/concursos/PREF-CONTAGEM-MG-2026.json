@@ -123,6 +123,26 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-03",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-contagem-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 35 cargos (269 vagas até R$ 13.305,57 no total); cargos da área: Auditor de controle interno - ciências contábeis, Auditor de controle interno - direito, Auditor de controle interno - engenharia civil, Auditor de controle interno - tecnologia da informação",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-contagem-mg-retifica-edital-de-concurso-publico",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-18",
+   "nota": ""
   }
  ]
 }
