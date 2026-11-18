@@ -1,0 +1,94 @@
+{
+ "id": "SEFAZ-AL-2026",
+ "orgao": "Secretaria de Estado da Fazenda de Alagoas",
+ "sigla": "SEFAZ-AL",
+ "area": "fiscal",
+ "esfera": "estadual",
+ "uf": "AL",
+ "cargos": [
+  "Auditor Fiscal da Administração Tributária Estadual"
+ ],
+ "aliases": [
+  "Sefaz AL",
+  "SEFAZ Alagoas"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/SEFAZ_AL_26/arquivos/DD4C3A2730B25BBF2A25E18515B454A52ECF7512DFB31A68C1D03E512779123F.html",
+   "data": "2026-08-24",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital publicado no site da Cebraspe."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/SEFAZ_AL_26/arquivos/DD4C3A2730B25BBF2A25E18515B454A52ECF7512DFB31A68C1D03E512779123F.html",
+   "data": "2026-08-24",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 1 de abertura, Auditor Fiscal da Administração Tributária Estadual."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal da Administração Tributária Estadual",
+    "vagas": 40,
+    "cr": true
+   },
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/SEFAZ_AL_26/arquivos/DD4C3A2730B25BBF2A25E18515B454A52ECF7512DFB31A68C1D03E512779123F.html",
+   "data": "2026-08-24",
+   "registrado_em": "2026-11-18",
+   "nota": "40 vagas imediatas + 60 de cadastro de reserva (Edital nº 1)."
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-10-21",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-sefaz-al-auditor-fiscal-2026-edital-inscricao-144965",
+   "data": "2026-08-25",
+   "registrado_em": "2026-11-18",
+   "nota": "Inscrições de 17/09 a 21/10/2026; prova objetiva em 20/12/2026."
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-09-17",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-sefaz-al-auditor-fiscal-2026-edital-inscricao-144965",
+   "data": "2026-08-25",
+   "registrado_em": "2026-11-18",
+   "nota": "Inscrições de 17/09 a 21/10/2026 no site da Cebraspe."
+  },
+  {
+   "campo": "salario_max",
+   "valor": 25270.68,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-sefaz-al-publicado",
+   "data": "2026-08-25",
+   "registrado_em": "2026-11-18",
+   "nota": "Salário inicial de R$ 25.270,68."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/al/2026/08/25/concurso-sefaz-al-divulga-abertura-de-novo-edital-com-100-vagas/",
+   "data": "2026-08-25",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital com 100 vagas (40 imediatas + CR) para auditor fiscal, banca Cebraspe."
+  }
+ ]
+}

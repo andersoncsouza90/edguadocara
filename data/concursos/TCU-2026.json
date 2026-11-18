@@ -1,0 +1,40 @@
+{
+ "id": "TCU-2026",
+ "orgao": "Tribunal de Contas da União",
+ "sigla": "TCU",
+ "area": "controle",
+ "esfera": "federal",
+ "uf": "BR",
+ "cargos": [
+  "Auditor Federal de Controle Externo"
+ ],
+ "aliases": [
+  "TCU 2027",
+  "Concurso TCU auditor"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tcu-auditor-previsto-no-ploa-2027",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-18",
+   "nota": "Data da verificação. Documentos complementares do PLOA 2027 preveem novo concurso para Auditor; sem banca, vagas por cargo ou data."
+  },
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-tcu-ploa-2027/amp/",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-18",
+   "nota": "Data da verificação. PLOA 2027 prevê novo edital para auditor do TCU e 43 provimentos (não são vagas do edital)."
+  }
+ ]
+}

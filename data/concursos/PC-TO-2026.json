@@ -64,6 +64,108 @@
    "data": "2026-08-21",
    "registrado_em": "2026-11-17",
    "nota": "Concurso segue em fase de escolha da banca; sem prazo para contratação (lido no trecho do buscador)"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Cebraspe contratado; extrato publicado no DOE-TO."
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/concurso-pc-to-contrato-assinado-e-edital-previsto-para-dezembro",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Contrato com o Cebraspe assinado; edital previsto para dezembro (lido só pelo trecho do buscador)."
+  },
+  {
+   "campo": "previsao",
+   "valor": "Edital até o início de dezembro/2026 (governador: 'dentro de 18 dias')",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Declaração do governador Wanderlei Barbosa."
+  },
+  {
+   "campo": "salario_max",
+   "valor": 21901.7,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Delegado R$ 21.901,70; Perito R$ 17.694,68; Investigador R$ 7.917,97."
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Cebraspe contratado, com extrato no DOE-TO, anunciado pelo governador; data do extrato não informada (usada a data da notícia)."
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-pc-to-contratada-banca-para-452-vagas-edital-iminente-146611",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Contratada banca para 452 vagas; edital iminente (lido só pelo título, página 403)."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Delegado de Polícia",
+    "vagas": 69,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Perito Criminal",
+    "vagas": 60,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Citado como Perito Oficial."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Investigador de Polícia",
+    "vagas": 323,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-18",
+   "nota": "Citado como Oficial Investigador."
   }
  ]
 }
