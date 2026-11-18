@@ -1,0 +1,133 @@
+{
+ "id": "PC-PR-2026",
+ "orgao": "Polícia Civil do Estado do Paraná",
+ "sigla": "PC-PR",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "PR",
+ "cargos": [
+  "Delegado de Polícia",
+  "Agente de Polícia Judiciária",
+  "Papiloscopista Policial"
+ ],
+ "aliases": [
+  "PCPR-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "FGV",
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 01/2026 PCPR/Fundaseg, só cadastro de reserva; autorização no DIOE-PR nº 12082 de 06/02/2026"
+  },
+  {
+   "campo": "edital_url",
+   "valor": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 01/2026 PCPR/Fundaseg, só cadastro de reserva; autorização no DIOE-PR nº 12082 de 06/02/2026"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-08-12",
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 01/2026 PCPR/Fundaseg, só cadastro de reserva; autorização no DIOE-PR nº 12082 de 06/02/2026"
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-07-14",
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 01/2026 PCPR/Fundaseg, só cadastro de reserva; autorização no DIOE-PR nº 12082 de 06/02/2026"
+  },
+  {
+   "campo": "nota",
+   "valor": "Concurso só para cadastro de reserva (sem vagas imediatas); prova objetiva prevista para 11/10/2026 e discursiva de Delegado em 20/12/2026",
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 01/2026 PCPR/Fundaseg, só cadastro de reserva; autorização no DIOE-PR nº 12082 de 06/02/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-pr-edital-2026",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital FGV para Delegado, Agente e Papiloscopista (cadastro de reserva)"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Delegado de Polícia",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente de Polícia Judiciária",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Papiloscopista Policial",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "oficial",
+   "veiculo": "FGV (site da banca) – Edital nº 01/2026",
+   "url": "https://conhecimento.fgv.br/sites/default/files/concursos/edital-01-2026-pcpr-publicacao-2.pdf",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  }
+ ]
+}

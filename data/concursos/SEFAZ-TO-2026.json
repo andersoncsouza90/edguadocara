@@ -1,0 +1,57 @@
+{
+ "id": "SEFAZ-TO-2026",
+ "orgao": "Secretaria da Fazenda do Estado do Tocantins",
+ "sigla": "SEFAZ-TO",
+ "area": "fiscal",
+ "esfera": "estadual",
+ "uf": "TO",
+ "cargos": [
+  "Auditor Fiscal da Receita Estadual"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-to-2026-autorizado",
+   "data": "2026-02-20",
+   "registrado_em": "2026-11-18",
+   "nota": "Governador Wanderlei Barbosa anunciou em vídeo (20/02/2026) a autorização do concurso; sem decreto/ato no DOE citado"
+  },
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-sefaz-to-autorizado-2026/amp/",
+   "data": "2026-02-20",
+   "registrado_em": "2026-11-18",
+   "nota": "Anúncio do governador de concurso com 200 vagas para Auditor Fiscal"
+  },
+  {
+   "campo": "vagas",
+   "valor": 100,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-to-2026-autorizado",
+   "data": "2026-02-20",
+   "registrado_em": "2026-11-18",
+   "nota": "100 imediatas + 100 cadastro de reserva (anúncio do governador)"
+  },
+  {
+   "campo": "nota",
+   "valor": "Autorização anunciada em vídeo pelo governador, mas sem ato publicado no DOE-TO; comissão ainda não formada e banca a definir (último concurso do cargo em 1993)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://www.estrategiaconcursos.com.br/blog/concurso-sefaz-to/",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  }
+ ]
+}

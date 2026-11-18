@@ -1,0 +1,141 @@
+{
+ "id": "TCE-MA-2026",
+ "orgao": "Tribunal de Contas do Estado do Maranhão",
+ "sigla": "TCE-MA",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "MA",
+ "cargos": [
+  "Auditor Estadual de Controle Externo"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "edital_url",
+   "valor": "https://cdn.cebraspe.org.br/concursos/TCE_MA_26/arquivos/286F92FD1323AD1603BB4FECDE9E40CCC27E6A3E8278DE6C9967CA14B2E4B84F.html",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/TCE_MA_26/arquivos/286F92FD1323AD1603BB4FECDE9E40CCC27E6A3E8278DE6C9967CA14B2E4B84F.html",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 1/2026 – TCE/MA, de 6 de julho de 2026"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/TCE_MA_26/arquivos/286F92FD1323AD1603BB4FECDE9E40CCC27E6A3E8278DE6C9967CA14B2E4B84F.html",
+   "data": "2026-07-06",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital nº 1/2026 – TCE/MA de abertura"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-ma-2026-edital",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://www.estrategiaconcursos.com.br/blog/concurso-tce-ma-2026-edital-publicado/",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-08-21",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-ma-2026-edital",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-08-21",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://www.estrategiaconcursos.com.br/blog/concurso-tce-ma-2026-edital-publicado/",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-07-17",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-ma-2026-edital",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-07-17",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://www.estrategiaconcursos.com.br/blog/concurso-tce-ma-2026-edital-publicado/",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Provas objetivas: analista em 22/11/2026; técnico e auditor em 29/11/2026. Só o cargo de Auditor (15 vagas, 5 especialidades) é da área de controle",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-ma-2026-edital",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-ma-2026-edital",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital Cebraspe com 40 vagas (5 técnico, 20 analista, 15 auditor)"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://www.estrategiaconcursos.com.br/blog/concurso-tce-ma-2026-edital-publicado/",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": "Edital Cebraspe com 40 vagas (5 técnico, 20 analista, 15 auditor)"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Estadual de Controle Externo",
+    "vagas": 15,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-ma-2026-edital",
+   "data": "2026-07-07",
+   "registrado_em": "2026-11-18",
+   "nota": ""
+  }
+ ]
+}

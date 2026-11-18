@@ -62,6 +62,36 @@
    "data": "2026-11-12",
    "registrado_em": "2026-11-13",
    "nota": "Dispensa de licitação publicada no DOE-AC em 12/11/2026 (art. 75, XV, Lei 14.133) para o Idecan organizar os concursos da PMAC e do CBMAC; contrato ainda a formalizar; lido pelo resultado da busca"
+  },
+  {
+   "campo": "banca",
+   "valor": "Idecan",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário do Acre",
+   "url": "https://diariodoacre.com.br/pm-e-bombeiros-terao-novos-concursos-no-acre-veja-o-que-ja-foi-definido-e-o-que-falta/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-18",
+   "nota": "Contrato nº 55/2026 assinado com o Idecan"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário do Acre",
+   "url": "https://diariodoacre.com.br/pm-e-bombeiros-terao-novos-concursos-no-acre-veja-o-que-ja-foi-definido-e-o-que-falta/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-18",
+   "nota": "Contrato nº 55/2026 com o Idecan assinado em 13/11/2026 (24 meses); extrato no DOE-AC de 16/11/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concursos-bombeiros-pm-ac-fiscais-contrato-idecan",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-18",
+   "nota": "Banca contratada; Portaria SEAD nº 1.037/2026 designa gestor e fiscal do contrato com o Idecan"
   }
  ]
 }
