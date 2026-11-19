@@ -1,11 +1,11 @@
 {
  "dou": {
   "erro": "",
-  "lidos": 5432,
+  "lidos": 5986,
   "nome": "Diário Oficial da União (seções 1 e 3)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-19T00:33Z"
+  "ultima_ok": "2026-11-19T08:54Z"
  },
  "fcc": {
   "erro": "",
@@ -13,7 +13,7 @@
   "nome": "Fundação Carlos Chagas (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-19T00:33Z"
+  "ultima_ok": "2026-11-19T08:54Z"
  },
  "fgv": {
   "erro": "",
@@ -21,7 +21,7 @@
   "nome": "FGV Conhecimento (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-19T00:33Z"
+  "ultima_ok": "2026-11-19T08:54Z"
  },
  "ibgp": {
   "erro": "",
@@ -29,6 +29,6 @@
   "nome": "IBGP (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-19T00:33Z"
+  "ultima_ok": "2026-11-19T08:54Z"
  }
 }
