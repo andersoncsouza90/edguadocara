@@ -87,6 +87,16 @@
    "data": "2026-11-17",
    "registrado_em": "2026-11-17",
    "nota": "Data da verificação; extrato do contrato não localizado. Vagas divergem: 187 (100 AF + 87 ATE) ou 200"
+  },
+  {
+   "campo": "nota",
+   "valor": "Fontes de set–nov/2026 dizem 'banca escolhida, contrato em elaboração'; nenhum extrato encontrado — sinal de 'contratada' segue sem confirmação",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-sefaz-ba-cesgranrio-banca",
+   "data": "2026-11-19",
+   "registrado_em": "2026-11-19",
+   "nota": ""
   }
  ]
 }

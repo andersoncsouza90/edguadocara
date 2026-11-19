@@ -70,6 +70,16 @@
    "nota": "Entrevista da ministra; pedido segue sem autorização"
   },
   {
+   "campo": "nota",
+   "valor": "Ministra Esther Dweck (12/11/2026, Bom Dia Ministra): 'A própria PRF deve ter um novo concurso no ano que vem'; sem autorização publicada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário de Pernambuco",
+   "url": "https://www.diariodepernambuco.com.br/economia/2026/11/11728987-governo-preve-novos-concursos-para-inss-prf-e-policia-penal-em-2027.html",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
    "campo": "previsao",
    "valor": "Ministra Esther Dweck (MGI) disse em 12/11/2026 que a PRF 'deve ter um novo concurso no ano que vem' (2027); ainda sem autorização",
    "fonte_tipo": "imprensa",

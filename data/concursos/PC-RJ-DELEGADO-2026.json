@@ -1,0 +1,71 @@
+{
+ "id": "PC-RJ-DELEGADO-2026",
+ "orgao": "Polícia Civil do Estado do Rio de Janeiro",
+ "sigla": "PC-RJ",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "RJ",
+ "cargos": [
+  "Delegado de Polícia"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Cesgranrio",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-delegado-2026-banca-contratada",
+   "data": "2026-06-26",
+   "registrado_em": "2026-11-19",
+   "nota": "Contrato 039/SEPOL/2026 com a Cesgranrio"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cesgranrio",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-pc-rj-delegado-cesgranrio-contratada",
+   "data": "2026-06-26",
+   "registrado_em": "2026-11-19",
+   "nota": "Contrato 039/SEPOL/2026 com a Cesgranrio"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-delegado-2026-banca-contratada",
+   "data": "2026-06-26",
+   "registrado_em": "2026-11-19",
+   "nota": "Contrato 039/SEPOL/2026 com a Cesgranrio assinado em 08/06/2026, extrato no DOE-RJ em 26/06/2026; concurso de Delegado separado do de peritos (FGV)"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-pc-rj-delegado-cesgranrio-contratada",
+   "data": "2026-06-26",
+   "registrado_em": "2026-11-19",
+   "nota": "Contrato 039/SEPOL/2026 com a Cesgranrio assinado em 08/06/2026, extrato no DOE-RJ em 26/06/2026; concurso de Delegado separado do de peritos (FGV)"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Delegado de Polícia",
+    "vagas": 85,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-rj-delegado-2026-banca-contratada",
+   "data": "2026-06-26",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  }
+ ]
+}

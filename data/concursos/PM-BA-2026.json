@@ -19,6 +19,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "nota",
+   "valor": "Governador (26/10/2026): edital até fevereiro de 2027; banca ainda em escolha; 2.500 Soldado e 200 Oficial",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-pm-ba-edital-para-2700-vagas-ate-fevereiro-diz-governador-146215",
+   "data": "2026-10-26",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
    "campo": "previsao",
    "valor": "Edital até fevereiro de 2027, segundo o governador",
    "fonte_tipo": "imprensa",
