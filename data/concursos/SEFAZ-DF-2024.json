@@ -1,0 +1,114 @@
+{
+ "id": "SEFAZ-DF-2024",
+ "orgao": "Secretaria de Estado de Economia do Distrito Federal (SEEC-DF)",
+ "sigla": "SEFAZ-DF",
+ "area": "fiscal",
+ "esfera": "estadual",
+ "uf": "DF",
+ "cargos": [
+  "Auditor Fiscal da Receita do Distrito Federal"
+ ],
+ "aliases": [
+  "SEFAZ-DF-2026",
+  "SEEC-DF-2026"
+ ],
+ "banca_anterior": {
+  "nome": "Cebraspe",
+  "ano": 2019,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-df-edital-autorizado-2024",
+   "data": "2024-12-26",
+   "registrado_em": "2026-11-19",
+   "nota": "Portaria nº 1.000, de 23/12/2024, publicada no DODF, autoriza concurso para 265 vagas de auditor fiscal da Receita do DF"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-sefaz-df-divulgada-autorizacao-para-265-vagas-131554",
+   "data": "2024-12-26",
+   "registrado_em": "2026-11-19",
+   "nota": "Divulgada autorização para 265 vagas (Portaria nº 1.000/2024)"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-df-2025-banca",
+   "data": "2025-10-31",
+   "registrado_em": "2026-11-19",
+   "nota": "Cebraspe contratado para o concurso de auditor fiscal"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Correio Braziliense",
+   "url": "https://blogs.correiobraziliense.com.br/papodeconcurseiro/auditor-fiscal-sefaz-df-publica-contrato-com-cebraspe/amp/",
+   "data": "2025-10-31",
+   "registrado_em": "2026-11-19",
+   "nota": "Sefaz/DF publica contrato com o Cebraspe"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-df-2025-banca",
+   "data": "2025-10-31",
+   "registrado_em": "2026-11-19",
+   "nota": "Contrato com o Cebraspe formalizado em 31/10/2025, vigência até out/2027"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Correio Braziliense",
+   "url": "https://blogs.correiobraziliense.com.br/papodeconcurseiro/auditor-fiscal-sefaz-df-publica-contrato-com-cebraspe/amp/",
+   "data": "2025-10-31",
+   "registrado_em": "2026-11-19",
+   "nota": "Sefaz/DF publica contrato com o Cebraspe"
+  },
+  {
+   "campo": "vagas",
+   "valor": 115,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-df-2026-termo-aditivo-banca",
+   "data": "2026-06-12",
+   "registrado_em": "2026-11-19",
+   "nota": "265 vagas: 115 imediatas + 150 CR; termo aditivo com o Cebraspe; edital segue em elaboração"
+  },
+  {
+   "campo": "nota",
+   "valor": "SEEC-DF pretende resolver pendências contratuais com o Cebraspe até dez/2026; não há data de edital",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Guruja",
+   "url": "https://guruja.com.br/concurso-sefaz-df-seec-confirma-265-vagas-de-auditor-fiscal-e-prazo-ate-dezembro-para-destravar-edital/",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-19",
+   "nota": "Fontes divergem: alguns sites falam em 265 imediatas; SEEC confirma 115 + 150 CR"
+  },
+  {
+   "campo": "vagas",
+   "valor": 115,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Guruja",
+   "url": "https://guruja.com.br/concurso-sefaz-df-seec-confirma-265-vagas-de-auditor-fiscal-e-prazo-ate-dezembro-para-destravar-edital/",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-19",
+   "nota": "SEEC-DF confirma 265 vagas: 115 imediatas + 150 cadastro de reserva"
+  }
+ ]
+}

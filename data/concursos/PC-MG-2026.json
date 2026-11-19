@@ -1,0 +1,100 @@
+{
+ "id": "PC-MG-2026",
+ "orgao": "Polícia Civil de Minas Gerais",
+ "sigla": "PC-MG",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "MG",
+ "cargos": [
+  "Delegado de Polícia",
+  "Investigador de Polícia",
+  "Perito Criminal",
+  "Médico-Legista"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/governador-anuncia-3-mil-vagas-para-a-policia-civil-de-mg",
+   "data": "2026-10-06",
+   "registrado_em": "2026-11-19",
+   "nota": "Governador anuncia 3 mil vagas para a Polícia Civil de MG"
+  },
+  {
+   "campo": "vagas",
+   "valor": 3000,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/governador-anuncia-3-mil-vagas-para-a-policia-civil-de-mg",
+   "data": "2026-10-06",
+   "registrado_em": "2026-11-19",
+   "nota": "3 mil vagas anunciadas pelo governador em exercício"
+  },
+  {
+   "campo": "banca_cotada",
+   "valor": "FGV",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-mg-2026-banca-cotada",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-19",
+   "nota": "FGV enviou manifestação de interesse em 08/10; não confirmada como banca"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Editais previstos para 2026, segundo a delegada-geral (sem data)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-mg-2026-banca-cotada",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-mg-2026-banca-cotada",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-19",
+   "nota": "Governador em exercício anunciou 3 mil vagas em 06/10 e a delegada-geral disse em 08/10 'está autorizado'; nenhum ato formal de autorização citado"
+  },
+  {
+   "campo": "vagas",
+   "valor": 3000,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-mg-2026-banca-cotada",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-19",
+   "nota": "3 mil vagas anunciadas, sem distribuição por cargo"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-mg-2026-banca-cotada",
+   "data": "2026-10-09",
+   "registrado_em": "2026-11-19",
+   "nota": "Escolha da banca tramita em processo da Seplag aberto no SEI em 09/10 (estudo técnico preliminar); autorização formal ainda não citada"
+  },
+  {
+   "campo": "nota",
+   "valor": "Distribuição de vagas por cargo ainda não divulgada; cargos listados são as carreiras do concurso de 2024 (expectativa, não confirmada)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-mg-2026-banca-cotada",
+   "data": "2026-10-20",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+ "id": "TCE-SE-2026",
+ "orgao": "Tribunal de Contas do Estado de Sergipe",
+ "sigla": "TCE-SE",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "SE",
+ "cargos": [
+  "Auditor de Controle Externo I",
+  "Auditor de Controle Externo II"
+ ],
+ "aliases": [],
+ "banca_anterior": {
+  "nome": "FCC",
+  "ano": 2011,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-se-2026-estudo-20-vagas-auditor",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-19",
+   "nota": "Presidente informou em sessão plenária de 29/10 a conclusão do estudo de impacto orçamentário prevendo 20 vagas + CR; ainda não há autorização"
+  },
+  {
+   "campo": "status",
+   "valor": "previsto",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-tce-se-deve-contar-com-oferta-de-20-vagas-e-cadastros-146303",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-19",
+   "nota": "TCE-SE deve contar com oferta de 20 vagas e cadastro de reserva"
+  },
+  {
+   "campo": "vagas",
+   "valor": 20,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-se-2026-estudo-20-vagas-auditor",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-19",
+   "nota": "Estudo prevê 20 vagas + CR de auditor de controle externo"
+  },
+  {
+   "campo": "vagas",
+   "valor": 20,
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-tce-se-deve-contar-com-oferta-de-20-vagas-e-cadastros-146303",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-19",
+   "nota": "20 vagas e cadastro de reserva"
+  }
+ ]
+}

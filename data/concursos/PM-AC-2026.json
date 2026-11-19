@@ -84,6 +84,16 @@
    "nota": "Contrato nº 55/2026 assinado com o Idecan"
   },
   {
+   "campo": "nota",
+   "valor": "Portaria SEAD designa gestor e fiscais do Contrato nº 55/2026 com o Idecan (PM e CBMAC); edital considerado iminente",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concursos-bombeiros-pm-ac-fiscais-contrato-idecan",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-19",
+   "nota": "Divergência no número da portaria: Direção cita Portaria SEAD nº 1.037 de 16/11; PDF cita nº 1035 de 13/11"
+  },
+  {
    "campo": "status",
    "valor": "banca_contratada",
    "fonte_tipo": "imprensa",
