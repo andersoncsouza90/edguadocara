@@ -1,0 +1,73 @@
+{
+ "id": "PREF-TIJUCAS-SC-2026",
+ "orgao": "Prefeitura de Tijucas/SC",
+ "sigla": "PREF-TIJUCAS-SC",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296780
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-05",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
+   "data": "2026-11-19",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-24",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
+   "data": "2026-11-19",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 48 cargos (97 vagas até R$ 9.941,61 no total); cargos da área: Controlador interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
+   "data": "2026-11-19",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
+   "data": "2026-11-19",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controlador Interno",
+    "vagas": 1,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
+   "data": "2026-11-19",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  }
+ ]
+}
