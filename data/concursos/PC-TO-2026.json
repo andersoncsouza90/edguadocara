@@ -66,6 +66,16 @@
    "nota": "Concurso segue em fase de escolha da banca; sem prazo para contratação (lido no trecho do buscador)"
   },
   {
+   "campo": "nota",
+   "valor": "Governador disse em 16/11/2026 que o edital sai 'dentro de 18 dias' (previsão, ~04/12/2026); contrato com o Cebraspe teve extrato no DOE",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-19",
+   "nota": ""
+  },
+  {
    "campo": "banca",
    "valor": "Cebraspe",
    "fonte_tipo": "imprensa",

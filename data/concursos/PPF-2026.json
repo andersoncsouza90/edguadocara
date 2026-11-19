@@ -23,6 +23,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Portal de Prefeitura",
+   "url": "https://portaldeprefeitura.com.br/oportunidades/policia-penal-federal-solicita-concurso-com-mais-quase-mil-vagas/609577/",
+   "data": "2026-08-06",
+   "registrado_em": "2026-11-19",
+   "nota": "Título da matéria: Polícia Penal Federal solicita concurso com quase mil vagas; número de vagas pedido diverge entre fontes (11, 101 ou ~1.000); matéria não aberta (host bloqueado na sessão), lida pelo resultado de busca"
+  },
+  {
    "campo": "previsao",
    "valor": "Ministra Esther Dweck (MGI) projetou em 12/11/2026 autorização e novo concurso em 2027",
    "fonte_tipo": "imprensa",
