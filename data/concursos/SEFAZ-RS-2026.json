@@ -91,6 +91,16 @@
    "nota": ""
   },
   {
+   "campo": "previsao",
+   "valor": "Contrato com a FCC assinado (início dos serviços em 10/11/2026); edital aguardado, sem data oficial",
+   "fonte_tipo": "imprensa",
+   "veiculo": "CEISC",
+   "url": "https://ceisc.com.br/blog/post/concurso-sefaz-rs-contrato-com-a-fundacao-carlos-chagas-e-assinado-e-novo-edital-e-iminente",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-20",
+   "nota": "Atualiza a previsão anterior, que ainda falava em contrato pendente"
+  },
+  {
    "campo": "status",
    "valor": "banca_contratada",
    "fonte_tipo": "imprensa",

@@ -95,6 +95,16 @@
    "data": "2026-10-20",
    "registrado_em": "2026-11-19",
    "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-mg-2026-inicio-escolha-da-banca",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-20",
+   "nota": "Delegada-geral: estudo técnico-preliminar em elaboração para contratar a banca; FGV manifestou interesse, sem confirmação; edital sem data garantida"
   }
  ]
 }
