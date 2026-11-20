@@ -93,6 +93,26 @@
    "data": "2026-11-13",
    "registrado_em": "2026-11-13",
    "nota": "sem número na lista da notícia: cadastro de reserva"
+  },
+  {
+   "campo": "nota",
+   "valor": "Concurso suspenso (PCI: datas 'Suspenso')",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-suspende-concurso-publico-para-diversos-niveis",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": "PCI noticia a suspensão do concurso da Prefeitura; data da verificação."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-suspende-concurso-publico-para-diversos-niveis",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": ""
   }
  ]
 }

@@ -1,0 +1,37 @@
+{
+ "id": "PM-DF-2026",
+ "orgao": "Polícia Militar do Distrito Federal",
+ "sigla": "PM-DF",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "DF",
+ "cargos": [
+  "Soldado PM"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-df-pedido-vagas-deficit-2026",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-20",
+   "nota": "Pedido de novo concurso (2 mil vagas de soldado) encaminhado ao GDF; data do envio não informada."
+  },
+  {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/concurso-pmdf-novo-pedido-de-vagas-movimenta-selecao-para-2027",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-20",
+   "nota": "Novo pedido de vagas da PMDF para seleção em 2027 (lido no trecho do buscador; data da verificação aproximada)."
+  }
+ ]
+}

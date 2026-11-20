@@ -1,0 +1,83 @@
+{
+ "id": "PREF-SEDE-NOVA-RS-2026",
+ "orgao": "Prefeitura de Sede Nova/RS",
+ "sigla": "PREF-SEDE-NOVA-RS",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "RS",
+ "cargos": [
+  "Auditor fiscal da receita municipal"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296861
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Fundatec",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sede-nova-rs-abre-concurso-publico-e-processo-seletivo-com-diversas-vagas",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": "banca citada na notícia do PCI"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sede-nova-rs-abre-concurso-publico-e-processo-seletivo-com-diversas-vagas",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-19",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sede-nova-rs-abre-concurso-publico-e-processo-seletivo-com-diversas-vagas",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 38 cargos (45 vagas até R$ 9.339,29 no total); cargos da área: Auditor fiscal da receita municipal",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sede-nova-rs-abre-concurso-publico-e-processo-seletivo-com-diversas-vagas",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sede-nova-rs-abre-concurso-publico-e-processo-seletivo-com-diversas-vagas",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal da Receita Municipal",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sede-nova-rs-abre-concurso-publico-e-processo-seletivo-com-diversas-vagas",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": ""
+  }
+ ]
+}

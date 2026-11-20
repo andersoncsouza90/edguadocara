@@ -1,0 +1,69 @@
+{
+ "id": "PC-BA-2026",
+ "orgao": "Polícia Civil da Bahia",
+ "sigla": "PC-BA",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "BA",
+ "cargos": [
+  "Delegado de Polícia",
+  "Investigador de Polícia",
+  "Escrivão de Polícia"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Instituto AOCP",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-ba-edital-2026",
+   "data": "2026-07-30",
+   "registrado_em": "2026-11-20",
+   "nota": "Instituto AOCP organiza o concurso da PC-BA."
+  },
+  {
+   "campo": "banca",
+   "valor": "Instituto AOCP",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário do Nordeste",
+   "url": "https://diariodonordeste.verdesmares.com.br/papo-carreira/policia-civil-da-bahia-divulga-edital-de-concurso-com-750-vagas-e-salarios-de-ate-r-16-mil-1.3780756",
+   "data": "2026-07-30",
+   "registrado_em": "2026-11-20",
+   "nota": "Instituto AOCP organiza o concurso da PC-BA."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-ba-edital-2026",
+   "data": "2026-07-30",
+   "registrado_em": "2026-11-20",
+   "nota": "Edital SAEB nº 02/2026 da Polícia Civil da Bahia publicado com 750 vagas, banca Instituto AOCP."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário do Nordeste",
+   "url": "https://diariodonordeste.verdesmares.com.br/papo-carreira/policia-civil-da-bahia-divulga-edital-de-concurso-com-750-vagas-e-salarios-de-ate-r-16-mil-1.3780756",
+   "data": "2026-07-30",
+   "registrado_em": "2026-11-20",
+   "nota": "Edital SAEB nº 02/2026 da Polícia Civil da Bahia publicado com 750 vagas, banca Instituto AOCP."
+  },
+  {
+   "campo": "nota",
+   "valor": "Liminar da 5ª Vara da Fazenda Pública de Salvador suspende o concurso só para Delegado (100 vagas); escrivão e investigador seguem",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-ba-edital-suspenso-delegado-2026",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-20",
+   "nota": "Processo 8168313-56.2026.8.05.0001; Saeb tem 15 dias para ajustar o edital à Lei Orgânica Nacional das Polícias Civis."
+  }
+ ]
+}

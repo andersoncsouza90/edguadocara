@@ -76,6 +76,16 @@
    "nota": ""
   },
   {
+   "campo": "nota",
+   "valor": "Extrato do Contrato nº 2555/2026 (SEAD-TO x Cebraspe) no DOE-TO nº 7.183 de 16/11/2026; vigência 24 meses",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-pc-to-2026-cebraspe-e-contratado-para-452-vagas-veja-como-estudar/",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-20",
+   "nota": "Notícia cita o extrato do contrato com o Cebraspe no DOE-TO de 16/11/2026 (lido no trecho do buscador)."
+  },
+  {
    "campo": "banca",
    "valor": "Cebraspe",
    "fonte_tipo": "imprensa",

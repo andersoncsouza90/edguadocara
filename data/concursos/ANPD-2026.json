@@ -164,6 +164,26 @@
    "data": "2026-11-16",
    "registrado_em": "2026-11-16",
    "nota": "50 vagas"
+  },
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/2026/11/18/concurso-anpd-com-50-vagas-e-salario-de-r-177-mil-sera-organizado-pelo-cebraspe/",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Notícia informa que o Cebraspe organizará o concurso da ANPD."
+  },
+  {
+   "campo": "nota",
+   "valor": "Assinatura do contrato com o Cebraspe prevista para 20/11/2026; ainda sem extrato no DOU/PNCP",
+   "fonte_tipo": "imprensa",
+   "veiculo": "IMP Concursos",
+   "url": "https://impconcursos.com.br/blogs/noticias/concurso-anpd-confira-o-cronograma-preliminar",
+   "data": "2026-11-20",
+   "registrado_em": "2026-11-20",
+   "nota": "Cronograma preliminar prevê contrato em 20/11; nenhuma fonte confirma a assinatura até a verificação. Direção cita subsídio de R$ 20 mil (radar: R$ 17.726,42)."
   }
  ]
 }

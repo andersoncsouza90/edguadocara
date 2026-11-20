@@ -118,6 +118,16 @@
    "nota": ""
   },
   {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "DOE-PE",
+   "url": "https://diariooficial.cepe.com.br/1/arquivos/resumoDiario/2026-11-04/2026-11-04.pdf",
+   "data": "2026-11-04",
+   "registrado_em": "2026-11-20",
+   "nota": "Resumo do DOE-PE noticia edital da Polícia Penal: 700 vagas, Cebraspe, inscrições 12/11/2026 a 04/01/2027 (lido no trecho do buscador)."
+  },
+  {
    "campo": "vagas",
    "valor": 700,
    "fonte_tipo": "agregador",

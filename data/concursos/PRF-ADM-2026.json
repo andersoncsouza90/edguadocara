@@ -1,0 +1,51 @@
+{
+ "id": "PRF-ADM-2026",
+ "orgao": "Polícia Rodoviária Federal (área administrativa)",
+ "sigla": "PRF",
+ "area": "policial",
+ "esfera": "federal",
+ "uf": null,
+ "cargos": [
+  "Agente Administrativo"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-prf-administrativo-2026-pedido-novo-edital",
+   "data": "2026-06-01",
+   "registrado_em": "2026-11-20",
+   "nota": "PRF encaminhou ao MGI novo pedido com 264 vagas de agente administrativo (data da notícia; protocolo sem data informada)."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente Administrativo",
+    "vagas": 264,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-prf-administrativo-2026-pedido-novo-edital",
+   "data": "2026-06-01",
+   "registrado_em": "2026-11-20",
+   "nota": "Vagas do pedido enviado ao MGI (não autorizadas)."
+  },
+  {
+   "campo": "nota",
+   "valor": "Pedido segue aguardando autorização do MGI; cronograma proposto (autorização set/2026, edital nov/2026) não cumprido",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-prf-administrativo-ministra-fala-sobre-edital-em-2027",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Fala da ministra (12/11) sobre concurso PRF em 2027 não especifica a área administrativa."
+  }
+ ]
+}

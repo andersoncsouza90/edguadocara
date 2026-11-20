@@ -1,0 +1,77 @@
+{
+ "id": "PM-RJ-CFO-2026",
+ "orgao": "Polícia Militar do Estado do Rio de Janeiro",
+ "sigla": "PM-RJ",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "RJ",
+ "cargos": [
+  "Cadete PM (CFO 2027)"
+ ],
+ "aliases": [
+  "PMERJ-CFO-2026"
+ ],
+ "banca_anterior": {
+  "nome": "FGV",
+  "ano": 2024,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Cesgranrio",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pmerj-cfo-2026-banca-contratada",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-20",
+   "nota": "Cesgranrio contratada para o CFO da PMERJ."
+  },
+  {
+   "campo": "banca",
+   "valor": "Cesgranrio",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/concurso-pmerj-cesgranrio-e-contratada-e-edital-fica-proximo",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-20",
+   "nota": "Cesgranrio contratada para o CFO da PMERJ."
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pmerj-cfo-2026-banca-contratada",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-20",
+   "nota": "Extrato do contrato com a Fundação Cesgranrio publicado no DOE-RJ em 08/10/2026 para o CFO 2027."
+  },
+  {
+   "campo": "status",
+   "valor": "banca_contratada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/concurso-pmerj-cesgranrio-e-contratada-e-edital-fica-proximo",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-20",
+   "nota": "Extrato do contrato com a Fundação Cesgranrio publicado no DOE-RJ em 08/10/2026 para o CFO 2027."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Cadete PM (CFO 2027)",
+    "vagas": 100,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pmerj-cfo-2026-banca-contratada",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-20",
+   "nota": "100 vagas + cadastro de reserva; exige bacharelado em Direito."
+  }
+ ]
+}

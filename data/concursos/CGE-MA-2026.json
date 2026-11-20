@@ -1,0 +1,134 @@
+{
+ "id": "CGE-MA-2026",
+ "orgao": "Secretaria de Estado de Transparência e Controle do Maranhão (STC) – Concurso Unificado MA",
+ "sigla": "CGE-MA",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "MA",
+ "cargos": [
+  "Auditor – Área Geral",
+  "Auditor – Tecnologia da Informação",
+  "Auditor – Engenharia"
+ ],
+ "aliases": [
+  "STC-MA-2026",
+  "UNIFICADO-MA-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Fundação Carlos Chagas organiza o Concurso Unificado MA."
+  },
+  {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/ma/2026/11/18/concurso-unificado-maranhao-abre-mais-de-23-mil-vagas-com-salarios-de-ate-r-149-mil/",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "FCC é a banca do Concurso Unificado MA (lido no trecho do buscador)."
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-29",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Inscrições até 23h59 de 29/01/2027."
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-12-14",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Inscrições a partir das 10h de 14/12/2026 no site da FCC."
+  },
+  {
+   "campo": "salario_max",
+   "valor": 14950.78,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Inicial de Auditor da STC: R$ 14.950,78."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "1º edital do Concurso Unificado MA (FCC) publicado; STC oferece 20 vagas de Auditor."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/ma/2026/11/18/concurso-unificado-maranhao-abre-mais-de-23-mil-vagas-com-salarios-de-ate-r-149-mil/",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Concurso Unificado MA abre mais de 2,3 mil vagas (lido no trecho do buscador)."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor – Área Geral",
+    "vagas": 14,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Vagas da STC no edital nº 01/2026 do Unificado MA."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor – Tecnologia da Informação",
+    "vagas": 3,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Vagas da STC no edital nº 01/2026 do Unificado MA."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor – Engenharia",
+    "vagas": 3,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-unificado-maranhao-2026-edital-1",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-20",
+   "nota": "Vagas da STC no edital nº 01/2026 do Unificado MA."
+  }
+ ]
+}
