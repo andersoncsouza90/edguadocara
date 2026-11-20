@@ -50,6 +50,16 @@
    "nota": "Vagas solicitadas para policial; outras fontes citam 533 no total, somando o pedido administrativo"
   },
   {
+   "campo": "nota",
+   "valor": "Projeto estratégico da PRF prevê dobrar o efetivo de 13 mil para 26 mil policiais até 2030; no cenário de referência a autorização sairia em dez/2026, mas é estudo orçamentário, não autorização, e depende da PEC da Segurança Pública",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-prf-corporacao-preve-aval-em-2027",
+   "data": "2026-11-10",
+   "registrado_em": "2026-11-20",
+   "nota": "Matéria de 10/11/2026: o projeto não representa autorização concedida; os pedidos ao MGI (269 PRF + 264 adm) seguem separados da meta de 13 mil"
+  },
+  {
    "campo": "previsao",
    "valor": "Ministra do MGI projeta novo concurso da PRF para 2027 (sem autorização publicada)",
    "fonte_tipo": "imprensa",
