@@ -105,6 +105,16 @@
    "data": "2026-10-29",
    "registrado_em": "2026-11-20",
    "nota": "Delegada-geral: estudo técnico-preliminar em elaboração para contratar a banca; FGV manifestou interesse, sem confirmação; edital sem data garantida"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-pc-mg-estudo-tecnico-preliminar-banca",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-21",
+   "nota": "PC-MG elabora o estudo técnico-preliminar para contratar a banca; FGV manifestou interesse (SEI)"
   }
  ]
 }

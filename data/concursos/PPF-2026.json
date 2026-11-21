@@ -33,6 +33,16 @@
    "nota": "Título da matéria: Polícia Penal Federal solicita concurso com quase mil vagas; número de vagas pedido diverge entre fontes (11, 101 ou ~1.000); matéria não aberta (host bloqueado na sessão), lida pelo resultado de busca"
   },
   {
+   "campo": "nota",
+   "valor": "Ministra do MGI disse em 12/11/2026 que a Polícia Penal Federal deve ter concurso em 2027; sem autorização formal",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-penal-federal-2027-ministra-projeta-autorizacao",
+   "data": "2026-11-12",
+   "registrado_em": "2026-11-21",
+   "nota": ""
+  },
+  {
    "campo": "previsao",
    "valor": "Ministra Esther Dweck (MGI) projetou em 12/11/2026 autorização e novo concurso em 2027",
    "fonte_tipo": "imprensa",

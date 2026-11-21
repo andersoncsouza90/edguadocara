@@ -14,6 +14,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "nota",
+   "valor": "PM-DF abriu novo processo administrativo em 13/11/2026 para ampliar ao GDF o pedido de 2.000 vagas (840 cargos vagos); edital esperado para 2027",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-df-pedido-vagas-deficit-2026",
+   "data": "2026-11-13",
+   "registrado_em": "2026-11-21",
+   "nota": ""
+  },
+  {
    "campo": "status",
    "valor": "solicitado",
    "fonte_tipo": "imprensa",

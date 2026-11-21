@@ -1,0 +1,83 @@
+{
+ "id": "PC-MA-2026",
+ "orgao": "Polícia Civil do Estado do Maranhão",
+ "sigla": "PC-MA",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "MA",
+ "cargos": [
+  "Oficial Investigador de Polícia"
+ ],
+ "aliases": [
+  "PCMA"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Cebraspe",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/pcma-divulga-concurso-publico-para-oficial-investigador-de-policia/",
+   "data": "2026-07-24",
+   "registrado_em": "2026-11-21",
+   "nota": "Página do concurso PCMA (Oficial Investigador) no site do Cebraspe; provas em 06/12/2026"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-08-24",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/pcma-divulga-concurso-publico-para-oficial-investigador-de-policia/",
+   "data": "2026-07-24",
+   "registrado_em": "2026-11-21",
+   "nota": "Página do concurso PCMA (Oficial Investigador) no site do Cebraspe; provas em 06/12/2026"
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-07-24",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/pcma-divulga-concurso-publico-para-oficial-investigador-de-policia/",
+   "data": "2026-07-24",
+   "registrado_em": "2026-11-21",
+   "nota": "Página do concurso PCMA (Oficial Investigador) no site do Cebraspe; provas em 06/12/2026"
+  },
+  {
+   "campo": "salario_max",
+   "valor": 6514.3,
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/pcma-divulga-concurso-publico-para-oficial-investigador-de-policia/",
+   "data": "2026-07-24",
+   "registrado_em": "2026-11-21",
+   "nota": "Página do concurso PCMA (Oficial Investigador) no site do Cebraspe; provas em 06/12/2026"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/pcma-divulga-concurso-publico-para-oficial-investigador-de-policia/",
+   "data": "2026-07-24",
+   "registrado_em": "2026-11-21",
+   "nota": "Página do concurso PCMA (Oficial Investigador) no site do Cebraspe; provas em 06/12/2026"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Oficial Investigador de Polícia",
+    "vagas": 357,
+    "cr": false
+   },
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/pcma-divulga-concurso-publico-para-oficial-investigador-de-policia/",
+   "data": "2026-07-24",
+   "registrado_em": "2026-11-21",
+   "nota": ""
+  }
+ ]
+}
