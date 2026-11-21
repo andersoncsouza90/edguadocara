@@ -1,9 +1,10 @@
 {
  "dou": {
-  "erro": "",
-  "lidos": 2940,
+  "erro": "a página respondeu, mas nenhum item foi lido (layout mudou?)",
+  "falhou_em": "2026-11-21T08:22Z",
+  "lidos": 0,
   "nome": "Diário Oficial da União (seções 1 e 3)",
-  "ok": true,
+  "ok": false,
   "relevantes": 0,
   "ultima_ok": "2026-11-21T00:03Z"
  },
@@ -13,7 +14,7 @@
   "nome": "Fundação Carlos Chagas (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-21T00:03Z"
+  "ultima_ok": "2026-11-21T08:22Z"
  },
  "fgv": {
   "erro": "",
@@ -21,7 +22,7 @@
   "nome": "FGV Conhecimento (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-21T00:03Z"
+  "ultima_ok": "2026-11-21T08:22Z"
  },
  "ibgp": {
   "erro": "",
@@ -29,6 +30,6 @@
   "nome": "IBGP (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-21T00:03Z"
+  "ultima_ok": "2026-11-21T08:22Z"
  }
 }
