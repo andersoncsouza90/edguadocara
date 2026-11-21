@@ -36,6 +36,16 @@
    "nota": ""
   },
   {
+   "campo": "nota",
+   "valor": "Edital nº 3 (locais de prova): provas objetiva e discursiva em 22/11/2026",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://cdn.cebraspe.org.br/concursos/tc_df_26_analista/arquivos/5CBDB1BF33DA95A4A4268EAEB774729DABC511BEB376FD8BA860E1DCE2AB265B.html",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-21",
+   "nota": "Edital de locais de prova; resultado provisório previsto para 23/12/2026"
+  },
+  {
    "campo": "status",
    "valor": "edital_publicado",
    "fonte_tipo": "oficial",
