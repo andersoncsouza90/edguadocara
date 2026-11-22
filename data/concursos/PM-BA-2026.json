@@ -39,6 +39,26 @@
    "nota": "Declaração do governador; fontes oscilam entre dez/2026 e fev/2027"
   },
   {
+   "campo": "previsao",
+   "valor": "Edital até dezembro/2026 e provas no fim de janeiro ou em fevereiro/2027, segundo o comandante-geral",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-ba-edital-previsao-comandante-2026",
+   "data": "2026-10-28",
+   "registrado_em": "2026-11-22",
+   "nota": "Comandante-geral ao Bahia Notícias no Ar (28/10): edital 'no máximo em dezembro'; banca ainda em definição pela Saeb. Diverge do governador (fev/2027)"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Edital até dezembro/2026 e provas no fim de janeiro ou em fevereiro/2027, segundo o comandante-geral",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-pm-ba-comandante-edital-dezembro-2026/",
+   "data": "2026-10-28",
+   "registrado_em": "2026-11-22",
+   "nota": "Comandante reforça edital em dezembro (lido no trecho do buscador)"
+  },
+  {
    "campo": "status",
    "valor": "autorizado",
    "fonte_tipo": "imprensa",

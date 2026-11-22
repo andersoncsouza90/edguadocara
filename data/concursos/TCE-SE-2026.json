@@ -57,6 +57,34 @@
    "data": "2026-10-29",
    "registrado_em": "2026-11-19",
    "nota": "20 vagas e cadastro de reserva"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor de Controle Externo I",
+    "vagas": 10,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-se-2026-estudo-20-vagas-auditor",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-22",
+   "nota": "Número do estudo de impacto orçamentário, ainda sem edital, comissão ou banca; fonte única"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor de Controle Externo II",
+    "vagas": 10,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-se-2026-estudo-20-vagas-auditor",
+   "data": "2026-10-29",
+   "registrado_em": "2026-11-22",
+   "nota": "Número do estudo de impacto orçamentário, ainda sem edital, comissão ou banca; fonte única"
   }
  ]
 }

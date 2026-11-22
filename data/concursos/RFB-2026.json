@@ -131,6 +131,16 @@
    "nota": "Portarias Sucor nº 56 (comissão de coordenação do concurso) e nº 57 (GT de conteúdos programáticos), no Boletim de Serviço da RFB de 05/11/2026"
   },
   {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Próximos Concursos",
+   "url": "https://www.proximosconcursos.com/concurso-receita-federal-2026-duas-comissoes-sao-formadas-veja-o-que-muda-para-quem-esta-estudando/",
+   "data": "2026-11-05",
+   "registrado_em": "2026-11-22",
+   "nota": "Portarias Sucor nº 56 (comissão de coordenação) e nº 57 (GT de conteúdos programáticos), de 04/11/2026, no BS nº 208 de 05/11/2026; banca ainda não contratada"
+  },
+  {
    "campo": "previsao",
    "valor": "Assinatura do contrato com a banca em meados de novembro/2026; edital previsto para dezembro/2026",
    "fonte_tipo": "imprensa",

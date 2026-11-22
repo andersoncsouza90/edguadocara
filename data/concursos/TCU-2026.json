@@ -17,6 +17,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "nota",
+   "valor": "TCU avalia concurso exclusivo para mulheres, dependente de autorização legislativa",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tcu-proposta-edital-para-mulheres",
+   "data": "2026-11-18",
+   "registrado_em": "2026-11-22",
+   "nota": "Vice-presidente Jorge Oliveira, em 18/11/2026: ideia em estudo interno, exigiria projeto de lei; segue sem edital, banca ou vagas por cargo"
+  },
+  {
    "campo": "status",
    "valor": "previsto",
    "fonte_tipo": "imprensa",
