@@ -1,0 +1,31 @@
+{
+ "id": "PM-TO-CFO-2026",
+ "orgao": "Polícia Militar do Estado do Tocantins",
+ "sigla": "PM-TO",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "TO",
+ "cargos": [
+  "Cadete PM (Curso de Formação de Oficiais)"
+ ],
+ "aliases": [],
+ "banca_anterior": {
+  "nome": "FGV",
+  "ano": 2025,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-to-2026-comissao-cfo",
+   "data": "2026-06-30",
+   "registrado_em": "2026-11-22",
+   "nota": "Portaria no DOE-TO de 30/06/2026 institui comissão do novo CFO; ainda sem autorização do governo nem vagas. Fonte única: Nova Concursos fala em comissão 'alterada' e outra fonte diz que a comissão existe desde 2023."
+  }
+ ]
+}

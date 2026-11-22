@@ -1,0 +1,70 @@
+{
+ "id": "PREF-BELEM-PA-2025",
+ "orgao": "Prefeitura de Belém/PA – Secretaria Municipal de Finanças (Sefin)",
+ "sigla": "PREF-BELEM-PA",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "PA",
+ "cargos": [
+  "Auditor Fiscal da Receita Municipal"
+ ],
+ "aliases": [
+  "ISS-BELEM",
+  "PREF-BELEM-PA-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "salario_max",
+   "valor": 16659.63,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-iss-belem-pa-2026-comissao-formada",
+   "data": "2026-08-05",
+   "registrado_em": "2026-11-22",
+   "nota": "Remuneração inicial informada em set/2025"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-iss-belem-pa-2026-comissao-formada",
+   "data": "2026-08-05",
+   "registrado_em": "2026-11-22",
+   "nota": "Data da matéria; portaria da comissão especial publicada (número não citado na matéria; Aprova cita Portaria nº 2339/2026). Banca ainda a contratar."
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-iss-belem-pa-comissao-formada-2026/amp/",
+   "data": "2026-08-05",
+   "registrado_em": "2026-11-22",
+   "nota": "Lido no trecho do buscador; data do fato segundo a Folha. Outro site cita nova comissão pela Portaria nº 3315/2026 (09/10)."
+  },
+  {
+   "campo": "vagas",
+   "valor": 20,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-iss-belem-pa-2026-comissao-formada",
+   "data": "2026-08-05",
+   "registrado_em": "2026-11-22",
+   "nota": "60 vagas: 20 imediatas + 40 cadastro de reserva; ainda sem edital"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-iss-belem-pa-2026-comissao-formada",
+   "data": "2026-11-22",
+   "registrado_em": "2026-11-22",
+   "nota": "Data da verificação; autorização do prefeito Igor Normando anunciada em setembro de 2025 (dia exato não informado)."
+  }
+ ]
+}
