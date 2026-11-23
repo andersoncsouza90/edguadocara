@@ -15,8 +15,18 @@
  "pci_ids": [
   296701
  ],
- "encerrado": false,
+ "encerrado": true,
  "fatos": [
+  {
+   "campo": "nota",
+   "valor": "Processo seletivo simplificado temporário (Edital nº 2/2026), banca própria, só análise de experiência e títulos; não é concurso público efetivo",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/tribunal-de-contas-do-estado-do-espirito-santo-abre-concurso-com-16-vagas-para-tecnico-de-nivel-superior",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-23",
+   "nota": "Contratação temporária de até 36 meses para TI; retirado do radar por não ser concurso efetivo da área de controle"
+  },
   {
    "campo": "inscricoes_fim",
    "valor": "2026-12-18",

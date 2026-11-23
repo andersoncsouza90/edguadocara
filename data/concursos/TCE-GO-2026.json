@@ -17,6 +17,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "banca",
+   "valor": "FCC",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-go-edital-2026",
+   "data": "2026-08-25",
+   "registrado_em": "2026-11-23",
+   "nota": "Matéria do edital: inscrições pelo portal da Fundação Carlos Chagas (FCC), de 05/10 a 06/11/2026"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-11-06",
    "fonte_tipo": "agregador",

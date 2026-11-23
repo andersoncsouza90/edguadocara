@@ -1,0 +1,39 @@
+{
+ "id": "TCE-RJ-2023",
+ "orgao": "Tribunal de Contas do Estado do Rio de Janeiro",
+ "sigla": "TCE-RJ",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "RJ",
+ "cargos": [
+  "Auditor de Controle Externo"
+ ],
+ "aliases": [
+  "TCE-RJ-2027"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "vagas",
+   "valor": 40,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-rj-orcamento-para-2027",
+   "data": "2026-10-14",
+   "registrado_em": "2026-11-23",
+   "nota": "40 vagas de Auditor de Controle Externo autorizadas inicialmente; número pode ser revisto"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-rj-orcamento-para-2027",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "Data da verificação; matéria cita autorização inicial de julho/2023 (dia não informado). IBFC contratado em 09/2024 e distratado antes do edital; nova banca a contratar. Orçamento 2027 com recursos para o concurso (ata no DOERJ de 14/10/2026)"
+  }
+ ]
+}

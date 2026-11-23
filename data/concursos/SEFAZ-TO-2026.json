@@ -45,6 +45,16 @@
   },
   {
    "campo": "nota",
+   "valor": "Governo teria criado comissão para tratar de questões administrativas do concurso (citando AF Notícias), sem portaria citada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-to-2026-edital-governo-sindicatos",
+   "data": "2026-09-08",
+   "registrado_em": "2026-11-23",
+   "nota": "Diverge da nota de 18/11 (comissão não formada); sem portaria, fase continua Previsto"
+  },
+  {
+   "campo": "nota",
    "valor": "Autorização anunciada em vídeo pelo governador, mas sem ato publicado no DOE-TO; comissão ainda não formada e banca a definir (último concurso do cargo em 1993)",
    "fonte_tipo": "imprensa",
    "veiculo": "Estratégia Concursos",

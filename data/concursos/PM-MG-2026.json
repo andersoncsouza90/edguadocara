@@ -16,6 +16,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "nota",
+   "valor": "Concurso organizado pela própria PMMG (Centro de Recrutamento e Seleção, Edital DRH/CRS nº 11/2026); inscrições de 10/11 a 10/12/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-mg-cfo-2027-edital",
+   "data": "2026-09-03",
+   "registrado_em": "2026-11-23",
+   "nota": "Sem banca externa"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-12-10",
    "fonte_tipo": "agregador",

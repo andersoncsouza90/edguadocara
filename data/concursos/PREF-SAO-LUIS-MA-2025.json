@@ -1,0 +1,33 @@
+{
+ "id": "PREF-SAO-LUIS-MA-2025",
+ "orgao": "Prefeitura de São Luís/MA – Secretaria Municipal da Fazenda",
+ "sigla": "PREF-SAO-LUIS-MA",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "MA",
+ "cargos": [
+  "Auditor de Tributos"
+ ],
+ "aliases": [
+  "ISS São Luís"
+ ],
+ "banca_anterior": {
+  "nome": "FCC",
+  "ano": 2018,
+  "url": null
+ },
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-iss-sao-luis-ma-comissao-formada-2025",
+   "data": "2025-11-26",
+   "registrado_em": "2026-11-23",
+   "nota": "Portaria nº 655, de 26/11/2025 (Diário Oficial de São Luís), forma a comissão do concurso de auditor; próximo passo é a escolha da banca"
+  }
+ ]
+}
