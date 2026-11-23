@@ -59,6 +59,34 @@
    "nota": "Banca definida para edital com 200 vagas"
   },
   {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal",
+    "vagas": 100,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-ba-2026-banca-definida",
+   "data": "2026-09-22",
+   "registrado_em": "2026-11-23",
+   "nota": "Matéria: 200 vagas, 100 em cada cargo; autorização de março (100 AF + 87 ATE) também dá 100 para AF"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente de Tributos Estaduais",
+    "vagas": 100,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-ba-2026-banca-definida",
+   "data": "2026-09-22",
+   "registrado_em": "2026-11-23",
+   "nota": "Divergência: outras fontes citam 87 vagas de ATE (total 187); fica como fonte única até o edital"
+  },
+  {
    "campo": "status",
    "valor": "banca_contratada",
    "fonte_tipo": "imprensa",
