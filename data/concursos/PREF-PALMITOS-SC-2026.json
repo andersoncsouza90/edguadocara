@@ -1,0 +1,63 @@
+{
+ "id": "PREF-PALMITOS-SC-2026",
+ "orgao": "Prefeitura de Palmitos/SC",
+ "sigla": "PREF-PALMITOS-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Fiscal de tributos, obras, posturas e vigilância sanitária"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296871
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-12",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmitos-sc-abre-processo-seletivo-com-salarios-de-ate-26258",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-13",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmitos-sc-abre-processo-seletivo-com-salarios-de-ate-26258",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmitos-sc-abre-processo-seletivo-com-salarios-de-ate-26258",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos, Obras, Posturas e Vigilância Sanitária",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmitos-sc-abre-processo-seletivo-com-salarios-de-ate-26258",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "sem número na lista da notícia: cadastro de reserva"
+  }
+ ]
+}

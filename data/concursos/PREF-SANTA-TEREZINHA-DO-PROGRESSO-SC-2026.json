@@ -12,7 +12,8 @@
  "aliases": [],
  "banca_anterior": null,
  "pci_ids": [
-  296113
+  296113,
+  296882
  ],
  "encerrado": false,
  "fatos": [
@@ -112,6 +113,36 @@
    "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-suspende-concurso-publico-para-diversos-niveis",
    "data": "2026-11-20",
    "registrado_em": "2026-11-20",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-25",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-publico-com-salarios-de-ate-10000",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-26",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-publico-com-salarios-de-ate-10000",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-publico-com-salarios-de-ate-10000",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
    "nota": ""
   }
  ]
