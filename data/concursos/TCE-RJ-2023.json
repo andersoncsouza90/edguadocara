@@ -16,6 +16,36 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-tce-rj-formada-comissao-organizadora-para-40-vagas-de-auditor-de-controle-externo-117722",
+   "data": "2023-07-05",
+   "registrado_em": "2026-11-23",
+   "nota": "Concurso autorizado pela Resolução TCE-RJ nº 424, de 05/07/2023, com 40 vagas de Auditor de Controle Externo"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://www.estrategiaconcursos.com.br/blog/concurso-tce-rj-processo-banca-reiniciado/amp/",
+   "data": "2025-11-26",
+   "registrado_em": "2026-11-23",
+   "nota": "Contrato com o IBFC rescindido em 26/09/2025; escolha de nova banca reiniciada em 26/11/2025"
+  },
+  {
+   "campo": "nota",
+   "valor": "Concurso incluído no orçamento de 2027 pelo Conselho Superior em 29/07/2026; banca ainda não definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-rj-e-incluido-no-orcamento-para-2027",
+   "data": "2026-07-29",
+   "registrado_em": "2026-11-23",
+   "nota": "Seleção incluída no orçamento de 2027"
+  },
+  {
    "campo": "vagas",
    "valor": 40,
    "fonte_tipo": "imprensa",
@@ -34,6 +64,36 @@
    "data": "2026-11-23",
    "registrado_em": "2026-11-23",
    "nota": "Data da verificação; matéria cita autorização inicial de julho/2023 (dia não informado). IBFC contratado em 09/2024 e distratado antes do edital; nova banca a contratar. Orçamento 2027 com recursos para o concurso (ata no DOERJ de 14/10/2026)"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-rj-2023-comissao-organizadora",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "Comissão organizadora formada em out/2023 e alterada em 2024 (data da verificação)"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-tce-rj-formada-comissao-organizadora-para-40-vagas-de-auditor-de-controle-externo-117722",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "Formada comissão organizadora para 40 vagas de Auditor (out/2023; data da verificação)"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-tce-rj-edital-para-nivel-superior-segue-em-definicao-de-nova-banca-142458",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "Edital segue em definição de nova banca (matéria de mai/2026; data da verificação)"
   }
  ]
 }

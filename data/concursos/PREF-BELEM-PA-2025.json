@@ -17,6 +17,40 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-prefeitura-de-belem-pa-e-autorizado-para-60-vagas-de-auditor-fiscal-137655",
+   "data": "2025-09-26",
+   "registrado_em": "2026-11-23",
+   "nota": "Prefeito autorizou concurso com 60 vagas (20 imediatas + 40 CR) de Auditor Fiscal da Receita Municipal"
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário do Pará",
+   "url": "https://diariodopara.com.br/concursos-e-empregos/prefeitura-de-belem-autoriza-concurso-para-auditor-fiscal-com-60-vagas-no-total/",
+   "data": "2025-09-26",
+   "registrado_em": "2026-11-23",
+   "nota": "Prefeitura autoriza concurso para auditor fiscal com 60 vagas no total"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal da Receita Municipal",
+    "vagas": 20,
+    "cr": true
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-prefeitura-de-belem-pa-e-autorizado-para-60-vagas-de-auditor-fiscal-137655",
+   "data": "2025-09-26",
+   "registrado_em": "2026-11-23",
+   "nota": ""
+  },
+  {
    "campo": "salario_max",
    "valor": 16659.63,
    "fonte_tipo": "imprensa",
@@ -55,6 +89,16 @@
    "data": "2026-08-05",
    "registrado_em": "2026-11-22",
    "nota": "60 vagas: 20 imediatas + 40 cadastro de reserva; ainda sem edital"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-iss-belem-nova-comissao-organizadora",
+   "data": "2026-10-20",
+   "registrado_em": "2026-11-23",
+   "nota": "Nova comissão organizadora instituída por portaria em 20/10/2026; banca ainda não contratada"
   },
   {
    "campo": "status",

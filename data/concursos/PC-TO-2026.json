@@ -116,6 +116,16 @@
    "nota": "Declaração do governador Wanderlei Barbosa."
   },
   {
+   "campo": "previsao",
+   "valor": "Edital previsto para dezembro/2026, após contrato com o Cebraspe",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/concurso-pc-to-contrato-assinado-e-edital-previsto-para-dezembro",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-23",
+   "nota": "Contrato assinado e edital previsto para dezembro"
+  },
+  {
    "campo": "salario_max",
    "valor": 21901.7,
    "fonte_tipo": "imprensa",

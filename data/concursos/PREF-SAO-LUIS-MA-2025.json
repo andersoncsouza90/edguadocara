@@ -28,6 +28,16 @@
    "data": "2025-11-26",
    "registrado_em": "2026-11-23",
    "nota": "Portaria nº 655, de 26/11/2025 (Diário Oficial de São Luís), forma a comissão do concurso de auditor; próximo passo é a escolha da banca"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/concurso-iss-sao-luis-comissao-formada",
+   "data": "2025-11-26",
+   "registrado_em": "2026-11-23",
+   "nota": "Portaria nº 655 (26/11/2025) autoriza concurso para Auditor Fiscal de Tributos e forma comissão setorial; banca e vagas indefinidas"
   }
  ]
 }
