@@ -189,6 +189,46 @@
    "data": "2026-11-18",
    "registrado_em": "2026-11-19",
    "nota": ""
+  },
+  {
+   "campo": "banca",
+   "valor": "FGV",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-receita-federal-banca-definida-2026/",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "FGV escolhida por dispensa no PNCP (23/11/2026) para o concurso de 146 vagas (30 AFRFB, 116 ATRFB)"
+  },
+  {
+   "campo": "banca",
+   "valor": "FGV",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-receita-federal-2027-banca-definida/",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "FGV escolhida por dispensa no PNCP (23/11/2026) para o concurso de 146 vagas (30 AFRFB, 116 ATRFB)"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Gran Cursos Online",
+   "url": "https://blog.grancursosonline.com.br/concurso-receita-federal-banca-definida-2026/",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "Ato de dispensa de licitação (art. 75, XV, Lei 14.133/2021) publicado no PNCP em 23/11/2026 escolhe a FGV; contrato (R$ 4.624.920,00, 24 meses) ainda não divulgado no PNCP"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Estratégia Concursos",
+   "url": "https://concursos.estrategia.com/portal/concurso-receita-federal-2027-banca-definida/",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-23",
+   "nota": "Ato de dispensa de licitação (art. 75, XV, Lei 14.133/2021) publicado no PNCP em 23/11/2026 escolhe a FGV; contrato (R$ 4.624.920,00, 24 meses) ainda não divulgado no PNCP"
   }
  ]
 }
