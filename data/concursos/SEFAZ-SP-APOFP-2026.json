@@ -42,6 +42,90 @@
    "nota": "Edital publicado com 60 vagas de analista"
   },
   {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista em planejamento, orçamento e finanças públicas - orçamento e finanças públicas",
+    "vagas": 20,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-sefaz-sp-publicado",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-24",
+   "nota": "Edital nº 01/2026 (01/10/2026): 20 vagas na área (orçamento e finanças públicas), 19 AC + 1 PcD"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista em planejamento, orçamento e finanças públicas - orçamento e finanças públicas",
+    "vagas": 20,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/sp/2026/10/02/concurso-sefaz-sp-oferta-60-vagas-com-salarios-de-ate-r-113-mil/",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-24",
+   "nota": "60 vagas divididas igualmente entre as três áreas: 20 para orçamento e finanças públicas"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista em planejamento, orçamento e finanças públicas - contabilidade pública",
+    "vagas": 20,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-sefaz-sp-publicado",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-24",
+   "nota": "Edital nº 01/2026 (01/10/2026): 20 vagas na área (contabilidade pública), 19 AC + 1 PcD"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista em planejamento, orçamento e finanças públicas - contabilidade pública",
+    "vagas": 20,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/sp/2026/10/02/concurso-sefaz-sp-oferta-60-vagas-com-salarios-de-ate-r-113-mil/",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-24",
+   "nota": "60 vagas divididas igualmente entre as três áreas: 20 para contabilidade pública"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista em planejamento, orçamento e finanças públicas - ciências de dados e tecnologia da informação",
+    "vagas": 20,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-sefaz-sp-publicado",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-24",
+   "nota": "Edital nº 01/2026 (01/10/2026): 20 vagas na área (ciências de dados e tecnologia da informação), 19 AC + 1 PcD"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista em planejamento, orçamento e finanças públicas - ciências de dados e tecnologia da informação",
+    "vagas": 20,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/sp/2026/10/02/concurso-sefaz-sp-oferta-60-vagas-com-salarios-de-ate-r-113-mil/",
+   "data": "2026-10-02",
+   "registrado_em": "2026-11-24",
+   "nota": "60 vagas divididas igualmente entre as três áreas: 20 para ciências de dados e tecnologia da informação"
+  },
+  {
    "campo": "nota",
    "valor": "Retificação (Edital nº 02/2026, DOE-SP de 22/10/2026) mudou a prova para 20/12/2026",
    "fonte_tipo": "imprensa",

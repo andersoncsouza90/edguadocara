@@ -50,6 +50,16 @@
    "nota": "Vagas solicitadas para policial; outras fontes citam 533 no total, somando o pedido administrativo"
   },
   {
+   "campo": "vagas",
+   "valor": 269,
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-prf-novo-pedido-enviado-e-para-533-vagas-de-niveis-medio-e-superior-143041",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-24",
+   "nota": "269 vagas pedidas para Policial Rodoviário Federal, no pedido de 533; não autorizadas"
+  },
+  {
    "campo": "nota",
    "valor": "Projeto estratégico da PRF prevê dobrar o efetivo de 13 mil para 26 mil policiais até 2030; no cenário de referência a autorização sairia em dez/2026, mas é estudo orçamentário, não autorização, e depende da PEC da Segurança Pública",
    "fonte_tipo": "imprensa",

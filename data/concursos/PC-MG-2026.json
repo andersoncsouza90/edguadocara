@@ -47,6 +47,16 @@
    "nota": "FGV enviou manifestação de interesse em 08/10; não confirmada como banca"
   },
   {
+   "campo": "banca_cotada",
+   "valor": "FGV",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Focus Concursos",
+   "url": "https://noticias.focusconcursos.com.br/noticias/concurso-pc-mg-fgv-manifesta-interesse-em-organizar-novo-edital",
+   "data": "2026-10-08",
+   "registrado_em": "2026-11-24",
+   "nota": "FGV manifestou interesse em organizar o concurso (carta à PCMG/Seplag); não é contratação"
+  },
+  {
    "campo": "previsao",
    "valor": "Editais previstos para 2026, segundo a delegada-geral (sem data)",
    "fonte_tipo": "imprensa",

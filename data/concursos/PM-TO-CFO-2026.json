@@ -26,6 +26,16 @@
    "data": "2026-06-30",
    "registrado_em": "2026-11-22",
    "nota": "Portaria no DOE-TO de 30/06/2026 institui comissão do novo CFO; ainda sem autorização do governo nem vagas. Fonte única: Nova Concursos fala em comissão 'alterada' e outra fonte diz que a comissão existe desde 2023."
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-pm-to-formada-comissao-para-novo-edital-de-oficiais-143745",
+   "data": "2026-06-30",
+   "registrado_em": "2026-11-24",
+   "nota": "Portaria do comandante-geral (DOE-TO 30/06/2026) institui a comissão do novo concurso do CFO; banca a definir"
   }
  ]
 }

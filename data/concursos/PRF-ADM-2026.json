@@ -24,6 +24,16 @@
    "nota": "PRF encaminhou ao MGI novo pedido com 264 vagas de agente administrativo (data da notícia; protocolo sem data informada)."
   },
   {
+   "campo": "status",
+   "valor": "solicitado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-prf-novo-pedido-enviado-e-para-533-vagas-de-niveis-medio-e-superior-143041",
+   "data": "2026-06-01",
+   "registrado_em": "2026-11-24",
+   "nota": "PRF enviou novo pedido de 533 vagas: 264 Agente Administrativo e 269 Policial Rodoviário Federal"
+  },
+  {
    "campo": "vagas_cargo",
    "valor": {
     "cargo": "Agente Administrativo",
@@ -36,6 +46,20 @@
    "data": "2026-06-01",
    "registrado_em": "2026-11-20",
    "nota": "Vagas do pedido enviado ao MGI (não autorizadas)."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente Administrativo",
+    "vagas": 264,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-prf-novo-pedido-enviado-e-para-533-vagas-de-niveis-medio-e-superior-143041",
+   "data": "2026-06-01",
+   "registrado_em": "2026-11-24",
+   "nota": "Vagas pedidas (não autorizadas), parte do pedido de 533"
   },
   {
    "campo": "nota",
