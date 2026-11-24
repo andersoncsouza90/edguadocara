@@ -1,0 +1,61 @@
+{
+ "id": "PREF-PILAR-DO-SUL-SP-2026",
+ "orgao": "Prefeitura de Pilar do Sul/SP",
+ "sigla": "PREF-PILAR-DO-SUL-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Agente de Fiscalização Tributária"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-28",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-concurso-publico-com-salarios-de-ate-6593",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": "Edital com 8 cargos (5 vagas até R$ 6.593,75 no total); cargo da área: Agente de Fiscalização Tributária. Data da verificação."
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-26",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-concurso-publico-com-salarios-de-ate-6593",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": "Edital com 8 cargos (5 vagas até R$ 6.593,75 no total); cargo da área: Agente de Fiscalização Tributária. Data da verificação."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-concurso-publico-com-salarios-de-ate-6593",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": "Edital com 8 cargos (5 vagas até R$ 6.593,75 no total); cargo da área: Agente de Fiscalização Tributária. Data da verificação."
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Agente de Fiscalização Tributária",
+    "vagas": 0,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-concurso-publico-com-salarios-de-ate-6593",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": ""
+  }
+ ]
+}

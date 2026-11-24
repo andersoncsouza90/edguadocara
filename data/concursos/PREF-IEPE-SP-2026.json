@@ -1,0 +1,74 @@
+{
+ "id": "PREF-IEPE-SP-2026",
+ "orgao": "Prefeitura de Iepê/SP",
+ "sigla": "PREF-IEPE-SP",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Controlador interno",
+  "Controlador"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296893
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-20",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iepe-sp-abre-concurso-com-salarios-de-ate-6520",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iepe-sp-abre-concurso-com-salarios-de-ate-6520",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 28 cargos (5 vagas até R$ 6.520,36 no total); cargos da área: Controlador interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iepe-sp-abre-concurso-com-salarios-de-ate-6520",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iepe-sp-abre-concurso-com-salarios-de-ate-6520",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controlador",
+    "vagas": 1,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iepe-sp-abre-concurso-com-salarios-de-ate-6520",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-24",
+   "nota": ""
+  }
+ ]
+}
