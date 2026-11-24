@@ -92,6 +92,16 @@
    "nota": ""
   },
   {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-05",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-sp-inscricoes-2026",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-24",
+   "nota": "Inscrições prorrogadas até 05/11."
+  },
+  {
    "campo": "inscricoes_inicio",
    "valor": "2026-10-05",
    "fonte_tipo": "agregador",
@@ -100,6 +110,16 @@
    "data": "2026-11-03",
    "registrado_em": "2026-11-03",
    "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Prova remarcada para 20/12/2026",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-sefaz-sp-inscricoes-2026",
+   "data": "2026-11-03",
+   "registrado_em": "2026-11-24",
+   "nota": "Diverge da nota anterior (13/12, Concursos no Brasil); a ficha da própria matéria ainda mostra 13/12."
   },
   {
    "campo": "salario_max",

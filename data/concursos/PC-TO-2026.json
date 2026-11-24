@@ -86,6 +86,16 @@
    "nota": "Notícia cita o extrato do contrato com o Cebraspe no DOE-TO de 16/11/2026 (lido no trecho do buscador)."
   },
   {
+   "campo": "previsao",
+   "valor": "Edital até 04/12/2026 (prazo anunciado pelo governador)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pc-to-banca-2026",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-24",
+   "nota": "Governador Wanderlei Barbosa, em 16/11: 'Dentro de 18 dias, o edital será publicado'."
+  },
+  {
    "campo": "banca",
    "valor": "Cebraspe",
    "fonte_tipo": "imprensa",

@@ -116,6 +116,16 @@
    "nota": "Cronograma do documento-base, sujeito a alteração; contrato ainda não assinado em 16/11"
   },
   {
+   "campo": "previsao",
+   "valor": "Edital em 18/12/2026 e provas em 18/04/2027 (cronograma preliminar do termo de referência)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-anpd-cebraspe-2026",
+   "data": "2026-11-16",
+   "registrado_em": "2026-11-24",
+   "nota": "Datas do TR no PNCP; Concursos no Brasil fala em edital até 24/12 (prazo da Portaria MGI). Assinatura do contrato com o Cebraspe ainda não confirmada."
+  },
+  {
    "campo": "salario_max",
    "valor": 17726.42,
    "fonte_tipo": "imprensa",

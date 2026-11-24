@@ -1,0 +1,57 @@
+{
+ "id": "CGE-AP-2026",
+ "orgao": "Controladoria-Geral do Estado do Amapá",
+ "sigla": "CGE-AP",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "AP",
+ "cargos": [
+  "Auditor de Controle Interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "salario_max",
+   "valor": 8850.0,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-cge-ap-edital-autorizado-comissao-2026",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-24",
+   "nota": "Remuneração inicial (Lei 3.280/2025); topo da carreira R$ 24.680,39."
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-cge-ap-edital-autorizado-comissao-2026",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-24",
+   "nota": "Governo do Amapá autorizou o primeiro concurso próprio da CGE-AP; vagas ainda não divulgadas."
+  },
+  {
+   "campo": "status",
+   "valor": "autorizado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Diário do Amapá",
+   "url": "https://www.diariodoamapa.com.br/cadernos/politica/clecio-autoriza-concurso-publico-para-auditor-de-controle-interno-da-controladoria-geral-do-estado/",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-24",
+   "nota": "Governador Clécio Luís autorizou concurso para auditor de controle interno da CGE."
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-cge-ap-edital-autorizado-comissao-2026",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-24",
+   "nota": "Folha diz que a comissão (CGE, Sead, PGE) saiu no DOE-AP de 23/11; o Diário do Amapá trata a comissão como próximo passo. Fica como sinal até conferir no DOE-AP."
+  }
+ ]
+}

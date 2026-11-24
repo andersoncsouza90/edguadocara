@@ -15,6 +15,16 @@
  "fatos": [
   {
    "campo": "nota",
+   "valor": "Cebraspe tem contrato sob demanda com a PMDF (Contrato 53/2025, 3 anos desde out/2025)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-pm-df-cebraspe-contrato",
+   "data": "2025-10-01",
+   "registrado_em": "2026-11-24",
+   "nota": "Contrato guarda-chuva anterior ao pedido de 13/11/2026; dia exato desconhecido (registrado como 1º/10/2025). Concurso de soldado ainda não autorizado, por isso não vira banca contratada."
+  },
+  {
+   "campo": "nota",
    "valor": "PM-DF abriu novo processo administrativo em 13/11/2026 para ampliar ao GDF o pedido de 2.000 vagas (840 cargos vagos); edital esperado para 2027",
    "fonte_tipo": "imprensa",
    "veiculo": "Folha Dirigida/Qconcursos",
