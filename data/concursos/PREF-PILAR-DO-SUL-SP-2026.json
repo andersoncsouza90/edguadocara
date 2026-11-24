@@ -14,6 +14,16 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "banca",
+   "valor": "Aplicativa",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-concurso-publico-com-salarios-de-ate-6593",
+   "data": "2026-11-17",
+   "registrado_em": "2026-11-24",
+   "nota": "Inscrições pelo site www.aplicativa.net.br, conforme Edital nº 02/2026"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-12-28",
    "fonte_tipo": "agregador",
