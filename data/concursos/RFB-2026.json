@@ -211,6 +211,16 @@
    "nota": "FGV escolhida por dispensa no PNCP (23/11/2026) para o concurso de 146 vagas (30 AFRFB, 116 ATRFB)"
   },
   {
+   "campo": "nota",
+   "valor": "FGV selecionada por dispensa de licitação publicada no PNCP; contrato ainda não assinado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-receita-federal-urgente-definida-banca-para-146-vagas-de-auditores-e-analistas-146725",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-24",
+   "nota": "Termo de Dispensa nº 9/2026 no PNCP (23/11); assinatura do contrato pendente, por isso segue Banca definida e não contratada. Edital previsto para dez/2026."
+  },
+  {
    "campo": "status",
    "valor": "banca_definida",
    "fonte_tipo": "imprensa",
