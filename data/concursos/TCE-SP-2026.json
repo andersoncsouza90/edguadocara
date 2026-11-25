@@ -1,0 +1,107 @@
+{
+ "id": "TCE-SP-2026",
+ "orgao": "Tribunal de Contas do Estado de São Paulo",
+ "sigla": "TCE-SP",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "SP",
+ "cargos": [
+  "Auditor de Controle Externo"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Vunesp",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-sp-2026-banca-auditor-dipe",
+   "data": "2026-03-30",
+   "registrado_em": "2026-11-25",
+   "nota": "Contrato com a Vunesp divulgado em 30/03/2026"
+  },
+  {
+   "campo": "banca",
+   "valor": "Vunesp",
+   "fonte_tipo": "oficial",
+   "veiculo": "TCE-SP (site do órgão)",
+   "url": "https://tce.sp.gov.br/6524-tcesp-abre-concurso-publico-para-auditor-controle-externo-com-oferta-50-vagas",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "Edital nº 001/2026 disponível nos sites do TCESP e da Vunesp"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-08-11",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-sp-2026-edital-auditor",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "Inscrições até 23h59 de 11/08/2026"
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-07-13",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-sp-2026-edital-auditor",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "Inscrições de 13/07 a 11/08/2026 no site da Vunesp; prova objetiva em 11/10/2026"
+  },
+  {
+   "campo": "salario_max",
+   "valor": 20940.2,
+   "fonte_tipo": "imprensa",
+   "veiculo": "Concursos no Brasil",
+   "url": "https://concursosnobrasil.com/concursos/sp/2026/07/04/tce-sp-abre-concurso-com-50-vagas-e-salarios-de-ate-r-20-mil/",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "Remuneração inicial de R$ 20.940,20 (40h)"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "TCE-SP (site do órgão)",
+   "url": "https://tce.sp.gov.br/6524-tcesp-abre-concurso-publico-para-auditor-controle-externo-com-oferta-50-vagas",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "TCESP abre concurso para Auditor de Controle Externo com 50 vagas (Edital nº 001/2026)"
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-tce-sp-2026-edital-auditor",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "Edital nº 001/2026 publicado com 50 vagas para auditor"
+  },
+  {
+   "campo": "vagas",
+   "valor": 50,
+   "fonte_tipo": "oficial",
+   "veiculo": "TCE-SP (site do órgão)",
+   "url": "https://tce.sp.gov.br/6524-tcesp-abre-concurso-publico-para-auditor-controle-externo-com-oferta-50-vagas",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "50 vagas de Auditor de Controle Externo – DIPE em seis especialidades"
+  },
+  {
+   "campo": "vagas",
+   "valor": 50,
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-tce-sp-publicado-edital-para-auditor-com-50-vagas-e-salario-de-r-20-mil-143796",
+   "data": "2026-07-04",
+   "registrado_em": "2026-11-25",
+   "nota": "Edital para auditor com 50 vagas e salário de R$ 20 mil"
+  }
+ ]
+}

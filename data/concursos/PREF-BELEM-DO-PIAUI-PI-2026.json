@@ -73,6 +73,36 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-11-25",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-belem-do-piaui-pi-abre-concurso-publico-para-cargos-de-todos-os-niveis",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-10-30",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-belem-do-piaui-pi-abre-concurso-publico-para-cargos-de-todos-os-niveis",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-belem-do-piaui-pi-abre-concurso-publico-para-cargos-de-todos-os-niveis",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
   }
  ]
 }
