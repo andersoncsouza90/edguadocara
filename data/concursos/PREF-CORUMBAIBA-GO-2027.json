@@ -1,0 +1,73 @@
+{
+ "id": "PREF-CORUMBAIBA-GO-2027",
+ "orgao": "Prefeitura de Corumbaíba/GO",
+ "sigla": "PREF-CORUMBAIBA-GO",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "GO",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296950
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Itame",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbaiba-go-abre-concurso-publico-com-838-vagas-no-total",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-25",
+   "nota": "Edital nº 01/2026; inscrições no site do Itame (organizadora a confirmar no edital)."
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-26",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbaiba-go-abre-concurso-publico-com-838-vagas-no-total",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2027-01-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbaiba-go-abre-concurso-publico-com-838-vagas-no-total",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbaiba-go-abre-concurso-publico-com-838-vagas-no-total",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos",
+    "vagas": 2,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbaiba-go-abre-concurso-publico-com-838-vagas-no-total",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  }
+ ]
+}

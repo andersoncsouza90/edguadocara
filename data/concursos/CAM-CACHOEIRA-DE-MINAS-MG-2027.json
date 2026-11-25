@@ -1,0 +1,73 @@
+{
+ "id": "CAM-CACHOEIRA-DE-MINAS-MG-2027",
+ "orgao": "Câmara Municipal de Cachoeira de Minas/MG",
+ "sigla": "CAM-CACHOEIRA-DE-MINAS-MG",
+ "area": "controle",
+ "esfera": "municipal",
+ "uf": "MG",
+ "cargos": [
+  "Controlador interno"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296963
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "GL Consultoria",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-cachoeira-de-minas-mg-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-25",
+   "nota": "Edital nº 001/2026; inscrições exclusivamente pelo site da GL Consultoria."
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-02-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-cachoeira-de-minas-mg-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2027-01-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-cachoeira-de-minas-mg-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-cachoeira-de-minas-mg-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Controlador Interno",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/camara-de-cachoeira-de-minas-mg-abre-concurso-publico-para-diversos-niveis-de-escolaridade",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  }
+ ]
+}

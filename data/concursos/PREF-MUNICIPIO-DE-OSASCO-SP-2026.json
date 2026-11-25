@@ -1,0 +1,74 @@
+{
+ "id": "PREF-MUNICIPIO-DE-OSASCO-SP-2026",
+ "orgao": "Prefeitura de Município de Osasco/SP",
+ "sigla": "PREF-MUNICIPIO-DE-OSASCO-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Fiscal tributário",
+  "Fiscal Tributário, 1ª Classe"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  296967
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "banca",
+   "valor": "Vunesp",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-osasco-sp-abre-concurso-com-107-vagas-e-salarios-de-ate-8856",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": "banca citada na notícia do PCI"
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-osasco-sp-abre-concurso-com-107-vagas-e-salarios-de-ate-8856",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-12-09",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-osasco-sp-abre-concurso-com-107-vagas-e-salarios-de-ate-8856",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-osasco-sp-abre-concurso-com-107-vagas-e-salarios-de-ate-8856",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal Tributário, 1ª Classe",
+    "vagas": 8,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-osasco-sp-abre-concurso-com-107-vagas-e-salarios-de-ate-8856",
+   "data": "2026-11-25",
+   "registrado_em": "2026-11-25",
+   "nota": ""
+  }
+ ]
+}
