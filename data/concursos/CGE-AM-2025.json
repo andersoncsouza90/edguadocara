@@ -1,0 +1,49 @@
+{
+ "id": "CGE-AM-2025",
+ "orgao": "Controladoria-Geral do Estado do Amazonas",
+ "sigla": "CGE-AM",
+ "area": "controle",
+ "esfera": "estadual",
+ "uf": "AM",
+ "cargos": [
+  "Auditor de Controle Interno"
+ ],
+ "aliases": [
+  "CGE-AM-2026"
+ ],
+ "banca_anterior": null,
+ "pci_ids": [],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-cge-am-comissao-formada-2025",
+   "data": "2025-11-28",
+   "registrado_em": "2026-11-26",
+   "nota": "Portaria nº 123/2025 (de 27/11/2025, publicada no DOE-AM em 28/11/2025) institui comissão especial do primeiro concurso da CGE-AM para Auditor de Controle Interno; banca não definida"
+  },
+  {
+   "campo": "status",
+   "valor": "comissao_formada",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-cge-am-formada-comissao-para-selecao-inedita-139016",
+   "data": "2025-11-28",
+   "registrado_em": "2026-11-26",
+   "nota": "Formada comissão (Portaria nº 123/2025) para a seleção inédita da CGE-AM; banca não definida"
+  },
+  {
+   "campo": "nota",
+   "valor": "Imprensa diverge sobre vagas (15 x 50 para Auditor de Controle Interno); edital previsto para o 1º semestre de 2026 não saiu; em set/2026 JC Concursos noticiou a retomada dos preparativos. Banca não definida (data da verificação).",
+   "fonte_tipo": "imprensa",
+   "veiculo": "JC Concursos",
+   "url": "https://jcconcursos.com.br/noticia/concursos/concurso-cge-am-retomados-preparativos-para-selecao-inedita-com-50-vagas-145504",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": "data da verificação"
+  }
+ ]
+}

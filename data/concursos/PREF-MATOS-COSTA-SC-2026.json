@@ -1,0 +1,73 @@
+{
+ "id": "PREF-MATOS-COSTA-SC-2026",
+ "orgao": "Prefeitura de Matos Costa/SC",
+ "sigla": "PREF-MATOS-COSTA-SC",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SC",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  297018
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matos-costa-sc-abre-selecao-com-salarios-de-ate-5529",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-25",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matos-costa-sc-abre-selecao-com-salarios-de-ate-5529",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Processo Seletivo Simplificado (contratação temporária), não concurso efetivo; inscrições pelo site do Instituto Select",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matos-costa-sc-abre-selecao-com-salarios-de-ate-5529",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": "Data da verificação. PCI: 'As contratações serão temporárias'."
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matos-costa-sc-abre-selecao-com-salarios-de-ate-5529",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos",
+    "vagas": 1,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matos-costa-sc-abre-selecao-com-salarios-de-ate-5529",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
+  }
+ ]
+}

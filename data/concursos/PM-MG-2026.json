@@ -16,6 +16,26 @@
  "encerrado": false,
  "fatos": [
   {
+   "campo": "banca",
+   "valor": "PMMG (CRS – organização própria)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/policia-militar-de-minas-gerais-abre-concurso-com-90-vagas-para-cadete-do-curso-de-formacao-de-oficiais",
+   "data": "2026-09-03",
+   "registrado_em": "2026-11-26",
+   "nota": "Edital DRH/CRS nº 11/2026 do CFO/2027; inscrições pelo portal do Centro de Recrutamento e Seleção da PMMG, sem banca externa"
+  },
+  {
+   "campo": "banca",
+   "valor": "PMMG (CRS – organização própria)",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Direção Concursos",
+   "url": "https://www.direcaoconcursos.com.br/noticias/edital-concurso-pmmg-cfo-publicado",
+   "data": "2026-09-03",
+   "registrado_em": "2026-11-26",
+   "nota": "O próprio Centro de Recrutamento e Seleção (CRS) da PMMG organiza o CFO/2027 (Edital DRH/CRS nº 11/2026); nenhuma banca externa"
+  },
+  {
    "campo": "nota",
    "valor": "Concurso organizado pela própria PMMG (Centro de Recrutamento e Seleção, Edital DRH/CRS nº 11/2026); inscrições de 10/11 a 10/12/2026",
    "fonte_tipo": "imprensa",

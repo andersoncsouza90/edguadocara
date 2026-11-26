@@ -211,6 +211,16 @@
    "nota": "FGV escolhida por dispensa no PNCP (23/11/2026) para o concurso de 146 vagas (30 AFRFB, 116 ATRFB)"
   },
   {
+   "campo": "banca",
+   "valor": "FGV",
+   "fonte_tipo": "oficial",
+   "veiculo": "Receita Federal (gov.br)",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/comunicado-receita-federal-avanca-na-contratacao-da-fgv-para-organizacao-de-novo-concurso-da-carreira-tributaria-e-aduaneira",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-26",
+   "nota": "Comunicado oficial da RFB de 24/11/2026 sobre a dispensa no PNCP (23/11); contrato pendente. Lido só no trecho do buscador"
+  },
+  {
    "campo": "nota",
    "valor": "FGV selecionada por dispensa de licitação publicada no PNCP; contrato ainda não assinado",
    "fonte_tipo": "imprensa",
@@ -239,6 +249,26 @@
    "data": "2026-11-23",
    "registrado_em": "2026-11-23",
    "nota": "Ato de dispensa de licitação (art. 75, XV, Lei 14.133/2021) publicado no PNCP em 23/11/2026 escolhe a FGV; contrato (R$ 4.624.920,00, 24 meses) ainda não divulgado no PNCP"
+  },
+  {
+   "campo": "status",
+   "valor": "banca_definida",
+   "fonte_tipo": "oficial",
+   "veiculo": "Receita Federal (gov.br)",
+   "url": "https://www.gov.br/receitafederal/pt-br/assuntos/noticias/2026/novembro/comunicado-receita-federal-avanca-na-contratacao-da-fgv-para-organizacao-de-novo-concurso-da-carreira-tributaria-e-aduaneira",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-26",
+   "nota": "Comunicado da RFB (24/11/2026): ato de dispensa que autoriza a contratação direta da FGV publicado no PNCP em 23/11; contrato ainda a assinar. Lido só no trecho do buscador (gov.br bloqueado na sessão)"
+  },
+  {
+   "campo": "previsao",
+   "valor": "Edital previsto até o início de janeiro/2027, após assinatura do contrato com a FGV",
+   "fonte_tipo": "oficial",
+   "veiculo": "Ministério da Fazenda (gov.br)",
+   "url": "https://www.gov.br/fazenda/pt-br/assuntos/noticias/2026/novembro/receita-federal-avanca-na-contratacao-da-fgv-para-organizacao-do-concurso-da-carreira-tributaria-e-aduaneira",
+   "data": "2026-11-24",
+   "registrado_em": "2026-11-26",
+   "nota": "Data da verificação/publicação do comunicado; lido só no trecho do buscador. Outros veículos falam em dezembro/2026"
   },
   {
    "campo": "previsao",

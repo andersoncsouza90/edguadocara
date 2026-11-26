@@ -78,6 +78,46 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-luis-de-montes-belos-go-retifica-concurso-com-138-vagas-e-reabre-inscricoes",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-24",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-luis-de-montes-belos-go-retifica-concurso-com-138-vagas-e-reabre-inscricoes",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 17 cargos (138 vagas até R$ 5.559,33 no total); cargos da área: Fiscal de tributos municipais",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-luis-de-montes-belos-go-retifica-concurso-com-138-vagas-e-reabre-inscricoes",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-luis-de-montes-belos-go-retifica-concurso-com-138-vagas-e-reabre-inscricoes",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": ""
   }
  ]
 }
