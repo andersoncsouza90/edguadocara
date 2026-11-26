@@ -26,6 +26,16 @@
    "nota": "Banca anuncia o concurso da PMSC (Edital nº 002/CCP/2026 – CFP), 500 vagas de Soldado; provas em 13/12/2026."
   },
   {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "oficial",
+   "veiculo": "Instituto AOCP (site da banca)",
+   "url": "https://noticias.institutoaocp.org.br/blog/concurso-publico-da-pmsc-oferta-500-vagas-para-soldado/",
+   "data": "2026-10-19",
+   "registrado_em": "2026-11-26",
+   "nota": "Notícia da banca sobre o Edital de Abertura nº 002/CCP/2026 (CFP) da PMSC, 500 vagas de Soldado"
+  },
+  {
    "campo": "inscricoes_fim",
    "valor": "2026-11-16",
    "fonte_tipo": "agregador",

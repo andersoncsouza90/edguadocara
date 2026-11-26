@@ -61,6 +61,34 @@
    "nota": "30 Auditor-Fiscal + 116 Analista-Tributário"
   },
   {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor-Fiscal da Receita Federal",
+    "vagas": 30,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-2026-autorizacao",
+   "data": "2026-07-03",
+   "registrado_em": "2026-11-26",
+   "nota": "Divisão da autorização: 30 AFRFB e 116 ATRFB (total 146)"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Analista-Tributário da Receita Federal",
+    "vagas": 116,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-2026-autorizacao",
+   "data": "2026-07-03",
+   "registrado_em": "2026-11-26",
+   "nota": "Divisão da autorização: 30 AFRFB e 116 ATRFB (total 146)"
+  },
+  {
    "campo": "nota",
    "valor": "O Edital nº 11/2026-RFB (e a retificação de 27/10/2026) NÃO é deste concurso: divulga resultado sub judice de uma candidata do concurso de 2022 (Edital nº 1/2022-RFB), por decisão do TRF-1. A fase segue sendo banca em contratação",
    "fonte_tipo": "oficial",
@@ -229,6 +257,16 @@
    "data": "2026-11-23",
    "registrado_em": "2026-11-24",
    "nota": "Termo de Dispensa nº 9/2026 no PNCP (23/11); assinatura do contrato pendente, por isso segue Banca definida e não contratada. Edital previsto para dez/2026."
+  },
+  {
+   "campo": "nota",
+   "valor": "Dispensa com a FGV homologada no PNCP em 23/11/2026: R$ 4,6 milhões, vigência de 24 meses a partir da assinatura; contrato ainda não assinado",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Folha Dirigida/Qconcursos",
+   "url": "https://folha.qconcursos.com/n/concurso-receita-federal-2026-banca-definida",
+   "data": "2026-11-23",
+   "registrado_em": "2026-11-26",
+   "nota": "Resultado da contratação direta da FGV homologado no PNCP; próximo passo é a assinatura do contrato"
   },
   {
    "campo": "status",

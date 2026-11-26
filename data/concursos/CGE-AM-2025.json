@@ -36,6 +36,30 @@
    "nota": "Formada comissão (Portaria nº 123/2025) para a seleção inédita da CGE-AM; banca não definida"
   },
   {
+   "campo": "status",
+   "valor": "banca_em_definicao",
+   "fonte_tipo": "imprensa",
+   "veiculo": "Guruja",
+   "url": "https://guruja.com.br/concurso-cge-am-2026-pesquisa-de-mercado-avanca-para-banca-de-50-vagas-de-auditor/",
+   "data": "2026-09-18",
+   "registrado_em": "2026-11-26",
+   "nota": "Comissão atualiza a pesquisa de mercado para contratar a banca (propostas até 14/09/2026); banca ainda não definida"
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor de Controle Interno",
+    "vagas": 50,
+    "cr": false
+   },
+   "fonte_tipo": "imprensa",
+   "veiculo": "Guruja",
+   "url": "https://guruja.com.br/concurso-cge-am-2026-pesquisa-de-mercado-avanca-para-banca-de-50-vagas-de-auditor/",
+   "data": "2026-09-18",
+   "registrado_em": "2026-11-26",
+   "nota": "50 vagas imediatas (5 Contábeis, 5 Direito, 5 Eng. Civil, 5 TI, 30 formação livre); diverge de matéria anterior da Estratégia que citava 15 vagas"
+  },
+  {
    "campo": "nota",
    "valor": "Imprensa diverge sobre vagas (15 x 50 para Auditor de Controle Interno); edital previsto para o 1º semestre de 2026 não saiu; em set/2026 JC Concursos noticiou a retomada dos preparativos. Banca não definida (data da verificação).",
    "fonte_tipo": "imprensa",

@@ -194,6 +194,16 @@
    "data": "2026-11-13",
    "registrado_em": "2026-11-13",
    "nota": "Notícia da banca: SEAP-PE divulga concurso para Policial Penal, 700 vagas, inscrições de 12/11/2026 a 04/01/2027 pelo Cebraspe; data da verificação"
+  },
+  {
+   "campo": "edital_url",
+   "valor": "https://www.cebraspe.org.br/concursos/seap_pe_26",
+   "fonte_tipo": "oficial",
+   "veiculo": "Cebraspe (site da banca)",
+   "url": "https://www.cebraspe.org.br/concursos/seap_pe_26",
+   "data": "2026-11-26",
+   "registrado_em": "2026-11-26",
+   "nota": "Página do concurso SEAP-PE 2026 no site da banca; data da verificação"
   }
  ]
 }
