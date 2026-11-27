@@ -1,7 +1,7 @@
 {
  "dou": {
-  "erro": "Falha ao baixar https://www.in.gov.br/leiturajornal?data=27-11-2026&secao=do1: HTTP Error 502: Bad Gateway",
-  "falhou_em": "2026-11-27T09:45Z",
+  "erro": "Falha ao baixar https://www.in.gov.br/leiturajornal?data=27-11-2026&secao=do1: The read operation timed out",
+  "falhou_em": "2026-11-27T10:58Z",
   "lidos": 0,
   "nome": "Diário Oficial da União (seções 1 e 3)",
   "ok": false,
@@ -14,7 +14,7 @@
   "nome": "Fundação Carlos Chagas (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-27T09:45Z"
+  "ultima_ok": "2026-11-27T10:58Z"
  },
  "fgv": {
   "erro": "",
@@ -22,7 +22,7 @@
   "nome": "FGV Conhecimento (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-27T09:45Z"
+  "ultima_ok": "2026-11-27T10:58Z"
  },
  "ibgp": {
   "erro": "",
@@ -30,6 +30,6 @@
   "nome": "IBGP (banca)",
   "ok": true,
   "relevantes": 0,
-  "ultima_ok": "2026-11-27T09:45Z"
+  "ultima_ok": "2026-11-27T10:58Z"
  }
 }

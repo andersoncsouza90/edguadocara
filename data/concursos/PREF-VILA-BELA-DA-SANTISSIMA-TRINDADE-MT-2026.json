@@ -1,0 +1,73 @@
+{
+ "id": "PREF-VILA-BELA-DA-SANTISSIMA-TRINDADE-MT-2026",
+ "orgao": "Prefeitura de Vila Bela da Santíssima Trindade/MT",
+ "sigla": "PREF-VILA-BELA-DA-SANTISSIMA-TRINDADE-MT",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "MT",
+ "cargos": [
+  "Fiscal de tributos"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  297053
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-07",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-vila-bela-da-santissima-trindade-mt-abre-processo-seletivo-com-salarios-de-ate-7701",
+   "data": "2026-11-27",
+   "registrado_em": "2026-11-27",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-27",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-vila-bela-da-santissima-trindade-mt-abre-processo-seletivo-com-salarios-de-ate-7701",
+   "data": "2026-11-27",
+   "registrado_em": "2026-11-27",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 5 cargos (2 vagas até R$ 7.701,07 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-vila-bela-da-santissima-trindade-mt-abre-processo-seletivo-com-salarios-de-ate-7701",
+   "data": "2026-11-27",
+   "registrado_em": "2026-11-27",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-vila-bela-da-santissima-trindade-mt-abre-processo-seletivo-com-salarios-de-ate-7701",
+   "data": "2026-11-27",
+   "registrado_em": "2026-11-27",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Fiscal de Tributos",
+    "vagas": 1,
+    "cr": true
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-vila-bela-da-santissima-trindade-mt-abre-processo-seletivo-com-salarios-de-ate-7701",
+   "data": "2026-11-27",
+   "registrado_em": "2026-11-27",
+   "nota": ""
+  }
+ ]
+}
