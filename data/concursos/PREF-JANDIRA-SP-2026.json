@@ -139,6 +139,46 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-quatro-concursos-com-1380-vagas-e-salarios-de-ate-12-mil",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-16",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-quatro-concursos-com-1380-vagas-e-salarios-de-ate-12-mil",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 118 cargos (1.380 vagas até R$ 12.213,03 no total); cargos da área: Agente fiscal de renda, Analista de controle de convênio, Analista de controle interno",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-quatro-concursos-com-1380-vagas-e-salarios-de-ate-12-mil",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-quatro-concursos-com-1380-vagas-e-salarios-de-ate-12-mil",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
   }
  ]
 }

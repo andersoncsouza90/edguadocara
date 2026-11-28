@@ -1,0 +1,69 @@
+{
+ "id": "PM-PB-2026",
+ "orgao": "Polícia Militar — PB",
+ "sigla": "PM-PB",
+ "area": "policial",
+ "esfera": "estadual",
+ "uf": "PB",
+ "cargos": [
+  "Oficial do quadro de oficiais do estado-maior"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  297088
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-23",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/pmpb-pb-abre-concurso-publico-para-o-quadro-de-oficiais-com-30-vagas",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-12-04",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/pmpb-pb-abre-concurso-publico-para-o-quadro-de-oficiais-com-30-vagas",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "salario_max",
+   "valor": 8745.75,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/pmpb-pb-abre-concurso-publico-para-o-quadro-de-oficiais-com-30-vagas",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/pmpb-pb-abre-concurso-publico-para-o-quadro-de-oficiais-com-30-vagas",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "vagas",
+   "valor": 30,
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/pmpb-pb-abre-concurso-publico-para-o-quadro-de-oficiais-com-30-vagas",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  }
+ ]
+}

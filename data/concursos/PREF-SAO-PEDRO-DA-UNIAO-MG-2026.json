@@ -68,6 +68,46 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2026-12-28",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-pedro-da-uniao-mg-abre-concurso-com-salarios-de-ate-17612",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-28",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-pedro-da-uniao-mg-abre-concurso-com-salarios-de-ate-17612",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 29 cargos (29 vagas até R$ 17.612,87 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-pedro-da-uniao-mg-abre-concurso-com-salarios-de-ate-17612",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-pedro-da-uniao-mg-abre-concurso-com-salarios-de-ate-17612",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
   }
  ]
 }

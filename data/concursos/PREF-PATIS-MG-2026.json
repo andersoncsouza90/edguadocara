@@ -68,6 +68,46 @@
    "data": "2026-11-10",
    "registrado_em": "2026-11-10",
    "nota": ""
+  },
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-01-15",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patis-mg-abre-concurso-com-salarios-de-ate-13500",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-12-18",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patis-mg-abre-concurso-com-salarios-de-ate-13500",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 64 cargos (155 vagas até R$ 13.500,00 no total); cargos da área: Fiscal de tributos",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patis-mg-abre-concurso-com-salarios-de-ate-13500",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patis-mg-abre-concurso-com-salarios-de-ate-13500",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
   }
  ]
 }

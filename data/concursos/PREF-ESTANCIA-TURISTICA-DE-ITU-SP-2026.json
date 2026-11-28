@@ -1,0 +1,73 @@
+{
+ "id": "PREF-ESTANCIA-TURISTICA-DE-ITU-SP-2026",
+ "orgao": "Prefeitura de Estância Turística de Itu/SP",
+ "sigla": "PREF-ESTANCIA-TURISTICA-DE-ITU-SP",
+ "area": "fiscal",
+ "esfera": "municipal",
+ "uf": "SP",
+ "cargos": [
+  "Auditor fiscal tributário"
+ ],
+ "aliases": [],
+ "banca_anterior": null,
+ "pci_ids": [
+  297116
+ ],
+ "encerrado": false,
+ "fatos": [
+  {
+   "campo": "inscricoes_fim",
+   "valor": "2027-02-15",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itu-sp-abre-concurso-com-94-vagas-e-salarios-de-ate-18847",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "inscricoes_inicio",
+   "valor": "2026-11-27",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itu-sp-abre-concurso-com-94-vagas-e-salarios-de-ate-18847",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "nota",
+   "valor": "Edital com 95 cargos (94 vagas até R$ 18.847,36 no total); cargos da área: Auditor fiscal tributário",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itu-sp-abre-concurso-com-94-vagas-e-salarios-de-ate-18847",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "status",
+   "valor": "edital_publicado",
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itu-sp-abre-concurso-com-94-vagas-e-salarios-de-ate-18847",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  },
+  {
+   "campo": "vagas_cargo",
+   "valor": {
+    "cargo": "Auditor Fiscal Tributário",
+    "vagas": 1,
+    "cr": false
+   },
+   "fonte_tipo": "agregador",
+   "veiculo": "PCI Concursos",
+   "url": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itu-sp-abre-concurso-com-94-vagas-e-salarios-de-ate-18847",
+   "data": "2026-11-28",
+   "registrado_em": "2026-11-28",
+   "nota": ""
+  }
+ ]
+}
